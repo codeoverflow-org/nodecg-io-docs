@@ -2,6 +2,9 @@
 
 site_name: nodecg-io Documentation
 theme:
+  palette:
+    scheme: slate
+    primary: teal
   name: material
   favicon: https://avatars.githubusercontent.com/codeoverflow-org
 docs_dir: docs
@@ -11,7 +14,8 @@ repo_name: codeoverflow-org/nodecg-io
 repo_url: https://github.com/codeoverflow-org/nodecg-io
 
 markdown_extensions:
-    - plantuml_markdown
+    - plantuml_markdown:
+        server: http://www.plantuml.com/plantuml 
     - markdown_checklist.extension
 
 nav:
