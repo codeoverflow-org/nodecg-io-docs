@@ -1,17 +1,26 @@
 # To build the documentation use `build.py`
 
 site_name: nodecg-io Documentation
+site_author: codeoverflow.org
+site_url: https://nodecg.io/
+copyright: '© 2020 codeoverflow.org CC-BY-4.0'
+
 theme:
   palette:
     scheme: slate
     primary: teal
   name: material
+  font: false
+  feature:
+    tabs: true
   favicon: https://avatars.githubusercontent.com/codeoverflow-org
+
 docs_dir: docs
 site_dir: build
 
 repo_name: codeoverflow-org/nodecg-io
 repo_url: https://github.com/codeoverflow-org/nodecg-io
+edit_uri: https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/
 
 markdown_extensions:
     - plantuml_markdown:
@@ -34,3 +43,8 @@ nav:
       - Server: samples/ws-server.md
 
   - Contributors: contributors.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/sX2Gjbs
