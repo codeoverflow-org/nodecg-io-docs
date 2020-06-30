@@ -16,5 +16,4 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #CNAME Shouldn't be created yet
-          #CUSTOM_DOMAIN: docs.nodecg.io
+          CUSTOM_DOMAIN: nodecg.io
