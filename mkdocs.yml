@@ -30,7 +30,12 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Install: install.md
-  - How to Contribute: contribute.md
+  - How to Contribute:
+    - Basics: contribute.md
+    - Create a Service: contribute/create_service.md
+    - Create a sample bundle: contribute/create_sample.md
+    - Document a sample: contribute/sample_documentation.md
+    - Before opening a Pull Request: contribute/before_pr.md
   - Available services: services.md
   - Dependency Graph: dependencies.md
   - Sample Implementations:
@@ -41,7 +46,7 @@ nav:
     - WebSocket:
       - Client: samples/ws-client.md
       - Server: samples/ws-server.md
-
+  - Create your first bundle: create_bundle.md
   - Contributors: contributors.md
 
 extra:

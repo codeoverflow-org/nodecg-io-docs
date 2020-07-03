@@ -7,7 +7,7 @@
 [![Sevices](https://img.shields.io/static/v1?label=Services%20implemented&message=7&color=blue&style=flat-square)](services.md)
 [![License](https://img.shields.io/github/license/codeoverflow-org/nodecg-io?label=License&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/blob/master/LICENSE)
 
-**nodecg-io is a [NodeCG](https://github.com/nodecg/nodecg)-bundle which that implements Social Media API's in the NodeCG framework**
+**nodecg-io is a [NodeCG](https://github.com/nodecg/nodecg)-bundle that implements Social Media API's in the NodeCG framework**
 
 ## About nodecg-io
 
