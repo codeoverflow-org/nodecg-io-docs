@@ -20,17 +20,18 @@ If that's no problem you can had over to the [Installation Guide](install.md) an
 
 ## Implemented Services and Interfaces
 
-- [ ] AHK
-- [x] Discord  
+- [x] AHK
+- [x] Discord
+- [x] IntelliJ IDEs  
 - [ ] IRC (Internet Relay Chat)
 - [ ] MIDI
 - [x] RCON  
 - [ ] Serial Port (Arduino)  
-- [ ] Spotify
+- [x] Spotify
 - [ ] StreamElements  
 - [ ] TipeeeStream  
 - [x] Twitch Chat  
-- [ ] Twitter
+- [x] Twitter
 - [X] WebSocket Client & Server
 - [ ] Youtube
 
