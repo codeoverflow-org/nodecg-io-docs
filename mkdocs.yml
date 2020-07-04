@@ -35,7 +35,6 @@ nav:
     - Create a Service: contribute/create_service.md
     - Create a sample bundle: contribute/create_sample.md
     - Document a sample: contribute/sample_documentation.md
-    - Before opening a Pull Request: contribute/before_pr.md
   - Available services: services.md
   - Dependency Graph: dependencies.md
   - Sample Implementations:

@@ -63,5 +63,3 @@ module.exports = function (nodecg: NodeCG) {
 ## Next steps
 
 You could [add documentation](create_sample.md) for the sample bundle.
-
-Or you just [open your pull request](before_pr.md).

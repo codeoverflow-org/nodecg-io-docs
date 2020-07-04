@@ -148,6 +148,3 @@ No sample bundle for service `<the services name>`.
 ```
 
 Do not remove the marker in the first line until the bundle is implemented and on't forget to add this file to `mkdocs.yml`.
-
-
-Then you can just [open your pull request](before_pr.md).
