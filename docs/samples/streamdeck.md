@@ -6,7 +6,7 @@ Sadly you can't access the streamdeck while another application accesses it. So 
 
 ### Configure the Streamdeck Rainbow bundle
 
-1, If you're on linux follow the instructions listed under Manual Installation [here](https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md). Everything after the `sudo udevadm` command can be omitted.
+1. If you're on linux follow the instructions listed under Manual Installation [here](https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md). Everything after the `sudo udevadm` command can be omitted.
 
 2. Start nodecg with nodecg-io installed. The streamdeck-rainbow bundle is currently part of it so it should also be loaded.
 
