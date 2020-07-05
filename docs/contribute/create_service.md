@@ -8,7 +8,12 @@ Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a pac
 
 ## Create a package
 
-Now you need to create a package. You should call it `nodecg-ui-<your service name>`.
+From here you will have to replace:  
+* `YourServiceName` to your service's name in [PascalCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class).  
+* `yourServiceName` to your service's name in [carmelCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function).   
+* `your-service-name` to your service's name with only lowercase and hyphens ( `-` ) for example: ws-server.
+
+Now you need to create a package. You should call it `nodecg-io-your-service-name`.
 
 First create a directory with that name put file called `package.json` into it.
 
@@ -16,7 +21,7 @@ Put the following into it:
 
 ```json
 {
-  "name": "nodecg-io-<your service name>",
+  "name": "nodecg-io-your-service-name",
   "version": "0.1.0",
   "description": "<Short description what is possible with your service.>",
   "homepage": "",
@@ -63,69 +68,62 @@ Now run `npm install` in the repository root.
 
 ## Create a configuration schema
 
-Next create a file called `<your service name>-schame.json`. This is a json schema file that indicates how the configuration for your service should be structured. If you need help here take a look at [this](https://json-schema.org/understanding-json-schema/) online resource and the schema-files of the other service implementations.
+Next create a file called `your-service-name-schame.json`. This is a json schema file that indicates how the configuration for your service should be structured. If you need help here take a look at [this](https://json-schema.org/understanding-json-schema/) online resource and the schema-files of the other service implementations.
 
 ## Create the service
 
 Create a file called `index.ts` in a folder called `extension` inside your services directory. You can then paste the following code and fill in your code instead of the comments.
 
 ```typescript
-import { NodeCG } from "nodecg/types/server";
-import { NodeCGIOCore } from "nodecg-io-core/extension";
-import { Service, ServiceProvider } from "nodecg-io-core/extension/types";
-import { emptySuccess, success, error, Result } from "nodecg-io-core/extension/utils/result";
+// TODO: Rename all occurences of "YourServiceName" in PascalCase
+// TODO: Rename all occurences of "yourServiceName" in carmelCase
+// TODO: Rename all occurences of "your-service-name" with only lowercase and hyphens ( - )
 
-interface <Your service name>ServiceConfig {
+import { NodeCG } from "nodecg/types/server";
+import { ServiceProvider } from "nodecg-io-core/extension/types";
+import { emptySuccess, success, error, Result } from "nodecg-io-core/extension/utils/result";
+import { ServiceBundle } from "nodecg-io-core/extension/serviceBundle";
+// TODO: Replace the "fake" service class with that found on npm etc.
+import { ServiceClass} from "./";
+
+interface YourServiceNameServiceConfig {
     // TODO Fill in the values from your json schema here. The json
     // schema will load into an instance  of this.
 }
 
-export interface <Your service name>ServiceClient {
+export interface YourServiceNameServiceClient {
     // This interface is exposed to bundles. Make shure it's no longer
     // possible to access the login credentials from here
-    getRawClient(): <class of the package from step 1 taht should be exposed to bundles>;
+	// TODO: class of the package from step 1 that should be exposed to bundles [needs to be replaced];
+	getRawClient(): ServiceClass;
 }
 
-module.exports = (nodecg: NodeCG): ServiceProvider<<Your service name>ServiceClient> | undefined => {
-    nodecg.log.info("<Your service name> bundle started");
-    const core = (nodecg.extensions["nodecg-io-core"] as unknown) as NodeCGIOCore | undefined;
-    if (core === undefined) {
-        nodecg.log.error("nodecg-io-core isn't loaded! <Your service name> bundle won't function without it.");
-        return undefined;
-    }
-
-    const service: Service<<Your service name>ServiceConfig, <Your service name>ServiceClient> = {
-        schema: core.readSchema(__dirname, "../<Your service name>-schema.json"),
-        serviceType: "<Your service name>",
-        validateConfig: validateConfig,
-        createClient: createClient(nodecg),
-        stopClient: stopClient,
-    };
-
-    return core.registerService(service);
+module.exports = (nodecg: NodeCG): ServiceProvider<YourServiceNameServiceClient> | undefined => {
+    const yourServiceName = new YourServiceNameService(nodecg, "your-service-name", __dirname, "../your-service-name-schema.json");
+    return yourServiceName.register();
 };
 
-async function validateConfig(config: <Your service name>ServiceConfig): Promise<Result<void>> {
+class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig, YourServiceNameServiceClient> {
+  async validateConfig(config: <YourServiceNameServiceConfig): Promise<Result<void>> {
     // TODO You can validate your config here. If this gets called, the schema is correct.
     // You should for example check whether oauth keys are valid and servers are online here
     // If everything is good return 'emptySuccess()'
     // If an error occurs return 'error(<The error message>)'
-}
+  }
 
-function createClient(nodecg: NodeCG): (config: TwitchServiceConfig) => Promise<Result<TwitchServiceClient>> {
-    return async (config) => {
-        // TODO Here you should return a <Your service name>ServiceClient that is exposed to bundles.
-        // If everything is good return 'success({
-        //     getRawClient() {
-        //         return <The raw client from the package from step 1>
-        //     }
-        // })'
-        // If an error occurs return 'error(<The error message>)'
-    };
-}
+  async createClient(config: <YourServiceNameServiceConfig): Promise<Result<YourServiceNameServiceClient>> {
+    // TODO Here you should return a <Your service name>ServiceClient that is exposed to bundles.
+    // If everything is good return 'success({
+    //     getRawClient() {
+    //         return <The raw client from the package from step 1>
+    //     }
+    // })'
+    // If an error occurs return 'error(<The error message>)'
+  }
 
-function stopClient(client: TwitchServiceClient): void {
-    // At the moment this does not work but it will in the future so make shure you disconnect everything here.
+  stopClient(client: YourServiceNameServiceClient): void {
+    // Here you shuld make shure you disconnect everything here (if possible).
+  }
 }
 ```
 
@@ -147,4 +145,4 @@ No sample bundle for service `<the services name>`.
 [You can help us and create one!](https://github.com/codeoverflow-org/nodecg-io/blob/master/docs/docs/contribute.md)
 ```
 
-Do not remove the marker in the first line until the bundle is implemented and on't forget to add this file to `mkdocs.yml`.
+Do not remove the marker in the first line until the bundle is implemented and don't forget to add this file to `mkdocs.yml`.
