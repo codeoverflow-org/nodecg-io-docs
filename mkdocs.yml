@@ -41,6 +41,7 @@ nav:
     - Discord: samples/discord.md
     - IntelliJ: samples/intellij.md
     - Rcon: samples/rcon.md
+    - Streamdeck: samples/streamdeck.md
     - Twitch: samples/twitch.md
     - WebSocket:
       - Client: samples/ws-client.md
