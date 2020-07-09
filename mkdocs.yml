@@ -46,6 +46,7 @@ nav:
     - WebSocket:
       - Client: samples/ws-client.md
       - Server: samples/ws-server.md
+    - Xdotool: samples/xdotool.md
   - Create your first bundle: create_bundle.md
   - Contributors: contributors.md
 
