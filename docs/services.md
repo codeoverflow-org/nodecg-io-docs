@@ -10,6 +10,15 @@ Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.0.0 <br>
 Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.0.0 <br>
 Depends on [typescript](https://www.npmjs.com/package/typescript) @ ^3.8.3 <br>
 
+## [nodecg-io-ahk](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk)
+
+**Allows you to send commands to AutoHotkey.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.5.7 <br>
+
 ## [nodecg-io-discord](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord)
 
 **Allows to connect to discord via a discord-bot.**
@@ -27,6 +36,25 @@ See the [sample implementation](samples/intellij.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.5.7 <br>
+
+## [nodecg-io-irc](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-irc)
+
+**Allow to connect to IRC Servers.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [irc](https://www.npmjs.com/package/irc) @ 0.5.2 <br>
+
+## [nodecg-io-philipshue](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-philipshue)
+
+**Allows you to connect with your Philips Hue bridge. This allows you to control your lights etc.**
+
+There's no sample implementation for this service yet.
+
+Depends on [is-ip](https://www.npmjs.com/package/is-ip) @ ^3.1.0 <br>
+Depends on [node-hue-api](https://www.npmjs.com/package/node-hue-api) @ ^4.0.7 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 
 ## [nodecg-io-rcon](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-rcon)
 
@@ -47,6 +75,15 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 Depends on [open](https://www.npmjs.com/package/open) @ ^7.0.3 <br>
 Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node) @ ^4.0.0 <br>
 
+## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck)
+
+**Allows to interface with the elgato streamdeck.**
+
+See the [sample implementation](samples/streamdeck.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [elgato-stream-deck](https://www.npmjs.com/package/elgato-stream-deck) @ ^3.3.0 <br>
+
 ## [nodecg-io-twitch](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch)
 
 **Allows to connect to twitch with your account, send and receive messages and much more. It can be used to create Twitch-Bots.**
@@ -56,6 +93,16 @@ See the [sample implementation](samples/twitch.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.0.10 <br>
 Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.0.10 <br>
+
+## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter)
+
+**Allows to connect to twitter, send, retweet or like messages.**
+
+See the [sample implementation](samples/twitter.md)
+
+Depends on [@types/twitter](https://www.npmjs.com/package/@types/twitter) @ ^1.7.0 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [twitter](https://www.npmjs.com/package/twitter) @ ^1.7.1 <br>
 
 ## [nodecg-io-ws-client](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ws-client)
 
@@ -76,4 +123,14 @@ There's no sample implementation for this service yet.
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.5 <br>
 Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.0 <br>
+
+## [nodecg-io-xdotool](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool)
+
+**Allows you to send commands to xdotool.**
+
+See the [sample implementation](samples/xdotool.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.5.7 <br>
+Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
 
