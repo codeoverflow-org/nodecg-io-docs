@@ -23,7 +23,7 @@ The AHK sample bundle in `samples/ahk` shows how to use the
 
    ```json
    {
-       "host": localhost
+       "host": "localhost",
        "port": 42800
    }
    ```
