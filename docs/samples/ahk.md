@@ -1,6 +1,6 @@
 ## Using the AHK sample bundle
 
-The AHK sample bundle in `samples/ahk` shows how to use the 
+The AHK sample bundle in `samples/ahk` shows how to send a command to a HotkeylessAHK server.
 
 ### Prerequisites
 
@@ -32,4 +32,4 @@ The AHK sample bundle in `samples/ahk` shows how to use the
 
 6. Set the created ahk service instance to the service dependency of the ahk bundle.
 
-7. A small Window with the text "Hello World" should have popped up.
+7. A small window with the text "Hello World" should have popped up.
