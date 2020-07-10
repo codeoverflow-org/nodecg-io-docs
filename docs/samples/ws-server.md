@@ -30,4 +30,4 @@ The WebSocket-server sample bundle in `samples/websocket-server` shows how to se
 
 6. Set the created ws-server service instance to the service dependency of the ws-server bundle.
 
-7. Your browser window should get minimised.
+7. A websocket-server has been started at the specified port.
