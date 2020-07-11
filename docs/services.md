@@ -14,7 +14,7 @@ Depends on [typescript](https://www.npmjs.com/package/typescript) @ ^3.8.3 <br>
 
 **Allows you to send commands to AutoHotkey.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/ahk.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.5.7 <br>
@@ -118,7 +118,7 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.0 <br>
 
 **Allows to create a custom WebSocket server.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/ws-server.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.5 <br>
