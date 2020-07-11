@@ -50,6 +50,7 @@ nav:
       - Server sample: samples/ws-server.md
     - Xdotool sample: samples/xdotool.md
     - Dependency Graph: dependencies.md
+  - ✏️: https://github.com/codeoverflow-org/nodecg-io-docs/
 
 extra:
   social:
