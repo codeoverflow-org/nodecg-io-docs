@@ -4,7 +4,7 @@ The AHK sample bundle in `samples/ahk` shows how to send a command to a Hotkeyle
 
 ### Prerequisites
 
-* Working NodeCG & nodcg-io installation
+* Working NodeCG & nodecg-io installation
 * A running [HotkeylessAHK](https://github.com/sebinside/HotkeylessAHK) setup.
 
 ### Configure the ahk sample bundle

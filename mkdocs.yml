@@ -40,17 +40,18 @@ nav:
     - Contributors: contribute/contributors.md
   - Services:
     - Available services: services.md
+    - AHK sample: samples/ahk.md
     - Discord sample: samples/discord.md
     - IntelliJ sample: samples/intellij.md
     - Rcon sample: samples/rcon.md
     - Streamdeck sample: samples/streamdeck.md
     - Twitch sample: samples/twitch.md
+    - Twitter sample: samples/twitter.md
     - WebSocket:
       - Client sample: samples/ws-client.md
       - Server sample: samples/ws-server.md
     - Xdotool sample: samples/xdotool.md
     - Dependency Graph: dependencies.md
-  - ✏️: https://github.com/codeoverflow-org/nodecg-io-docs/
 
 extra:
   social:

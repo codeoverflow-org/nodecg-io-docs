@@ -4,7 +4,7 @@ To actually use nodecg-io you need to create a bundle. Here's a step-by-step gui
 
 ## Dependencies
 
-Think of what services your bundle needs. Take a look at the [service list](services.md) if to see what services are available. If you need a service that is not yet available consider [creating it](contribute/create_service.md).
+Think of what services your bundle needs. Take a look at the [service list](../services.md) if to see what services are available. If you need a service that is not yet available consider [creating it](../contribute/create_service.md).
 
 ## Create a package
 
