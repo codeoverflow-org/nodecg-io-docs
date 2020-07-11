@@ -1,13 +1,13 @@
 ## Using the Xdotool sample bundle
 
-The Xdotool sample bundle in `samples/xdotool` shows how to use the xdotool service to execute [xdotool commands](http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html) by minimising the currently active window.
+The Xdotool sample bundle in `samples/xdotool` shows how to use the xdotool service to execute [xdotool commands](http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html) by minimizing the currently active window.
 
 ### Prerequisites
 
-* Working NodeCG & nodcg-io installation
+* Working NodeCG & nodecg-io installation
 * xdotool installed (Only works on linux)
 
-### Configure the Twitch sample bundle
+### Configure the Xdotool sample bundle
 
 1. Start nodecg with nodecg-io installed. The xdotool bundle is currently part of it so it should also be loaded.
 
@@ -17,9 +17,9 @@ The Xdotool sample bundle in `samples/xdotool` shows how to use the xdotool serv
 
 4. Create a new xdotool service instance using the left upper menu.
 
-5. Enter settings Port `-1` tells nodecg-io to use a locally installed xdotool.
+5. Enter settings port `-1` tells nodecg-io to use a locally installed xdotool.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch oauth Key in monaco (the texteditor on the right) in this format:
+   The created instance should be automatically selected, if not select it in the upper left menu. Configure local xdotool in monaco (the texteditor on the right) using this config:
 
    ```json
    {
@@ -32,4 +32,4 @@ The Xdotool sample bundle in `samples/xdotool` shows how to use the xdotool serv
 
 6. Set the created xdotool service instance to the service dependency of the xdotool bundle.
 
-7. Your browser window should get minimised.
+7. Your browser window should get minimized.

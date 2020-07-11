@@ -4,7 +4,7 @@ The Twitch-chat example bundle in `samples/twitch-chat` demonstrates the ability
 
 ### Prerequisites
 
-* Working NodeCG & nodcg-io installation
+* Working NodeCG & nodecg-io installation
 * a Twitch oAuth-Key
 
 *Note:* If you don't have such a key yet you can generate it on https://twitchapps.com/tmi/. Just log into your Twitch account and copy the token.  
