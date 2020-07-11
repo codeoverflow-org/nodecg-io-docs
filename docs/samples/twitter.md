@@ -3,7 +3,7 @@ The [Twitter timeline](/samples/twitter-timeline/) bundle retrieves some of the 
 
 ### Prerequisites
 
-* Working NodeCG & nodcg-io installation
+* Working NodeCG & nodecg-io installation
 * An [app](https://developer.twitter.com/en/apps) and their following keys and tokens 
   - The _API key_ here **oauthConsumerKey**
   - The _API secret key_ here **oauthConsumerSecret**

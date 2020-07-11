@@ -4,7 +4,7 @@ The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrat
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-oi installation
+* Working NodeCG & nodecg-io installation
 * a Discord Bot token
 
 *Note:* If you don't have such a token yet you can follow [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html) guide.
