@@ -63,6 +63,7 @@ nav:
 
 extra_css:
   - stylesheets\colors.css
+  - stylesheets\fonts.css
 
 extra:
   social:
