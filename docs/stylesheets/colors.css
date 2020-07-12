@@ -2,3 +2,7 @@
     --md-primary-fg-color:               #FF7A04;
     --md-accent-fg-color:                #FF004D;
   }
+
+  .md-typeset .task-list-control [type=checkbox]:checked+.task-list-indicator::before {
+    background: var(--md-primary-fg-color) !important;
+  } 
