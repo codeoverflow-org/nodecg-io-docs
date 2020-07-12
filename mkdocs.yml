@@ -8,7 +8,7 @@ copyright: '© 2020 codeoverflow.org CC-BY-4.0'
 theme:
   palette:
     scheme: slate
-    primary: teal
+  #  primary: teal
   name: material
   font: false
   features:
@@ -25,7 +25,14 @@ edit_uri: https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/
 markdown_extensions:
     - plantuml_markdown:
         server: http://www.plantuml.com/plantuml 
-    - markdown_checklist.extension
+    - codehilite:
+        noclasses: true
+        use_pygments: true
+        pygments_style: monokai
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
 
 nav:
   - Home: index.md
@@ -52,6 +59,10 @@ nav:
       - Server sample: samples/ws-server.md
     - Xdotool sample: samples/xdotool.md
     - Dependency Graph: dependencies.md
+
+
+extra_css:
+  - stylesheets\colors.css
 
 extra:
   social:

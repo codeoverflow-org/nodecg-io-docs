@@ -14,7 +14,7 @@ You'll need the following tools:
 
 
 ## Clone this repository:
-```
+```shell
 git clone https://github.com/codeoverflow-org/nodecg-io.git
 ```
 
@@ -23,13 +23,13 @@ git clone https://github.com/codeoverflow-org/nodecg-io.git
 
 ## Install all of the dependencies using `npm`:
 
-```
+```shell
 cd path/to/nodecg-io
 npm install
 ```
 
 ## Build nodecg-io: 
-```
+```shell
 cd path/to/nodecg-io 
 npm run build
 ```

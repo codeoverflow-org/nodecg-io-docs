@@ -5,11 +5,11 @@
 left to right direction
 skinparam HyperlinkColor White
 skinparam component {
-ArrowColor LightSteelBlue
-BackgroundColor<<core>> SteelBlue
-BackgroundColor<<service>> Teal
-BackgroundColor<<lib>> SeaGreen
-BorderColor DarkSlateGray
+ArrowColor Gainsboro
+BackgroundColor<<core>> Crimson
+BackgroundColor<<service>> Darkorange
+BackgroundColor<<lib>> GoldenRod
+BorderColor Black
 FontColor White
 FontStyle Underline
 }
