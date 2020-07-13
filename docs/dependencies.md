@@ -25,6 +25,9 @@ FontStyle Underline
 [<u>nodecg-io-intellij] as nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij]]
 [<u>nodecg-io-irc] as nodecg_io_irc <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-irc]]
 [<u>irc] as irc <<lib>> [[https://www.npmjs.com/package/irc]]
+[<u>nodecg-io-midi-input] as nodecg_io_midi_input <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-input]]
+[<u>easymidi] as easymidi <<lib>> [[https://www.npmjs.com/package/easymidi]]
+[<u>nodecg-io-midi-output] as nodecg_io_midi_output <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-output]]
 [<u>nodecg-io-philipshue] as nodecg_io_philipshue <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-philipshue]]
 [<u>is-ip] as is_ip <<lib>> [[https://www.npmjs.com/package/is-ip]]
 [<u>node-hue-api] as node_hue_api <<lib>> [[https://www.npmjs.com/package/node-hue-api]]
@@ -59,6 +62,10 @@ nodecg_io_intellij --> nodecg_io_core
 nodecg_io_intellij ...> node_fetch
 nodecg_io_irc --> nodecg_io_core
 nodecg_io_irc ...> irc
+nodecg_io_midi_input --> nodecg_io_core
+nodecg_io_midi_input ...> easymidi
+nodecg_io_midi_output --> nodecg_io_core
+nodecg_io_midi_output ...> easymidi
 nodecg_io_philipshue ...> is_ip
 nodecg_io_philipshue ...> node_hue_api
 nodecg_io_philipshue --> nodecg_io_core
