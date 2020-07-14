@@ -25,7 +25,8 @@ If that's no problem you can head over to the [installation guide](https://nodec
 - [x] Discord
 - [X] IntelliJ IDEs
 - [x] IRC (Internet Relay Chat)
-- [x] MIDI
+- [x] MIDI Input
+- [x] MIDI Output
 - [X] Philips Hue
 - [x] RCON
 - [ ] Serial Port (Arduino)
