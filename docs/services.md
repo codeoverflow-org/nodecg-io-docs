@@ -109,8 +109,8 @@ Depends on [elgato-stream-deck](https://www.npmjs.com/package/elgato-stream-deck
 See the [sample implementation](samples/twitch.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
-Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.0.10 <br>
-Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.0.10 <br>
+Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.1.3 <br>
+Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.1.3 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter)
 
