@@ -83,6 +83,15 @@ There's no sample implementation for this service yet.
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [rcon-client](https://www.npmjs.com/package/rcon-client) @ ^4.2.0 <br>
 
+## [nodecg-io-slack](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack)
+
+**Allows to connect to Slack via a bot. This enables you to e.g. send messages, list all channels. **
+
+See the [sample implementation](samples/slack.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^5.10.0 <br>
+
 ## [nodecg-io-spotify](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify)
 
 **Allows to connect to your personal Spotify account. This enables you to e.g. control music playback or get current song information. **
