@@ -5,7 +5,7 @@ The Slack example bundle in `samples/slack` demonstrates the ability to list all
 ### Prerequisites
 
 * Working NodeCG & nodecg-io installation
-* a Discord Bot token
+* a Slack Bot token
 
 *Note:* If you don't have such a token yet you can create your on app with token on [this](https://app.slack.com/apps-manage/) page.
 
@@ -19,7 +19,7 @@ The Slack example bundle in `samples/slack` demonstrates the ability to list all
 
 4. Create a new slack service instance using the left upper menu.
 
-5. Enter your slack app token. [Manage Apps](https://app.slack.com/apps-manage/)
+5. Enter your slack app token.
 
    The created instance should be automatically selected, if not select it in the upper left menu. Enter your token in monaco (the texteditor on the right) in this format:
 
