@@ -40,6 +40,8 @@ FontStyle Underline
 [<u>spotify-web-api-node] as spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/spotify-web-api-node]]
 [<u>nodecg-io-streamdeck] as nodecg_io_streamdeck <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck]]
 [<u>elgato-stream-deck] as elgato_stream_deck <<lib>> [[https://www.npmjs.com/package/elgato-stream-deck]]
+[<u>nodecg-io-telegram] as nodecg_io_telegram <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-telegram]]
+[<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
 [<u>nodecg-io-twitch] as nodecg_io_twitch <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
@@ -80,6 +82,8 @@ nodecg_io_spotify ...> open
 nodecg_io_spotify ...> spotify_web_api_node
 nodecg_io_streamdeck --> nodecg_io_core
 nodecg_io_streamdeck ...> elgato_stream_deck
+nodecg_io_telegram --> nodecg_io_core
+nodecg_io_telegram ...> node_telegram_bot_api
 nodecg_io_twitch --> nodecg_io_core
 nodecg_io_twitch ...> twitch
 nodecg_io_twitch ...> twitch_chat_client
