@@ -33,11 +33,15 @@ FontStyle Underline
 [<u>node-hue-api] as node_hue_api <<lib>> [[https://www.npmjs.com/package/node-hue-api]]
 [<u>nodecg-io-rcon] as nodecg_io_rcon <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-rcon]]
 [<u>rcon-client] as rcon_client <<lib>> [[https://www.npmjs.com/package/rcon-client]]
+[<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
+[<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
 [<u>open] as open <<lib>> [[https://www.npmjs.com/package/open]]
 [<u>spotify-web-api-node] as spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/spotify-web-api-node]]
 [<u>nodecg-io-streamdeck] as nodecg_io_streamdeck <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck]]
 [<u>elgato-stream-deck] as elgato_stream_deck <<lib>> [[https://www.npmjs.com/package/elgato-stream-deck]]
+[<u>nodecg-io-telegram] as nodecg_io_telegram <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-telegram]]
+[<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
 [<u>nodecg-io-twitch] as nodecg_io_twitch <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
@@ -71,11 +75,15 @@ nodecg_io_philipshue ...> node_hue_api
 nodecg_io_philipshue --> nodecg_io_core
 nodecg_io_rcon --> nodecg_io_core
 nodecg_io_rcon ...> rcon_client
+nodecg_io_slack --> nodecg_io_core
+nodecg_io_slack ...> slack_web_api
 nodecg_io_spotify --> nodecg_io_core
 nodecg_io_spotify ...> open
 nodecg_io_spotify ...> spotify_web_api_node
 nodecg_io_streamdeck --> nodecg_io_core
 nodecg_io_streamdeck ...> elgato_stream_deck
+nodecg_io_telegram --> nodecg_io_core
+nodecg_io_telegram ...> node_telegram_bot_api
 nodecg_io_twitch --> nodecg_io_core
 nodecg_io_twitch ...> twitch
 nodecg_io_twitch ...> twitch_chat_client
