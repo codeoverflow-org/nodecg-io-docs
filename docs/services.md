@@ -174,7 +174,7 @@ Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio
 
 **Allows to connect and interact to youtube**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/youtube.md)
 
 Depends on [@types/express](https://www.npmjs.com/package/@types/express) @ ^4.17.6 <br>
 Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ 0.0.39 <br>
