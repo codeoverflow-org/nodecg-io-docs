@@ -170,3 +170,17 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.5.7 <br>
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
 
+## [nodecg-io-youtube](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube)
+
+**Allows to connect and interact to youtube**
+
+There's no sample implementation for this service yet.
+
+Depends on [@types/express](https://www.npmjs.com/package/@types/express) @ ^4.17.6 <br>
+Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ 0.0.39 <br>
+Depends on [@types/open](https://www.npmjs.com/package/@types/open) @ ^6.2.1 <br>
+Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^52.1.0 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [open](https://www.npmjs.com/package/open) @ ^7.0.4 <br>
+

@@ -54,6 +54,12 @@ FontStyle Underline
 [<u>nodecg-io-ws-server] as nodecg_io_ws_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ws-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
+[<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
+[<u>@types/express] as types_express <<lib>> [[https://www.npmjs.com/package/@types/express]]
+[<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
+[<u>@types/open] as types_open <<lib>> [[https://www.npmjs.com/package/@types/open]]
+[<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
+[<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
 nodecg_io_core ...> tslib
@@ -99,4 +105,11 @@ nodecg_io_ws_server ...> ws
 nodecg_io_xdotool --> nodecg_io_core
 nodecg_io_xdotool ...> node_fetch
 nodecg_io_xdotool ...> rauschma_stringio
+nodecg_io_youtube ...> types_express
+nodecg_io_youtube ...> types_gapi
+nodecg_io_youtube ...> types_open
+nodecg_io_youtube ...> express
+nodecg_io_youtube ...> googleapis
+nodecg_io_youtube --> nodecg_io_core
+nodecg_io_youtube ...> open
 ::end-uml::
