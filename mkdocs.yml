@@ -51,13 +51,16 @@ nav:
     - Discord sample: samples/discord.md
     - IntelliJ sample: samples/intellij.md
     - Rcon sample: samples/rcon.md
+    - Slack sample: samples/slack.md
     - Streamdeck sample: samples/streamdeck.md
+    - Telegram sample: samples/telegram.md
     - Twitch sample: samples/twitch.md
     - Twitter sample: samples/twitter.md
     - WebSocket:
       - Client sample: samples/ws-client.md
       - Server sample: samples/ws-server.md
     - Xdotool sample: samples/xdotool.md
+    - YouTube sample: samples/youtube.md
     - Dependency Graph: dependencies.md
 
 
