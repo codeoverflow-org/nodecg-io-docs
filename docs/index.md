@@ -23,23 +23,25 @@ If that's no problem you can head over to the [installation guide](https://nodec
 
 - [x] AutoHotkey
 - [x] Discord
-- [X] IntelliJ IDEs
+- [x] IntelliJ IDEs
 - [x] IRC (Internet Relay Chat)
 - [x] MIDI Input
 - [x] MIDI Output
-- [X] Philips Hue
+- [x] Philips Hue
 - [x] RCON
 - [ ] Serial Port (Arduino)
+- [x] Slack WebAPI
 - [x] Spotify
-- [X] Elgato Stream Deck 
+- [x] Elgato Stream Deck 
 - [ ] StreamElements
+- [x] Telegram
 - [ ] TipeeeStream
 - [x] Twitch Chat
 - [x] Twitter
 - [x] WebSocket Client
 - [x] WebSocket Server
 - [x] Xdotool
-- [ ] YouTube
+- [x] YouTube
 
 ## How to contribute
 If you want to contribute to this bundle you can implement one of those services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing head over to the [How to contribute](https://nodecg.io/contribute/contribute/) - Guide.
