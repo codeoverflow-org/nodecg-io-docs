@@ -21,22 +21,22 @@ The Slack example bundle in `samples/slack` demonstrates the ability to list all
 
 5. Enter your slack app token.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your token in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your token in monaco (the texteditor on the right) in this format:
 
-   ```json
-   {
-       "token": "your-token-goes-here"
-   }
-   ```
+    ```json
+    {
+        "token": "your-token-goes-here"
+    }
+    ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   *Note:* If you don't see monaco on the right, try reloading the page.
+    *Note:* If you don't see monaco on the right, try reloading the page.
 
 6. Set the created slack service instance to the service dependency of the slack bundle.
 
-   Select the slack bundle and the slack service in the left bottom menu and then select the service instance that should be used by the slack bundle (in this case the name of the previously created slack instance).
+    Select the slack bundle and the slack service in the left bottom menu and then select the service instance that should be used by the slack bundle (in this case the name of the previously created slack instance).
 
 7. Check the nodecg logs
 
-   You should see an error or a Login message.
+    You should see an error or a Login message.

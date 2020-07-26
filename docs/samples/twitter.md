@@ -1,18 +1,20 @@
 ## Using the twitter sample bundle
+
 The [Twitter timeline](/samples/twitter-timeline/) bundle retrieves some of the latest tweets from _skate702_ and printing them to your console.
 
 ### Prerequisites
 
 * Working NodeCG & nodecg-io installation
 * An [app](https://developer.twitter.com/en/apps) and their following keys and tokens 
-  - The _API key_ here **oauthConsumerKey**
-  - The _API secret key_ here **oauthConsumerSecret**
-  - The _Access token_ here **oauthToken**
-  - The _Access token secret_ here **oauthTokenSecret**
+    * The _API key_ here **oauthConsumerKey**
+    * The _API secret key_ here **oauthConsumerSecret**
+    * The _Access token_ here **oauthToken**
+    * The _Access token secret_ here **oauthTokenSecret**
 
 *Note:* You will need a twitter developer account (https://developer.twitter.com/en/apply-for-access) to get the necessary keys and tokens.
 
 ### Configure the sample bundle
+
 1. Start nodecg with nodecg-io installed. The twitter-timeline bundle is currently part of it so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
@@ -47,9 +49,11 @@ The [Twitter timeline](/samples/twitter-timeline/) bundle retrieves some of the 
     You should see an error or a success message and up to 50 twitter messages tweeted by the user that is hardcoded in [samples/twitter-timeline/extension/index.ts](/samples/twitter-timeline/extension/index.ts) as `screen_name`.
 
 ## Need to know for creating your own twitter bundle
-#### A little description of the twitter client and it's usage
+
+### A little description of the twitter client and it's usage
 
 * The client implements the different [API endpoints](https://developer.twitter.com/en/docs/api-reference-index) with two functions
+
   ```typescript
     client.get("<get endpoint name>", params, callback)
     client.post("<post endpoint name>", params, callback)

@@ -9,6 +9,7 @@ Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a pac
 ## Create a package
 
 From here you will have to replace:  
+
 * `YourServiceName` to your service's name in [PascalCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class).  
 * `yourServiceName` to your service's name in [carmelCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function).   
 * `your-service-name` to your service's name with only lowercase and hyphens ( `-` ) for example: ws-server.

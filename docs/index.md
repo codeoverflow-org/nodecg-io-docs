@@ -44,4 +44,5 @@ If that's no problem you can head over to the [installation guide](https://nodec
 - [x] YouTube
 
 ## How to contribute
+
 If you want to contribute to this bundle you can implement one of those services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing head over to the [How to contribute](https://nodecg.io/contribute/contribute/) - Guide.
