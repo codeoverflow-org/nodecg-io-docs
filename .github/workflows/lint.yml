@@ -1,0 +1,10 @@
+name: Linter
+on: pull_request
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: xt0rted/markdownlint-problem-matcher@v1
+      - name: "Run Markdown linter"
+        run: markdownlint **/*.md --ignore node_modules
