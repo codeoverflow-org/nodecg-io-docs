@@ -18,13 +18,13 @@ Sadly you can't access the streamdeck while another application accesses it. So 
 
 6. Enter the configuration
 
-   ```json
-   {
-       "device": "default"
-   }
-   ```
-   
-   `default` tells the bundle to automatically find a streamdeck. If you've multiple streamdecks you need to put in an id here.
+    ```json
+    {
+        "device": "default"
+    }
+    ```
+    
+    `default` tells the bundle to automatically find a streamdeck. If you've multiple streamdecks you need to put in an id here.
 
 7. Set the created streamdeck service instance to the service dependency of the streamdeck-rainbow bundle.
 

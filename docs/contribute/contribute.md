@@ -69,7 +69,7 @@ Modify the nodecg configuration in `path/to/nodecg/cfg/nodecg.json`, here is an 
 *Note 1:* This path should point to the root of this repository, not to a bundle inside this repo.
 
 *Note 2:* The second path to the samples is only required if you want to use a sample plugin.
-   
+
 *Note 3:* If nodecg doesn't load nodecg-io for some reason you might want to use an absolute path here.
 
 

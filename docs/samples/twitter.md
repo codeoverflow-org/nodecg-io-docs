@@ -23,28 +23,28 @@ The [Twitter timeline](/samples/twitter-timeline/) bundle retrieves some of the 
 
 5. Enter credentials for twitter.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitter keys and tokens in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitter keys and tokens in monaco (the texteditor on the right) in this format:
 
-   ```json
-   {
-       "oauthConsumerKey": "<API key>",
-       "oauthConsumerSecret": "<API secret key>",
-       "oauthToken": "<Access token>",
-       "oauthTokenSecret": "<Access token secret>",
-   }
-   ```
+    ```json
+    {
+        "oauthConsumerKey": "<API key>",
+        "oauthConsumerSecret": "<API secret key>",
+        "oauthToken": "<Access token>",
+        "oauthTokenSecret": "<Access token secret>",
+    }
+    ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   *Note:* If you don't see monaco on the right, try reloading the page.
+    *Note:* If you don't see monaco on the right, try reloading the page.
 
 6. Set the created twitter service instance to the service dependency of the twitter-timeline bundle.
 
-   Select the twitter-timeline bundle and the twitter service in the left bottom menu and then select the service instance that should be used by the twitter-timeline bundle (in this case the name of the previously created twitter instance).
+    Select the twitter-timeline bundle and the twitter service in the left bottom menu and then select the service instance that should be used by the twitter-timeline bundle (in this case the name of the previously created twitter instance).
 
 7. Check the nodecg logs
 
-   You should see an error or a success message and up to 50 twitter messages tweeted by the user that is hardcoded in [samples/twitter-timeline/extension/index.ts](/samples/twitter-timeline/extension/index.ts) as `screen_name`.
+    You should see an error or a success message and up to 50 twitter messages tweeted by the user that is hardcoded in [samples/twitter-timeline/extension/index.ts](/samples/twitter-timeline/extension/index.ts) as `screen_name`.
 
 ## Need to know for creating your own twitter bundle
 #### A little description of the twitter client and it's usage
