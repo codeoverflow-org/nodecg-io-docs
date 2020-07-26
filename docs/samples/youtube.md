@@ -23,23 +23,23 @@ The youtube bundle in `samples/youtube` demonstrates the ability of getting info
 
 5. Enter credentials for youtube.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your youtube oauth credentials in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your youtube oauth credentials in monaco (the texteditor on the right) in this format:
 
-   ```json
-   {
-       "clientID": "<clientID>",
-       "clientSecret": "<clientSecret>"
-   }
-   ```
+    ```json
+    {
+        "clientID": "<clientID>",
+        "clientSecret": "<clientSecret>"
+    }
+    ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   *Note:* If you don't see monaco on the right, try reloading the page.
+    *Note:* If you don't see monaco on the right, try reloading the page.
 
 6. Set the created youtube service instance to the service dependency of the youtube bundle.
 
-   Select the youtube bundle and the youtube service in the left bottom menu and then select the service instance that should be used by the youtube bundle (in this case the name of the previously created youtube instance).
+    Select the youtube bundle and the youtube service in the left bottom menu and then select the service instance that should be used by the youtube bundle (in this case the name of the previously created youtube instance).
 
 7. Check the nodecg logs
 
-   You should see an error or a success message that is hardcoded in `samples/youtube/extension/index.ts`.
+    You should see an error or a success message that is hardcoded in `samples/youtube/extension/index.ts`.
