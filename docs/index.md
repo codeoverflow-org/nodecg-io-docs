@@ -36,3 +36,8 @@ If that's no problem you can had over to the [Installation Guide](install.md) an
 
 ## How to contribute
  If you want to contribute to this bundle you can implement one of this services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing had over to the [How to contribute](contribute.md) - Guide.
+
+#### Linter test ####
+Ill try to ** make everything wrong ** in here.   
+	<-- Horrible tab char that takes me straight to hell.
+[and an broken link]()
