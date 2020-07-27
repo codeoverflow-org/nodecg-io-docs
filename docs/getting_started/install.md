@@ -27,6 +27,7 @@ git clone https://github.com/codeoverflow-org/nodecg-io.git
 ```shell
 cd path/to/nodecg-io
 npm install
+npm run bootstrap
 ```
 
 ## Build nodecg-io: 

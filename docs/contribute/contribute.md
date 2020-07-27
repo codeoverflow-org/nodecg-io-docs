@@ -29,6 +29,7 @@ Install and build all of the dependencies using `npm`:
 ```
 cd path/to/nodecg-io 
 npm install
+npm run bootstrap
 ```
 
 ## Build
