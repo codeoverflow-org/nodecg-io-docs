@@ -99,7 +99,7 @@ Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^5.1
 There's no sample implementation for this service yet.
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
-Depends on [open](https://www.npmjs.com/package/open) @ ^7.0.3 <br>
+Depends on [open](https://www.npmjs.com/package/open) @ ^7.0.4 <br>
 Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node) @ ^4.0.0 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck)
@@ -110,6 +110,16 @@ See the [sample implementation](samples/streamdeck.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [elgato-stream-deck](https://www.npmjs.com/package/elgato-stream-deck) @ ^3.3.0 <br>
+
+## [nodecg-io-streamelements](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamelements)
+
+**No description**
+
+There's no sample implementation for this service yet.
+
+Depends on [@types/socket.io-client](https://www.npmjs.com/package/@types/socket.io-client) @ ^1.4.33 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ ^2.3.0 <br>
 
 ## [nodecg-io-telegram](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-telegram)
 
