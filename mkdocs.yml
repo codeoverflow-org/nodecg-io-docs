@@ -1,32 +1,74 @@
 # To build the documentation use `build.py`
 
 site_name: nodecg-io Documentation
+site_author: codeoverflow.org
+site_url: https://nodecg.io/
+copyright: '© 2020 codeoverflow.org CC-BY-4.0'
+
 theme:
+  palette:
+    scheme: slate
+  #  primary: teal
   name: material
+  font: false
+  features:
+    - tabs
   favicon: https://avatars.githubusercontent.com/codeoverflow-org
+
 docs_dir: docs
 site_dir: build
 
 repo_name: codeoverflow-org/nodecg-io
 repo_url: https://github.com/codeoverflow-org/nodecg-io
+edit_uri: https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/
 
 markdown_extensions:
-    - plantuml_markdown
-    - markdown_checklist.extension
+    - plantuml_markdown:
+        server: http://www.plantuml.com/plantuml 
+    - codehilite:
+        noclasses: true
+        use_pygments: true
+        pygments_style: monokai
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
 
 nav:
   - Home: index.md
-  - Install: install.md
-  - How to Contribute: contribute.md
-  - Available services: services.md
-  - Dependency Graph: dependencies.md
-  - Sample Implementations:
-    - Discord: samples/discord.md
-    - IntelliJ: samples/intellij.md
-    - Rcon: samples/rcon.md
-    - Twitch: samples/twitch.md
+  - Getting Started:
+    - Installation: getting_started/install.md
+    - Your first bundle: getting_started/create_bundle.md
+  - Contribute:
+    - Basics: contribute/contribute.md
+    - Create a Service: contribute/create_service.md
+    - Create a sample bundle: contribute/create_sample.md
+    - Document a sample: contribute/sample_documentation.md
+    - Contributors: contribute/contributors.md
+  - Services:
+    - Available services: services.md
+    - AHK sample: samples/ahk.md
+    - Discord sample: samples/discord.md
+    - IntelliJ sample: samples/intellij.md
+    - Rcon sample: samples/rcon.md
+    - Slack sample: samples/slack.md
+    - Streamdeck sample: samples/streamdeck.md
+    - Telegram sample: samples/telegram.md
+    - Twitch sample: samples/twitch.md
+    - Twitter sample: samples/twitter.md
     - WebSocket:
-      - Client: samples/ws-client.md
-      - Server: samples/ws-server.md
+      - Client sample: samples/ws-client.md
+      - Server sample: samples/ws-server.md
+    - Xdotool sample: samples/xdotool.md
+    - YouTube sample: samples/youtube.md
+    - Dependency Graph: dependencies.md
 
-  - Contributors: contributors.md
+
+extra_css:
+  - stylesheets\colors.css
+  - stylesheets\fonts.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/sX2Gjbs
