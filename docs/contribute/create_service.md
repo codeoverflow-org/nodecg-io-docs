@@ -46,9 +46,9 @@ Put the following into it:
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^13.13.5",
+    "@types/node": "^13.13.12",
     "nodecg": "^1.6.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.6"
   },
   "dependencies": {
     "nodecg-io-core": "0.1.0",
