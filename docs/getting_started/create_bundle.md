@@ -15,22 +15,18 @@ Your package is a standard NodeCG bundle. See their [website](https://nodecg.com
 Here's an example for twitch:
 
 ```typescript
-const twitch = (nodecg.extensions["nodecg-io-twitch"] as unknown) as
-    | ServiceProvider<TwitchServiceClient>
-    | undefined;
+const twitch = requireService<TwitchServiceClient>(nodecg, "twitch");
 
-twitch?.requireService(
-    "twitch-chat",
-    (client) => {
-        // Do sth when twitch is available
-    },
-    () => {
-        // Do sth when twitch is not / no longer available
-    }
-);
+twitch?.onAvailable(client => {
+    // Do sth when twitch is available
+});
+
+twitch?.onUnavailable(() => {
+    // Do sth when twitch is not / no longer available
+});
 ```
 
-If you need multiple services you can save them in global variables.
+If you need multiple services you can save them in global variables and access them using the `service.getClient()` function which returns an optional of the client. If it isn't currently set it will be `undefined`.
 
 ## Test it
 
