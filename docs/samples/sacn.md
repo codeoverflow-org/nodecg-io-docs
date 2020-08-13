@@ -44,6 +44,7 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
 
    **Iface**
    Optional. If the computer is connected to multiple networks, specify which network adaptor to use by using this computer's local IP address.
+
    ```json
    {
      "universes": [1, 2, 3],
@@ -53,7 +54,8 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
 
    **ReuseAddr**
    Optional. Allow multiple programs on your computer to listen to the same sACN universe.
-      ```json
+
+    ```json
    {
      "universes": [1, 2, 3],
      "reuseAddr": true
