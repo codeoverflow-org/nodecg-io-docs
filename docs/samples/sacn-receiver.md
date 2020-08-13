@@ -66,7 +66,7 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
 
    _Note:_ If you don't see monaco on the right, try reloading the page.
 
-6. Set the created dsacn-receiver service instance to the service dependency of the sacn-receiver-sample bundle.
+6. Set the created sacn-receiver service instance to the service dependency of the sacn-receiver-sample bundle.
 
    Select the sacn-receiver-sample bundle and the sacn-receiver service in the left bottom menu and then select the service instance that should be used by the sacn-receiver-sample bundle (in this case the name of the previously created sACN instance).
 
