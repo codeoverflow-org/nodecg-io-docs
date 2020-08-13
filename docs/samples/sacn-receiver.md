@@ -1,6 +1,6 @@
-## Using the sACN sample bundle
+## Using the sACN receiver sample bundle
 
-The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability receive data send via sACN from e.g professional lighting consoles. Here is a guide to how to get it working.
+The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demonstrates the ability receive data send via sACN from e.g professional lighting consoles. Here is a guide to how to get it working.
 
 ### Prerequisites
 
@@ -9,7 +9,7 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
 
 ### Configure the Discord sample bundle
 
-1. Start nodecg with nodecg-io installed. The sacn-sample bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The sacn-receiver-sample bundle is currently part of it so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -66,9 +66,9 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
 
    _Note:_ If you don't see monaco on the right, try reloading the page.
 
-6. Set the created dsacn-receiver service instance to the service dependency of the sacn-sample bundle.
+6. Set the created dsacn-receiver service instance to the service dependency of the sacn-receiver-sample bundle.
 
-   Select the sacn-sample bundle and the sacn-receiver service in the left bottom menu and then select the service instance that should be used by the sacn-sample bundle (in this case the name of the previously created sACN instance).
+   Select the sacn-receiver-sample bundle and the sacn-receiver service in the left bottom menu and then select the service instance that should be used by the sacn-receiver-sample bundle (in this case the name of the previously created sACN instance).
 
 7. Check the nodecg logs
 
