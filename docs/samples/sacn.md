@@ -21,7 +21,7 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
 
    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the texteditor on the right) in this format:
 
-   #### Universes
+   **Universes**
 
    The universes to use. Must be an array with numbers within 1-63999
 
@@ -31,7 +31,7 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
    }
    ```
 
-   #### Port
+   **Port**
 
    Optional. The multicast port to use. All professional consoles broadcast to the default port 5568.
 
@@ -42,7 +42,7 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
    }
    ```
 
-   #### Iface
+   **Iface**
    Optional. If the computer is connected to multiple networks, specify which network adaptor to use by using this computer's local IP address.
    ```json
    {
@@ -51,7 +51,7 @@ The sacn-sample example bundle in `samples/sacn-sample` demonstrates the ability
    }
    ```
 
-   #### ReuseAddr
+   **ReuseAddr**
    Optional. Allow multiple programs on your computer to listen to the same sACN universe.
       ```json
    {
