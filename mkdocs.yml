@@ -23,28 +23,29 @@ repo_url: https://github.com/codeoverflow-org/nodecg-io
 edit_uri: https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/
 
 markdown_extensions:
-    - plantuml_markdown:
-        server: http://www.plantuml.com/plantuml 
-    - markdown_checklist.extension
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
+  - markdown_checklist.extension
 
 nav:
   - Home: index.md
   - Install: install.md
   - How to Contribute:
-    - Basics: contribute.md
-    - Create a Service: contribute/create_service.md
-    - Create a sample bundle: contribute/create_sample.md
-    - Document a sample: contribute/sample_documentation.md
+      - Basics: contribute.md
+      - Create a Service: contribute/create_service.md
+      - Create a sample bundle: contribute/create_sample.md
+      - Document a sample: contribute/sample_documentation.md
   - Available services: services.md
   - Dependency Graph: dependencies.md
   - Sample Implementations:
-    - Discord: samples/discord.md
-    - IntelliJ: samples/intellij.md
-    - Rcon: samples/rcon.md
-    - Twitch: samples/twitch.md
-    - WebSocket:
-      - Client: samples/ws-client.md
-      - Server: samples/ws-server.md
+      - Discord: samples/discord.md
+      - IntelliJ: samples/intellij.md
+      - Rcon: samples/rcon.md
+      - sACN: samples/sacn.md
+      - Twitch: samples/twitch.md
+      - WebSocket:
+          - Client: samples/ws-client.md
+          - Server: samples/ws-server.md
   - Create your first bundle: create_bundle.md
   - Contributors: contributors.md
 
