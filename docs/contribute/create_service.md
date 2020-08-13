@@ -52,7 +52,7 @@ Put the following into it:
   },
   "dependencies": {
     "nodecg-io-core": "0.1.0",
-    "<the package you found in step 1>": "<the packages version you wan't to use>"
+    "<the package you found in step 1>": "<the packages version you want to use>"
   }
 }
 ```
@@ -65,7 +65,7 @@ Next you need to put a file called `tsconfig.json` next to your `package.json`. 
 }
 ```
 
-Now run `npm install` in the repository root.
+Now run `npm install` and `npm run bootstrap` in the repository root.
 
 ## Create a configuration schema
 
@@ -83,20 +83,22 @@ Create a file called `index.ts` in a folder called `extension` inside your servi
 import { NodeCG } from "nodecg/types/server";
 import { emptySuccess, success, error, Result } from "nodecg-io-core/extension/utils/result";
 import { ServiceBundle } from "nodecg-io-core/extension/serviceBundle";
+import { ServiceClient } from "nodecg-io-core/extension/types";
 // TODO: Replace the "fake" service class with that found on npm etc.
-import { ServiceClass} from "./";
+import { ServiceClass } from "./";
 
 interface YourServiceNameServiceConfig {
     // TODO Fill in the values from your json schema here. The json
-    // schema will load into an instance  of this.
+    // schema will load into an instance of this.
 }
 
-export interface YourServiceNameServiceClient {
-    // This interface is exposed to bundles. Make shure it's no longer
-    // possible to access the login credentials from here
-	// TODO: class of the package from step 1 that should be exposed to bundles [needs to be replaced];
-	getRawClient(): ServiceClass;
-}
+// ServiceClient ensures that you will provide a `getNativeClient` function that should give
+// access to the underlying client from the library that you are using.
+// TODO: if you want to provide simplifications for the service then make this
+// type-alias a separate class in a separate file and directly implement those simplifications
+// there.
+// TODO: Replace the `ServiceClass` with the class of the package from step 1
+export type YourServiceNameServiceClient = ServiceClient<ServiceClass>;
 
 module.exports = (nodecg: NodeCG) => {
     new YourServiceNameService(nodecg, "your-service-name", __dirname, "../your-service-name-schema.json").register();
@@ -113,15 +115,16 @@ class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig,
   async createClient(config: YourServiceNameServiceConfig): Promise<Result<YourServiceNameServiceClient>> {
     // TODO Here you should return a <Your service name>ServiceClient that is exposed to bundles.
     // If everything is good return 'success({
-    //     getRawClient() {
+    //     getNativeClient() {
     //         return <The raw client from the package from step 1>
     //     }
     // })'
+    // Or create a instance of your class if you have any simplifications and return that.
     // If an error occurs return 'error(<The error message>)'
   }
 
   stopClient(client: YourServiceNameServiceClient): void {
-    // Here you shuld make shure you disconnect everything here (if possible).
+    // Here you shuld make sure you disconnect everything here (if possible).
   }
 }
 ```
