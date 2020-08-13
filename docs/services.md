@@ -83,6 +83,24 @@ There's no sample implementation for this service yet.
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [rcon-client](https://www.npmjs.com/package/rcon-client) @ ^4.2.0 <br>
 
+## [nodecg-io-sacn-receiver](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-receiver)
+
+**Allows you to receive data via sACN from e.g professional lighting consoles.**
+
+See the [sample implementation](samples/sacn-receiver.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^3.2.1 <br>
+
+## [nodecg-io-sacn-sender](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-sender)
+
+**Allows you to send data via sACN to e.g professional lights.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^3.2.1 <br>
+
 ## [nodecg-io-slack](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack)
 
 **Allows to connect to your slack. This enables you to e.g. send messages and list all channel. Visit https://api.slack.com/methods to see all methods **

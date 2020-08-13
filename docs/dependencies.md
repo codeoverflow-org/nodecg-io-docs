@@ -33,6 +33,9 @@ FontStyle Underline
 [<u>node-hue-api] as node_hue_api <<lib>> [[https://www.npmjs.com/package/node-hue-api]]
 [<u>nodecg-io-rcon] as nodecg_io_rcon <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-rcon]]
 [<u>rcon-client] as rcon_client <<lib>> [[https://www.npmjs.com/package/rcon-client]]
+[<u>nodecg-io-sacn-receiver] as nodecg_io_sacn_receiver <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-receiver]]
+[<u>sacn] as sacn <<lib>> [[https://www.npmjs.com/package/sacn]]
+[<u>nodecg-io-sacn-sender] as nodecg_io_sacn_sender <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-sender]]
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
@@ -84,6 +87,10 @@ nodecg_io_philipshue ...> node_hue_api
 nodecg_io_philipshue --> nodecg_io_core
 nodecg_io_rcon --> nodecg_io_core
 nodecg_io_rcon ...> rcon_client
+nodecg_io_sacn_receiver --> nodecg_io_core
+nodecg_io_sacn_receiver ...> sacn
+nodecg_io_sacn_sender --> nodecg_io_core
+nodecg_io_sacn_sender ...> sacn
 nodecg_io_slack --> nodecg_io_core
 nodecg_io_slack ...> slack_web_api
 nodecg_io_spotify --> nodecg_io_core
