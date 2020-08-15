@@ -30,10 +30,12 @@ If that's no problem you can head over to the [installation guide](https://nodec
 - [x] Philips Hue
 - [x] RCON
 - [ ] Serial Port (Arduino)
+- [x] sACN Receiver
+- [x] sACN Sender
 - [x] Slack WebAPI
 - [x] Spotify
-- [x] Elgato Stream Deck 
-- [ ] StreamElements
+- [x] Elgato Stream Deck
+- [x] StreamElements
 - [x] Telegram
 - [ ] TipeeeStream
 - [x] Twitch Chat
