@@ -1,6 +1,6 @@
 # Create a service integration
 
-This guide helps you to create a service integration such as *twitch-chat* or *discord*
+This guide helps you to create a service integration such as _twitch-chat_ or _discord_
 
 ## Find a javascript library
 
@@ -8,17 +8,17 @@ Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a pac
 
 ## Create a package
 
-From here you will have to replace:  
+From here you will have to replace:
 
-* `YourServiceName` to your service's name in [PascalCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class).  
-* `yourServiceName` to your service's name in [carmelCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function).   
-* `your-service-name` to your service's name with only lowercase and hyphens ( `-` ) for example: ws-server.
+- `YourServiceName` to your service's name in [PascalCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class).
+- `yourServiceName` to your service's name in [carmelCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function).
+- `your-service-name` to your service's name with only lowercase and hyphens ( `-` ) for example: ws-server.
 
 Now you need to create a package. You should call it `nodecg-io-your-service-name`.
 
 First create a directory with that name put file called `package.json` into it.
 
-Put the following into it: 
+Put the following into it:
 
 ```json
 {
@@ -34,10 +34,7 @@ Put the following into it:
     "build": "tsc",
     "watch": "tsc -w"
   },
-  "keywords": [
-    "",
-    "nodecg-bundle"
-  ],
+  "keywords": ["", "nodecg-bundle"],
   "nodecg": {
     "compatibleRange": "^1.1.1",
     "bundleDependencies": {
@@ -80,16 +77,16 @@ Create a file called `index.ts` in a folder called `extension` inside your servi
 // TODO: Rename all occurences of "yourServiceName" in carmelCase
 // TODO: Rename all occurences of "your-service-name" with only lowercase and hyphens ( - )
 
-import { NodeCG } from "nodecg/types/server";
-import { emptySuccess, success, error, Result } from "nodecg-io-core/extension/utils/result";
-import { ServiceBundle } from "nodecg-io-core/extension/serviceBundle";
-import { ServiceClient } from "nodecg-io-core/extension/types";
+import { NodeCG } from 'nodecg/types/server';
+import { emptySuccess, success, error, Result } from 'nodecg-io-core/extension/utils/result';
+import { ServiceBundle } from 'nodecg-io-core/extension/serviceBundle';
+import { ServiceClient } from 'nodecg-io-core/extension/types';
 // TODO: Replace the "fake" service class with that found on npm etc.
-import { ServiceClass } from "./";
+import { ServiceClass } from './';
 
 interface YourServiceNameServiceConfig {
-    // TODO Fill in the values from your json schema here. The json
-    // schema will load into an instance of this.
+  // TODO Fill in the values from your json schema here. The json
+  // schema will load into an instance of this.
 }
 
 // ServiceClient ensures that you will provide a `getNativeClient` function that should give
@@ -101,7 +98,7 @@ interface YourServiceNameServiceConfig {
 export type YourServiceNameServiceClient = ServiceClient<ServiceClass>;
 
 module.exports = (nodecg: NodeCG) => {
-    new YourServiceNameService(nodecg, "your-service-name", __dirname, "../your-service-name-schema.json").register();
+  new YourServiceNameService(nodecg, 'your-service-name', __dirname, '../your-service-name-schema.json').register();
 };
 
 class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig, YourServiceNameServiceClient> {
@@ -136,11 +133,12 @@ Now run `npm run build` in the repository root, start NodeCG and test your servi
 You could [create a sample bundle](create_sample.md) for your brand-new service.
 
 If you don't do so, make sure you add a placeholder file called `<the services name>.md` in `docs/samples` in your fork of the documentation.
- 
+
 The file should look like this:
- 
+
 ```markdown
 <!-- Marker for build.py that there's no sample bundle. Remove this if you created one -->
+
 ## Using the <the services name> sample bundle
 
 No sample bundle for service `<the services name>`.  

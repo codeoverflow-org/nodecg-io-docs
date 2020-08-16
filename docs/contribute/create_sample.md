@@ -36,21 +36,21 @@ Create a folder in `samples` and add a `package.json` and a `tsconfig.json`:
 Now you can create file called `extension/index.ts`. Here's a template. Make sure you replace all the comments with your own code.
 
 ```typescript
-import { NodeCG } from "nodecg/types/server";
-import { requireService } from "nodecg-io-core/extension/serviceClientWrapper";
-import { TheServicesExportedClient } from "nodecg-io-<the services name>/extension";
+import { NodeCG } from 'nodecg/types/server';
+import { requireService } from 'nodecg-io-core/extension/serviceClientWrapper';
+import { TheServicesExportedClient } from 'nodecg-io-<the services name>/extension';
 
-module.exports = function (nodecg: NodeCG) {
-    nodecg.log.info("Sample bundle for <the-service-name> started");
+module.exports = function(nodecg: NodeCG) {
+  nodecg.log.info('Sample bundle for <the-service-name> started');
 
-    const service = requireService<TheServicesExportedClient>(nodecg, "<the-service-name>");
-    service?.onAvailable(client => {
-        nodecg.log.info("Client has been updated.");
+  const service = requireService<TheServicesExportedClient>(nodecg, '<the-service-name>');
+  service?.onAvailable(client => {
+    nodecg.log.info('Client has been updated.');
 
-        // TODO do something with the client to demonstrate the functionality.
-    });
+    // TODO do something with the client to demonstrate the functionality.
+  });
 
-    service?.onUnavailable(() => nodecg.log.info("Client has been unset."));
+  service?.onUnavailable(() => nodecg.log.info('Client has been unset.'));
 };
 ```
 

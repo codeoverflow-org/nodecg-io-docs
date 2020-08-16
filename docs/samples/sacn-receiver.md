@@ -55,7 +55,7 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
    **ReuseAddr**
    Optional. Allow multiple programs on your computer to listen to the same sACN universe.
 
-    ```json
+   ```json
    {
      "universes": [1, 2, 3],
      "reuseAddr": true

@@ -4,7 +4,7 @@ The WebSocket-server sample bundle in `samples/websocket-server` shows how to se
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
+- Working NodeCG & nodecg-io installation
 
 ### Configure the websocket-server sample bundle
 
@@ -18,15 +18,15 @@ The WebSocket-server sample bundle in `samples/websocket-server` shows how to se
 
 5. Enter a port for the server. This has to be a number from 0 to 65535.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the texteditor on the right) in this format:
+   The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the texteditor on the right) in this format:
 
-    ```json
-    {
-        "port": 7777
-    }
-    ```
+   ```json
+   {
+     "port": 7777
+   }
+   ```
 
-    After entering it, click save.
+   After entering it, click save.
 
 6. Set the created ws-server service instance to the service dependency of the ws-server bundle.
 

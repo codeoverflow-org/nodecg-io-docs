@@ -1,11 +1,11 @@
 ## Using the AHK sample bundle
 
-The AHK sample bundle in `samples/ahk` shows how to send a command to a HotkeylessAHK server.
+The AHK sample bundle in `samples/ahk-sendcommand` shows how to send a command to a HotkeylessAHK server.
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
-* A running [HotkeylessAHK](https://github.com/sebinside/HotkeylessAHK) setup.
+- Working NodeCG & nodecg-io installation
+- A running [HotkeylessAHK](https://github.com/sebinside/HotkeylessAHK) setup.
 
 ### Configure the ahk sample bundle
 
@@ -19,16 +19,16 @@ The AHK sample bundle in `samples/ahk` shows how to send a command to a Hotkeyle
 
 5. Enter the host and port of the HotkeylessAHK Server.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the texteditor on the right) in this format:
+   The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the texteditor on the right) in this format:
 
-    ```json
-    {
-        "host": "localhost",
-        "port": 42800
-    }
-    ```
+   ```json
+   {
+     "host": "localhost",
+     "port": 42800
+   }
+   ```
 
-    After entering it, click save.
+   After entering it, click save.
 
 6. Set the created ahk service instance to the service dependency of the ahk bundle.
 
