@@ -6,10 +6,10 @@ The [Twitter timeline](/samples/twitter-timeline/) bundle retrieves some of the 
 
 - Working NodeCG & nodecg-io installation
 - An [app](https://developer.twitter.com/en/apps) and their following keys and tokens
-  - The _API key_ here **oauthConsumerKey**
-  - The _API secret key_ here **oauthConsumerSecret**
-  - The _Access token_ here **oauthToken**
-  - The _Access token secret_ here **oauthTokenSecret**
+    - The _API key_ here **oauthConsumerKey**
+    - The _API secret key_ here **oauthConsumerSecret**
+    - The _Access token_ here **oauthToken**
+    - The _Access token secret_ here **oauthTokenSecret**
 
 _Note:_ You will need a twitter developer account (https://developer.twitter.com/en/apply-for-access) to get the necessary keys and tokens.
 
