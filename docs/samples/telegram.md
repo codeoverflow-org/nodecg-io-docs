@@ -4,8 +4,8 @@ The telegram sample bundle in `samples/telegram-bot` shows how to create a simpl
 
 ### Prerequisites
 
-- Working NodeCG & nodecg-io installation
-- A telegram bot API token. You can create your bot [here](https://t.me/botfather).
+-   Working NodeCG & nodecg-io installation
+-   A telegram bot API token. You can create your bot [here](https://t.me/botfather).
 
 ### Configure the telegram sample bundle
 
@@ -19,16 +19,16 @@ The telegram sample bundle in `samples/telegram-bot` shows how to create a simpl
 
 5. Enter the token and set polling to true.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the texteditor on the right) in this format:
 
-   ```json
-   {
-     "token": "[TOKEN]",
-     "polling": true
-   }
-   ```
+    ```json
+    {
+        "token": "[TOKEN]",
+        "polling": true
+    }
+    ```
 
-   After entering it, click save.
+    After entering it, click save.
 
 6. Set the created telegram service instance to the service dependency of the telegram bundle.
 

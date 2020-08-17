@@ -23,29 +23,29 @@ If that's no problem you can head over to the [installation guide](https://nodec
 
 ## Implemented Services and Interfaces
 
-- [x] AutoHotkey
-- [x] Discord
-- [x] IntelliJ IDEs
-- [x] IRC (Internet Relay Chat)
-- [x] MIDI Input
-- [x] MIDI Output
-- [x] Philips Hue
-- [x] RCON
-- [ ] Serial Port (Arduino)
-- [x] sACN Receiver
-- [x] sACN Sender
-- [x] Slack WebAPI
-- [x] Spotify
-- [x] Elgato Stream Deck
-- [x] StreamElements
-- [x] Telegram
-- [ ] TipeeeStream
-- [x] Twitch Chat
-- [x] Twitter
-- [x] WebSocket Client
-- [x] WebSocket Server
-- [x] Xdotool
-- [x] YouTube
+-   [x] AutoHotkey
+-   [x] Discord
+-   [x] IntelliJ IDEs
+-   [x] IRC (Internet Relay Chat)
+-   [x] MIDI Input
+-   [x] MIDI Output
+-   [x] Philips Hue
+-   [x] RCON
+-   [ ] Serial Port (Arduino)
+-   [x] sACN Receiver
+-   [x] sACN Sender
+-   [x] Slack WebAPI
+-   [x] Spotify
+-   [x] Elgato Stream Deck
+-   [x] StreamElements
+-   [x] Telegram
+-   [ ] TipeeeStream
+-   [x] Twitch Chat
+-   [x] Twitter
+-   [x] WebSocket Client
+-   [x] WebSocket Server
+-   [x] Xdotool
+-   [x] YouTube
 
 ## How to contribute
 

@@ -6,10 +6,10 @@ In order to download necessary tools, clone the repository, and install dependen
 
 You'll need the following tools:
 
-- [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/) v12.0.0 or newer
-- [Npm](https://www.npmjs.com/get-npm)
-- [NodeCG](https://nodecg.com/)
+-   [Git](https://git-scm.com)
+-   [Node.JS](https://nodejs.org/en/) v12.0.0 or newer
+-   [Npm](https://www.npmjs.com/get-npm)
+-   [NodeCG](https://nodecg.com/)
 
 ## Clone this repository:
 
@@ -40,9 +40,9 @@ Modify the nodecg configuration in `path/to/nodecg/cfg/nodecg.json`, here is an 
 
 ```json
 {
-  "bundles": {
-    "paths": ["path/to/nodecg-io", "path/to/nodecg-io/samples"]
-  }
+    "bundles": {
+        "paths": ["path/to/nodecg-io", "path/to/nodecg-io/samples"]
+    }
 }
 ```
 

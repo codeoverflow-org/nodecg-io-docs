@@ -4,8 +4,8 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
 
 ### Prerequisites
 
-- Working NodeCG & nodecg-io installation
-- A working sACN sender in the current network
+-   Working NodeCG & nodecg-io installation
+-   A working sACN sender in the current network
 
 ### Configure the Discord sample bundle
 
@@ -19,57 +19,57 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
 
 5. Enter the needed options.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the texteditor on the right) in this format:
 
-   **Universes**
+    **Universes**
 
-   The universes to use. Must be an array with numbers within 1-63999
+    The universes to use. Must be an array with numbers within 1-63999
 
-   ```json
-   {
-     "universes": [1, 2, 3]
-   }
-   ```
+    ```json
+    {
+        "universes": [1, 2, 3]
+    }
+    ```
 
-   **Port**
+    **Port**
 
-   Optional. The multicast port to use. All professional consoles broadcast to the default port 5568.
+    Optional. The multicast port to use. All professional consoles broadcast to the default port 5568.
 
-   ```json
-   {
-     "universes": [1, 2, 3],
-     "port": 5568
-   }
-   ```
+    ```json
+    {
+        "universes": [1, 2, 3],
+        "port": 5568
+    }
+    ```
 
-   **Iface**
-   Optional. If the computer is connected to multiple networks, specify which network adaptor to use by using this computer's local IP address.
+    **Iface**
+    Optional. If the computer is connected to multiple networks, specify which network adaptor to use by using this computer's local IP address.
 
-   ```json
-   {
-     "universes": [1, 2, 3],
-     "iface": "Network Adapter"
-   }
-   ```
+    ```json
+    {
+        "universes": [1, 2, 3],
+        "iface": "Network Adapter"
+    }
+    ```
 
-   **ReuseAddr**
-   Optional. Allow multiple programs on your computer to listen to the same sACN universe.
+    **ReuseAddr**
+    Optional. Allow multiple programs on your computer to listen to the same sACN universe.
 
-   ```json
-   {
-     "universes": [1, 2, 3],
-     "reuseAddr": true
-   }
-   ```
+    ```json
+    {
+        "universes": [1, 2, 3],
+        "reuseAddr": true
+    }
+    ```
 
-   After entering it/them, click save.
+    After entering it/them, click save.
 
-   _Note:_ If you don't see monaco on the right, try reloading the page.
+    _Note:_ If you don't see monaco on the right, try reloading the page.
 
 6. Set the created sacn-receiver service instance to the service dependency of the sacn-receiver-sample bundle.
 
-   Select the sacn-receiver-sample bundle and the sacn-receiver service in the left bottom menu and then select the service instance that should be used by the sacn-receiver-sample bundle (in this case the name of the previously created sACN instance).
+    Select the sacn-receiver-sample bundle and the sacn-receiver service in the left bottom menu and then select the service instance that should be used by the sacn-receiver-sample bundle (in this case the name of the previously created sACN instance).
 
 7. Check the nodecg logs
 
-   You should see data logged.
+    You should see data logged.

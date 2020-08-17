@@ -15,14 +15,14 @@ Your package is a standard NodeCG bundle. See their [website](https://nodecg.com
 Here's an example for twitch:
 
 ```typescript
-const twitch = requireService<TwitchServiceClient>(nodecg, 'twitch');
+const twitch = requireService<TwitchServiceClient>(nodecg, "twitch");
 
-twitch?.onAvailable(client => {
-  // Do sth when twitch is available
+twitch?.onAvailable((client) => {
+    // Do sth when twitch is available
 });
 
 twitch?.onUnavailable(() => {
-  // Do sth when twitch is not / no longer available
+    // Do sth when twitch is not / no longer available
 });
 ```
 
