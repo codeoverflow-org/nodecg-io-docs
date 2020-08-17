@@ -4,10 +4,10 @@ The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrat
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
-* a Discord Bot token
+-   Working NodeCG & nodecg-io installation
+-   a Discord Bot token
 
-*Note:* If you don't have such a token yet you can follow [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html) guide.
+_Note:_ If you don't have such a token yet you can follow [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html) guide.
 
 ### Configure the Discord sample bundle
 
@@ -31,7 +31,7 @@ The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrat
 
     After entering it, click save.
 
-    *Note:* If you don't see monaco on the right, try reloading the page.
+    _Note:_ If you don't see monaco on the right, try reloading the page.
 
 6. Set the created discord service instance to the service dependency of the Discord-guild-chat bundle.
 

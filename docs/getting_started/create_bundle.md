@@ -17,7 +17,7 @@ Here's an example for twitch:
 ```typescript
 const twitch = requireService<TwitchServiceClient>(nodecg, "twitch");
 
-twitch?.onAvailable(client => {
+twitch?.onAvailable((client) => {
     // Do sth when twitch is available
 });
 

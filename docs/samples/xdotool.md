@@ -1,11 +1,11 @@
 ## Using the Xdotool sample bundle
 
-The Xdotool sample bundle in `samples/xdotool` shows how to use the xdotool service to execute [xdotool commands](http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html) by minimizing the currently active window.
+The Xdotool sample bundle in `samples/xdotool-windowminimize` shows how to use the xdotool service to execute [xdotool commands](http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html) by minimizing the currently active window.
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
-* xdotool installed (Only works on linux)
+-   Working NodeCG & nodecg-io installation
+-   xdotool installed (Only works on linux)
 
 ### Configure the Xdotool sample bundle
 

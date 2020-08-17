@@ -1,11 +1,11 @@
 ## Using the AHK sample bundle
 
-The AHK sample bundle in `samples/ahk` shows how to send a command to a HotkeylessAHK server.
+The AHK sample bundle in `samples/ahk-sendcommand` shows how to send a command to a HotkeylessAHK server.
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
-* A running [HotkeylessAHK](https://github.com/sebinside/HotkeylessAHK) setup.
+-   Working NodeCG & nodecg-io installation
+-   A running [HotkeylessAHK](https://github.com/sebinside/HotkeylessAHK) setup.
 
 ### Configure the ahk sample bundle
 

@@ -1,6 +1,6 @@
 ## Using the IntelliJ sample bundle
 
-The IntelliJ example bundle in `samples/intellij` Shows how to connect to a JetBrains IDE and print all installed plugins. Here is a guide to how to get it working:
+The IntelliJ example bundle in `samples/intellij-integration` Shows how to connect to a JetBrains IDE and print all installed plugins. Here is a guide to how to get it working:
 
 1. clone [this](https://github.com/noeppi-noeppi/nodecg-io-intellij) Git Repository
 

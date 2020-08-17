@@ -1,6 +1,6 @@
 ## Using the Streamdeck rainbow sample bundle
 
-The streamdeck-rainbow bundle paints your streamdeck with different colors.
+The streamdeck-rainbow bundle paints your streamdeck with different colors. It is located in `samples/streamdeck-rainbow`.
 
 Sadly you can't access the streamdeck while another application accesses it. So you need to stop your Streamdeck Software before.
 
@@ -23,12 +23,11 @@ Sadly you can't access the streamdeck while another application accesses it. So 
         "device": "default"
     }
     ```
-    
+
     `default` tells the bundle to automatically find a streamdeck. If you've multiple streamdecks you need to put in an id here.
 
 7. Set the created streamdeck service instance to the service dependency of the streamdeck-rainbow bundle.
 
 8. Watch your streamdeck.
-
 
 Due to issue [#21](https://github.com/codeoverflow-org/nodecg-io/issues/21) you might need to replug your streamdeck when you restart nodecg as the connection is not closed when the program exits.

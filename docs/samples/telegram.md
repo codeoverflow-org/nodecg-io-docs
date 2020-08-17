@@ -1,11 +1,11 @@
 ## Using the telegram sample bundle
 
-The telegram sample bundle in `samples/telegram` shows how to create a simple command.
+The telegram sample bundle in `samples/telegram-bot` shows how to create a simple command.
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
-* A telegram bot API token. You can create your bot [here](https://t.me/botfather).
+-   Working NodeCG & nodecg-io installation
+-   A telegram bot API token. You can create your bot [here](https://t.me/botfather).
 
 ### Configure the telegram sample bundle
 
@@ -24,7 +24,7 @@ The telegram sample bundle in `samples/telegram` shows how to create a simple co
     ```json
     {
         "token": "[TOKEN]",
-        "polling": true 
+        "polling": true
     }
     ```
 

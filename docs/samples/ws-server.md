@@ -4,7 +4,7 @@ The WebSocket-server sample bundle in `samples/websocket-server` shows how to se
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
+-   Working NodeCG & nodecg-io installation
 
 ### Configure the websocket-server sample bundle
 

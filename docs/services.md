@@ -1,4 +1,5 @@
 <!-- This file is auto-generated. Do not change anything here -->
+
 # Available nodecg-io services
 
 ## [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core)
@@ -211,4 +212,3 @@ Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
 Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^52.1.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^7.0.4 <br>
-

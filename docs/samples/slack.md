@@ -1,13 +1,13 @@
 ## Using the Slack sample bundle
 
-The Slack example bundle in `samples/slack` demonstrates the ability to list all channels into the console and sends an message to an channel witch you has to configure to your channel id
+The Slack example bundle in `samples/slack-post` demonstrates the ability to list all channels into the console and sends an message to an channel witch you has to configure to your channel id
 
 ### Prerequisites
 
-* Working NodeCG & nodecg-io installation
-* a Slack Bot token
+-   Working NodeCG & nodecg-io installation
+-   a Slack Bot token
 
-*Note:* If you don't have such a token yet you can create your on app with token on [this](https://app.slack.com/apps-manage/) page.
+_Note:_ If you don't have such a token yet you can create your on app with token on [this](https://app.slack.com/apps-manage/) page.
 
 ### Configure the Slack sample bundle
 
@@ -31,7 +31,7 @@ The Slack example bundle in `samples/slack` demonstrates the ability to list all
 
     After entering it, click save.
 
-    *Note:* If you don't see monaco on the right, try reloading the page.
+    _Note:_ If you don't see monaco on the right, try reloading the page.
 
 6. Set the created slack service instance to the service dependency of the slack bundle.
 
