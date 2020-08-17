@@ -54,10 +54,10 @@ FontStyle Underline
 [<u>nodecg-io-twitter] as nodecg_io_twitter <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter]]
 [<u>@types/twitter] as types_twitter <<lib>> [[https://www.npmjs.com/package/@types/twitter]]
 [<u>twitter] as twitter <<lib>> [[https://www.npmjs.com/package/twitter]]
-[<u>nodecg-io-ws-client] as nodecg_io_ws_client <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ws-client]]
+[<u>nodecg-io-websocket-client] as nodecg_io_websocket_client <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-client]]
 [<u>@types/ws] as types_ws <<lib>> [[https://www.npmjs.com/package/@types/ws]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
-[<u>nodecg-io-ws-server] as nodecg_io_ws_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ws-server]]
+[<u>nodecg-io-websocket-server] as nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
@@ -109,12 +109,12 @@ nodecg_io_twitch ...> twitch_chat_client
 nodecg_io_twitter ...> types_twitter
 nodecg_io_twitter --> nodecg_io_core
 nodecg_io_twitter ...> twitter
-nodecg_io_ws_client --> nodecg_io_core
-nodecg_io_ws_client ...> types_ws
-nodecg_io_ws_client ...> ws
-nodecg_io_ws_server --> nodecg_io_core
-nodecg_io_ws_server ...> types_ws
-nodecg_io_ws_server ...> ws
+nodecg_io_websocket_client --> nodecg_io_core
+nodecg_io_websocket_client ...> types_ws
+nodecg_io_websocket_client ...> ws
+nodecg_io_websocket_server --> nodecg_io_core
+nodecg_io_websocket_server ...> types_ws
+nodecg_io_websocket_server ...> ws
 nodecg_io_xdotool --> nodecg_io_core
 nodecg_io_xdotool ...> node_fetch
 nodecg_io_xdotool ...> rauschma_stringio

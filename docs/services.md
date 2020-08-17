@@ -168,7 +168,7 @@ Depends on [@types/twitter](https://www.npmjs.com/package/@types/twitter) @ ^1.7
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [twitter](https://www.npmjs.com/package/twitter) @ ^1.7.1 <br>
 
-## [nodecg-io-ws-client](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ws-client)
+## [nodecg-io-websocket-client](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-client)
 
 **Allows to connect to a external WebSocket server.**
 
@@ -178,11 +178,11 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.5 <br>
 Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.0 <br>
 
-## [nodecg-io-ws-server](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ws-server)
+## [nodecg-io-websocket-server](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server)
 
 **Allows to create a custom WebSocket server.**
 
-See the [sample implementation](samples/ws-server.md)
+There's no sample implementation for this service yet.
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.5 <br>
