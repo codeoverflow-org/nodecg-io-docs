@@ -78,12 +78,7 @@ Create a file called `index.ts` in a folder called `extension` inside your servi
 // TODO: Rename all occurences of "your-service-name" with only lowercase and hyphens ( - )
 
 import { NodeCG } from "nodecg/types/server";
-import {
-    emptySuccess,
-    success,
-    error,
-    Result,
-} from "nodecg-io-core/extension/utils/result";
+import { emptySuccess, success, error, Result } from "nodecg-io-core/extension/utils/result";
 import { ServiceBundle } from "nodecg-io-core/extension/serviceBundle";
 import { ServiceClient } from "nodecg-io-core/extension/types";
 // TODO: Replace the "fake" service class with that found on npm etc.
@@ -103,30 +98,18 @@ interface YourServiceNameServiceConfig {
 export type YourServiceNameServiceClient = ServiceClient<ServiceClass>;
 
 module.exports = (nodecg: NodeCG) => {
-    new YourServiceNameService(
-        nodecg,
-        "your-service-name",
-        __dirname,
-        "../your-service-name-schema.json"
-    ).register();
+    new YourServiceNameService(nodecg, "your-service-name", __dirname, "../your-service-name-schema.json").register();
 };
 
-class YourServiceNameService extends ServiceBundle<
-    YourServiceNameServiceConfig,
-    YourServiceNameServiceClient
-> {
-    async validateConfig(
-        config: YourServiceNameServiceConfig
-    ): Promise<Result<void>> {
+class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig, YourServiceNameServiceClient> {
+    async validateConfig(config: YourServiceNameServiceConfig): Promise<Result<void>> {
         // TODO You can validate your config here. If this gets called, the schema is correct.
         // You should for example check whether oauth keys are valid and servers are online here
         // If everything is good return 'emptySuccess()'
         // If an error occurs return 'error(<The error message>)'
     }
 
-    async createClient(
-        config: YourServiceNameServiceConfig
-    ): Promise<Result<YourServiceNameServiceClient>> {
+    async createClient(config: YourServiceNameServiceConfig): Promise<Result<YourServiceNameServiceClient>> {
         // TODO Here you should return a <Your service name>ServiceClient that is exposed to bundles.
         // If everything is good return 'success({
         //     getNativeClient() {

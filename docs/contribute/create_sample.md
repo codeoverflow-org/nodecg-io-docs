@@ -40,13 +40,10 @@ import { NodeCG } from "nodecg/types/server";
 import { requireService } from "nodecg-io-core/extension/serviceClientWrapper";
 import { TheServicesExportedClient } from "nodecg-io-<the services name>/extension";
 
-module.exports = function(nodecg: NodeCG) {
+module.exports = function (nodecg: NodeCG) {
     nodecg.log.info("Sample bundle for <the-service-name> started");
 
-    const service = requireService<TheServicesExportedClient>(
-        nodecg,
-        "<the-service-name>"
-    );
+    const service = requireService<TheServicesExportedClient>(nodecg, "<the-service-name>");
     service?.onAvailable((client) => {
         nodecg.log.info("Client has been updated.");
 
