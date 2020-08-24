@@ -29,6 +29,7 @@ If that's no problem you can head over to the [installation guide](https://nodec
 -   [x] IRC (Internet Relay Chat)
 -   [x] MIDI Input
 -   [x] MIDI Output
+-   [x] OBS
 -   [x] Philips Hue
 -   [x] RCON
 -   [ ] Serial Port (Arduino)
