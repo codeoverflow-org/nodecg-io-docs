@@ -64,6 +64,15 @@ There's no sample implementation for this service yet.
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.0 <br>
 
+## [nodecg-io-obs](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-obs)
+
+**No description**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ ^4.0.1 <br>
+
 ## [nodecg-io-philipshue](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-philipshue)
 
 **Allows you to connect with your Philips Hue bridge. This allows you to control your lights etc.**
