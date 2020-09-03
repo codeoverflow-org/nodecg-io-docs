@@ -29,5 +29,3 @@ Sadly you can't access the streamdeck while another application accesses it. So 
 7. Set the created streamdeck service instance to the service dependency of the streamdeck-rainbow bundle.
 
 8. Watch your streamdeck.
-
-Due to issue [#21](https://github.com/codeoverflow-org/nodecg-io/issues/21) you might need to replug your streamdeck when you restart nodecg as the connection is not closed when the program exits.
