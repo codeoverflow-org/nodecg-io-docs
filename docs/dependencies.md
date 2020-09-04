@@ -41,6 +41,8 @@ FontStyle Underline
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
+[<u>@types/spotify-web-api-node] as types_spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/@types/spotify-web-api-node]]
+[<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
 [<u>open] as open <<lib>> [[https://www.npmjs.com/package/open]]
 [<u>spotify-web-api-node] as spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/spotify-web-api-node]]
 [<u>nodecg-io-streamdeck] as nodecg_io_streamdeck <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck]]
@@ -52,6 +54,7 @@ FontStyle Underline
 [<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
 [<u>nodecg-io-twitch] as nodecg_io_twitch <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
+[<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
 [<u>nodecg-io-twitter] as nodecg_io_twitter <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter]]
 [<u>@types/twitter] as types_twitter <<lib>> [[https://www.npmjs.com/package/@types/twitter]]
@@ -63,10 +66,7 @@ FontStyle Underline
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
-[<u>@types/express] as types_express <<lib>> [[https://www.npmjs.com/package/@types/express]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
-[<u>@types/open] as types_open <<lib>> [[https://www.npmjs.com/package/@types/open]]
-[<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
@@ -97,7 +97,9 @@ nodecg_io_sacn_sender --> nodecg_io_core
 nodecg_io_sacn_sender ...> sacn
 nodecg_io_slack --> nodecg_io_core
 nodecg_io_slack ...> slack_web_api
+nodecg_io_spotify ...> types_spotify_web_api_node
 nodecg_io_spotify --> nodecg_io_core
+nodecg_io_spotify ...> express
 nodecg_io_spotify ...> open
 nodecg_io_spotify ...> spotify_web_api_node
 nodecg_io_streamdeck --> nodecg_io_core
@@ -109,6 +111,7 @@ nodecg_io_telegram --> nodecg_io_core
 nodecg_io_telegram ...> node_telegram_bot_api
 nodecg_io_twitch --> nodecg_io_core
 nodecg_io_twitch ...> twitch
+nodecg_io_twitch ...> twitch_auth
 nodecg_io_twitch ...> twitch_chat_client
 nodecg_io_twitter ...> types_twitter
 nodecg_io_twitter --> nodecg_io_core
@@ -122,9 +125,7 @@ nodecg_io_websocket_server ...> ws
 nodecg_io_xdotool --> nodecg_io_core
 nodecg_io_xdotool ...> node_fetch
 nodecg_io_xdotool ...> rauschma_stringio
-nodecg_io_youtube ...> types_express
 nodecg_io_youtube ...> types_gapi
-nodecg_io_youtube ...> types_open
 nodecg_io_youtube ...> express
 nodecg_io_youtube ...> googleapis
 nodecg_io_youtube --> nodecg_io_core
