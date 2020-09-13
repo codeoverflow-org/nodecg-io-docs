@@ -17,7 +17,7 @@ Depends on [typescript](https://www.npmjs.com/package/typescript) @ ^4.0.2 <br>
 See the [sample implementation](samples/ahk.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 ## [nodecg-io-discord](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord)
 
@@ -35,7 +35,7 @@ Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^12.3.1 <br>
 See the [sample implementation](samples/intellij.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 ## [nodecg-io-irc](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-irc)
 
@@ -207,7 +207,7 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.1 <br>
 See the [sample implementation](samples/xdotool.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
 
 ## [nodecg-io-youtube](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube)
