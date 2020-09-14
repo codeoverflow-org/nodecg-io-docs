@@ -40,7 +40,7 @@ For MacOS you'll need the Xcode command line tools. To install them run the foll
 xcode-select --install
 ```
 
-## Clone this repository:
+## Clone this repository
 
 ```shell
 git clone https://github.com/codeoverflow-org/nodecg-io.git
@@ -48,7 +48,7 @@ git clone https://github.com/codeoverflow-org/nodecg-io.git
 
 _Note:_ You should clone nodecg-io to somewhere outside of your nodecg bundles/ directory as this repo contains many bundles in subdirectories and nodecg doesn't support nesting of the bundles in other directories. You can clone it to any other path that you wish.
 
-## Install all of the dependencies using `npm`:
+## Install all of the dependencies using `npm`
 
 ```shell
 cd path/to/nodecg-io
@@ -63,7 +63,7 @@ cd path/to/nodecg-io
 npm run build
 ```
 
-## Add nodecg-io directory to the nodecg config:
+## Add nodecg-io directory to the nodecg config
 
 Modify the nodecg configuration in `path/to/nodecg/cfg/nodecg.json`, here is an example config:
 
