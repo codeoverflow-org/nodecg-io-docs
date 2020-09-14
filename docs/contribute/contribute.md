@@ -2,34 +2,8 @@
 
 There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
-## Prerequisites
-
-In order to download necessary tools, clone the repository, and install dependencies via `npm` you need network access.
-
-You'll need the following tools:
-
--   [Git](https://git-scm.com)
--   [Node.JS](https://nodejs.org/en/) v12.0.0 or newer
--   [Npm](https://www.npmjs.com/get-npm)
--   [NodeCG](https://nodecg.com/)
-
-## Getting the sources
-
-First, fork this repository so that you can make a pull request. Then, clone your fork locally:
-
-```
-git clone https://github.com/<<<your-github-username>>>/nodecg-io.git
-```
-
-_Note:_ You should clone nodecg-io to somewhere outside of your nodecg bundles/ directory as this repo contains many bundles in subdirectories and nodecg doesn't support nesting of the bundles in other directories. You can clone it to any other path that you wish.
-
-Install and build all of the dependencies using `npm`:
-
-```
-cd path/to/nodecg-io
-npm install
-npm run bootstrap
-```
+First you'll need a installation of nodecg-io. Please refer to the [installation guide](../getting_started/install.md) but
+instead of using our repository you might want to fork the nodecg-io repository to your GitHub account and clone your fork.
 
 ## Build
 
