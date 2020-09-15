@@ -28,7 +28,7 @@ The midi-input example bundle in `samples/midi-input` demonstrates the the abili
     ```
 
     After entering it, click save.
-    __Note:__ A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-input` using the command `npm run list`. The devices should be listed with there device names and some other stuff.
+    __Note:__ A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-input` using the command `npm run list`. The devices should be listed with their device names and some other stuff.
     under linux this looks for example like this:
     
     ```
@@ -37,9 +37,9 @@ The midi-input example bundle in `samples/midi-input` demonstrates the the abili
 
     _Note:_ If you don't see monaco on the right, try reloading the page.
 
-6. Set the created midi-input service instance to the service dependency of the Twitch-chat bundle.
+6. Set the created midi-input service instance to the service dependency of the midi-input sample bundle.
 
-    Select the midi-input bundle and the midi-input service in the left bottom menu and then select the service instance that should be used by the Twitch-chat bundle (in this case the name of the previously created midi-input instance).
+    Select the midi-input bundle and the midi-input service in the left bottom menu and then select the service instance that should be used by the midi-input bundle (in this case the name of the previously created midi-input instance).
 
 7. Check the nodecg logs
 
