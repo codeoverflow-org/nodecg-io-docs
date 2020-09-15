@@ -50,7 +50,7 @@ Depends on [irc](https://www.npmjs.com/package/irc) @ 0.5.2 <br>
 
 **Connect to MIDI devices and control the volume of your voice or music with a fader.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/midi-input.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.0 <br>
@@ -59,7 +59,7 @@ Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.0 <br>
 
 **Connect to MIDI devices and control the volume of your voice or music with a fader.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/midi-output.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.0 <br>
