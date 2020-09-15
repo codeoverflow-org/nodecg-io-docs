@@ -47,4 +47,4 @@ The midi-output example bundle in `samples/midi-output` demonstrates the the abi
 
 ### Note
 
-    Only sending "note on" messages is sufficient for most midi, because most of them don't really care if you use propper "note off" messages or simply send a "note on" with a velocity of 0. This is due to the early days of midi, when integrated circuits were expensive. Allowing a velocity of 0 as replacement for "note off" made instruments featuring midi more affordable.
+Only sending "note on" messages is sufficient for most midi, because most of them don't really care if you use propper "note off" messages or simply send a "note on" with a velocity of 0. This is due to the early days of midi, when integrated circuits were expensive. Allowing a velocity of 0 as replacement for "note off" made instruments featuring midi more affordable.
