@@ -51,6 +51,7 @@ nav:
           - Discord sample: samples/discord.md
           - IntelliJ sample: samples/intellij.md
           - Midi-Input sample: samples/midi-input.md
+          - Midi-Output sample: samples/midi-output.md
           - Rcon sample: samples/rcon.md
           - sACN:
                 - sACN Receiver sample: samples/sacn-receiver.md
