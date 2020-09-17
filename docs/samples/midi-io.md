@@ -1,6 +1,6 @@
 ## Using the midi-io sample bundle
 
-The midi-output example bundle in `samples/midi-io` demonstrates the the ability to send/recieve data to/from a midi device. 
+The midi-io example bundle in `samples/midi-io` demonstrates the the ability to send/recieve data to/from a midi device. 
 
 ### Prerequisites
 
@@ -39,11 +39,11 @@ The midi-output example bundle in `samples/midi-io` demonstrates the the ability
 
 6. Create a new midi-output service instance using the left upper menu.
 
-7. Repeat step 5 for your midi-output service. In most cases you want to use the same device fro input and output.
+7. Repeat step 5 for your midi-output service. In most cases you want to use the same device for input and output.
 
 8. Set the created midi-output service instance to the service dependency of the midi-io sample bundle.
 
-    Select the midi-io bundle and the midi-output service in the left bottom menu and then select the service instance that should be used by the midi- bundle (in this case the name of the previously created midi-output instance).
+    Select the midi-io bundle and the midi-output service in the left bottom menu and then select the service instance that should be used by the midi-io bundle (in this case the name of the previously created midi-output instance).
 
 9. Set the created midi-input service instance to the service dependency of the midi-io sample bundle.
 
@@ -51,7 +51,7 @@ The midi-output example bundle in `samples/midi-io` demonstrates the the ability
 
 10. Check the nodecg logs
 
-    You should see an error or a success message and midi messages that are recieved and echoed back to the device that is configured. The messages are only modified, if the recieved Message is a noteon with a velocity of greater than zero or a controll change message with a value of at least 64. Noteoff messages are always echoed unmodified.
+    You should see an error or a success message and midi messages that are recieved and echoed back to the device that is configured. The messages are only modified, if the recieved Message is a noteon with a velocity of greater than zero or a control change message with a value of at least 64. Noteoff messages are always echoed unmodified.
 
 ### Note
 
