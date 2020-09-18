@@ -31,8 +31,9 @@ Put the following into it:
         "url": "<Your github profile url>"
     },
     "scripts": {
-        "build": "tsc",
-        "watch": "tsc -w"
+        "build": "tsc -b",
+        "watch": "tsc -b -w",
+        "clean": "tsc -b --clean"
     },
     "keywords": ["", "nodecg-bundle"],
     "nodecg": {
