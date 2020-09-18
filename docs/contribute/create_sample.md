@@ -13,8 +13,9 @@ Create a folder in `samples` and add a `package.json` and a `tsconfig.json`:
         }
     },
     "scripts": {
-        "build": "tsc",
-        "watch": "tsc -w"
+        "build": "tsc -b",
+        "watch": "tsc -b -w",
+        "clean": "tsc -b --clean"
     },
     "license": "MIT",
     "dependencies": {
