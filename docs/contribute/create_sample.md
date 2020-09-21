@@ -20,9 +20,9 @@ Create a folder in `samples` and add a `package.json` and a `tsconfig.json`:
     "dependencies": {
         "nodecg-io-<the service name>": "0.1.0",
         "nodecg-io-core": "0.1.0",
-        "@types/node": "^13.13.12",
+        "@types/node": "^14.6.4",
         "nodecg": "^1.6.1",
-        "typescript": "^3.9.6"
+        "typescript": "^4.0.2"
     }
 }
 ```
