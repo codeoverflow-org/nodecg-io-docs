@@ -12,7 +12,7 @@ For simplicity sake this sample will rely upon the werbsocket-server sample.
 
 Please setup the WebSocket-server bundle first and then follow these steps:
 
-1. Start nodecg with nodecg-io installed. The websocket-server bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The websocket-client bundle is currently part of it so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -20,13 +20,13 @@ Please setup the WebSocket-server bundle first and then follow these steps:
 
 4. Create a new ws-client service instance using the left upper menu.
 
-5. Enter the address of the sample server. This has to be a url following the pattern `http://localhost:<port>`.
+5. Enter the address of the sample server. This has to be a url following the pattern `ws://localhost:<port>`.
 
     The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the texteditor on the right) in this format:
 
     ```json
     {
-        "address": "http://localhost:7777"
+        "address": "ws://localhost:7777"
     }
     ```
 
