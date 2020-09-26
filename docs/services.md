@@ -184,7 +184,7 @@ Depends on [twitter](https://www.npmjs.com/package/twitter) @ ^1.7.1 <br>
 
 **Allows to connect to a external WebSocket server.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/websocket-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.6 <br>
@@ -194,7 +194,7 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.1 <br>
 
 **Allows to create a custom WebSocket server.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/websocket-server.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.6 <br>
