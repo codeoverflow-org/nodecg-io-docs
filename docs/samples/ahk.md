@@ -19,7 +19,7 @@ The AHK sample bundle in `samples/ahk-sendcommand` shows how to send a command t
 
 5. Enter the host and port of the HotkeylessAHK Server.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:
 
     ```json
     {

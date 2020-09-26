@@ -67,7 +67,7 @@ To test the changes you simply need to start/restart nodecg.
 
 ## Work Branches
 
-Even if you have push rights on the Chatoverflow/nodecg-io repository, you should create a personal fork and create feature branches there when you need them. This keeps the main repository clean and your personal workflow cruft out of sight.
+Even if you have push rights on the codeoverflow-org/nodecg-io repository, you should create a personal fork and create feature branches there when you need them. This keeps the main repository clean and your personal workflow cruft out of sight.
 
 ## Pull Requests
 

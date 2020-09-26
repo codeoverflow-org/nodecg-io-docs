@@ -6,7 +6,7 @@ The WebSocket-client sample bundle in `samples/websocket-client` shows how to se
 
 -   Working NodeCG & nodecg-io installation
 
-For simplicity sake this sample will rely upon the werbsocket-server sample.
+For simplicity sake this sample will rely upon the websocket-server sample.
 
 ### Configure the WebSocket-client sample bundle
 
