@@ -1,6 +1,6 @@
 ## Using the twitter sample bundle
 
-The [Twitter timeline](/samples/twitter-timeline/) bundle retrieves some of the latest tweets from _skate702_ and printing them to your console.
+The Twitter timeline bundle retrieves some of the latest tweets from _skate702_ and printing them to your console.
 
 ### Prerequisites
 
@@ -25,7 +25,7 @@ _Note:_ You will need a twitter developer account (https://developer.twitter.com
 
 5. Enter credentials for twitter.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitter keys and tokens in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitter keys and tokens in monaco (the text-editor on the right) in this format:
 
     ```json
     {

@@ -19,7 +19,7 @@ The Xdotool sample bundle in `samples/xdotool-windowminimize` shows how to use t
 
 5. Enter settings port `-1` tells nodecg-io to use a locally installed xdotool.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Configure local xdotool in monaco (the texteditor on the right) using this config:
+    The created instance should be automatically selected, if not select it in the upper left menu. Configure local xdotool in monaco (the text-editor on the right) using this config:
 
     ```json
     {

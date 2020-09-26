@@ -19,7 +19,7 @@ The telegram sample bundle in `samples/telegram-bot` shows how to create a simpl
 
 5. Enter the token and set polling to true.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:
 
     ```json
     {

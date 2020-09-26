@@ -21,7 +21,7 @@ _Note:_ If you don't have such a token yet you can create your on app with token
 
 5. Enter your slack app token.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your token in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your token in monaco (the text-editor on the right) in this format:
 
     ```json
     {
