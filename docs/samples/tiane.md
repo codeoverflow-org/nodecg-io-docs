@@ -11,9 +11,11 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make ti
 ### Configure the TIANE sample bundle
 
 1. Edit the file `samples/tiane-discord/extension/index.ts`. Look for this line
+    
     ```
     const discordChannel = ""; // Insert channel for the discord bot here
     ```
+    
     and put the channel id of a discord channel where you want to talk to TIANE between the quotation marks. See [here](https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord) to find out how to get a channel id.
    
 2. Run `npm run build` in the main nodecg-io directory.
