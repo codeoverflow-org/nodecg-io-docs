@@ -163,7 +163,7 @@ Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-b
 
 **Connect to TIANE and make her for example a discord bot. https://github.com/FerdiKr/TIANE**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/tiane.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.1 <br>

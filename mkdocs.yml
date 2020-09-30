@@ -61,6 +61,7 @@ nav:
           - Slack sample: samples/slack.md
           - Streamdeck sample: samples/streamdeck.md
           - Telegram sample: samples/telegram.md
+          - TIANE sample: samples/tiane.md
           - Twitch sample: samples/twitch.md
           - Twitter sample: samples/twitter.md
           - WebSocket:
