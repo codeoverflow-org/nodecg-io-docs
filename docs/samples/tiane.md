@@ -30,7 +30,7 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make ti
     }
     ```
    
-    Make shure `websocket` is either set to `enabled` or `secure` and set a port of your desire.
+    Make sure `websocket` is either set to `enabled` or `secure` and set a port of your desire.
 
 4. Start nodecg with nodecg-io installed. The TIANE-Discord bundle is currently part of it so it should also be loaded.
 
@@ -38,7 +38,7 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make ti
 
 6. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
 
-7. Create a new TINE service instance using the left upper menu.
+7. Create a new TIANE service instance using the left upper menu.
 
 8. Enter address of the TIANE-Server
 
