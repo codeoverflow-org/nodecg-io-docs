@@ -1,6 +1,6 @@
 ## Using the Discord sample bundle
 
-The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrates the ability ping back messages witch start with `!ping`. Here is a guide to how to get it working.
+The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrates the ability to reply with `pong` to messages which are equal to `!ping` or `ping`. Here is a guide to how to get it working.
 
 ### Prerequisites
 
@@ -21,7 +21,7 @@ _Note:_ If you don't have such a token yet you can follow [this](https://discord
 
 5. Enter your bot token.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the text-editor on the right) in this format:
 
     ```json
     {

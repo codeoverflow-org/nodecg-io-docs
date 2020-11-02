@@ -53,7 +53,7 @@ nav:
           - Midi:
                 - Midi-Input sample: samples/midi-input.md
                 - Midi-Output sample: samples/midi-output.md
-                - Midi-io sample: samples/midi-io.md
+                - Midi-IO sample: samples/midi-io.md
           - Rcon sample: samples/rcon.md
           - sACN:
                 - sACN Receiver sample: samples/sacn-receiver.md
@@ -62,11 +62,12 @@ nav:
           - Slack sample: samples/slack.md
           - Streamdeck sample: samples/streamdeck.md
           - Telegram sample: samples/telegram.md
+          - TIANE sample: samples/tiane.md
           - Twitch sample: samples/twitch.md
           - Twitter sample: samples/twitter.md
           - WebSocket:
-                - Client sample: samples/ws-client.md
-                - Server sample: samples/ws-server.md
+                - Client sample: samples/websocket-client.md
+                - Server sample: samples/websocket-server.md
           - Xdotool sample: samples/xdotool.md
           - YouTube sample: samples/youtube.md
           - Dependency Graph: dependencies.md

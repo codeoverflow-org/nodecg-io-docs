@@ -105,7 +105,7 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^3.2.1 <br>
 
 **Allows you to send data via sACN to e.g professional lights.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/sacn-sender.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^3.2.1 <br>
@@ -159,6 +159,15 @@ See the [sample implementation](samples/telegram.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.50.0 <br>
 
+## [nodecg-io-tiane](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane)
+
+**Connect to TIANE and make her for example a discord bot. https://github.com/FerdiKr/TIANE**
+
+See the [sample implementation](samples/tiane.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.1 <br>
+
 ## [nodecg-io-twitch](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch)
 
 **Allows to connect to twitch with your account, send and receive messages and much more. It can be used to create Twitch-Bots.**
@@ -184,7 +193,7 @@ Depends on [twitter](https://www.npmjs.com/package/twitter) @ ^1.7.1 <br>
 
 **Allows to connect to a external WebSocket server.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/websocket-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.6 <br>
@@ -194,7 +203,7 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.3.1 <br>
 
 **Allows to create a custom WebSocket server.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/websocket-server.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.2.6 <br>

@@ -52,6 +52,8 @@ FontStyle Underline
 [<u>socket.io-client] as socket_io_client <<lib>> [[https://www.npmjs.com/package/socket.io-client]]
 [<u>nodecg-io-telegram] as nodecg_io_telegram <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-telegram]]
 [<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
+[<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
+[<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
 [<u>nodecg-io-twitch] as nodecg_io_twitch <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
 [<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
@@ -61,7 +63,6 @@ FontStyle Underline
 [<u>twitter] as twitter <<lib>> [[https://www.npmjs.com/package/twitter]]
 [<u>nodecg-io-websocket-client] as nodecg_io_websocket_client <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-client]]
 [<u>@types/ws] as types_ws <<lib>> [[https://www.npmjs.com/package/@types/ws]]
-[<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
 [<u>nodecg-io-websocket-server] as nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
@@ -109,6 +110,8 @@ nodecg_io_streamelements --> nodecg_io_core
 nodecg_io_streamelements ...> socket_io_client
 nodecg_io_telegram --> nodecg_io_core
 nodecg_io_telegram ...> node_telegram_bot_api
+nodecg_io_tiane --> nodecg_io_core
+nodecg_io_tiane ...> ws
 nodecg_io_twitch --> nodecg_io_core
 nodecg_io_twitch ...> twitch
 nodecg_io_twitch ...> twitch_auth

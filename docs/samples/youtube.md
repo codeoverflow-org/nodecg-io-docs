@@ -1,6 +1,6 @@
 ## Using the youtube sample bundle
 
-The youtube bundle in `samples/youtube-playlist` demonstrates the ability of getting infos of a playlist. Here is a guide to how to get it working.
+The youtube bundle in `samples/youtube-playlist` demonstrates the ability of getting information of a playlist. Here is a guide to how to get it working.
 
 ### Prerequisites
 
