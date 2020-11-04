@@ -13,7 +13,7 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchap
 
 1. A load a simple serial echo sketch on your microcontroller. You can find a working arduino sketch at the end of this article.
 
-2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it so it should also be loaded.
+2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it so it should also be loaded. Make shure the device is already connected. Otherwise you wont be able to see the device.
 
 3. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -54,6 +54,8 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchap
 8. Check the nodecg logs
 
     You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The adruino device will respond with pong. you ahould see the pong message displayed in the log.
+
+    If 
 
 ### Sample arduino sketch
 
