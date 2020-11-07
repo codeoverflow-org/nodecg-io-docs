@@ -87,7 +87,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Allows you to send commands to a minecraft server via RCON.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/rcon.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [rcon-client](https://www.npmjs.com/package/rcon-client) @ ^4.2.0 <br>
