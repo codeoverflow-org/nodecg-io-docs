@@ -38,6 +38,9 @@ FontStyle Underline
 [<u>nodecg-io-sacn-receiver] as nodecg_io_sacn_receiver <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-receiver]]
 [<u>sacn] as sacn <<lib>> [[https://www.npmjs.com/package/sacn]]
 [<u>nodecg-io-sacn-sender] as nodecg_io_sacn_sender <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-sender]]
+[<u>nodecg-io-serial] as nodecg_io_serial <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-serial]]
+[<u>serialport] as serialport <<lib>> [[https://www.npmjs.com/package/serialport]]
+[<u>@serialport/parser-readline] as serialport_parser_readline <<lib>> [[https://www.npmjs.com/package/@serialport/parser-readline]]
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
@@ -96,6 +99,9 @@ nodecg_io_sacn_receiver --> nodecg_io_core
 nodecg_io_sacn_receiver ...> sacn
 nodecg_io_sacn_sender --> nodecg_io_core
 nodecg_io_sacn_sender ...> sacn
+nodecg_io_serial --> nodecg_io_core
+nodecg_io_serial ...> serialport
+nodecg_io_serial ...> serialport_parser_readline
 nodecg_io_slack --> nodecg_io_core
 nodecg_io_slack ...> slack_web_api
 nodecg_io_spotify ...> types_spotify_web_api_node
