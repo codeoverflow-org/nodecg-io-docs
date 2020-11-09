@@ -78,6 +78,6 @@ void loop() {
         Serial.println("pong");
         stringComplete = false;
     }
-  delay(1);        // delay in between reads for stability
+    delay(1);        // delay in between reads for stability
 }
 ```
