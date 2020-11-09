@@ -7,8 +7,6 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 -   Working NodeCG & nodecg-io installation
 -   An Arduino or any other microcontroller development board that can send and receive data via serial.
 
-_Note:_ If you don't have such a key yet you can generate it on https://twitchapps.com/tmi/. Just log into your Twitch account and copy the token.
-
 ### Configure the Twitch sample bundle
 
 1. Load a simple serial echo sketch on your microcontroller. You can find a working arduino sketch at the end of this article.
