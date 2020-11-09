@@ -1,4 +1,4 @@
-## Using the Twitch sample bundle
+## Using the serial sample bundle
 
 The serial example bundle in `samples/serial` demonstrates the ability to exchange data with a device that is connected via serial. Here is a guide to how to get it working.
 
