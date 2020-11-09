@@ -11,7 +11,7 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchap
 
 ### Configure the Twitch sample bundle
 
-1. A load a simple serial echo sketch on your microcontroller. You can find a working arduino sketch at the end of this article.
+1. Load a simple serial echo sketch on your microcontroller. You can find a working arduino sketch at the end of this article.
 
 2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it so it should also be loaded. Make shure the device is already connected. Otherwise you wont be able to see the device.
 
