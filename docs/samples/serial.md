@@ -21,7 +21,7 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
 6. Enter the information of your device.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the com port or other identifying information in one of these format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter the com port or other identifying information in one of these formats:
 
     ```json
     {
