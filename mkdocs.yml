@@ -58,7 +58,7 @@ nav:
           - sACN:
                 - sACN Receiver sample: samples/sacn-receiver.md
                 - sACN Receiver sample: samples/sacn-sender.md
-          - Serial anmple: samples/serial.md
+          - Serial sample: samples/serial.md
           - Slack sample: samples/slack.md
           - Streamdeck sample: samples/streamdeck.md
           - Telegram sample: samples/telegram.md
