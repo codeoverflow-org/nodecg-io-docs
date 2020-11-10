@@ -35,6 +35,8 @@ FontStyle Underline
 [<u>node-hue-api] as node_hue_api <<lib>> [[https://www.npmjs.com/package/node-hue-api]]
 [<u>nodecg-io-rcon] as nodecg_io_rcon <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-rcon]]
 [<u>rcon-client] as rcon_client <<lib>> [[https://www.npmjs.com/package/rcon-client]]
+[<u>nodecg-io-reddit] as nodecg_io_reddit <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-reddit]]
+[<u>reddit-ts] as reddit_ts <<lib>> [[https://www.npmjs.com/package/reddit-ts]]
 [<u>nodecg-io-sacn-receiver] as nodecg_io_sacn_receiver <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-receiver]]
 [<u>sacn] as sacn <<lib>> [[https://www.npmjs.com/package/sacn]]
 [<u>nodecg-io-sacn-sender] as nodecg_io_sacn_sender <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-sender]]
@@ -92,6 +94,8 @@ nodecg_io_philipshue ...> node_hue_api
 nodecg_io_philipshue --> nodecg_io_core
 nodecg_io_rcon --> nodecg_io_core
 nodecg_io_rcon ...> rcon_client
+nodecg_io_reddit --> nodecg_io_core
+nodecg_io_reddit ...> reddit_ts
 nodecg_io_sacn_receiver --> nodecg_io_core
 nodecg_io_sacn_receiver ...> sacn
 nodecg_io_sacn_sender --> nodecg_io_core
