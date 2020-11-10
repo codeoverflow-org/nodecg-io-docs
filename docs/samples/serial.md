@@ -51,7 +51,7 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
 8. Check the nodecg logs
 
-    You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The adruino device will respond with pong. you ahould see the pong message displayed in the log.
+    You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The arduino device will respond with pong. You should see the pong message displayed in the log.
 
     If 
 
