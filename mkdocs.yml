@@ -55,6 +55,7 @@ nav:
                 - Midi-Output sample: samples/midi-output.md
                 - Midi-IO sample: samples/midi-io.md
           - Rcon sample: samples/rcon.md
+          - Reddit Sample: samples/reddit.md
           - sACN:
                 - sACN Receiver sample: samples/sacn-receiver.md
                 - sACN Sender sample: samples/sacn-sender.md
