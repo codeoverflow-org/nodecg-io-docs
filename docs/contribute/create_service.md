@@ -22,24 +22,30 @@ Put the following into it:
 
 ```json
 {
-    "name": "nodecg-io-your-service-name",
+    "name": "nodecg-io-<your-service-name>",
     "version": "0.1.0",
     "description": "<Short description what is possible with your service.>",
-    "homepage": "",
+    "homepage": "https://nodecg.io/samples/<your-service-name>",
     "author": {
         "name": "<Your name>",
         "url": "<Your github profile url>"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/codeoverflow-org/nodecg-io.git",
+        "directory": "nodecg-io-<your-service-name>"
+    },
+    "main": "extension"
     "scripts": {
         "build": "tsc -b",
         "watch": "tsc -b -w",
         "clean": "tsc -b --clean"
     },
-    "keywords": ["", "nodecg-bundle"],
+    "keywords": ["nodecg-io", "nodecg-bundle"],
     "nodecg": {
         "compatibleRange": "^1.1.1",
         "bundleDependencies": {
-            "nodecg-io-core": "0.1.0"
+            "nodecg-io-core": "^0.1.0"
         }
     },
     "license": "MIT",
@@ -49,7 +55,7 @@ Put the following into it:
         "typescript": "^4.0.2"
     },
     "dependencies": {
-        "nodecg-io-core": "0.1.0",
+        "nodecg-io-core": "^0.1.0",
         "<the package you found in step 1>": "<the packages version you want to use>"
     }
 }
