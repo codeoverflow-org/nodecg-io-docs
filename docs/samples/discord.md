@@ -1,6 +1,6 @@
 ## Using the Discord sample bundle
 
-The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrates the ability ping back messages witch start with `!ping`. Here is a guide to how to get it working.
+The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrates the ability to reply with `pong` to messages which are equal to `!ping` or `ping`. Here is a guide to how to get it working.
 
 ### Prerequisites
 
