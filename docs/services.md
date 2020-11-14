@@ -92,6 +92,15 @@ See the [sample implementation](samples/rcon.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [rcon-client](https://www.npmjs.com/package/rcon-client) @ ^4.2.0 <br>
 
+## [nodecg-io-reddit](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-reddit)
+
+**Provides aninterface to the Reddit-API.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
+Depends on [reddit-ts](https://www.npmjs.com/package/reddit-ts) @ noeppi-noeppi/npm-reddit-ts#build <br>
+
 ## [nodecg-io-sacn-receiver](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-receiver)
 
 **Allows you to receive data via sACN from e.g professional lighting consoles.**
