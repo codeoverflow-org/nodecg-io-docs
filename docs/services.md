@@ -96,7 +96,7 @@ Depends on [rcon-client](https://www.npmjs.com/package/rcon-client) @ ^4.2.0 <br
 
 **Provides aninterface to the Reddit-API.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/reddit.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [reddit-ts](https://www.npmjs.com/package/reddit-ts) @ noeppi-noeppi/npm-reddit-ts#build <br>
