@@ -32,6 +32,7 @@ If that's no problem you can head over to the [installation guide](https://nodec
 -   [x] OBS
 -   [x] Philips Hue
 -   [x] RCON
+-   [x] Reddit
 -   [x] sACN Receiver
 -   [x] sACN Sender
 -   [x] Serial Port (Arduino)
