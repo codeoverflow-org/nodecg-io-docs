@@ -51,14 +51,14 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
 8. Check the nodecg logs
 
-    You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The arduino device will respond with pong.                You should see the pong message displayed in the log.
+    You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The arduino device will respond with pong. You should see the pong message displayed in the log.
 
-    If You see an error or nothing at all, try making shure your microcontroler is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted. 
+    If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted. 
 
 ### Sample arduino sketch
 
 ```cpp
-String inputString = "";     NeoCortex97:master
+String inputString = "";
 boolean stringComplete = false; 
 
 void setup() {
@@ -69,8 +69,8 @@ void setup() {
 void loop() {
     while (Serial.available()) {
         char inChar = (char)Serial.read();
-            inputString += inChar;
-            if (inChar == '\n') {
+        inputString += inChar;
+        if (inChar == '\n') {
             stringComplete = true;
         }
     }
