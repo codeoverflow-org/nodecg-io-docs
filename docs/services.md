@@ -123,7 +123,7 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^3.2.1 <br>
 
 **Exposes serial deivces to nodecg-io**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/serial.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.0.1 <br>
