@@ -63,6 +63,8 @@ FontStyle Underline
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
 [<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
+[<u>nodecg-io-twitch-pubsub] as nodecg_io_twitch_pubsub <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub]]
+[<u>twitch-pubsub-client] as twitch_pubsub_client <<lib>> [[https://www.npmjs.com/package/twitch-pubsub-client]]
 [<u>nodecg-io-twitter] as nodecg_io_twitter <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter]]
 [<u>@types/twitter] as types_twitter <<lib>> [[https://www.npmjs.com/package/@types/twitter]]
 [<u>twitter] as twitter <<lib>> [[https://www.npmjs.com/package/twitter]]
@@ -126,6 +128,10 @@ nodecg_io_twitch --> nodecg_io_core
 nodecg_io_twitch ...> twitch
 nodecg_io_twitch ...> twitch_auth
 nodecg_io_twitch ...> twitch_chat_client
+nodecg_io_twitch_pubsub --> nodecg_io_core
+nodecg_io_twitch_pubsub ...> twitch
+nodecg_io_twitch_pubsub ...> twitch_pubsub_client
+nodecg_io_twitch_pubsub ...> ws
 nodecg_io_twitter ...> types_twitter
 nodecg_io_twitter --> nodecg_io_core
 nodecg_io_twitter ...> twitter

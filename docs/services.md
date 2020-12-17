@@ -198,6 +198,17 @@ Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.2.1 <br>
 Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.2.1 <br>
 Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.2.1 <br>
 
+## [nodecg-io-twitch-pubsub](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub)
+
+**Allows access to the Twitch PubSub API.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.3.6 <br>
+Depends on [twitch-pubsub-client](https://www.npmjs.com/package/twitch-pubsub-client) @ ^4.3.6 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
+
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter)
 
 **Allows to connect to twitter, send, retweet or like messages.**
