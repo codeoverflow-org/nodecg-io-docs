@@ -41,8 +41,8 @@ FontStyle Underline
 [<u>sacn] as sacn <<lib>> [[https://www.npmjs.com/package/sacn]]
 [<u>nodecg-io-sacn-sender] as nodecg_io_sacn_sender <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-sender]]
 [<u>nodecg-io-serial] as nodecg_io_serial <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-serial]]
-[<u>serialport] as serialport <<lib>> [[https://www.npmjs.com/package/serialport]]
 [<u>@serialport/parser-readline] as serialport_parser_readline <<lib>> [[https://www.npmjs.com/package/@serialport/parser-readline]]
+[<u>serialport] as serialport <<lib>> [[https://www.npmjs.com/package/serialport]]
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
@@ -82,12 +82,12 @@ nodecg_io_core ...> tslib
 nodecg_io_core ...> typescript
 nodecg_io_ahk --> nodecg_io_core
 nodecg_io_ahk ...> node_fetch
-nodecg_io_discord --> nodecg_io_core
 nodecg_io_discord ...> discord_js
+nodecg_io_discord --> nodecg_io_core
 nodecg_io_intellij --> nodecg_io_core
 nodecg_io_intellij ...> node_fetch
-nodecg_io_irc --> nodecg_io_core
 nodecg_io_irc ...> irc
+nodecg_io_irc --> nodecg_io_core
 nodecg_io_midi_input --> nodecg_io_core
 nodecg_io_midi_input ...> easymidi
 nodecg_io_midi_output --> nodecg_io_core
@@ -105,18 +105,18 @@ nodecg_io_sacn_receiver --> nodecg_io_core
 nodecg_io_sacn_receiver ...> sacn
 nodecg_io_sacn_sender --> nodecg_io_core
 nodecg_io_sacn_sender ...> sacn
+nodecg_io_serial ...> serialport_parser_readline
 nodecg_io_serial --> nodecg_io_core
 nodecg_io_serial ...> serialport
-nodecg_io_serial ...> serialport_parser_readline
-nodecg_io_slack --> nodecg_io_core
 nodecg_io_slack ...> slack_web_api
+nodecg_io_slack --> nodecg_io_core
 nodecg_io_spotify ...> types_spotify_web_api_node
-nodecg_io_spotify --> nodecg_io_core
 nodecg_io_spotify ...> express
+nodecg_io_spotify --> nodecg_io_core
 nodecg_io_spotify ...> open
 nodecg_io_spotify ...> spotify_web_api_node
-nodecg_io_streamdeck --> nodecg_io_core
 nodecg_io_streamdeck ...> elgato_stream_deck
+nodecg_io_streamdeck --> nodecg_io_core
 nodecg_io_streamelements ...> types_socket_io_client
 nodecg_io_streamelements --> nodecg_io_core
 nodecg_io_streamelements ...> socket_io_client
@@ -131,15 +131,14 @@ nodecg_io_twitch ...> twitch_chat_client
 nodecg_io_twitch_pubsub --> nodecg_io_core
 nodecg_io_twitch_pubsub ...> twitch
 nodecg_io_twitch_pubsub ...> twitch_pubsub_client
-nodecg_io_twitch_pubsub ...> ws
 nodecg_io_twitter ...> types_twitter
 nodecg_io_twitter --> nodecg_io_core
 nodecg_io_twitter ...> twitter
-nodecg_io_websocket_client --> nodecg_io_core
 nodecg_io_websocket_client ...> types_ws
+nodecg_io_websocket_client --> nodecg_io_core
 nodecg_io_websocket_client ...> ws
-nodecg_io_websocket_server --> nodecg_io_core
 nodecg_io_websocket_server ...> types_ws
+nodecg_io_websocket_server --> nodecg_io_core
 nodecg_io_websocket_server ...> ws
 nodecg_io_xdotool --> nodecg_io_core
 nodecg_io_xdotool ...> node_fetch
