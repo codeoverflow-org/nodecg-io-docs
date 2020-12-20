@@ -9,7 +9,7 @@ You'll need the following tools:
 -   [Git](https://git-scm.com)
 -   [Node.JS](https://nodejs.org/en/) v12.0.0 or newer
 -   [Npm](https://www.npmjs.com/get-npm)
--   [NodeCG](https://nodecg.com/)
+-   [NodeCG](https://nodecg.dev/)
 
 You'll also need operating system dependant tools for native modules like Streamdeck and Midi:
 
