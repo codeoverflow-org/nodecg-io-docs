@@ -65,7 +65,7 @@ nav:
           - Streamdeck sample: samples/streamdeck.md
           - Telegram sample: samples/telegram.md
           - TIANE sample: samples/tiane.md
-          - Twitch sample: samples/twitch.md
+          - Twitch sample: samples/twitch-chat.md
           - Twitter sample: samples/twitter.md
           - WebSocket:
                 - Client sample: samples/websocket-client.md

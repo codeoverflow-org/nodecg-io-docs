@@ -17,7 +17,7 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchap
 
 3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
 
-4. Create a new twitch service instance using the left upper menu.
+4. Create a new twitch-chat service instance using the left upper menu.
 
 5. Enter credentials for twitch.
 
@@ -33,9 +33,9 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchap
 
     _Note:_ If you don't see monaco on the right, try reloading the page.
 
-6. Set the created twitch service instance to the service dependency of the Twitch-chat bundle.
+6. Set the created twitch-chat service instance to the service dependency of the Twitch-chat bundle.
 
-    Select the Twitch-chat bundle and the twitch service in the left bottom menu and then select the service instance that should be used by the Twitch-chat bundle (in this case the name of the previously created twitch instance).
+    Select the Twitch-chat bundle and the twitch-chat service in the left bottom menu and then select the service instance that should be used by the Twitch-chat bundle (in this case the name of the previously created twitch-chat instance).
 
 7. Check the nodecg logs
 
