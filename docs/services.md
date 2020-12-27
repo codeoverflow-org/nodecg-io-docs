@@ -142,7 +142,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Allows to connect to your personal Spotify account. This enables you to e.g. control music playback or get current song information. **
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/spotify.md)
 
 Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^4.0.2 <br>
 Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
