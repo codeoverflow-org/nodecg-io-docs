@@ -190,11 +190,11 @@ See the [sample implementation](samples/tiane.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 
-## [nodecg-io-twitch](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch)
+## [nodecg-io-twitch-chat](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat)
 
 **Allows to connect to twitch with your account, send and receive messages and much more. It can be used to create Twitch-Bots.**
 
-See the [sample implementation](samples/twitch.md)
+There's no sample implementation for this service yet.
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.3.6 <br>

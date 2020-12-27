@@ -62,7 +62,7 @@ FontStyle Underline
 [<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
 [<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
-[<u>nodecg-io-twitch] as nodecg_io_twitch <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch]]
+[<u>nodecg-io-twitch-chat] as nodecg_io_twitch_chat <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
 [<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
@@ -130,10 +130,10 @@ nodecg_io_telegram ...> node_telegram_bot_api
 nodecg_io_telegram --> nodecg_io_core
 nodecg_io_tiane --> nodecg_io_core
 nodecg_io_tiane ...> ws
-nodecg_io_twitch --> nodecg_io_core
-nodecg_io_twitch ...> twitch
-nodecg_io_twitch ...> twitch_auth
-nodecg_io_twitch ...> twitch_chat_client
+nodecg_io_twitch_chat --> nodecg_io_core
+nodecg_io_twitch_chat ...> twitch
+nodecg_io_twitch_chat ...> twitch_auth
+nodecg_io_twitch_chat ...> twitch_chat_client
 nodecg_io_twitch_pubsub --> nodecg_io_core
 nodecg_io_twitch_pubsub ...> twitch
 nodecg_io_twitch_pubsub ...> twitch_pubsub_client
