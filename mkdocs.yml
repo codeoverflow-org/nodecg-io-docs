@@ -61,6 +61,7 @@ nav:
                 - sACN Sender sample: samples/sacn-sender.md
           - Serial sample: samples/serial.md
           - Slack sample: samples/slack.md
+          - Spotify sample: samples/spotify.md
           - Streamdeck sample: samples/streamdeck.md
           - Telegram sample: samples/telegram.md
           - TIANE sample: samples/tiane.md
