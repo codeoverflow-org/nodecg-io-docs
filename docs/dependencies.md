@@ -24,6 +24,7 @@ FontStyle Underline
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-intellij] as nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij]]
 [<u>nodecg-io-irc] as nodecg_io_irc <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-irc]]
+[<u>@types/irc] as types_irc <<lib>> [[https://www.npmjs.com/package/@types/irc]]
 [<u>irc] as irc <<lib>> [[https://www.npmjs.com/package/irc]]
 [<u>nodecg-io-midi-input] as nodecg_io_midi_input <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-input]]
 [<u>easymidi] as easymidi <<lib>> [[https://www.npmjs.com/package/easymidi]]
@@ -41,6 +42,7 @@ FontStyle Underline
 [<u>sacn] as sacn <<lib>> [[https://www.npmjs.com/package/sacn]]
 [<u>nodecg-io-sacn-sender] as nodecg_io_sacn_sender <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-sender]]
 [<u>nodecg-io-serial] as nodecg_io_serial <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-serial]]
+[<u>@types/serialport] as types_serialport <<lib>> [[https://www.npmjs.com/package/@types/serialport]]
 [<u>@serialport/parser-readline] as serialport_parser_readline <<lib>> [[https://www.npmjs.com/package/@serialport/parser-readline]]
 [<u>serialport] as serialport <<lib>> [[https://www.npmjs.com/package/serialport]]
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
@@ -56,6 +58,7 @@ FontStyle Underline
 [<u>@types/socket.io-client] as types_socket_io_client <<lib>> [[https://www.npmjs.com/package/@types/socket.io-client]]
 [<u>socket.io-client] as socket_io_client <<lib>> [[https://www.npmjs.com/package/socket.io-client]]
 [<u>nodecg-io-telegram] as nodecg_io_telegram <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-telegram]]
+[<u>@types/node-telegram-bot-api] as types_node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/@types/node-telegram-bot-api]]
 [<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
 [<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
@@ -86,6 +89,7 @@ nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
 nodecg_io_intellij --> nodecg_io_core
 nodecg_io_intellij ...> node_fetch
+nodecg_io_irc ...> types_irc
 nodecg_io_irc ...> irc
 nodecg_io_irc --> nodecg_io_core
 nodecg_io_midi_input --> nodecg_io_core
@@ -105,6 +109,7 @@ nodecg_io_sacn_receiver --> nodecg_io_core
 nodecg_io_sacn_receiver ...> sacn
 nodecg_io_sacn_sender --> nodecg_io_core
 nodecg_io_sacn_sender ...> sacn
+nodecg_io_serial ...> types_serialport
 nodecg_io_serial ...> serialport_parser_readline
 nodecg_io_serial --> nodecg_io_core
 nodecg_io_serial ...> serialport
@@ -120,8 +125,9 @@ nodecg_io_streamdeck --> nodecg_io_core
 nodecg_io_streamelements ...> types_socket_io_client
 nodecg_io_streamelements --> nodecg_io_core
 nodecg_io_streamelements ...> socket_io_client
-nodecg_io_telegram --> nodecg_io_core
+nodecg_io_telegram ...> types_node_telegram_bot_api
 nodecg_io_telegram ...> node_telegram_bot_api
+nodecg_io_telegram --> nodecg_io_core
 nodecg_io_tiane --> nodecg_io_core
 nodecg_io_tiane ...> ws
 nodecg_io_twitch --> nodecg_io_core

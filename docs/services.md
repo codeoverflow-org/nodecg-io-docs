@@ -43,6 +43,7 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 There's no sample implementation for this service yet.
 
+Depends on [@types/irc](https://www.npmjs.com/package/@types/irc) @ ^0.3.33 <br>
 Depends on [irc](https://www.npmjs.com/package/irc) @ ^0.5.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
@@ -125,6 +126,7 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^3.2.1 <br>
 
 See the [sample implementation](samples/serial.md)
 
+Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.1 <br>
 Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^9.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.0.3 <br>
@@ -175,8 +177,9 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.50.4 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.50.0 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-tiane](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane)
 
