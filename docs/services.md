@@ -194,7 +194,7 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 
 **Allows to connect to twitch with your account, send and receive messages and much more. It can be used to create Twitch-Bots.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/twitch-chat.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.3.6 <br>
