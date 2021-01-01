@@ -177,8 +177,8 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.50.4 <br>
-Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.50.0 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.51.0 <br>
+Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.51.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-tiane](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane)
