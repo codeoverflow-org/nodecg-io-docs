@@ -5,11 +5,16 @@ There are many ways to contribute to nodecg-io: logging bugs, submitting pull re
 First you'll need a installation of nodecg-io. Please refer to the [installation guide](../getting_started/install.md) but
 instead of using our repository you might want to fork the nodecg-io repository to your GitHub account and clone your fork.
 
+To make changes to the documentation you also need to clone the docs repo:
+```shell
+git clone https://github.com/codeoverflow-org/nodecg-io-docs.git
+```
+
 ## Build
 
-### VsCode
+### VS Code
 
-In `Vscode` you can start the build task with
+In Visual Studio Code you can start the build task with
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS).
 The incremental builder will do an initial full build.  
 The watch builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
@@ -28,6 +33,8 @@ cd path/to/nodecg-io
 npm run build
 ```
 
+To do a full rebuild instead of just a incremental build you can use `npm run rebuild`.
+
 The watch builder can be activated here too:
 
 ```
@@ -35,41 +42,25 @@ cd path/to/nodecg-io
 npm run watch
 ```
 
-## Add nodecg-io directory to the nodecg config:
-
-Modify the nodecg configuration in `path/to/nodecg/cfg/nodecg.json`, here is an example config:
-
-```json
-{
-    "bundles": {
-        "paths": ["path/to/nodecg-io", "path/to/nodecg-io/samples"]
-    }
-}
-```
-
-_Note 1:_ This path should point to the root of this repository, not to a bundle inside this repo.
-
-_Note 2:_ The second path to the samples is only required if you want to use a sample plugin.
-
-_Note 3:_ If nodecg doesn't load nodecg-io for some reason you might want to use an absolute path here.
+_Note:_ Watching all packages requires a lot of RAM. 
+Instead you can watch just the packages you are actively working on e.g. `npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat`.
+This will just spawn a watch process for the twitch-chat sample and service and require way less memory.
 
 ## Run
 
 To test the changes you simply need to start/restart nodecg.
 
-### Automated Testing
+## Adding dependencies to packages
 
-> Nothing yet
+This project uses [lerna](https://lerna.js.org) to manage our monorepo and most importantly link all our packages together.
+Because of linking you should not use `npm install xyz --save` to add dependencies because npm can't get the development version of internal packages like `nodecg-io-core`. Doing so will result in an error and break the link.
+Instead you should edit the `package.json` directly using a text editor and the run `npm run bootstrap` in the repository root.
 
-### Unit Testing
+## Open a Pull Request
 
-> Nothing yet
+Once you have implemented your feature or fixed a bug push it to your fork and start a Pull Request.
 
-## Work Branches
-
-Even if you have push rights on the codeoverflow-org/nodecg-io repository, you should create a personal fork and create feature branches there when you need them. This keeps the main repository clean and your personal workflow cruft out of sight.
-
-## Pull Requests
+## Merge Upstream Changes
 
 Occasionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
 
@@ -79,15 +70,13 @@ git checkout master
 git pull https://github.com/codeoverflow-org/nodecg-io master
 ```
 
-Manage any merge conflicts, commit them, and then push them to your fork. Now you can make a pull request from your folk.
+Manage any merge conflicts, commit them, and then push them to your fork.
+
+You may also occasionally need to merge upstream master in a pull request. To do that make the above to update your local master and the merge your local master into your PR branch.
 
 ### Where to Contribute
 
 After cloning and building the repo, check out the [issues list](https://github.com/codeoverflow-org/nodecg-io/issues). Issues labeled [`help wanted`](https://github.com/codeoverflow-org/nodecg-io/labels/help%20wanted) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/codeoverflow-org/nodecg-io/labels/good%20first%20issue) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
-
-## Packaging
-
-> Maybe in the future
 
 ## Suggestions
 

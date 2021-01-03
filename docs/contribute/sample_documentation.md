@@ -4,4 +4,4 @@ To document a sample bundle take a look at the name of the service the sample bu
 
 Don't forget to add the newly created MarkDown file to `mkdocs.yml`. When you create your documentation pull request, please include the id of your PR in the main repository in the description so the documentation is not merged before the actual code.
 
-You should make this very detailed so everyone gets it to work because a super-good implementation is worth nothing if there's nobody who can use it. Take a look at the [twitch sample bundle](../samples/twitch.md).
+You should make this very detailed so everyone gets it to work because a super-good implementation is worth nothing if there's nobody who can use it. Take a look at the [twitch sample bundle](../samples/twitch-chat.md).
