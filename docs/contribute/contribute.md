@@ -6,6 +6,7 @@ First you'll need a installation of nodecg-io. Please refer to the [installation
 instead of using our repository you might want to fork the nodecg-io repository to your GitHub account and clone your fork.
 
 To make changes to the documentation you also need to clone the docs repo:
+
 ```shell
 git clone https://github.com/codeoverflow-org/nodecg-io-docs.git
 ```
