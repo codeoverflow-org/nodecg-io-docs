@@ -1,6 +1,9 @@
 # Create a sample bundle
 
-Create a folder in `samples` and add a `package.json` and a `tsconfig.json`:
+A sample should have the same name as the service but it may include a short description in the name after the service name aswell.
+E.g. `twitch-chat` or `obs-scenelist`.
+
+Create a folder in `samples` named after the sample and add a `package.json` and a `tsconfig.json`:
 
 ```json
 {
