@@ -8,7 +8,7 @@ Think of what services your bundle needs. Take a look at the [service list](../s
 
 ## Create a package
 
-Your package is a standard NodeCG bundle. See their [website](https://nodecg.com/) for more info. The bundle should be dependent on `nodecg-io-core` and all services it needs. Then you define `module.exports` as a function that takes a NodeCG instance. In that function you initialise your bundle.
+Your package is a standard NodeCG bundle. See their [website](https://nodecg.dev/) for more info. The bundle should be dependent on `nodecg-io-core` and all services it needs. Then you define `module.exports` as a function that takes a NodeCG instance. In that function you initialise your bundle.
 
 ## Adding availability handlers
 
