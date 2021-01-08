@@ -7,8 +7,6 @@
 
 Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^6.12.6 <br>
 Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.0.0 <br>
-Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.0.3 <br>
-Depends on [typescript](https://www.npmjs.com/package/typescript) @ ^4.1.3 <br>
 
 ## [nodecg-io-ahk](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk)
 

@@ -16,8 +16,6 @@ FontStyle Underline
 [<u>nodecg-io-core] as nodecg_io_core <<core>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core]]
 [<u>ajv] as ajv <<lib>> [[https://www.npmjs.com/package/ajv]]
 [<u>crypto-js] as crypto_js <<lib>> [[https://www.npmjs.com/package/crypto-js]]
-[<u>tslib] as tslib <<lib>> [[https://www.npmjs.com/package/tslib]]
-[<u>typescript] as typescript <<lib>> [[https://www.npmjs.com/package/typescript]]
 [<u>nodecg-io-ahk] as nodecg_io_ahk <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk]]
 [<u>node-fetch] as node_fetch <<lib>> [[https://www.npmjs.com/package/node-fetch]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
@@ -81,8 +79,6 @@ FontStyle Underline
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
-nodecg_io_core ...> tslib
-nodecg_io_core ...> typescript
 nodecg_io_ahk --> nodecg_io_core
 nodecg_io_ahk ...> node_fetch
 nodecg_io_discord ...> discord_js
