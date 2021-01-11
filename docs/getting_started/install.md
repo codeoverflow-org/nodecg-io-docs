@@ -27,7 +27,7 @@ npm install -g windows-build-tools
 For Linux you'll need a C++ compiler and some other packages. On Ubuntu/Debian based operating systems run the following command:
 
 ```shell
-sudo apt install build-essentials libusb-1.0-0-dev libasound2-dev libudev-dev
+sudo apt install build-essential libusb-1.0-0-dev libasound2-dev libudev-dev
 ```
 
 For other linux distros you'll need the corresponding packages, just search on the internet how the packages are named for your specific distro.
