@@ -63,6 +63,7 @@ nav:
           - Slack sample: samples/slack.md
           - Spotify sample: samples/spotify.md
           - Streamdeck sample: samples/streamdeck.md
+          - StreamElements sample: samples/streamelements.md
           - Telegram sample: samples/telegram.md
           - TIANE sample: samples/tiane.md
           - Twitch sample: samples/twitch-chat.md
