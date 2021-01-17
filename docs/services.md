@@ -163,7 +163,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Allows to connect to streamelements to e.g. react to donations.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/streamelements.md)
 
 Depends on [@types/socket.io-client](https://www.npmjs.com/package/@types/socket.io-client) @ ^1.4.34 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
