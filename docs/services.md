@@ -67,7 +67,7 @@ Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.1 <br>
 
 **Allows to control your obs instance to e.g. switch scenes.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/obs.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ ^4.0.2 <br>
