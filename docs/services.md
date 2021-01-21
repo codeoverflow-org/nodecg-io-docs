@@ -190,7 +190,7 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 
 ## [nodecg-io-twitch-chat](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat)
 
-**Allows to connect to twitch with your account, send and receive messages and much more. It can be used to create Twitch-Bots.**
+**Allows to connect to the twitch chat with your account, send and receive messages and much more. It can be used to create Twitch-Bots.**
 
 See the [sample implementation](samples/twitch-chat.md)
 
