@@ -18,6 +18,9 @@ FontStyle Underline
 [<u>crypto-js] as crypto_js <<lib>> [[https://www.npmjs.com/package/crypto-js]]
 [<u>nodecg-io-ahk] as nodecg_io_ahk <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk]]
 [<u>node-fetch] as node_fetch <<lib>> [[https://www.npmjs.com/package/node-fetch]]
+[<u>nodecg-io-android] as nodecg_io_android <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android]]
+[<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
+[<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-intellij] as nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij]]
@@ -73,7 +76,6 @@ FontStyle Underline
 [<u>@types/ws] as types_ws <<lib>> [[https://www.npmjs.com/package/@types/ws]]
 [<u>nodecg-io-websocket-server] as nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
-[<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
@@ -81,6 +83,9 @@ nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
 nodecg_io_ahk --> nodecg_io_core
 nodecg_io_ahk ...> node_fetch
+nodecg_io_android --> nodecg_io_core
+nodecg_io_android ...> rauschma_stringio
+nodecg_io_android ...> get_stream
 nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
 nodecg_io_intellij --> nodecg_io_core
