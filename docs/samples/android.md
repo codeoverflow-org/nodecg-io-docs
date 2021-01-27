@@ -16,7 +16,7 @@ The Android example bundle in `samples/android` shows how to connect to an andro
 
 7. Run `adb start-server`
 
-8. Connect your device via USB. You'll be prompted whetehr you want to allow USB debugging. Press `Allow`
+8. Connect your device via USB. You'll be prompted whether you want to allow USB debugging. Press `Allow`
 
 9. Run `adb device -l`. The output might look like this:
 
