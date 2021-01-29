@@ -21,9 +21,9 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 **Allows to connect to an android device via adb.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/android.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ 0.1.0 <br>
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
 Depends on [get-stream](https://www.npmjs.com/package/get-stream) @ 6.0.0 <br>
 
