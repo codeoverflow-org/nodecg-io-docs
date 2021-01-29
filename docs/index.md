@@ -24,6 +24,7 @@ If that's no problem you can head over to the [installation guide](https://nodec
 ## Implemented Services and Interfaces
 
 -   [x] AutoHotkey
+-   [x] Android (using adb)
 -   [x] Discord
 -   [x] IntelliJ IDEs
 -   [x] IRC (Internet Relay Chat)
