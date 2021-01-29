@@ -44,7 +44,9 @@ If that's no problem you can head over to the [installation guide](https://nodec
 -   [x] Telegram
 -   [x] TIANE
 -   [ ] TipeeeStream
+-   [x] Twitch API
 -   [x] Twitch Chat
+-   [x] Twitch PubSub
 -   [x] Twitter
 -   [x] WebSocket Client
 -   [x] WebSocket Server
