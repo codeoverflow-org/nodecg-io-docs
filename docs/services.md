@@ -17,6 +17,16 @@ See the [sample implementation](samples/ahk.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
+## [nodecg-io-android](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android)
+
+**Allows to connect to an android device via adb.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
+Depends on [get-stream](https://www.npmjs.com/package/get-stream) @ 6.0.0 <br>
+
 ## [nodecg-io-discord](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord)
 
 **Allows to connect to discord via a discord-bot.**
