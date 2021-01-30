@@ -154,7 +154,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/spotify.md)
 
-Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^4.0.2 <br>
+Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^5.0.0 <br>
 Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^7.3.0 <br>
