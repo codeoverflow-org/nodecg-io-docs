@@ -30,6 +30,7 @@ FontStyle Underline
 [<u>nodecg-io-midi-input] as nodecg_io_midi_input <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-input]]
 [<u>easymidi] as easymidi <<lib>> [[https://www.npmjs.com/package/easymidi]]
 [<u>nodecg-io-midi-output] as nodecg_io_midi_output <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-output]]
+[<u>nodecg-io-nanoleaf] as nodecg_io_nanoleaf <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-nanoleaf]]
 [<u>nodecg-io-obs] as nodecg_io_obs <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-obs]]
 [<u>obs-websocket-js] as obs_websocket_js <<lib>> [[https://www.npmjs.com/package/obs-websocket-js]]
 [<u>nodecg-io-philipshue] as nodecg_io_philipshue <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-philipshue]]
@@ -98,6 +99,8 @@ nodecg_io_midi_input --> nodecg_io_core
 nodecg_io_midi_input ...> easymidi
 nodecg_io_midi_output --> nodecg_io_core
 nodecg_io_midi_output ...> easymidi
+nodecg_io_nanoleaf --> nodecg_io_core
+nodecg_io_nanoleaf ...> node_fetch
 nodecg_io_obs --> nodecg_io_core
 nodecg_io_obs ...> obs_websocket_js
 nodecg_io_philipshue ...> is_ip
