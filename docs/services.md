@@ -232,7 +232,7 @@ Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client
 
 **Allows access to the Twitch PubSub API.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/twitch-pubsub.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
