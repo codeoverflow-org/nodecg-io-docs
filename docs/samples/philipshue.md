@@ -1,6 +1,6 @@
 ## Using the Philips Hue sample bundle
 
-The Twitch-chat example bundle in `samples/philipshue-lights` demonstrates the ability to connect to the Philips Hue bridge and control philips hue accessories.
+The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates the ability to connect to the Philips Hue bridge and control philips hue accessories.
 
 ### Prerequisites
 
