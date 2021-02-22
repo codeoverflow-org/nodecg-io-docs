@@ -95,7 +95,7 @@ Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ 
 
 **Allows you to connect with your Philips Hue bridge. This allows you to control your lights etc.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/philipshue.md)
 
 Depends on [is-ip](https://www.npmjs.com/package/is-ip) @ ^3.1.0 <br>
 Depends on [node-hue-api](https://www.npmjs.com/package/node-hue-api) @ ^4.0.9 <br>
