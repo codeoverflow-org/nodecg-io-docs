@@ -51,7 +51,7 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 There's no sample implementation for this service yet.
 
-Depends on [@types/irc](https://www.npmjs.com/package/@types/irc) @ ^0.3.33 <br>
+Depends on [@types/irc](https://www.npmjs.com/package/@types/irc) @ ^0.5.0 <br>
 Depends on [irc](https://www.npmjs.com/package/irc) @ ^0.5.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
