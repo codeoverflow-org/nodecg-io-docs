@@ -62,6 +62,7 @@ FontStyle Underline
 [<u>nodecg-io-telegram] as nodecg_io_telegram <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-telegram]]
 [<u>@types/node-telegram-bot-api] as types_node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/@types/node-telegram-bot-api]]
 [<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
+[<u>nodecg-io-template] as nodecg_io_template <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-template]]
 [<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
 [<u>nodecg-io-twitch-api] as nodecg_io_twitch_api <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api]]
@@ -133,6 +134,7 @@ nodecg_io_streamelements ...> socket_io_client
 nodecg_io_telegram ...> types_node_telegram_bot_api
 nodecg_io_telegram ...> node_telegram_bot_api
 nodecg_io_telegram --> nodecg_io_core
+nodecg_io_template --> nodecg_io_core
 nodecg_io_tiane --> nodecg_io_core
 nodecg_io_tiane ...> ws
 nodecg_io_twitch_api --> nodecg_io_core
