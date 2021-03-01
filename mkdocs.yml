@@ -48,6 +48,7 @@ nav:
     - Services:
           - Available services: services.md
           - AHK sample: samples/ahk.md
+          - Android: samples/android.md
           - Discord sample: samples/discord.md
           - IntelliJ sample: samples/intellij.md
           - Midi:
@@ -55,8 +56,9 @@ nav:
                 - Midi-Output sample: samples/midi-output.md
                 - Midi-IO sample: samples/midi-io.md
           - OBS: samples/obs.md
+          - Philips Hue sample: samples/philipshue.md
           - Rcon sample: samples/rcon.md
-          - Reddit Sample: samples/reddit.md
+          - Reddit sample: samples/reddit.md
           - sACN:
                 - sACN Receiver sample: samples/sacn-receiver.md
                 - sACN Sender sample: samples/sacn-sender.md
@@ -67,8 +69,10 @@ nav:
           - StreamElements sample: samples/streamelements.md
           - Telegram sample: samples/telegram.md
           - TIANE sample: samples/tiane.md
-          - Twitch-Addons sample: samples/twitch-addons.md
-          - Twitch-Chat sample: samples/twitch-chat.md
+          - Twitch:
+                - Twitch-api sample: samples/twitch-api.md
+                - Twitch-chat sample: samples/twitch-chat.md
+                - Twitch-pubsub sample: samples/twitch-pubsub.md
           - Twitter sample: samples/twitter.md
           - WebSocket:
                 - Client sample: samples/websocket-client.md
