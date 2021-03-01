@@ -215,6 +215,15 @@ See the [sample implementation](samples/tiane.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 
+## [nodecg-io-twitch-addons](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-addons)
+
+**Support for the API's of BetterTTV and FrankerFaceZ**
+
+See the [sample implementation](samples/twitch-addons.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+
 ## [nodecg-io-twitch-api](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api)
 
 **Allows talking to twitch APIs like helix.**

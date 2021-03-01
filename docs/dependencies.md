@@ -65,6 +65,7 @@ FontStyle Underline
 [<u>nodecg-io-template] as nodecg_io_template <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-template]]
 [<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
+[<u>nodecg-io-twitch-addons] as nodecg_io_twitch_addons <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-addons]]
 [<u>nodecg-io-twitch-api] as nodecg_io_twitch_api <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
 [<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
@@ -137,6 +138,8 @@ nodecg_io_telegram --> nodecg_io_core
 nodecg_io_template --> nodecg_io_core
 nodecg_io_tiane --> nodecg_io_core
 nodecg_io_tiane ...> ws
+nodecg_io_twitch_addons --> nodecg_io_core
+nodecg_io_twitch_addons ...> node_fetch
 nodecg_io_twitch_api --> nodecg_io_core
 nodecg_io_twitch_api ...> twitch
 nodecg_io_twitch_api ...> twitch_auth
