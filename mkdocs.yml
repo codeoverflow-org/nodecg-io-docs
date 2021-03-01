@@ -67,7 +67,8 @@ nav:
           - StreamElements sample: samples/streamelements.md
           - Telegram sample: samples/telegram.md
           - TIANE sample: samples/tiane.md
-          - Twitch-chat sample: samples/twitch-chat.md
+          - Twitch-Addons sample: samples/twitch-addons.md
+          - Twitch-Chat sample: samples/twitch-chat.md
           - Twitter sample: samples/twitter.md
           - WebSocket:
                 - Client sample: samples/websocket-client.md

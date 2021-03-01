@@ -18,6 +18,9 @@ FontStyle Underline
 [<u>crypto-js] as crypto_js <<lib>> [[https://www.npmjs.com/package/crypto-js]]
 [<u>nodecg-io-ahk] as nodecg_io_ahk <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk]]
 [<u>node-fetch] as node_fetch <<lib>> [[https://www.npmjs.com/package/node-fetch]]
+[<u>nodecg-io-android] as nodecg_io_android <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android]]
+[<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
+[<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-intellij] as nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij]]
@@ -27,6 +30,7 @@ FontStyle Underline
 [<u>nodecg-io-midi-input] as nodecg_io_midi_input <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-input]]
 [<u>easymidi] as easymidi <<lib>> [[https://www.npmjs.com/package/easymidi]]
 [<u>nodecg-io-midi-output] as nodecg_io_midi_output <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-output]]
+[<u>nodecg-io-nanoleaf] as nodecg_io_nanoleaf <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-nanoleaf]]
 [<u>nodecg-io-obs] as nodecg_io_obs <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-obs]]
 [<u>obs-websocket-js] as obs_websocket_js <<lib>> [[https://www.npmjs.com/package/obs-websocket-js]]
 [<u>nodecg-io-philipshue] as nodecg_io_philipshue <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-philipshue]]
@@ -58,11 +62,14 @@ FontStyle Underline
 [<u>nodecg-io-telegram] as nodecg_io_telegram <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-telegram]]
 [<u>@types/node-telegram-bot-api] as types_node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/@types/node-telegram-bot-api]]
 [<u>node-telegram-bot-api] as node_telegram_bot_api <<lib>> [[https://www.npmjs.com/package/node-telegram-bot-api]]
+[<u>nodecg-io-template] as nodecg_io_template <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-template]]
 [<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
-[<u>nodecg-io-twitch-chat] as nodecg_io_twitch_chat <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat]]
+[<u>nodecg-io-twitch-addons] as nodecg_io_twitch_addons <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-addons]]
+[<u>nodecg-io-twitch-api] as nodecg_io_twitch_api <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
 [<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
+[<u>nodecg-io-twitch-chat] as nodecg_io_twitch_chat <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
 [<u>nodecg-io-twitch-pubsub] as nodecg_io_twitch_pubsub <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub]]
 [<u>twitch-pubsub-client] as twitch_pubsub_client <<lib>> [[https://www.npmjs.com/package/twitch-pubsub-client]]
@@ -73,7 +80,6 @@ FontStyle Underline
 [<u>@types/ws] as types_ws <<lib>> [[https://www.npmjs.com/package/@types/ws]]
 [<u>nodecg-io-websocket-server] as nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
-[<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
@@ -81,6 +87,9 @@ nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
 nodecg_io_ahk --> nodecg_io_core
 nodecg_io_ahk ...> node_fetch
+nodecg_io_android --> nodecg_io_core
+nodecg_io_android ...> rauschma_stringio
+nodecg_io_android ...> get_stream
 nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
 nodecg_io_intellij --> nodecg_io_core
@@ -92,6 +101,8 @@ nodecg_io_midi_input --> nodecg_io_core
 nodecg_io_midi_input ...> easymidi
 nodecg_io_midi_output --> nodecg_io_core
 nodecg_io_midi_output ...> easymidi
+nodecg_io_nanoleaf --> nodecg_io_core
+nodecg_io_nanoleaf ...> node_fetch
 nodecg_io_obs --> nodecg_io_core
 nodecg_io_obs ...> obs_websocket_js
 nodecg_io_philipshue ...> is_ip
@@ -124,8 +135,14 @@ nodecg_io_streamelements ...> socket_io_client
 nodecg_io_telegram ...> types_node_telegram_bot_api
 nodecg_io_telegram ...> node_telegram_bot_api
 nodecg_io_telegram --> nodecg_io_core
+nodecg_io_template --> nodecg_io_core
 nodecg_io_tiane --> nodecg_io_core
 nodecg_io_tiane ...> ws
+nodecg_io_twitch_addons --> nodecg_io_core
+nodecg_io_twitch_addons ...> node_fetch
+nodecg_io_twitch_api --> nodecg_io_core
+nodecg_io_twitch_api ...> twitch
+nodecg_io_twitch_api ...> twitch_auth
 nodecg_io_twitch_chat --> nodecg_io_core
 nodecg_io_twitch_chat ...> twitch
 nodecg_io_twitch_chat ...> twitch_auth

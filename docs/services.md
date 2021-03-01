@@ -17,6 +17,16 @@ See the [sample implementation](samples/ahk.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
+## [nodecg-io-android](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android)
+
+**Allows to connect to an android device via adb.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
+Depends on [get-stream](https://www.npmjs.com/package/get-stream) @ 6.0.0 <br>
+
 ## [nodecg-io-discord](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord)
 
 **Allows to connect to discord via a discord-bot.**
@@ -41,7 +51,7 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 There's no sample implementation for this service yet.
 
-Depends on [@types/irc](https://www.npmjs.com/package/@types/irc) @ ^0.3.33 <br>
+Depends on [@types/irc](https://www.npmjs.com/package/@types/irc) @ ^0.5.0 <br>
 Depends on [irc](https://www.npmjs.com/package/irc) @ ^0.5.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
@@ -62,6 +72,15 @@ See the [sample implementation](samples/midi-output.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.1 <br>
+
+## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-nanoleaf)
+
+**Allows to connect to a nanoleaf controller and trigger custom lighting effects.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 ## [nodecg-io-obs](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-obs)
 
@@ -144,7 +163,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/spotify.md)
 
-Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^4.0.2 <br>
+Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^5.0.0 <br>
 Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^7.3.0 <br>
@@ -179,6 +198,14 @@ Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/n
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.51.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
+## [nodecg-io-template](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-template)
+
+**Template package.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+
 ## [nodecg-io-tiane](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane)
 
 **Connect to TIANE and make her for example a discord bot. https://github.com/FerdiKr/TIANE**
@@ -188,6 +215,25 @@ See the [sample implementation](samples/tiane.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 
+## [nodecg-io-twitch-addons](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-addons)
+
+**Support for the API's of BetterTTV and FrankerFaceZ**
+
+See the [sample implementation](samples/twitch-addons.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+
+## [nodecg-io-twitch-api](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api)
+
+**Allows talking to twitch APIs like helix.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
+Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br>
+
 ## [nodecg-io-twitch-chat](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat)
 
 **Allows to connect to the twitch chat with your account, send and receive messages and much more. It can be used to create Twitch-Bots.**
@@ -195,9 +241,9 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 See the [sample implementation](samples/twitch-chat.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.3.6 <br>
-Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.3.6 <br>
-Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.3.6 <br>
+Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
+Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br>
+Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.4.7 <br>
 
 ## [nodecg-io-twitch-pubsub](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub)
 
@@ -206,8 +252,8 @@ Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client
 There's no sample implementation for this service yet.
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.3.6 <br>
-Depends on [twitch-pubsub-client](https://www.npmjs.com/package/twitch-pubsub-client) @ ^4.3.6 <br>
+Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
+Depends on [twitch-pubsub-client](https://www.npmjs.com/package/twitch-pubsub-client) @ ^4.4.7 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter)
 
