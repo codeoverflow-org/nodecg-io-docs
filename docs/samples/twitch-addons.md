@@ -1,6 +1,6 @@
-## Using the Twitch-Adons sample bundle
+## Using the Twitch-Addons sample bundle
 
-The Twitch-Addons example bundle in `samples/twitch-chat` demonstrates the ability to send requests to the APIs of [BetterTTV](https://betterttv.com/), and [FrankerFaceZ](https://www.frankerfacez.com/).
+The Twitch-Addons example bundle in `samples/twitch-addons` demonstrates the ability to send requests to the APIs of [BetterTTV](https://betterttv.com/), and [FrankerFaceZ](https://www.frankerfacez.com/).
 
 ### Prerequisites
 
