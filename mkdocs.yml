@@ -70,9 +70,10 @@ nav:
           - Telegram sample: samples/telegram.md
           - TIANE sample: samples/tiane.md
           - Twitch:
-                - Twitch-api sample: samples/twitch-api.md
-                - Twitch-chat sample: samples/twitch-chat.md
-                - Twitch-pubsub sample: samples/twitch-pubsub.md
+                - Twitch-Addons sample: samples/twitch-addons.md
+                - Twitch-Api sample: samples/twitch-api.md
+                - Twitch-Chat sample: samples/twitch-chat.md
+                - Twitch-Pubsub sample: samples/twitch-pubsub.md
           - Twitter sample: samples/twitter.md
           - WebSocket:
                 - Client sample: samples/websocket-client.md
