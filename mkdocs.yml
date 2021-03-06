@@ -46,8 +46,9 @@ nav:
           - Document a sample: contribute/sample_documentation.md
           - Contributors: contribute/contributors.md
     - Services:
-          - Available services: services.md
+        - Available services: services.md
           - AHK sample: samples/ahk.md
+          - Curseforge sample: samples/curseforge.md
           - Discord sample: samples/discord.md
           - IntelliJ sample: samples/intellij.md
           - Midi:
