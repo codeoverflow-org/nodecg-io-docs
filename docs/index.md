@@ -24,11 +24,14 @@ If that's no problem you can head over to the [installation guide](https://nodec
 ## Implemented Services and Interfaces
 
 -   [x] AutoHotkey
+-   [x] Android (using adb)
+-   [x] CurseForge
 -   [x] Discord
 -   [x] IntelliJ IDEs
 -   [x] IRC (Internet Relay Chat)
 -   [x] MIDI Input
 -   [x] MIDI Output
+-   [x] Nanoleafs
 -   [x] OBS
 -   [x] Philips Hue
 -   [x] RCON
@@ -43,7 +46,10 @@ If that's no problem you can head over to the [installation guide](https://nodec
 -   [x] Telegram
 -   [x] TIANE
 -   [ ] TipeeeStream
+-   [x] Twitch Addons
+-   [x] Twitch API
 -   [x] Twitch Chat
+-   [x] Twitch PubSub
 -   [x] Twitter
 -   [x] WebSocket Client
 -   [x] WebSocket Server
