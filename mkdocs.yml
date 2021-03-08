@@ -46,7 +46,7 @@ nav:
           - Document a sample: contribute/sample_documentation.md
           - Contributors: contribute/contributors.md
     - Services:
-        - Available services: services.md
+          - Available services: services.md
           - AHK sample: samples/ahk.md
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
