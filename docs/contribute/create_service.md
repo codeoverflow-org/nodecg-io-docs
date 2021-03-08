@@ -85,9 +85,7 @@ Create a file called `index.ts` in a folder called `extension` inside your servi
 // TODO: Rename all occurences of "your-service-name" with only lowercase and hyphens ( - )
 
 import { NodeCG } from "nodecg/types/server";
-import { emptySuccess, success, error, Result } from "nodecg-io-core/extension/utils/result";
-import { ServiceBundle } from "nodecg-io-core/extension/serviceBundle";
-import { ServiceClient } from "nodecg-io-core/extension/types";
+import { Result, emptySuccess, success, ServiceBundle, ServiceClient } from "nodecg-io-core";
 // TODO: Replace the "fake" service class with that found on npm etc.
 import { ServiceClass } from "./";
 

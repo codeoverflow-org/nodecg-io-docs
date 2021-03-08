@@ -6,7 +6,7 @@
 
 <!-- Do not set the 'Services implemented' value manually. It's inserted automatically. -->
 
-[![Sevices](https://img.shields.io/static/v1?label=Services%20implemented&message=26&color=blue&style=flat-square)](services.md)
+[![Sevices](https://img.shields.io/static/v1?label=Services%20implemented&message=32&color=blue&style=flat-square)](services.md)
 [![License](https://img.shields.io/github/license/codeoverflow-org/nodecg-io?label=License&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/blob/master/LICENSE)
 [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&style=flat-square)](https://discord.gg/sX2Gjbs/)
 
@@ -24,11 +24,14 @@ If that's no problem you can head over to the [installation guide](https://nodec
 ## Implemented Services and Interfaces
 
 -   [x] AutoHotkey
+-   [x] Android (using adb)
+-   [x] CurseForge
 -   [x] Discord
 -   [x] IntelliJ IDEs
 -   [x] IRC (Internet Relay Chat)
 -   [x] MIDI Input
 -   [x] MIDI Output
+-   [x] Nanoleafs
 -   [x] OBS
 -   [x] Philips Hue
 -   [x] RCON
@@ -43,7 +46,10 @@ If that's no problem you can head over to the [installation guide](https://nodec
 -   [x] Telegram
 -   [x] TIANE
 -   [ ] TipeeeStream
+-   [x] Twitch Addons
+-   [x] Twitch API
 -   [x] Twitch Chat
+-   [x] Twitch PubSub
 -   [x] Twitter
 -   [x] WebSocket Client
 -   [x] WebSocket Server

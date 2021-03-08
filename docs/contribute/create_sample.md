@@ -42,7 +42,7 @@ Now you can create file called `extension/index.ts`. Here's a template. Make sur
 
 ```typescript
 import { NodeCG } from "nodecg/types/server";
-import { requireService } from "nodecg-io-core/extension/serviceClientWrapper";
+import { requireService } from "nodecg-io-core";
 import { TheServicesExportedClient } from "nodecg-io-<the services name>";
 
 module.exports = function (nodecg: NodeCG) {
