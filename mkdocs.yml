@@ -13,7 +13,8 @@ theme:
     font: false
     features:
         - tabs
-    favicon: https://avatars.githubusercontent.com/codeoverflow-org
+    logo: assets/logo.png
+    favicon: assets/logo.png
 
 docs_dir: docs
 site_dir: build
