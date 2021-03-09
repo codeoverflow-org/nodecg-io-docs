@@ -66,9 +66,9 @@ FontStyle Underline
 [<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
 [<u>nodecg-io-twitch-addons] as nodecg_io_twitch_addons <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-addons]]
+[<u>nodecg-io-twitch-auth] as nodecg_io_twitch_auth <<lib>> [[https://www.npmjs.com/package/nodecg-io-twitch-auth]]
 [<u>nodecg-io-twitch-api] as nodecg_io_twitch_api <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
-[<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
 [<u>nodecg-io-twitch-chat] as nodecg_io_twitch_chat <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
 [<u>nodecg-io-twitch-pubsub] as nodecg_io_twitch_pubsub <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub]]
@@ -140,16 +140,17 @@ nodecg_io_tiane --> nodecg_io_core
 nodecg_io_tiane ...> ws
 nodecg_io_twitch_addons --> nodecg_io_core
 nodecg_io_twitch_addons ...> node_fetch
+nodecg_io_twitch_addons ...> nodecg_io_twitch_auth
 nodecg_io_twitch_api --> nodecg_io_core
 nodecg_io_twitch_api ...> twitch
-nodecg_io_twitch_api ...> twitch_auth
+nodecg_io_twitch_api ...> nodecg_io_twitch_auth
 nodecg_io_twitch_chat --> nodecg_io_core
-nodecg_io_twitch_chat ...> twitch
-nodecg_io_twitch_chat ...> twitch_auth
 nodecg_io_twitch_chat ...> twitch_chat_client
+nodecg_io_twitch_chat ...> nodecg_io_twitch_auth
 nodecg_io_twitch_pubsub --> nodecg_io_core
 nodecg_io_twitch_pubsub ...> twitch
 nodecg_io_twitch_pubsub ...> twitch_pubsub_client
+nodecg_io_twitch_pubsub ...> nodecg_io_twitch_auth
 nodecg_io_twitter ...> types_twitter
 nodecg_io_twitter --> nodecg_io_core
 nodecg_io_twitter ...> twitter
