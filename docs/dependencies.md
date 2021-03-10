@@ -21,6 +21,7 @@ FontStyle Underline
 [<u>nodecg-io-android] as nodecg_io_android <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
+[<u>nodecg-io-curseforge] as nodecg_io_curseforge <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-intellij] as nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij]]
@@ -90,6 +91,8 @@ nodecg_io_ahk ...> node_fetch
 nodecg_io_android --> nodecg_io_core
 nodecg_io_android ...> rauschma_stringio
 nodecg_io_android ...> get_stream
+nodecg_io_curseforge --> nodecg_io_core
+nodecg_io_curseforge ...> node_fetch
 nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
 nodecg_io_intellij --> nodecg_io_core
