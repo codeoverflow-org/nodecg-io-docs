@@ -49,6 +49,7 @@ nav:
     - Services:
           - Available services: services.md
           - AHK sample: samples/ahk.md
+          - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
           - Discord sample: samples/discord.md
           - IntelliJ sample: samples/intellij.md
