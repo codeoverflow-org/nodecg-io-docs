@@ -232,6 +232,7 @@ See the [sample implementation](samples/twitch-addons.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
 
 ## [nodecg-io-twitch-api](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api)
 
@@ -241,7 +242,7 @@ See the [sample implementation](samples/twitch-api.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
-Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
 
 ## [nodecg-io-twitch-chat](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat)
 
@@ -250,9 +251,8 @@ Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br
 See the [sample implementation](samples/twitch-chat.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
-Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br>
 Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.4.7 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
 
 ## [nodecg-io-twitch-pubsub](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub)
 
@@ -263,6 +263,7 @@ See the [sample implementation](samples/twitch-pubsub.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
 Depends on [twitch-pubsub-client](https://www.npmjs.com/package/twitch-pubsub-client) @ ^4.4.7 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter)
 
