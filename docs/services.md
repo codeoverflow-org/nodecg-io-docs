@@ -58,7 +58,7 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 **Allow to connect to IRC Servers.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/irc.md)
 
 Depends on [@types/irc](https://www.npmjs.com/package/@types/irc) @ ^0.5.0 <br>
 Depends on [irc](https://www.npmjs.com/package/irc) @ ^0.5.2 <br>
