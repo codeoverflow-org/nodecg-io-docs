@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       
       - name: Setup Python 3.8
         uses: actions/setup-python@v2
@@ -25,8 +27,8 @@ jobs:
 
       - name: Configure git user
         run: |
-          git config --global user.name "BetonQuest-Bot"
-          git config --global user.email "contact@betonquest.org"
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.${GITHUB_DOMAIN:-github.com}"
 
       - name: Deploy dev docs
         if: github.ref == 'refs/heads/master'
