@@ -88,6 +88,8 @@ extra_css:
     - stylesheets\fonts.css
 
 extra:
+    version:
+      provider: mike
     social:
         - icon: fontawesome/brands/discord
           link: https://discord.gg/sX2Gjbs
