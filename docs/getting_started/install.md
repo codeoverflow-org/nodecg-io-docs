@@ -44,9 +44,12 @@ xcode-select --install
 
 ```shell
 git clone https://github.com/codeoverflow-org/nodecg-io.git
+git checkout release/0.1
 ```
 
 _Note:_ You should clone nodecg-io to somewhere outside of your nodecg bundles/ directory as this repo contains many bundles in subdirectories and nodecg doesn't support nesting of the bundles in other directories. You can clone it to any other path that you wish.
+
+_Note:_ If you want to use the current dev version don't execute the latter of the two commands above.
 
 ## Install all of the dependencies using `npm`
 
