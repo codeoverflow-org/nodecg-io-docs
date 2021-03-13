@@ -1,19 +1,42 @@
 name: Publish docs via GitHub Pages
 on:
-    push:
-        branches:
-            - master
+  push:
+    branches:
+      - master
+      - release/**
 
 jobs:
-    build:
-        name: Deploy docs
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout master
-              uses: actions/checkout@v1
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v1
+      
+      - name: Setup Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-            - name: Deploy docs
-              uses: mhausenblas/mkdocs-deploy-gh-pages@master
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  CUSTOM_DOMAIN: nodecg.io
+      - name: Configure git user
+        run: |
+          git config --global user.name "BetonQuest-Bot"
+          git config --global user.email "contact@betonquest.org"
+
+      - name: Deploy dev docs
+        if: github.ref == 'refs/heads/master'
+        run: mike deploy --push --update-aliases DEV
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy release docs
+        if: github.ref != 'refs/heads/master'
+        run: mike deploy --push --update-aliases ${GITHUB_REF##*/} RELEASE
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
