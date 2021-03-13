@@ -1,5 +1,3 @@
-# To build the documentation use `build.py`
-
 site_name: nodecg-io Documentation
 site_author: codeoverflow.org
 site_url: https://nodecg.io/
@@ -53,6 +51,7 @@ nav:
           - Android: samples/android.md
           - Discord sample: samples/discord.md
           - IntelliJ sample: samples/intellij.md
+          - IRC: samples/irc.md
           - Midi:
                 - Midi-Input sample: samples/midi-input.md
                 - Midi-Output sample: samples/midi-output.md
