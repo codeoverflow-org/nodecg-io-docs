@@ -5,7 +5,7 @@
 
 **The core of nodecg-io. Connects everything up.**
 
-Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^6.12.6 <br>
+Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^7.2.1 <br>
 Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.0.0 <br>
 
 ## [nodecg-io-ahk](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk)
@@ -14,8 +14,8 @@ Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.0.0 <br>
 
 See the [sample implementation](samples/ahk.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-android](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android)
 
@@ -23,9 +23,18 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 
 See the [sample implementation](samples/android.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
-Depends on [get-stream](https://www.npmjs.com/package/get-stream) @ 6.0.0 <br>
+Depends on [get-stream](https://www.npmjs.com/package/get-stream) @ ^6.0.0 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+
+## [nodecg-io-curseforge](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge)
+
+**A service to communicate with the CurseForge API.**
+
+See the [sample implementation](samples/curseforge.md)
+
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-discord](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord)
 
@@ -42,8 +51,8 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/intellij.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-irc](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-irc)
 
@@ -61,8 +70,8 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/midi-input.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-midi-output](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-output)
 
@@ -70,8 +79,8 @@ Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.1 <br>
 
 See the [sample implementation](samples/midi-output.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-nanoleaf)
 
@@ -79,8 +88,8 @@ Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.0.1 <br>
 
 There's no sample implementation for this service yet.
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-obs](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-obs)
 
@@ -143,10 +152,10 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^3.2.1 <br>
 
 See the [sample implementation](samples/serial.md)
 
+Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^9.0.7 <br>
 Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.1 <br>
-Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^9.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.0.3 <br>
+Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.0.7 <br>
 
 ## [nodecg-io-slack](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack)
 
@@ -154,7 +163,7 @@ Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.0.3 <br>
 
 See the [sample implementation](samples/slack.md)
 
-Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^5.14.0 <br>
+Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.1.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-spotify](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify)
@@ -163,11 +172,11 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/spotify.md)
 
-Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^5.0.0 <br>
+Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^5.0.1 <br>
 Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [open](https://www.npmjs.com/package/open) @ ^7.3.0 <br>
-Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node) @ ^5.0.0 <br>
+Depends on [open](https://www.npmjs.com/package/open) @ ^8.0.2 <br>
+Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node) @ ^5.0.2 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck)
 
@@ -175,7 +184,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 See the [sample implementation](samples/streamdeck.md)
 
-Depends on [elgato-stream-deck](https://www.npmjs.com/package/elgato-stream-deck) @ ^3.3.5 <br>
+Depends on [elgato-stream-deck](https://www.npmjs.com/package/elgato-stream-deck) @ ^4.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-streamelements](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamelements)
@@ -184,7 +193,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/streamelements.md)
 
-Depends on [@types/socket.io-client](https://www.npmjs.com/package/@types/socket.io-client) @ ^1.4.34 <br>
+Depends on [@types/socket.io-client](https://www.npmjs.com/package/@types/socket.io-client) @ ^1.4.35 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ ^2.3.1 <br>
 
@@ -194,7 +203,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.51.0 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.51.1 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.51.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
@@ -213,7 +222,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/tiane.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.4 <br>
 
 ## [nodecg-io-twitch-addons](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-addons)
 
@@ -221,8 +230,9 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 
 See the [sample implementation](samples/twitch-addons.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
 
 ## [nodecg-io-twitch-api](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api)
 
@@ -231,8 +241,8 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 See the [sample implementation](samples/twitch-api.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
-Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
+Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.5.0 <br>
 
 ## [nodecg-io-twitch-chat](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat)
 
@@ -241,9 +251,8 @@ Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br
 See the [sample implementation](samples/twitch-chat.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
-Depends on [twitch-auth](https://www.npmjs.com/package/twitch-auth) @ ^4.4.7 <br>
-Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.4.7 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
+Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client) @ ^4.5.0 <br>
 
 ## [nodecg-io-twitch-pubsub](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub)
 
@@ -252,8 +261,9 @@ Depends on [twitch-chat-client](https://www.npmjs.com/package/twitch-chat-client
 See the [sample implementation](samples/twitch-pubsub.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.4.7 <br>
-Depends on [twitch-pubsub-client](https://www.npmjs.com/package/twitch-pubsub-client) @ ^4.4.7 <br>
+Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.1.0 <br>
+Depends on [twitch](https://www.npmjs.com/package/twitch) @ ^4.5.0 <br>
+Depends on [twitch-pubsub-client](https://www.npmjs.com/package/twitch-pubsub-client) @ ^4.5.0 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitter)
 
@@ -273,7 +283,7 @@ See the [sample implementation](samples/websocket-client.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.4.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.4 <br>
 
 ## [nodecg-io-websocket-server](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server)
 
@@ -283,7 +293,7 @@ See the [sample implementation](samples/websocket-server.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^7.4.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.4 <br>
 
 ## [nodecg-io-xdotool](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool)
 
@@ -291,9 +301,9 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^7.4.1 <br>
 
 See the [sample implementation](samples/xdotool.md)
 
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
 
 ## [nodecg-io-youtube](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube)
 
@@ -301,9 +311,9 @@ Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio
 
 See the [sample implementation](samples/youtube.md)
 
-Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ 0.0.39 <br>
+Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.39 <br>
 Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^66.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^67.1.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.1.0 <br>
-Depends on [open](https://www.npmjs.com/package/open) @ ^7.3.0 <br>
+Depends on [open](https://www.npmjs.com/package/open) @ ^8.0.2 <br>
 
