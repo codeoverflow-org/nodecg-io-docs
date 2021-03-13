@@ -21,7 +21,6 @@ FontStyle Underline
 [<u>nodecg-io-android] as nodecg_io_android <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
-[<u>nodecg-io-curseforge] as nodecg_io_curseforge <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-intellij] as nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij]]
@@ -45,8 +44,8 @@ FontStyle Underline
 [<u>sacn] as sacn <<lib>> [[https://www.npmjs.com/package/sacn]]
 [<u>nodecg-io-sacn-sender] as nodecg_io_sacn_sender <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sacn-sender]]
 [<u>nodecg-io-serial] as nodecg_io_serial <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-serial]]
-[<u>@serialport/parser-readline] as serialport_parser_readline <<lib>> [[https://www.npmjs.com/package/@serialport/parser-readline]]
 [<u>@types/serialport] as types_serialport <<lib>> [[https://www.npmjs.com/package/@types/serialport]]
+[<u>@serialport/parser-readline] as serialport_parser_readline <<lib>> [[https://www.npmjs.com/package/@serialport/parser-readline]]
 [<u>serialport] as serialport <<lib>> [[https://www.npmjs.com/package/serialport]]
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
@@ -67,9 +66,9 @@ FontStyle Underline
 [<u>nodecg-io-tiane] as nodecg_io_tiane <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-tiane]]
 [<u>ws] as ws <<lib>> [[https://www.npmjs.com/package/ws]]
 [<u>nodecg-io-twitch-addons] as nodecg_io_twitch_addons <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-addons]]
-[<u>nodecg-io-twitch-auth] as nodecg_io_twitch_auth <<lib>> [[https://www.npmjs.com/package/nodecg-io-twitch-auth]]
 [<u>nodecg-io-twitch-api] as nodecg_io_twitch_api <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-api]]
 [<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
+[<u>twitch-auth] as twitch_auth <<lib>> [[https://www.npmjs.com/package/twitch-auth]]
 [<u>nodecg-io-twitch-chat] as nodecg_io_twitch_chat <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-chat]]
 [<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
 [<u>nodecg-io-twitch-pubsub] as nodecg_io_twitch_pubsub <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-twitch-pubsub]]
@@ -86,26 +85,24 @@ FontStyle Underline
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
-nodecg_io_ahk ...> node_fetch
 nodecg_io_ahk --> nodecg_io_core
+nodecg_io_ahk ...> node_fetch
+nodecg_io_android --> nodecg_io_core
 nodecg_io_android ...> rauschma_stringio
 nodecg_io_android ...> get_stream
-nodecg_io_android --> nodecg_io_core
-nodecg_io_curseforge ...> node_fetch
-nodecg_io_curseforge --> nodecg_io_core
 nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
-nodecg_io_intellij ...> node_fetch
 nodecg_io_intellij --> nodecg_io_core
+nodecg_io_intellij ...> node_fetch
 nodecg_io_irc ...> types_irc
 nodecg_io_irc ...> irc
 nodecg_io_irc --> nodecg_io_core
-nodecg_io_midi_input ...> easymidi
 nodecg_io_midi_input --> nodecg_io_core
-nodecg_io_midi_output ...> easymidi
+nodecg_io_midi_input ...> easymidi
 nodecg_io_midi_output --> nodecg_io_core
-nodecg_io_nanoleaf ...> node_fetch
+nodecg_io_midi_output ...> easymidi
 nodecg_io_nanoleaf --> nodecg_io_core
+nodecg_io_nanoleaf ...> node_fetch
 nodecg_io_obs --> nodecg_io_core
 nodecg_io_obs ...> obs_websocket_js
 nodecg_io_philipshue ...> is_ip
@@ -119,8 +116,8 @@ nodecg_io_sacn_receiver --> nodecg_io_core
 nodecg_io_sacn_receiver ...> sacn
 nodecg_io_sacn_sender --> nodecg_io_core
 nodecg_io_sacn_sender ...> sacn
-nodecg_io_serial ...> serialport_parser_readline
 nodecg_io_serial ...> types_serialport
+nodecg_io_serial ...> serialport_parser_readline
 nodecg_io_serial --> nodecg_io_core
 nodecg_io_serial ...> serialport
 nodecg_io_slack ...> slack_web_api
@@ -141,17 +138,16 @@ nodecg_io_telegram --> nodecg_io_core
 nodecg_io_template --> nodecg_io_core
 nodecg_io_tiane --> nodecg_io_core
 nodecg_io_tiane ...> ws
-nodecg_io_twitch_addons ...> node_fetch
 nodecg_io_twitch_addons --> nodecg_io_core
-nodecg_io_twitch_addons ...> nodecg_io_twitch_auth
+nodecg_io_twitch_addons ...> node_fetch
 nodecg_io_twitch_api --> nodecg_io_core
-nodecg_io_twitch_api ...> nodecg_io_twitch_auth
 nodecg_io_twitch_api ...> twitch
+nodecg_io_twitch_api ...> twitch_auth
 nodecg_io_twitch_chat --> nodecg_io_core
-nodecg_io_twitch_chat ...> nodecg_io_twitch_auth
+nodecg_io_twitch_chat ...> twitch
+nodecg_io_twitch_chat ...> twitch_auth
 nodecg_io_twitch_chat ...> twitch_chat_client
 nodecg_io_twitch_pubsub --> nodecg_io_core
-nodecg_io_twitch_pubsub ...> nodecg_io_twitch_auth
 nodecg_io_twitch_pubsub ...> twitch
 nodecg_io_twitch_pubsub ...> twitch_pubsub_client
 nodecg_io_twitter ...> types_twitter
@@ -163,9 +159,9 @@ nodecg_io_websocket_client ...> ws
 nodecg_io_websocket_server ...> types_ws
 nodecg_io_websocket_server --> nodecg_io_core
 nodecg_io_websocket_server ...> ws
-nodecg_io_xdotool ...> rauschma_stringio
-nodecg_io_xdotool ...> node_fetch
 nodecg_io_xdotool --> nodecg_io_core
+nodecg_io_xdotool ...> node_fetch
+nodecg_io_xdotool ...> rauschma_stringio
 nodecg_io_youtube ...> types_gapi
 nodecg_io_youtube ...> express
 nodecg_io_youtube ...> googleapis
