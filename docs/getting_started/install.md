@@ -44,6 +44,7 @@ xcode-select --install
 
 ```shell
 git clone https://github.com/codeoverflow-org/nodecg-io.git
+cd nodecg-io
 git checkout release/0.1
 ```
 
