@@ -19,7 +19,7 @@ nodecg-io is the successor of [ChatOverflow](https://github.com/codeoverflow-org
 ## How to use nodecg-io
 
 If you want to use nodecg-io, you should note that it is only a framework for your bundle, so you need at least a basic knowledge of the programming language JavaScript or any other language that compiles to JavaScript like TypeScript.
-If that's no problem you can head over to the [installation guide](https://nodecg.io/getting_started/install/) and take a look at the [available nodecg-io services](https://nodecg.io/services/).
+If that's no problem you can head over to the [installation guide](./getting_started/install/) and take a look at the [available nodecg-io services](./services/).
 
 ## Implemented Services and Interfaces
 
@@ -58,4 +58,4 @@ If that's no problem you can head over to the [installation guide](https://nodec
 
 ## How to contribute
 
-If you want to contribute to this bundle you can implement one of those services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing head over to the [How to contribute](https://nodecg.io/contribute/contribute/) - Guide.
+If you want to contribute to this bundle you can implement one of those services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing head over to the [How to contribute](./contribute/contribute/) - Guide.
