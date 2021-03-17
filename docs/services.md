@@ -45,6 +45,18 @@ See the [sample implementation](samples/discord.md)
 Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^12.5.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-gsheets](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-gsheets)
+
+**Allow to control Google Sheets.**
+
+There's no sample implementation for this service yet.
+
+Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.39 <br>
+Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^67.1.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [open](https://www.npmjs.com/package/open) @ ^8.0.2 <br>
+
 ## [nodecg-io-intellij](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij)
 
 **Allows to control JetBrains IDEs via nodecg-io**

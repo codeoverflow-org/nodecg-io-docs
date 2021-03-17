@@ -24,6 +24,11 @@ FontStyle Underline
 [<u>nodecg-io-curseforge] as nodecg_io_curseforge <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
+[<u>nodecg-io-gsheets] as nodecg_io_gsheets <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-gsheets]]
+[<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
+[<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
+[<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
+[<u>open] as open <<lib>> [[https://www.npmjs.com/package/open]]
 [<u>nodecg-io-intellij] as nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-intellij]]
 [<u>nodecg-io-irc] as nodecg_io_irc <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-irc]]
 [<u>@types/irc] as types_irc <<lib>> [[https://www.npmjs.com/package/@types/irc]]
@@ -52,8 +57,6 @@ FontStyle Underline
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
 [<u>@types/spotify-web-api-node] as types_spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/@types/spotify-web-api-node]]
-[<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
-[<u>open] as open <<lib>> [[https://www.npmjs.com/package/open]]
 [<u>spotify-web-api-node] as spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/spotify-web-api-node]]
 [<u>nodecg-io-streamdeck] as nodecg_io_streamdeck <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck]]
 [<u>elgato-stream-deck] as elgato_stream_deck <<lib>> [[https://www.npmjs.com/package/elgato-stream-deck]]
@@ -82,8 +85,6 @@ FontStyle Underline
 [<u>nodecg-io-websocket-server] as nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
 [<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
-[<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
-[<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
 nodecg_io_ahk ...> node_fetch
@@ -95,6 +96,11 @@ nodecg_io_curseforge ...> node_fetch
 nodecg_io_curseforge --> nodecg_io_core
 nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
+nodecg_io_gsheets ...> types_gapi
+nodecg_io_gsheets ...> express
+nodecg_io_gsheets ...> googleapis
+nodecg_io_gsheets --> nodecg_io_core
+nodecg_io_gsheets ...> open
 nodecg_io_intellij ...> node_fetch
 nodecg_io_intellij --> nodecg_io_core
 nodecg_io_irc ...> types_irc
