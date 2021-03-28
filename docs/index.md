@@ -6,7 +6,7 @@
 [![Bugs](https://img.shields.io/github/issues/codeoverflow-org/nodecg-io/bug?label=Bugs&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/labels/bug)
 [![Pull Requests](https://img.shields.io/github/issues-pr/codeoverflow-org/nodecg-io?label=Pull%20Requests&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/pulls)
 <!-- Do not set the 'Services implemented' value manually. It's inserted automatically. -->
-[![Sevices](https://img.shields.io/static/v1?label=Services%20implemented&message=33&color=blue&style=flat-square)](services.md)
+[![Sevices](https://img.shields.io/static/v1?label=Services%20implemented&message=34&color=blue&style=flat-square)](services.md)
 [![License](https://img.shields.io/github/license/codeoverflow-org/nodecg-io?label=License&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/blob/master/LICENSE)
 [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&style=flat-square)](https://discord.gg/sX2Gjbs/)
 
