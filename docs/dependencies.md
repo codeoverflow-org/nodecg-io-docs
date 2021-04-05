@@ -16,6 +16,7 @@ FontStyle Underline
 [<u>nodecg-io-core] as nodecg_io_core <<core>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core]]
 [<u>ajv] as ajv <<lib>> [[https://www.npmjs.com/package/ajv]]
 [<u>crypto-js] as crypto_js <<lib>> [[https://www.npmjs.com/package/crypto-js]]
+[<u>tslib] as tslib <<lib>> [[https://www.npmjs.com/package/tslib]]
 [<u>nodecg-io-ahk] as nodecg_io_ahk <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk]]
 [<u>node-fetch] as node_fetch <<lib>> [[https://www.npmjs.com/package/node-fetch]]
 [<u>nodecg-io-android] as nodecg_io_android <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android]]
@@ -32,6 +33,7 @@ FontStyle Underline
 [<u>easymidi] as easymidi <<lib>> [[https://www.npmjs.com/package/easymidi]]
 [<u>nodecg-io-midi-output] as nodecg_io_midi_output <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-midi-output]]
 [<u>nodecg-io-nanoleaf] as nodecg_io_nanoleaf <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-nanoleaf]]
+[<u>@types/node-fetch] as types_node_fetch <<lib>> [[https://www.npmjs.com/package/@types/node-fetch]]
 [<u>nodecg-io-obs] as nodecg_io_obs <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-obs]]
 [<u>obs-websocket-js] as obs_websocket_js <<lib>> [[https://www.npmjs.com/package/obs-websocket-js]]
 [<u>nodecg-io-philipshue] as nodecg_io_philipshue <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-philipshue]]
@@ -86,6 +88,7 @@ FontStyle Underline
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
+nodecg_io_core ...> tslib
 nodecg_io_ahk ...> node_fetch
 nodecg_io_ahk --> nodecg_io_core
 nodecg_io_android ...> rauschma_stringio
@@ -104,6 +107,7 @@ nodecg_io_midi_input ...> easymidi
 nodecg_io_midi_input --> nodecg_io_core
 nodecg_io_midi_output ...> easymidi
 nodecg_io_midi_output --> nodecg_io_core
+nodecg_io_nanoleaf ...> types_node_fetch
 nodecg_io_nanoleaf ...> node_fetch
 nodecg_io_nanoleaf --> nodecg_io_core
 nodecg_io_obs --> nodecg_io_core
