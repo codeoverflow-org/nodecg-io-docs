@@ -7,6 +7,7 @@
 
 Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^7.2.1 <br>
 Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.0.0 <br>
+Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.1.0 <br>
 
 ## [nodecg-io-ahk](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-ahk)
 
@@ -40,7 +41,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Debug helper service that helps to easily trigger your code for debugging purposes.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/debug.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 Depends on [monaco-editor](https://www.npmjs.com/package/monaco-editor) @ ^0.23.0 <br>
@@ -109,6 +110,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 There's no sample implementation for this service yet.
 
+Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.5.8 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
