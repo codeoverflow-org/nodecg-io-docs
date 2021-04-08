@@ -17,7 +17,7 @@ The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
 
 4. Create a new philipshue service instance using the left upper menu.
 
-5. Enter config for hue.
+5. Enter configuration for hue.
 
     The created instance should be automatically selected, if not select it in the upper left menu. If you want the bridge to be automatically discovered just set `discover` to true like this:
 
@@ -38,7 +38,7 @@ The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
 
     After entering it, press the big link button on your bridge and then click save.
 
-    After the first time you connect to your bridge it will create a user and an apiKey which will be saved so that you only need to press the link button when you connect it for the first time.
+    After the first time you connect to your bridge it will create a user and an API key which will be saved so that you only need to press the link button when you connect it for the first time.
 
     _Note:_ If you don't see monaco on the right, try reloading the page.
 

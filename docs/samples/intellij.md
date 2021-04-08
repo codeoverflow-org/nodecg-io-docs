@@ -6,7 +6,7 @@ The IntelliJ example bundle in `samples/intellij-integration` Shows how to conne
 
 2. Make sure you've Java 11 or newer installed.
 
-3. Run `gradlew build` (on windows) or `./gradlew build` (on linux) inside the cloned repository.
+3. Run `gradlew build` (on Windows) or `./gradlew build` (on linux) inside the cloned repository.
 
 4. Inside your JetBrains IDE go to `Settings` and then `Plugins`. Click on the little gear in the top right corner. Then click `Install from file`.
 

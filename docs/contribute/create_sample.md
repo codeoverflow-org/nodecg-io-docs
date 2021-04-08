@@ -1,6 +1,6 @@
 # Create a sample bundle
 
-A sample should have the same name as the service but it may include a short description in the name after the service name aswell.
+A sample should have the same name as the service, but it may include a short description in the name after the service name as well.
 E.g. `twitch-chat` or `obs-scenelist`.
 
 Create a folder in `samples` named after the sample and add a `package.json` and a `tsconfig.json`:
@@ -38,7 +38,7 @@ Create a folder in `samples` named after the sample and add a `package.json` and
 }
 ```
 
-Now you can create file called `extension/index.ts`. Here's a template. Make sure you replace all the comments with your own code.
+Now you can create a file called `extension/index.ts`. Here's a template. Make sure you replace all the comments with your own code.
 
 ```typescript
 import { NodeCG } from "nodecg/types/server";

@@ -7,7 +7,7 @@ The twitch-api example bundle in `samples/twitch-api` demonstrates the ability t
 -   Working NodeCG & nodecg-io installation
 -   a Twitch oAuth-Key
 
-_Note:_ If you don't have such a key yet you can generate it on https://twitchtokengenerator.com/, select custom scope token and select the scopes you need. For this sample you don't need any additional scopes so you can leave everything off.
+_Note:_ If you don't have such a key yet, you can generate it on https://twitchtokengenerator.com/, select custom scope token and select the scopes you need. For this sample you don't need any additional scopes, so you can leave everything off.
 
 ### Configure the Twitch Api sample bundle
 
@@ -21,7 +21,7 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchto
 
 5. Enter credentials for the twitch api.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch oauth Key in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch oauth Key in monaco (the text-editor on the right) in this format:
 
     ```json
     {

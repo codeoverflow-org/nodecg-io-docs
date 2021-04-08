@@ -7,7 +7,7 @@ The reddit-message-read example bundle in `samples/reddit-msg-read` demonstrates
 -   Working NodeCG & nodecg-io installation
 -   a Reddit Application (Should be of type script for own purpose)
 
-_Note:_ If you don't have such an application yet you can get one [here](https://www.reddit.com/prefs/apps).
+_Note:_ If you don't have such an application yet, you can get one [here](https://www.reddit.com/prefs/apps).
 
 ### Configure the Reddit sample bundle
 

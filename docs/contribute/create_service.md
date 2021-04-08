@@ -35,7 +35,7 @@ Put the following into it:
         "url": "https://github.com/codeoverflow-org/nodecg-io.git",
         "directory": "nodecg-io-<your-service-name>"
     },
-    "main": "extension"
+    "main": "extension",
     "scripts": {
         "build": "tsc -b",
         "watch": "tsc -b -w",

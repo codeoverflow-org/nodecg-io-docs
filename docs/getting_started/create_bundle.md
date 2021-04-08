@@ -34,4 +34,4 @@ Start NodeCG and provide your bundle with all required services.
 
 ## Share it!
 
-If you share your work others might get happy with it. And we made nodecg-io for you and the nodecg people made nodecg for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.
+If you share your work others might get happy with it. We made nodecg-io for you, and the nodecg people made nodecg for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.

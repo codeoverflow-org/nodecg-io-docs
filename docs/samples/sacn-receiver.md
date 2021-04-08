@@ -1,6 +1,6 @@
 ## Using the sACN receiver sample bundle
 
-The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demonstrates the ability receive data send via sACN from e.g professional lighting consoles. Here is a guide to how to get it working.
+The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demonstrates the ability receive data send via sACN from e.g. professional lighting consoles. Here is a guide to how to get it working.
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
 
 5. Enter the needed options.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the text-editor on the right) in this format:
 
     **Universes**
 

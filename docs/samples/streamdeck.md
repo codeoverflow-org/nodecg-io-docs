@@ -1,8 +1,8 @@
-## Using the Streamdeck rainbow sample bundle
+## Using the StreamDeck rainbow sample bundle
 
 The streamdeck-rainbow bundle paints your streamdeck with different colors. It is located in `samples/streamdeck-rainbow`.
 
-Sadly you can't access the streamdeck while another application accesses it. So you need to stop your Streamdeck Software before.
+Sadly you can't access the StreamDeck while another application accesses it. So you need to stop your StreamDeck Software before.
 
 ### Configure the Streamdeck Rainbow bundle
 
@@ -14,7 +14,7 @@ Sadly you can't access the streamdeck while another application accesses it. So 
 
 4. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
 
-5. Create a new streamdeck service instance using the left upper menu.
+5. Create a new StreamDeck service instance using the left upper menu.
 
 6. Enter the configuration
 
@@ -24,8 +24,8 @@ Sadly you can't access the streamdeck while another application accesses it. So 
     }
     ```
 
-    `default` tells the bundle to automatically find a streamdeck. If you've multiple streamdecks you need to put in an id here.
+    `default` tells the bundle to automatically find a StreamDeck. If you've multiple StreamDecks you need to put in an id here.
 
-7. Set the created streamdeck service instance to the service dependency of the streamdeck-rainbow bundle.
+7. Set the created StreamDeck service instance to the service dependency of the streamdeck-rainbow bundle.
 
 8. Watch your streamdeck.

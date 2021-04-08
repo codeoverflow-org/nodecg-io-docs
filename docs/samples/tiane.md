@@ -16,7 +16,7 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make ti
     const discordChannel = ""; // Insert channel for the discord bot here
     ```
     
-    and put the channel id of a discord channel where you want to talk to TIANE between the quotation marks. See [here](https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord) to find out how to get a channel id.
+    Put the channel id of a discord channel where you want to talk to TIANE between the quotation marks. See [here](https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord) to find out how to get a channel id.
    
 2. Run `npm run build` in the main nodecg-io directory.
    
@@ -42,7 +42,7 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make ti
 
 8. Enter address of the TIANE-Server
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the host and the port you just set in `server/TIANE_config.json` in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter host and port you just set in `server/TIANE_config.json` in this format:
 
     ```json
     {

@@ -1,16 +1,16 @@
 ## Using the WebSocket-client sample bundle
 
-The WebSocket-client sample bundle in `samples/websocket-client` shows how to setup a simple WebSocket client that will ping a server every second.
+The WebSocket-client sample bundle in `samples/websocket-client` shows how to set up a simple WebSocket client that will ping a server every second.
 
 ### Prerequisites
 
 -   Working NodeCG & nodecg-io installation
 
-For simplicity sake this sample will rely upon the websocket-server sample.
+For simplicity's sake this sample will rely upon the websocket-server sample.
 
 ### Configure the WebSocket-client sample bundle
 
-Please setup the WebSocket-server bundle first and then follow these steps:
+Please set up the WebSocket-server bundle first and then follow these steps:
 
 1. Start nodecg with nodecg-io installed. The websocket-client bundle is currently part of it so it should also be loaded.
 
@@ -22,7 +22,7 @@ Please setup the WebSocket-server bundle first and then follow these steps:
 
 5. Enter the address of the sample server. This has to be a url following the pattern `ws://localhost:<port>`.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -34,4 +34,4 @@ Please setup the WebSocket-server bundle first and then follow these steps:
 
 6. Set the created ws-client service instance to the service dependency of the ws-client bundle.
 
-7. A websocket-client has been connected and the console should display if a ping is sent or a pong is recieved.
+7. A websocket-client has been connected and the console should display if a ping is sent or a pong is received.
