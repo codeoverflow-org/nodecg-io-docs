@@ -1,6 +1,6 @@
 ## Using the midi-input sample bundle
 
-The midi-input example bundle in `samples/midi-input` demonstrates the the ability to read data from a midi device. 
+The midi-input example bundle in `samples/midi-input` demonstrates the ability to read data from a midi device. 
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ The midi-input example bundle in `samples/midi-input` demonstrates the the abili
 
 5. Enter your device information
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the name of your device in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter the name of your device in monaco (the text-editor on the right) in this format:
 
     ```json
     {

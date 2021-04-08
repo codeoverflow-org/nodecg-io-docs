@@ -11,7 +11,7 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
 1. Load a simple serial echo sketch on your microcontroller. You can find a working arduino sketch at the end of this article.
 
-2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it so it should also be loaded. Make shure the device is already connected. Otherwise you wont be able to see the device.
+2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it so it should also be loaded. Make sure the device is already connected. Otherwise, you won't be able to see the device.
 
 3. Go to the `nodecg-io` tab in the nodecg dashboard.
 

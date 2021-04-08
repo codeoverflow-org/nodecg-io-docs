@@ -2,7 +2,7 @@
 
 There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
-First you'll need a installation of nodecg-io. Please refer to the [installation guide](../getting_started/install.md) but
+First you'll need an installation of nodecg-io. Please refer to the [installation guide](../getting_started/install.md) but
 instead of using our repository you might want to fork the nodecg-io repository to your GitHub account and clone your fork.
 
 To make changes to the documentation you also need to clone the docs repo:
@@ -22,7 +22,7 @@ The watch builder will watch for file changes and compile those changes incremen
 It will even stay running in the background if you close VS Code.
 You can resume it by starting the build task with
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again.  
-ou can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd> on macOS.  
+ou can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd>) on macOS.  
 Errors and warnings will be shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS)
 
 ### Terminal
@@ -34,7 +34,7 @@ cd path/to/nodecg-io
 npm run build
 ```
 
-To do a full rebuild instead of just a incremental build you can use `npm run rebuild`.
+To do a full rebuild instead of just an incremental build you can use `npm run rebuild`.
 
 The watch builder can be activated here too:
 
@@ -44,7 +44,7 @@ npm run watch
 ```
 
 _Note:_ Watching all packages requires a lot of RAM. 
-Instead you can watch just the packages you are actively working on e.g. `npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat`.
+Instead, you can watch just the packages you are actively working on e.g. `npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat`.
 This will just spawn a watch process for the twitch-chat sample and service and require way less memory.
 
 ## Run
@@ -53,9 +53,9 @@ To test the changes you simply need to start/restart nodecg.
 
 ## Adding dependencies to packages
 
-This project uses [lerna](https://lerna.js.org) to manage our monorepo and most importantly link all our packages together.
+This project uses [lerna](https://lerna.js.org) to manage our monorepo, and most importantly link all our packages together.
 Because of linking you should not use `npm install xyz --save` to add dependencies because npm can't get the development version of internal packages like `nodecg-io-core`. Doing so will result in an error and break the link.
-Instead you should edit the `package.json` directly using a text editor and the run `npm run bootstrap` in the repository root.
+Instead, you should edit the `package.json` directly using a text editor and the run `npm run bootstrap` in the repository root.
 
 ## Open a Pull Request
 
@@ -73,7 +73,7 @@ git pull https://github.com/codeoverflow-org/nodecg-io master
 
 Manage any merge conflicts, commit them, and then push them to your fork.
 
-You may also occasionally need to merge upstream master in a pull request. To do that make the above to update your local master and the merge your local master into your PR branch.
+You may also occasionally need to merge upstream master in a pull request. To do that make the above to update your local master, and then merge your local master into your PR branch.
 
 ### Where to Contribute
 

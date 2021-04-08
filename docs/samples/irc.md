@@ -1,6 +1,6 @@
 ## Using the IRC sample bundle
 
-The IRC example bundle in `samples/irc` demonstrates the ability to get access to a IRC chat. This sample is designed to log the twitch IRC chat of skate702.
+The IRC example bundle in `samples/irc` demonstrates the ability to get access to an IRC chat. This sample is designed to log the twitch IRC chat of skate702.
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ The IRC example bundle in `samples/irc` demonstrates the ability to get access t
 
 5. Enter credentials for irc.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. In this example we will anonyoumously connect to the twitch IRC chat. Enter the config in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. In this example we will anonymously connect to the twitch IRC chat. Enter the config in this format:
 
     ```json
     {
@@ -28,7 +28,7 @@ The IRC example bundle in `samples/irc` demonstrates the ability to get access t
     }
     ```
 
-    Where you may want to change the numbers of the nick to be unique to you.
+    Here you may want to change the numbers of the nick to be unique to you.
 
     After entering it, click save.
 

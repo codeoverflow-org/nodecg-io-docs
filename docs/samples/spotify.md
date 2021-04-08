@@ -5,7 +5,7 @@ The spotify-current-song example bundle in `samples/spotify-current-song` demons
 ### Prerequisites
 
 -   Working NodeCG & nodecg-io installation
--   A Spotify account and a registered Spotify application and the accosiated client id/client secret.
+-   A Spotify account and a registered Spotify application and the associated client id/client secret.
 
 _Note:_ If you don't have a registered application yet you can follow [this guide](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app). As a redirect url use [http://localhost:9090/nodecg-io-spotify/spotifycallback](http://localhost:9090/nodecg-io-spotify/spotifycallback).
 
@@ -21,7 +21,7 @@ _Note:_ If you don't have a registered application yet you can follow [this guid
 
 5. Enter credentials for spotify.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your client id and secret in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your client id and secret in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -45,4 +45,4 @@ _Note:_ If you don't have a registered application yet you can follow [this guid
 
 7. Check the nodecg logs
 
-    You should see an error or a success message and the current playing song with name and artists.
+    You should see an error or a success message and the current playing song with names and artists.

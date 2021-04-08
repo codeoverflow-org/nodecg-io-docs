@@ -1,6 +1,6 @@
 ## Using the midi-io sample bundle
 
-The midi-io example bundle in `samples/midi-io` demonstrates the the ability to send/recieve data to/from a midi device. 
+The midi-io example bundle in `samples/midi-io` demonstrates the ability to send/receive data to/from a midi device. 
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ The midi-io example bundle in `samples/midi-io` demonstrates the the ability to 
 
 5. Enter your device information
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the name of your device in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter the name of your device in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -51,9 +51,9 @@ The midi-io example bundle in `samples/midi-io` demonstrates the the ability to 
 
 10. Check the nodecg logs
 
-    You should see an error or a success message and midi messages that are recieved and echoed back to the device that is configured. The messages are only modified, if the recieved Message is a noteon with a velocity of greater than zero or a control change message with a value of at least 64. Noteoff messages are always echoed unmodified.
+    You should see an error or a success message and midi messages that are received and echoed back to the device that is configured. The messages are only modified, if the received Message is a noteon with a velocity of greater than zero or a control change message with a value of at least 64. Noteoff messages are always echoed unmodified.
 
 ### Note
 
-A noteon message with a velocity of 0 should be handled like a noteoff message, so they are echoed unmodified. Otherwise this would get annoying very fast.  
-If a control change is assigned to a pushbutten values of 64 and up are interpreted as on and values lower than that are interpreted as off. Most somewhat modern Midi devices send 127 as on and 0 as off, but 63 and 64 should also be sufficient. 
+A noteon message with a velocity of 0 should be handled like a noteoff message, so they are echoed unmodified. Otherwise, this would get annoying very fast.  
+If a control change is assigned to a push-butten values of 64 and up are interpreted as on and values lower than that are interpreted as off. Most somewhat modern Midi devices send 127 as on and 0 as off, but 63 and 64 should also be sufficient. 

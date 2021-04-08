@@ -1,6 +1,6 @@
 ## Using the midi-output sample bundle
 
-The midi-output example bundle in `samples/midi-output` demonstrates the the ability to send data to a midi device. 
+The midi-output example bundle in `samples/midi-output` demonstrates the ability to send data to a midi device. 
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ The midi-output example bundle in `samples/midi-output` demonstrates the the abi
 
 5. Enter your device information
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the name of your device in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter the name of your device in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -43,7 +43,7 @@ The midi-output example bundle in `samples/midi-output` demonstrates the the abi
 
 7. Check the nodecg logs
 
-    You should see an error or a success message and random midi messages should be sent to the device that is configured. The messages are only "note on" messages and have a random note and velocity value ranging 0-127. The channels they are send from are either channel 0 or 1, but the midi protocoll supports up to 16 channels, so it could technically range from 0-15.
+    You should see an error or a success message and random midi messages should be sent to the device that is configured. The messages are only "note on" messages and have a random note and velocity value ranging 0-127. The channels they are sent from are either channel 0 or 1, but the midi protocol supports up to 16 channels, so it could technically range from 0-15.
 
 ### Note
 

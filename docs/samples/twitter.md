@@ -46,7 +46,7 @@ _Note:_ You will need a twitter developer account (https://developer.twitter.com
 
 7. Check the nodecg logs
 
-    You should see an error or a success message and up to 50 twitter messages tweeted by the user that is hardcoded in [samples/twitter-timeline/extension/index.ts](/samples/twitter-timeline/extension/index.ts) as `screen_name`.
+    You should see an error or a success message and up to 50 Twitter messages tweeted by the user that is hardcoded in [samples/twitter-timeline/extension/index.ts](/samples/twitter-timeline/extension/index.ts) as `screen_name`.
 
 ## Need to know for creating your own twitter bundle
 

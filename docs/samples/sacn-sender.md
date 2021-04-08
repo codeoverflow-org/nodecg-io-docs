@@ -1,6 +1,6 @@
 ## Using the sACN sender sample bundle
 
-The sacn-sender example bundle in `samples/sacn-sender` demonstrates the ability send data via sACN to e.g open lighting architecture or professional lighting equipment. Here is a guide to how to get it working.
+The sacn-sender example bundle in `samples/sacn-sender` demonstrates the ability send data via sACN to e.g. open lighting architecture or professional lighting equipment. Here is a guide to how to get it working.
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ The sacn-sender example bundle in `samples/sacn-sender` demonstrates the ability
 
 5. Enter the needed options.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your universe in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your universe in monaco (the text-editor on the right) in this format:
 
     **Universes**
 

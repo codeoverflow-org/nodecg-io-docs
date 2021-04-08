@@ -7,7 +7,7 @@ The Twitch-Addons example bundle in `samples/twitch-addons` demonstrates the abi
 -   Working NodeCG & nodecg-io installation
 -   a Twitch oAuth-Key
 
-_Note:_ If you don't have such a key yet you can generate it on https://twitchapps.com/tmi/. Just log into your Twitch account and copy the token. You can also use any other token. There are no special scope requirements as the token is only used to convert channel names to ids.
+_Note:_ If you don't have such a key yet, you can generate it on https://twitchapps.com/tmi/. Just log into your Twitch account and copy the token. You can also use any other token. There are no special scope requirements as the token is only used to convert channel names to ids.
 
 ### Configure the Twitch-Addons sample bundle
 
@@ -21,7 +21,7 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchap
 
 5. Enter credentials for twitch.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch oauth Key in monaco (the texteditor on the right) in this format:
+   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch oauth Key in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -39,4 +39,4 @@ _Note:_ If you don't have such a key yet you can generate it on https://twitchap
 
 7. Check the nodecg logs
 
-   You should see an error or a success message and all BTTV and FFZ emotes from the twitch channel `#derniklaas`
+   You should see an error or a success message and all BetterTTV and FFZ emotes from the twitch channel `#derniklaas`
