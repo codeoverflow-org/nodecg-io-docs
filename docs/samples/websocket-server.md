@@ -1,6 +1,6 @@
 ## Using the WebSocket Server sample bundle
 
-The WebSocket-server sample bundle in `samples/websocket-server` shows how to setup a simple WebSocket server that will relay all incoming messages to all connected clients.
+The WebSocket-server sample bundle in `samples/websocket-server` shows how to set up a simple WebSocket server that will relay all incoming messages to all connected clients.
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ The WebSocket-server sample bundle in `samples/websocket-server` shows how to se
 
 5. Enter a port for the server. This has to be a number from 0 to 65535.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the text-editor on the right) in this format:
 
     ```json
     {

@@ -4,11 +4,11 @@ The Android example bundle in `samples/android` shows how to connect to an andro
 
 1. clone [this](https://github.com/noeppi-noeppi/nodecg-io-android) Git Repository
 
-2. Run `gradlew build` (on windows) or `./gradlew build` (on linux) inside the cloned repository.
+2. Run `gradlew build` (on Windows) or `./gradlew build` (on linux) inside the cloned repository.
 
 3. There will be an apk file generated in `app/build/outputs/apk/debug/app-debug.apk`. Install it on the device.
 
-4. Launch the app. You'll be asked to grant the system alert window permission. This is required because the app will do its work in the background. But occasionally when user interaction is required, it needs to launch an activity without the user pressing the app icon in the launcher.
+4. Launch the app. You'll be asked to grant the system alert window permission. This is required because the app will do its work in the background. However occasionally when user interaction is required, it needs to launch an activity without the user pressing the app icon in the launcher.
 
 5. Install the android developer tools and make sure you have the `adb` command in your `PATH`
 

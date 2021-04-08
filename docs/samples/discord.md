@@ -7,7 +7,7 @@ The Discord-guild-chat example bundle in `samples/discord-guild-chat` demonstrat
 -   Working NodeCG & nodecg-io installation
 -   a Discord Bot token
 
-_Note:_ If you don't have such a token yet you can follow [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html) guide.
+_Note:_ If you don't have such a token yet, you can follow [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html) guide.
 
 ### Configure the Discord sample bundle
 

@@ -1,6 +1,6 @@
 ## Using the SteamElements sample bundle
 
-The streamelements-events example bundle in `samples/streamelements-events` demonstrates the ability to react to events like donations and subs. Here is a guide to how to get it working.
+The StreamElements-events example bundle in `samples/streamelements-events` demonstrates the ability to react to events like donations and subs. Here is a guide to how to get it working.
 
 ### Prerequisites
 
@@ -25,7 +25,7 @@ To get it goto https://streamelements.com/dashboard/account/channels, login, cli
 
 5. Enter credentials for StreamElements.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your JWT Token in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your JWT Token in monaco (the text-editor on the right) in this format:
 
     ```json
     {

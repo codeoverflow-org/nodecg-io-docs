@@ -9,7 +9,7 @@ The youtube bundle in `samples/youtube-playlist` demonstrates the ability of get
 -   Grant `YouTube Data API v3` access at the project's dashboard.
     -   Shortcut URL: https://console.developers.google.com/apis/library/youtube.googleapis.com?project=&lt;project-id&gt;
 
-_Note:_ If you don't have such a key yet you can generate them like [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred) as redirect URI add "http://localhost:9090/nodecg-io-youtube/oauth2callback".
+_Note:_ If you don't have such a key yet, you can generate them like [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred) as redirect URI add "http://localhost:9090/nodecg-io-youtube/oauth2callback".
 
 ### Configure the youtube sample bundle
 
@@ -23,7 +23,7 @@ _Note:_ If you don't have such a key yet you can generate them like [this](https
 
 5. Enter credentials for youtube.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your youtube oauth credentials in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your youtube oauth credentials in monaco (the text-editor on the right) in this format:
 
     ```json
     {

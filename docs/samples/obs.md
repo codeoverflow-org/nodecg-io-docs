@@ -1,6 +1,6 @@
 ## Using the OBS sample bundle
 
-The OBS example bundle in `samples/obs-scenelist` demonstrates the ability to control a OBS instance by listing all available scenes. Here is a guide to how to get it working.
+The OBS example bundle in `samples/obs-scenelist` demonstrates the ability to control an OBS instance by listing all available scenes. Here is a guide to how to get it working.
 
 ### Prerequisites
 
@@ -19,9 +19,9 @@ _Note:_ OBS is available [here](https://obsproject.com/de/download) and obs-webs
 
 4. Create a new obs service instance using the left upper menu.
 
-5. Enter config for obs.
+5. Enter configuration for obs.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your obs-websocket connection information in monaco (the texteditor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your obs-websocket connection information in monaco (the text-editor on the right) in this format:
 
     ```json
     {
