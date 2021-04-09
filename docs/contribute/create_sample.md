@@ -9,11 +9,11 @@ Create a folder in `samples` named after the sample and add a `package.json` and
 {
     "name": "<the sample name>",
     "private": true,
-    "version": "0.1.0",
+    "version": "0.2.0",
     "nodecg": {
         "compatibleRange": "^1.1.1",
         "bundleDependencies": {
-            "nodecg-io-<the service name>": "^0.1.0"
+            "nodecg-io-<the service name>": "^0.2.0"
         }
     },
     "scripts": {
@@ -23,8 +23,8 @@ Create a folder in `samples` named after the sample and add a `package.json` and
     },
     "license": "MIT",
     "dependencies": {
-        "nodecg-io-<the service name>": "^0.1.0",
-        "nodecg-io-core": "^0.1.0",
+        "nodecg-io-<the service name>": "^0.2.0",
+        "nodecg-io-core": "^0.2.0",
         "@types/node": "^14.14.13",
         "nodecg": "^1.7.4",
         "typescript": "^4.1.3"

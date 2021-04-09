@@ -23,9 +23,9 @@ Put the following into it:
 ```json
 {
     "name": "nodecg-io-<your-service-name>",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "<Short description what is possible with your service.>",
-    "homepage": "https://nodecg.io/samples/<your-service-name>",
+    "homepage": "https://nodecg.io/RELEASE/samples/<your-service-name>",
     "author": {
         "name": "<Your name>",
         "url": "<Your github profile url>"
@@ -45,17 +45,17 @@ Put the following into it:
     "nodecg": {
         "compatibleRange": "^1.1.1",
         "bundleDependencies": {
-            "nodecg-io-core": "^0.1.0"
+            "nodecg-io-core": "^0.2.0"
         }
     },
     "license": "MIT",
     "devDependencies": {
-        "@types/node": "^14.14.13",
-        "nodecg": "^1.7.4",
-        "typescript": "^4.1.3"
+        "@types/node": "^14.14.33",
+        "nodecg": "^1.8.1",
+        "typescript": "^4.2.3"
     },
     "dependencies": {
-        "nodecg-io-core": "^0.1.0",
+        "nodecg-io-core": "^0.2.0",
         "<the package you found in step 1>": "<the packages version you want to use>"
     }
 }
