@@ -1019,9 +1019,9 @@ E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now you can create a file called <code>extension/index.ts</code>. Here's a template. Make sure you replace all the comments with your own code.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;nodecg/types/server&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">TheServicesExportedClient</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;nodecg-io-&lt;the services name&gt;&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;nodecg/types/server&quot;</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">TheServicesExportedClient</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;nodecg-io-&lt;the services name&gt;&quot;</span><span class="p">;</span>
 
 <span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Sample bundle for &lt;the-service-name&gt; started&quot;</span><span class="p">);</span>
