@@ -2,18 +2,26 @@
 
 ## Prerequisites
 
-In order to download necessary tools, clone the repository, and install dependencies via `npm` you need network access.
+In order to download necessary tools, and install nodecg-io using the cli you need network access.
+
+### Required Applications
 
 You'll need the following tools:
 
 -   [Git](https://git-scm.com)
 -   [Node.JS](https://nodejs.org/en/) v12.0.0 or newer
 -   [Npm](https://www.npmjs.com/get-npm) 7.0.0 or newer
--   [NodeCG](https://nodecg.dev/) 1.4.0 or newer
+-   [NodeCG](https://nodecg.dev/) 1.4.0 or newer (1.7.0 or higher recommended)
 
-You'll also need operating system dependant tools for native modules like StreamDeck and Midi:
+### Native Build Tools
 
-### Windows
+Some services depend on packages that require native build tools. You _ONLY_ need to install these if you want to use a service that depends on native modules or if you want to install a development version.
+
+The services that require these include StreamDeck, Midi and Serial. Please note that this list might not be up to date.
+
+Here's how to install the native build tools on the most popular operating systems, if you need them:
+
+#### Windows
 
 For Windows, you'll need the Visual Studio Build Tools, if you have Visual Studio installed you should already have them.
 If you don't have Visual Studio just install the Visual Studio Build Tools by running the following command as an __Administrator__:
@@ -22,7 +30,7 @@ If you don't have Visual Studio just install the Visual Studio Build Tools by ru
 npm install -g windows-build-tools
 ```
 
-### Linux
+#### Linux
 
 For Linux, you'll need a C++ compiler and some other packages. On Ubuntu/Debian based operating systems run the following command:
 
@@ -32,7 +40,7 @@ sudo apt install build-essential libusb-1.0-0-dev libasound2-dev libudev-dev
 
 For other linux distros you'll need the corresponding packages, just search on the internet how the packages are named for your specific distro.
 
-### MacOS
+#### MacOS
 
 For macOS, you'll need the Xcode command line tools. To install them run the following command:
 
@@ -40,49 +48,35 @@ For macOS, you'll need the Xcode command line tools. To install them run the fol
 xcode-select --install
 ```
 
-## Clone this repository
+## Install the nodecg-io cli
+
+Install the nodecg-io cli using the following command:
 
 ```shell
-git clone https://github.com/codeoverflow-org/nodecg-io.git
-cd nodecg-io
-git checkout release/0.1
+npm install -g nodecg-io-cli
 ```
 
-_Note:_ You should clone nodecg-io to somewhere outside your nodecg bundles/ directory as this repo contains many bundles in subdirectories and nodecg doesn't support nesting of the bundles in other directories. You can clone it to any other path that you wish.
+_Note:_ If you are running on linux, you may need to use `sudo` if your npm installation uses a non-writeable path (default on Ubuntu apt packages, does usually not apply to installs using [nvm](https://github.com/nvm-sh/nvm))
 
-## Install all the dependencies using `npm`
+
+## Install nodecg-io using the nodecg-io cli
+
+With the nodecg-io cli installed you can run this command inside a nodecg installation:
 
 ```shell
-cd path/to/nodecg-io
-npm install
-npm run bootstrap
+nodecg-io install
 ```
 
-## Build nodecg-io:
+You will get a prompt which asks you which version you want to install. 
 
-```shell
-cd path/to/nodecg-io
-npm run build
-```
+- By selecting a version you create a production install that downloads the required packages from npm and setups a npm workspace to install all dependencies. Here you can choose which services you want to install.
 
-## Add nodecg-io directory to the nodecg config
+- `development` clones the nodecg-io git repo and builds everything from scratch. We only recommend a dev install if you are sure that you want to contribute to nodecg-io. Here you always must install all services.
 
-Modify the nodecg configuration in `path/to/nodecg/cfg/nodecg.json`, here is an example config:
-
-```json
-{
-    "bundles": {
-        "paths": ["path/to/nodecg-io", "path/to/nodecg-io/samples"]
-    }
-}
-```
-
-_Note 1:_ This path should point to the root of this repository, not to a bundle inside this repo.
-
-_Note 2:_ The second path to the samples is only required if you want to use a sample plugin.
-
-_Note 3:_ If nodecg doesn't load nodecg-io for some reason you might want to use an absolute path here.
+For starters we recommend using the latest non-development version.
 
 ## Start nodecg
 
-Now you can use nodecg-io in your own bundle. You can find example code in [./samples/](https://github.com/codeoverflow-org/nodecg-io/tree/master/samples/).
+When starting nodecg you should see that all nodecg-io related bundles should be loaded and that you can you can now access nodecg-io in your nodecg dashboard.
+
+Now you can either install a already existing bundle that uses nodecg-io or [create a new bundle](./create_bundle.md).
