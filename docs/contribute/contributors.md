@@ -25,14 +25,13 @@
             data.forEach(entry => {
                 if (!BLACKLIST.includes(entry.login)) {
                     if (!(entry.login in contributors)) {
-                        console.log(typeof entry.login)
                         contributors[entry.login] = {
                             avatar_url: entry.avatar_url,
                             html_url: entry.html_url,
                             contributions: 0
                         }
                     }
-                contributors[entry.login].contributions += entry.contributions
+                    contributors[entry.login].contributions += entry.contributions
                 }
             })
         }
