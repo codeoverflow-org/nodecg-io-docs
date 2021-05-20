@@ -69,14 +69,28 @@ nodecg-io install
 
 You will get a prompt which asks you which version you want to install. 
 
-- By selecting a version you create a production install that downloads the required packages from npm and setups a npm workspace to install all dependencies. Here you can choose which services you want to install.
+- By selecting a actual version (e.g. `0.1`) you create a production install that downloads the required packages from npm and setups a npm workspace to install all dependencies. Here you can choose which services you want to install.
 
-- `development` clones the nodecg-io git repo and builds everything from scratch. We only recommend a dev install if you are sure that you want to contribute to nodecg-io. Here you always must install all services.
+- By selecting `development` you create a development install that clones the nodecg-io git repo and builds everything from scratch. We only recommend a dev install if you are sure that you want to contribute to nodecg-io. Here you always must install all services.
 
 For starters we recommend using the latest non-development version.
+
+nodecg-io will always be installed into a `nodecg-io/` directory inside your nodecg installation so that your bundles and all bundles from nodecg-io are separated. The cli will add this path to the loaded bundles in your nodecg configuration automatically, you don't need to worry about it.
+
+If you want to every change your nodecg-io installation to add/remove a service or change the version, you can always re-run `nodecg-io install`. If a nodecg-io installation is found its options will be preselected in the prompt. 
 
 ## Start nodecg
 
 When starting nodecg you should see that all nodecg-io related bundles should be loaded and that you can you can now access nodecg-io in your nodecg dashboard.
 
 Now you can either install a already existing bundle that uses nodecg-io or [create a new bundle](./create_bundle.md).
+
+## Uninstall nodecg-io
+
+If you want uninstall nodecg-io you can run the following command:
+
+```shell
+nodecg-io uninstall
+```
+
+This will remove the `nodecg-io` directory inside your nodecg installation and also will remove it from the loaded bundle paths in your nodecg configuration.
