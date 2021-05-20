@@ -1008,14 +1008,13 @@
             data.forEach(entry => {
                 if (!BLACKLIST.includes(entry.login)) {
                     if (!(entry.login in contributors)) {
-                        console.log(typeof entry.login)
                         contributors[entry.login] = {
                             avatar_url: entry.avatar_url,
                             html_url: entry.html_url,
                             contributions: 0
                         }
                     }
-                contributors[entry.login].contributions += entry.contributions
+                    contributors[entry.login].contributions += entry.contributions
                 }
             })
         }
@@ -1025,8 +1024,6 @@
             return result == 0 ? n1.toLowerCase() < n2.toLowerCase() : result
         });
         let idx = 1
-        console.log(contributors)
-        console.log(Object.keys(contributors))
         for (const name of sorted) {
             const div = document.createElement('div')
             div.style = `grid-column: 1; grid-row: ${idx}; display: inline-block; padding-bottom: 10px`
