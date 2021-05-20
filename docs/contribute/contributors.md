@@ -9,7 +9,8 @@
 <script type="text/javascript">
     const REPOS = [
         'codeoverflow-org/nodecg-io',
-        'codeoverflow-org/nodecg-io-docs'
+        'codeoverflow-org/nodecg-io-docs',
+        'codeoverflow-org/nodecg-io-cli'
     ];
     const BLACKLIST = [
         'dependabot[bot]'
