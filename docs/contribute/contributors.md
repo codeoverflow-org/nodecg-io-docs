@@ -13,7 +13,8 @@
         'codeoverflow-org/nodecg-io-cli'
     ];
     const BLACKLIST = [
-        'dependabot[bot]'
+        'dependabot[bot]',
+        'semantic-release-bot'
     ];
     (async () => {
         // name -> { avatar?,  html_url, contributions }
