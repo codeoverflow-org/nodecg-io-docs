@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-In order to download necessary tools, and install nodecg-io using the cli you need network access.
+In order to download necessary tools and to install nodecg-io using the cli you need network access.
 
 ### Required Applications
 
@@ -61,7 +61,7 @@ _Note:_ If you are running on linux, you may need to use `sudo` if your npm inst
 
 ## Install nodecg-io using the nodecg-io cli
 
-With the nodecg-io cli installed you can run this command inside a nodecg installation:
+With the nodecg-io cli installed you can run this command inside a nodecg installation to install nodecg-io:
 
 ```shell
 nodecg-io install
@@ -77,7 +77,7 @@ For starters we recommend using the latest non-development version.
 
 nodecg-io will always be installed into a `nodecg-io/` directory inside your nodecg installation so that your bundles and all bundles from nodecg-io are separated. The cli will add this path to the loaded bundles in your nodecg configuration automatically, you don't need to worry about it.
 
-If you want to every change your nodecg-io installation to add/remove a service or change the version, you can always re-run `nodecg-io install`. If a nodecg-io installation is found its options will be preselected in the prompt. 
+If you want to every change your nodecg-io installation to add/remove a service or change the version, you can always re-run `nodecg-io install`. If a nodecg-io installation is found its options will be preselected in the prompt. Re-running `nodecg-io install` will also update all packages to the latest patch version, if you have a production installation, and pull the repository and rebuild, if you have a development installation.
 
 ## Start nodecg
 
