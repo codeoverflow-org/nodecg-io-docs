@@ -2,36 +2,43 @@
 
 To actually use nodecg-io you need to create a bundle. Here's a step-by-step guide to create one.
 
-## Dependencies
-
 Think of what services your bundle needs. Take a look at the [service list](../services.md) if to see what services are available. If you need a service that is not yet available consider [creating it](../contribute/create_service.md).
 
-## Create a package
+## Create your bundle using the nodecg-io cli
 
-Your package is a standard NodeCG bundle. See their [website](https://nodecg.dev/) for more info. The bundle should be dependent on `nodecg-io-core` and all services it needs. Then you define `module.exports` as a function that takes a NodeCG instance. In that function you initialise your bundle.
+Automatically generating a bundle that uses nodecg-io requires that you have the nodecg-io cli installed. A guide on how to do this is inside the [install guide](./install.md). Also note that this currently only works when you have installed a release version, not development versions.
 
-## Adding availability handlers
+To start run this command while being inside your nodecg installation:
 
-Here's an example for twitch:
-
-```typescript
-const twitch = requireService<TwitchServiceClient>(nodecg, "twitch");
-
-twitch?.onAvailable((client) => {
-    // Do sth when twitch is available
-});
-
-twitch?.onUnavailable(() => {
-    // Do sth when twitch is not / no longer available
-});
+```shell
+nodecg-io generate
 ```
 
-If you need multiple services you can save them in global variables and access them using the `service.getClient()` function which returns an optional of the client. If it isn't currently set it will be `undefined`.
+This will ask you a couple details about your bundle like name, description and used services.
+Most questions have a reasonable default that you can choose if you don't care or are not sure about the asked thing.
+
+After finishing the prompt the cli will generate your bundle, install dependencies and, if you have chosen TypeScript, compile the generated code.
 
 ## Test it
 
-Start NodeCG and provide your bundle with all required services.
+Start NodeCG and make sure that the bundle gets loaded successfully and it is displayed in the nodecg-io dashboard with all service dependencies.
+
+## Modify it
+
+After that you should edit the `extension/index.ts` or `extension/index.js` depending on your chosen language to do something useful.
+You can start by updating the `onAvailable` callbacks.
+
+_Note:_ If you need to access another service inside the callback of a `onAvailable` call you can use `otherService.getClient()` to get the client or `undefined` if it is not set.
+
+## Further steps
+
+A couple of steps you may want to do after generating a bundle:
+
+- Create a git repository for you bundle (a `.gitignore` is automatically generated for you) and push it to a git platform of your choice
+- Add a [open source license](https://choosealicense.com), don't forget it to also add it to the `package.json` file
+- Add code formatters and linting tools like [prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
+- Add a README that explains what your bundle does and how it can be used
 
 ## Share it!
 
-If you share your work others might get happy with it. We made nodecg-io for you, and the nodecg people made nodecg for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.
+If you share your work others might find it useful and get happy with it. We made nodecg-io for you, and the nodecg people made nodecg for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.
