@@ -281,22 +281,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
-    Dependencies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-package" class="md-nav__link">
-    Create a package
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-availability-handlers" class="md-nav__link">
-    Adding availability handlers
+  <a href="#create-your-bundle-using-the-nodecg-io-cli" class="md-nav__link">
+    Create your bundle using the nodecg-io cli
   </a>
   
 </li>
@@ -304,6 +290,20 @@
         <li class="md-nav__item">
   <a href="#test-it" class="md-nav__link">
     Test it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-it" class="md-nav__link">
+    Modify it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-steps" class="md-nav__link">
+    Further steps
   </a>
   
 </li>
@@ -990,22 +990,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
-    Dependencies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-package" class="md-nav__link">
-    Create a package
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-availability-handlers" class="md-nav__link">
-    Adding availability handlers
+  <a href="#create-your-bundle-using-the-nodecg-io-cli" class="md-nav__link">
+    Create your bundle using the nodecg-io cli
   </a>
   
 </li>
@@ -1013,6 +999,20 @@
         <li class="md-nav__item">
   <a href="#test-it" class="md-nav__link">
     Test it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-it" class="md-nav__link">
+    Modify it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-steps" class="md-nav__link">
+    Further steps
   </a>
   
 </li>
@@ -1043,27 +1043,31 @@
                 
                 <h1 id="create-your-first-bundle">Create your first bundle</h1>
 <p>To actually use nodecg-io you need to create a bundle. Here's a step-by-step guide to create one.</p>
-<h2 id="dependencies">Dependencies</h2>
 <p>Think of what services your bundle needs. Take a look at the <a href="../../services/">service list</a> if to see what services are available. If you need a service that is not yet available consider <a href="../../contribute/create_service/">creating it</a>.</p>
-<h2 id="create-a-package">Create a package</h2>
-<p>Your package is a standard NodeCG bundle. See their <a href="https://nodecg.dev/">website</a> for more info. The bundle should be dependent on <code>nodecg-io-core</code> and all services it needs. Then you define <code>module.exports</code> as a function that takes a NodeCG instance. In that function you initialise your bundle.</p>
-<h2 id="adding-availability-handlers">Adding availability handlers</h2>
-<p>Here's an example for twitch:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">twitch</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TwitchServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;twitch&quot;</span><span class="p">);</span>
-
-<span class="nx">twitch</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// Do sth when twitch is available</span>
-<span class="p">});</span>
-
-<span class="nx">twitch</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// Do sth when twitch is not / no longer available</span>
-<span class="p">});</span>
+<h2 id="create-your-bundle-using-the-nodecg-io-cli">Create your bundle using the nodecg-io cli</h2>
+<p>Automatically generating a bundle that uses nodecg-io requires that you have the nodecg-io cli installed. A guide on how to do this is inside the <a href="../install/">install guide</a>. Also note that this currently only works when you have installed a release version, not development versions.</p>
+<p>To start run this command while being inside your nodecg installation:</p>
+<div class="highlight"><pre><span></span><code>nodecg-io generate
 </code></pre></div>
-<p>If you need multiple services you can save them in global variables and access them using the <code>service.getClient()</code> function which returns an optional of the client. If it isn't currently set it will be <code>undefined</code>.</p>
+<p>This will ask you a couple details about your bundle like name, description and used services.
+Most questions have a reasonable default that you can choose if you don't care or are not sure about the asked thing.</p>
+<p>After finishing the prompt the cli will generate your bundle, install dependencies and, if you have chosen TypeScript, compile the generated code.</p>
 <h2 id="test-it">Test it</h2>
-<p>Start NodeCG and provide your bundle with all required services.</p>
+<p>Start NodeCG and make sure that the bundle gets loaded successfully and it is displayed in the nodecg-io dashboard with all service dependencies.</p>
+<h2 id="modify-it">Modify it</h2>
+<p>After that you should edit the <code>extension/index.ts</code> or <code>extension/index.js</code> depending on your chosen language to do something useful.
+You can start by updating the <code>onAvailable</code> callbacks.</p>
+<p><em>Note:</em> If you need to access another service inside the callback of a <code>onAvailable</code> call you can use <code>otherService.getClient()</code> to get the client or <code>undefined</code> if it is not set.</p>
+<h2 id="further-steps">Further steps</h2>
+<p>A couple of steps you may want to do after generating a bundle:</p>
+<ul>
+<li>Create a git repository for you bundle (a <code>.gitignore</code> is automatically generated for you) and push it to a git platform of your choice</li>
+<li>Add a <a href="https://choosealicense.com">open source license</a>, don't forget it to also add it to the <code>package.json</code> file</li>
+<li>Add code formatters and linting tools like <a href="https://prettier.io/">prettier</a> and <a href="https://eslint.org/">ESLint</a></li>
+<li>Add a README that explains what your bundle does and how it can be used</li>
+</ul>
 <h2 id="share-it">Share it!</h2>
-<p>If you share your work others might get happy with it. We made nodecg-io for you, and the nodecg people made nodecg for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.</p>
+<p>If you share your work others might find it useful and get happy with it. We made nodecg-io for you, and the nodecg people made nodecg for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.</p>
                 
               
               
