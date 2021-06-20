@@ -1137,11 +1137,14 @@
                 
                 <h1 id="how-to-contribute">How to contribute</h1>
 <p>There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions.</p>
-<p>First you'll need an installation of nodecg-io. Please refer to the <a href="../../getting_started/install/">installation guide</a> but
-instead of using our repository you might want to fork the nodecg-io repository to your GitHub account and clone your fork.</p>
-<p>To make changes to the documentation you also need to clone the docs repo:</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/codeoverflow-org/nodecg-io-docs.git
-</code></pre></div>
+<p>First you'll need an installation of nodecg-io. Please refer to the <a href="../../getting_started/install/">installation guide</a> and create a development installation.
+The cli asks you whether you want to clone the documentation. It's highly recommended that you do that and update the documentation as you add new services or features.
+To be able to create Pull Requests you should fork the corresponding repositories and add them as a remote (update url for e.g. documentation repository):
+<div class="highlight"><pre><span></span><code>git remote add fork https://github.com/<span class="o">[</span>YOUR_USERNAME<span class="o">]</span>/nodecg-io.git
+</code></pre></div></p>
+<p>Then you can create a new branch, do your changes, create commits and publish the branch to your fork using the following command:
+<div class="highlight"><pre><span></span><code>git push fork my-branch
+</code></pre></div></p>
 <h2 id="build">Build</h2>
 <h3 id="vs-code">VS Code</h3>
 <p>In Visual Studio Code you can start the build task with
