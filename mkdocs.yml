@@ -38,6 +38,7 @@ nav:
     - Getting Started:
           - Installation: getting_started/install.md
           - Your first bundle: getting_started/create_bundle.md
+          - Configuration: getting_started/configuration.md
     - Contribute:
           - Basics: contribute/contribute.md
           - Create a Service: contribute/create_service.md

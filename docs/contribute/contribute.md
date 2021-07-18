@@ -5,12 +5,14 @@ There are many ways to contribute to nodecg-io: logging bugs, submitting pull re
 First you'll need an installation of nodecg-io. Please refer to the [installation guide](../getting_started/install.md) and create a development installation.
 The cli asks you whether you want to clone the documentation. It's highly recommended that you do that and update the documentation as you add new services or features.
 To be able to create Pull Requests you should fork the corresponding repositories and add them as a remote (update url for e.g. documentation repository):
+
 ```shell
 git remote add fork https://github.com/[YOUR_USERNAME]/nodecg-io.git
 ```
 
 Then you can create a new branch, do your changes, create commits and publish the branch to your fork using the following command:
-```
+
+```shell
 git push fork my-branch
 ```
 
