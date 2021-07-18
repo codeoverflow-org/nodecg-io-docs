@@ -1,6 +1,6 @@
 :root {
-    --md-primary-fg-color: #5836FF;
-    --md-accent-fg-color: #DD241F;
+    --md-primary-fg-color: #5836ff;
+    --md-accent-fg-color: #dd241f;
     --md-header-color--dark: #2c1849;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .md-nav__source {
-    --md-primary-fg-color--dark: #1F1135;
+    --md-primary-fg-color--dark: #1f1135;
 }
 
 .md-typeset .task-list-control [type="checkbox"]:checked + .task-list-indicator::before {
