@@ -41,6 +41,7 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 -   [x] Serial Port (Arduino)
 -   [x] Slack WebAPI
 -   [x] Spotify
+-   [x] SQL (using [knex](https://knexjs.org/))
 -   [x] Elgato Stream Deck
 -   [x] StreamElements
 -   [x] Telegram
