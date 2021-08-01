@@ -201,6 +201,15 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.0.8 <br>
 Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node) @ ^5.0.2 <br>
 
+## [nodecg-io-sql](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sql)
+
+**SQL service based on knex.js. Different clients like mysql are supported but have to be installed separately.**
+
+There's no sample implementation for this service yet.
+
+Depends on [knex](https://www.npmjs.com/package/knex) @ ^0.95.6 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck)
 
 **Allows to interface with the elgato streamdeck.**

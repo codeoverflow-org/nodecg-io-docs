@@ -62,6 +62,8 @@ FontStyle Underline
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
 [<u>@types/spotify-web-api-node] as types_spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/@types/spotify-web-api-node]]
 [<u>spotify-web-api-node] as spotify_web_api_node <<lib>> [[https://www.npmjs.com/package/spotify-web-api-node]]
+[<u>nodecg-io-sql] as nodecg_io_sql <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-sql]]
+[<u>knex] as knex <<lib>> [[https://www.npmjs.com/package/knex]]
 [<u>nodecg-io-streamdeck] as nodecg_io_streamdeck <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamdeck]]
 [<u>elgato-stream-deck] as elgato_stream_deck <<lib>> [[https://www.npmjs.com/package/elgato-stream-deck]]
 [<u>nodecg-io-streamelements] as nodecg_io_streamelements <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-streamelements]]
@@ -144,6 +146,8 @@ nodecg_io_spotify ...> express
 nodecg_io_spotify --> nodecg_io_core
 nodecg_io_spotify ...> open
 nodecg_io_spotify ...> spotify_web_api_node
+nodecg_io_sql ...> knex
+nodecg_io_sql --> nodecg_io_core
 nodecg_io_streamdeck ...> elgato_stream_deck
 nodecg_io_streamdeck --> nodecg_io_core
 nodecg_io_streamelements ...> types_socket_io_client
