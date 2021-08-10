@@ -68,6 +68,7 @@ nav:
           - Serial sample: samples/serial.md
           - Slack sample: samples/slack.md
           - Spotify sample: samples/spotify.md
+          - SQL sample: samples/sql.md
           - Streamdeck sample: samples/streamdeck.md
           - StreamElements sample: samples/streamelements.md
           - Telegram sample: samples/telegram.md
