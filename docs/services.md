@@ -205,7 +205,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 **SQL service based on knex.js. Different clients like mysql are supported but have to be installed separately.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/sql.md)
 
 Depends on [knex](https://www.npmjs.com/package/knex) @ ^0.95.6 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
