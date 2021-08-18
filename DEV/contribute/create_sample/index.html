@@ -726,6 +726,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../samples/sql/" class="md-nav__link">
+        SQL sample
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../samples/streamdeck/" class="md-nav__link">
         Streamdeck sample
       </a>
@@ -777,14 +789,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_22" type="checkbox" id="__nav_4_22" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_23" type="checkbox" id="__nav_4_23" >
       
-      <label class="md-nav__link" for="__nav_4_22">
+      <label class="md-nav__link" for="__nav_4_23">
         Twitch
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Twitch" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_22">
+        <label class="md-nav__title" for="__nav_4_23">
           <span class="md-nav__icon md-icon"></span>
           Twitch
         </label>
@@ -864,14 +876,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_24" type="checkbox" id="__nav_4_24" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_25" type="checkbox" id="__nav_4_25" >
       
-      <label class="md-nav__link" for="__nav_4_24">
+      <label class="md-nav__link" for="__nav_4_25">
         WebSocket
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="WebSocket" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_24">
+        <label class="md-nav__title" for="__nav_4_25">
           <span class="md-nav__icon md-icon"></span>
           WebSocket
         </label>
@@ -1031,21 +1043,21 @@ E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now you can create a file called <code>extension/index.ts</code>. Here's a template. Make sure you replace all the comments with your own code.</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;nodecg/types/server&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">TheServicesExportedClient</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;nodecg-io-&lt;the services name&gt;&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg/types/server&quot;</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">TheServicesExportedClient</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-&lt;the services name&gt;&quot;</span><span class="p">;</span>
 
 <span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Sample bundle for &lt;the-service-name&gt; started&quot;</span><span class="p">);</span>
 
     <span class="kd">const</span> <span class="nx">service</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TheServicesExportedClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;&lt;the-service-name&gt;&quot;</span><span class="p">);</span>
-    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
         <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client has been updated.&quot;</span><span class="p">);</span>
 
         <span class="c1">// TODO do something with the client to demonstrate the functionality.</span>
     <span class="p">});</span>
 
-    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client has been unset.&quot;</span><span class="p">));</span>
+    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client has been unset.&quot;</span><span class="p">));</span>
 <span class="p">};</span>
 </code></pre></div>
 <h2 id="next-steps">Next steps</h2>
