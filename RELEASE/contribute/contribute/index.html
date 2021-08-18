@@ -543,6 +543,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../samples/debug/" class="md-nav__link">
+        Debug
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../samples/discord/" class="md-nav__link">
         Discord sample
       </a>
@@ -582,14 +594,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
       
-      <label class="md-nav__link" for="__nav_4_8">
+      <label class="md-nav__link" for="__nav_4_9">
         Midi
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Midi" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_8">
+        <label class="md-nav__title" for="__nav_4_9">
           <span class="md-nav__icon md-icon"></span>
           Midi
         </label>
@@ -693,14 +705,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14" type="checkbox" id="__nav_4_14" >
       
-      <label class="md-nav__link" for="__nav_4_13">
+      <label class="md-nav__link" for="__nav_4_14">
         sACN
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="sACN" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_13">
+        <label class="md-nav__title" for="__nav_4_14">
           <span class="md-nav__icon md-icon"></span>
           sACN
         </label>
@@ -828,14 +840,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_21" type="checkbox" id="__nav_4_21" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_22" type="checkbox" id="__nav_4_22" >
       
-      <label class="md-nav__link" for="__nav_4_21">
+      <label class="md-nav__link" for="__nav_4_22">
         Twitch
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Twitch" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_21">
+        <label class="md-nav__title" for="__nav_4_22">
           <span class="md-nav__icon md-icon"></span>
           Twitch
         </label>
@@ -915,14 +927,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_23" type="checkbox" id="__nav_4_23" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_24" type="checkbox" id="__nav_4_24" >
       
-      <label class="md-nav__link" for="__nav_4_23">
+      <label class="md-nav__link" for="__nav_4_24">
         WebSocket
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="WebSocket" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_23">
+        <label class="md-nav__title" for="__nav_4_24">
           <span class="md-nav__icon md-icon"></span>
           WebSocket
         </label>
@@ -1125,10 +1137,13 @@
                 
                 <h1 id="how-to-contribute">How to contribute</h1>
 <p>There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions.</p>
-<p>First you'll need a installation of nodecg-io. Please refer to the <a href="../../getting_started/install/">installation guide</a> but
-instead of using our repository you might want to fork the nodecg-io repository to your GitHub account and clone your fork.</p>
-<p>To make changes to the documentation you also need to clone the docs repo:</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/codeoverflow-org/nodecg-io-docs.git
+<p>First you'll need an installation of nodecg-io. Please refer to the <a href="../../getting_started/install/">installation guide</a> and create a development installation.
+The cli asks you whether you want to clone the documentation. It's highly recommended that you do that and update the documentation as you add new services or features.
+To be able to create Pull Requests you should fork the corresponding repositories and add them as a remote (update url for e.g. documentation repository):</p>
+<div class="highlight"><pre><span></span><code>git remote add fork https://github.com/<span class="o">[</span>YOUR_USERNAME<span class="o">]</span>/nodecg-io.git
+</code></pre></div>
+<p>Then you can create a new branch, do your changes, create commits and publish the branch to your fork using the following command:</p>
+<div class="highlight"><pre><span></span><code>git push fork my-branch
 </code></pre></div>
 <h2 id="build">Build</h2>
 <h3 id="vs-code">VS Code</h3>
@@ -1139,27 +1154,27 @@ The watch builder will watch for file changes and compile those changes incremen
 It will even stay running in the background if you close VS Code.
 You can resume it by starting the build task with
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again.<br />
-ou can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd> on macOS.<br />
+ou can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd>) on macOS.<br />
 Errors and warnings will be shown in the status bar at the bottom left of the editor. You can view the error list using <code>View | Errors and Warnings</code> or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS)</p>
 <h3 id="terminal">Terminal</h3>
 <p>You can also use you terminal to build nodecg-io:</p>
 <div class="highlight"><pre><span></span><code>cd path/to/nodecg-io
 npm run build
 </code></pre></div>
-<p>To do a full rebuild instead of just a incremental build you can use <code>npm run rebuild</code>.</p>
+<p>To do a full rebuild instead of just an incremental build you can use <code>npm run rebuild</code>.</p>
 <p>The watch builder can be activated here too:</p>
 <div class="highlight"><pre><span></span><code>cd path/to/nodecg-io
 npm run watch
 </code></pre></div>
 <p><em>Note:</em> Watching all packages requires a lot of RAM. 
-Instead you can watch just the packages you are actively working on e.g. <code>npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat</code>.
+Instead, you can watch just the packages you are actively working on e.g. <code>npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat</code>.
 This will just spawn a watch process for the twitch-chat sample and service and require way less memory.</p>
 <h2 id="run">Run</h2>
 <p>To test the changes you simply need to start/restart nodecg.</p>
 <h2 id="adding-dependencies-to-packages">Adding dependencies to packages</h2>
-<p>This project uses <a href="https://lerna.js.org">lerna</a> to manage our monorepo and most importantly link all our packages together.
+<p>This project uses <a href="https://lerna.js.org">lerna</a> to manage our monorepo, and most importantly link all our packages together.
 Because of linking you should not use <code>npm install xyz --save</code> to add dependencies because npm can't get the development version of internal packages like <code>nodecg-io-core</code>. Doing so will result in an error and break the link.
-Instead you should edit the <code>package.json</code> directly using a text editor and the run <code>npm run bootstrap</code> in the repository root.</p>
+Instead, you should edit the <code>package.json</code> directly using a text editor and the run <code>npm run bootstrap</code> in the repository root.</p>
 <h2 id="open-a-pull-request">Open a Pull Request</h2>
 <p>Once you have implemented your feature or fixed a bug push it to your fork and start a Pull Request.</p>
 <h2 id="merge-upstream-changes">Merge Upstream Changes</h2>
@@ -1169,7 +1184,7 @@ git checkout master
 git pull https://github.com/codeoverflow-org/nodecg-io master
 </code></pre></div>
 <p>Manage any merge conflicts, commit them, and then push them to your fork.</p>
-<p>You may also occasionally need to merge upstream master in a pull request. To do that make the above to update your local master and the merge your local master into your PR branch.</p>
+<p>You may also occasionally need to merge upstream master in a pull request. To do that make the above to update your local master, and then merge your local master into your PR branch.</p>
 <h3 id="where-to-contribute">Where to Contribute</h3>
 <p>After cloning and building the repo, check out the <a href="https://github.com/codeoverflow-org/nodecg-io/issues">issues list</a>. Issues labeled <a href="https://github.com/codeoverflow-org/nodecg-io/labels/help%20wanted"><code>help wanted</code></a> are good issues to submit a PR for. Issues labeled <a href="https://github.com/codeoverflow-org/nodecg-io/labels/good%20first%20issue"><code>good first issue</code></a> are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.</p>
 <h2 id="suggestions">Suggestions</h2>
