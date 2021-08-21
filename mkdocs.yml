@@ -30,6 +30,7 @@ markdown_extensions:
           pygments_style: monokai
     - pymdownx.inlinehilite
     - pymdownx.superfences
+    - pymdownx.tabbed
     - pymdownx.tasklist:
           custom_checkbox: true
 
@@ -37,7 +38,8 @@ nav:
     - Home: index.md
     - Getting Started:
           - Installation: getting_started/install.md
-          - Your first bundle: getting_started/create_bundle.md
+          - Your first bundle: getting_started/create_new_bundle.md
+          - Migrating an existing bundle: getting_started/existing_bundle.md
           - Configuration: getting_started/configuration.md
     - Contribute:
           - Basics: contribute/contribute.md

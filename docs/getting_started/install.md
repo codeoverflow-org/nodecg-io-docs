@@ -83,7 +83,7 @@ If you want to every change your nodecg-io installation to add/remove a service 
 
 When starting nodecg you should see that all nodecg-io related bundles should be loaded and that you can you can now access nodecg-io in your nodecg dashboard.
 
-Now you can either install a already existing bundle that uses nodecg-io or [create a new bundle](./create_bundle.md).
+Now you can either install a already existing bundle that uses nodecg-io, [create a new bundle](./create_new_bundle.md) or [integrate an existing bundle](./existing_bundle.md).
 
 ## Uninstall nodecg-io
 
