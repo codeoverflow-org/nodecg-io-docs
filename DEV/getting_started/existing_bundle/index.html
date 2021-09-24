@@ -11,14 +11,14 @@
         <meta name="author" content="codeoverflow.org">
       
       
-        <link rel="canonical" href="https://nodecg.io/samples/curseforge/">
+        <link rel="canonical" href="https://nodecg.io/getting_started/existing_bundle/">
       
       <link rel="shortcut icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
     
     
       
-        <title>Curseforge sample - nodecg-io Documentation</title>
+        <title>Migrating an existing bundle - nodecg-io Documentation</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-the-curseforge-sample-bundle" class="md-skip">
+        <a href="#migrating-your-existing-bundle-to-nodecg-io" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Curseforge sample
+              Migrating an existing bundle
             
           </span>
         </div>
@@ -213,12 +213,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         Getting Started
@@ -236,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/install/" class="md-nav__link">
+      <a href="../install/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -248,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
+      <a href="../create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
     </li>
@@ -258,11 +260,97 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../getting_started/existing_bundle/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Migrating an existing bundle
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Migrating an existing bundle
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-nodecg-io-core" class="md-nav__link">
+    Install nodecg-io-core
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-requireservice" class="md-nav__link">
+    Import requireService
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-service-type-typescript-only" class="md-nav__link">
+    Import Service type (TypeScript only)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#require-the-service" class="md-nav__link">
+    Require the service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-service-client" class="md-nav__link">
+    Accessing the service client
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing the service client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-onavailable-and-onunavailable-handlers" class="md-nav__link">
+    Using onAvailable and onUnavailable handlers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-getclient" class="md-nav__link">
+    Using getClient
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -272,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         Configuration
       </a>
     </li>
@@ -381,14 +469,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
         Services
@@ -418,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ahk/" class="md-nav__link">
+      <a href="../../samples/ahk/" class="md-nav__link">
         AHK sample
       </a>
     </li>
@@ -428,65 +514,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Curseforge sample
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../samples/curseforge/" class="md-nav__link">
         Curseforge sample
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-the-curseforge-sample-bundle" class="md-nav__link">
-    Using the CurseForge sample bundle
-  </a>
-  
-    <nav class="md-nav" aria-label="Using the CurseForge sample bundle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-the-curseforge-bundle" class="md-nav__link">
-    Configure the CurseForge bundle
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -496,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../android/" class="md-nav__link">
+      <a href="../../samples/android/" class="md-nav__link">
         Android
       </a>
     </li>
@@ -508,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../debug/" class="md-nav__link">
+      <a href="../../samples/debug/" class="md-nav__link">
         Debug
       </a>
     </li>
@@ -520,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../discord/" class="md-nav__link">
+      <a href="../../samples/discord/" class="md-nav__link">
         Discord sample
       </a>
     </li>
@@ -532,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intellij/" class="md-nav__link">
+      <a href="../../samples/intellij/" class="md-nav__link">
         IntelliJ sample
       </a>
     </li>
@@ -544,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../irc/" class="md-nav__link">
+      <a href="../../samples/irc/" class="md-nav__link">
         IRC
       </a>
     </li>
@@ -577,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../midi-input/" class="md-nav__link">
+      <a href="../../samples/midi-input/" class="md-nav__link">
         Midi-Input sample
       </a>
     </li>
@@ -589,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../midi-output/" class="md-nav__link">
+      <a href="../../samples/midi-output/" class="md-nav__link">
         Midi-Output sample
       </a>
     </li>
@@ -601,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../midi-io/" class="md-nav__link">
+      <a href="../../samples/midi-io/" class="md-nav__link">
         Midi-IO sample
       </a>
     </li>
@@ -619,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../obs/" class="md-nav__link">
+      <a href="../../samples/obs/" class="md-nav__link">
         OBS
       </a>
     </li>
@@ -631,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../philipshue/" class="md-nav__link">
+      <a href="../../samples/philipshue/" class="md-nav__link">
         Philips Hue sample
       </a>
     </li>
@@ -643,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rcon/" class="md-nav__link">
+      <a href="../../samples/rcon/" class="md-nav__link">
         Rcon sample
       </a>
     </li>
@@ -655,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reddit/" class="md-nav__link">
+      <a href="../../samples/reddit/" class="md-nav__link">
         Reddit sample
       </a>
     </li>
@@ -688,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sacn-receiver/" class="md-nav__link">
+      <a href="../../samples/sacn-receiver/" class="md-nav__link">
         sACN Receiver sample
       </a>
     </li>
@@ -700,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sacn-sender/" class="md-nav__link">
+      <a href="../../samples/sacn-sender/" class="md-nav__link">
         sACN Sender sample
       </a>
     </li>
@@ -718,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../serial/" class="md-nav__link">
+      <a href="../../samples/serial/" class="md-nav__link">
         Serial sample
       </a>
     </li>
@@ -730,7 +762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slack/" class="md-nav__link">
+      <a href="../../samples/slack/" class="md-nav__link">
         Slack sample
       </a>
     </li>
@@ -742,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../spotify/" class="md-nav__link">
+      <a href="../../samples/spotify/" class="md-nav__link">
         Spotify sample
       </a>
     </li>
@@ -754,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sql/" class="md-nav__link">
+      <a href="../../samples/sql/" class="md-nav__link">
         SQL sample
       </a>
     </li>
@@ -766,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../streamdeck/" class="md-nav__link">
+      <a href="../../samples/streamdeck/" class="md-nav__link">
         Streamdeck sample
       </a>
     </li>
@@ -778,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../streamelements/" class="md-nav__link">
+      <a href="../../samples/streamelements/" class="md-nav__link">
         StreamElements sample
       </a>
     </li>
@@ -790,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../telegram/" class="md-nav__link">
+      <a href="../../samples/telegram/" class="md-nav__link">
         Telegram sample
       </a>
     </li>
@@ -802,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tiane/" class="md-nav__link">
+      <a href="../../samples/tiane/" class="md-nav__link">
         TIANE sample
       </a>
     </li>
@@ -835,7 +867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-addons/" class="md-nav__link">
+      <a href="../../samples/twitch-addons/" class="md-nav__link">
         Twitch-Addons sample
       </a>
     </li>
@@ -847,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-api/" class="md-nav__link">
+      <a href="../../samples/twitch-api/" class="md-nav__link">
         Twitch-Api sample
       </a>
     </li>
@@ -859,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-chat/" class="md-nav__link">
+      <a href="../../samples/twitch-chat/" class="md-nav__link">
         Twitch-Chat sample
       </a>
     </li>
@@ -871,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-pubsub/" class="md-nav__link">
+      <a href="../../samples/twitch-pubsub/" class="md-nav__link">
         Twitch-Pubsub sample
       </a>
     </li>
@@ -889,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitter/" class="md-nav__link">
+      <a href="../../samples/twitter/" class="md-nav__link">
         Twitter sample
       </a>
     </li>
@@ -922,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../websocket-client/" class="md-nav__link">
+      <a href="../../samples/websocket-client/" class="md-nav__link">
         Client sample
       </a>
     </li>
@@ -934,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../websocket-server/" class="md-nav__link">
+      <a href="../../samples/websocket-server/" class="md-nav__link">
         Server sample
       </a>
     </li>
@@ -952,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xdotool/" class="md-nav__link">
+      <a href="../../samples/xdotool/" class="md-nav__link">
         Xdotool sample
       </a>
     </li>
@@ -964,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../youtube/" class="md-nav__link">
+      <a href="../../samples/youtube/" class="md-nav__link">
         YouTube sample
       </a>
     </li>
@@ -1004,6 +1036,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1012,23 +1046,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-curseforge-sample-bundle" class="md-nav__link">
-    Using the CurseForge sample bundle
+  <a href="#install-nodecg-io-core" class="md-nav__link">
+    Install nodecg-io-core
   </a>
   
-    <nav class="md-nav" aria-label="Using the CurseForge sample bundle">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-requireservice" class="md-nav__link">
+    Import requireService
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-service-type-typescript-only" class="md-nav__link">
+    Import Service type (TypeScript only)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#require-the-service" class="md-nav__link">
+    Require the service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-service-client" class="md-nav__link">
+    Accessing the service client
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing the service client">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#using-onavailable-and-onunavailable-handlers" class="md-nav__link">
+    Using onAvailable and onUnavailable handlers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-the-curseforge-bundle" class="md-nav__link">
-    Configure the CurseForge bundle
+  <a href="#using-getclient" class="md-nav__link">
+    Using getClient
   </a>
   
 </li>
@@ -1050,28 +1112,83 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/samples/curseforge.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/getting_started/existing_bundle.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Curseforge sample</h1>
-                
-                <h2 id="using-the-curseforge-sample-bundle">Using the CurseForge sample bundle</h2>
-<p>The CurseForge example bundle in <code>samples/curseforge</code> demonstrates the ability to search for different addons with the id or search with specific values for matching addons. Here is a guide how to get it working.</p>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
-</ul>
-<h3 id="configure-the-curseforge-bundle">Configure the CurseForge bundle</h3>
-<ol>
-<li>Start NodeCG with nodecg-io installed. The CurseForge bundle is currently part of it, so it should also be loaded.</li>
-<li>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</li>
-<li>Create a new CurseForge service instance using the left upper menu.</li>
-<li>Set the CurseForge service instance to the service dependency of the CurseForge bundle. 
-    Select the CurseForge bundle and the CurseForge service in the left bottom menu and then select the service instance that should be used by the CurseForge bundle (in this case the name of the previously created CurseForge instance).</li>
-<li>Check the NodeCG logs. You should see two lists of addons.</li>
-</ol>
+                <h1 id="migrating-your-existing-bundle-to-nodecg-io">Migrating your existing bundle to nodecg-io</h1>
+<p>This guide explains you how to migrate an existing nodecg bundle that already meets your requirements to use nodecg-io.
+nodecg-io manages service configuration and authentication so your bundle doesn't have to bother with it.</p>
+<p>If you are lucky and used the same library as we do for the service you want to migrate, nodecg-io is a drop-in replacement just doing authentication and configuration.
+If you have used another library you'll have to do a little more work to migrate to the library that our service uses.
+In that case make sure that the migration is worth the effort.
+You can use nodecg-io for one service and use your own library of choice for other services if you like to.</p>
+<h2 id="install-nodecg-io-core">Install <code>nodecg-io-core</code></h2>
+<p>The first thing you need to do is to install <code>nodecg-io-core</code>. You can do this simply using this npm command:</p>
+<div class="highlight"><pre><span></span><code>npm install nodecg-io-core
+</code></pre></div>
+<h2 id="import-requireservice">Import <code>requireService</code></h2>
+<p>Now that you have <code>nodecg-io-core</code> installed in your bundle you can import the <code>requireService</code> function that it exposes:</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">TypeScript/ES Modules</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">CommonJS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">requireService</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">).</span><span class="nx">requireService</span><span class="p">;</span>
+</code></pre></div>
+</div>
+</div>
+<h2 id="import-service-type-typescript-only">Import Service type (TypeScript only)</h2>
+<p>If you're using TypeScript you'll also need to install the package of the service that you want to use.
+You need it to be able to import its type for typesafety.</p>
+<p>This example uses <code>twitch-chat</code> as an example but you can just replace it with the name of the service you need.</p>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TypeScript</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>npm install nodecg-io-twitch-chat
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">TwitchChatServiceClient</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-twitch-chat&quot;</span><span class="p">;</span>
+</code></pre></div>
+</div>
+</div>
+<p>Note: You can get the name of the type by using autocomplete in your editor or by looking it up in the service sample.</p>
+<h2 id="require-the-service">Require the service</h2>
+<p>Now you can finally tell nodecg-io that you want to get access to a service using the <code>requireService</code> function.
+You'll have to pass your nodecg instance which is used to identify your bundle and the name of the service you want.
+In case of TypeScript you'll also need to provide the type of the service.</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">TypeScript</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">twitchChat</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TwitchChatServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">JavaScript</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">twitchChat</span> <span class="o">=</span> <span class="nx">requireService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+</div>
+<h2 id="accessing-the-service-client">Accessing the service client</h2>
+<h3 id="using-onavailable-and-onunavailable-handlers">Using <code>onAvailable</code> and <code>onUnavailable</code> handlers</h3>
+<p>You can setup handlers that are executed when the user assigns a service instance to your bundle, removes the assignment or when the service client got updated in some way.</p>
+<p>Handlers added with <code>onAvailable</code> will get called if there was a change and you got a client:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// This is the variable with the return value of requireService().</span>
+<span class="c1">// You may want to change the variable name for the service you are using.</span>
+<span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">(</span><span class="nx">client</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was set&quot;</span><span class="p">);</span>
+    <span class="c1">// You can use the passed client in here to e.g. setup handlers on the client</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>onAvailable</code> is especially useful to add event handlers to clients.
+E.g. if you want to react to donations or chat messages you can add event handlers for these here.</p>
+<p>Handlers added with <code>onUnavailable</code> will get called if your bundle was not assigned a service instance or if there was an error in service client creation:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was unset&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3 id="using-getclient">Using <code>getClient</code></h3>
+<p>Instead of callbacks you can also get access to the client directly:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">twitchChatClient</span> <span class="o">=</span> <span class="nx">twitchChat</span><span class="p">.</span><span class="nx">getClient</span><span class="p">();</span>
+</code></pre></div>
+<p><code>getClient</code> will return the client if your bundle has an assigned service instance that has produced an service client without error
+and will return <code>undefined</code> otherwise.
+This is useful for when you want to use the client due to some external event or from <code>onAvailable</code> handlers of other services.</p>
                 
               
               
@@ -1089,7 +1206,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../ahk/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../create_new_bundle/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1098,19 +1215,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              AHK sample
+              Your first bundle
             </div>
           </div>
         </a>
       
       
-        <a href="../android/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../configuration/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Android
+              Configuration
             </div>
           </div>
           <div class="md-footer__button md-icon">
