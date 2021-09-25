@@ -55,6 +55,16 @@ See the [sample implementation](samples/discord.md)
 Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^12.5.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-elgato-light](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light)
+
+**Control your Elgato lights, e.g. key lights and light stripes.**
+
+There's no sample implementation for this service yet.
+
+Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.5.10 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+
 ## [nodecg-io-gsheets](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-gsheets)
 
 **Allow to control Google Sheets.**
