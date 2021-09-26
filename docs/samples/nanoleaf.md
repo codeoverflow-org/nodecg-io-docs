@@ -23,7 +23,7 @@ The Nanoleaf example bundle in `samples/nanoleaf` demonstrates the ability to co
 
     ```json
     {
-        "ipAddress": "192.168.1.xxx"
+        "ipAddress": "xxx.xxx.xxx.xxx"
     }
     ```
 
