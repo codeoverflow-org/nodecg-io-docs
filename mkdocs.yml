@@ -60,6 +60,7 @@ nav:
                 - Midi-Input sample: samples/midi-input.md
                 - Midi-Output sample: samples/midi-output.md
                 - Midi-IO sample: samples/midi-io.md
+          - Nanoleaf: samples/nanoleaf.md
           - OBS: samples/obs.md
           - Philips Hue sample: samples/philipshue.md
           - Rcon sample: samples/rcon.md
