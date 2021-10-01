@@ -54,6 +54,7 @@ nav:
           - Android: samples/android.md
           - Debug: samples/debug.md
           - Discord sample: samples/discord.md
+          - Elgato Light sample: samples/elgato-light.md
           - IntelliJ sample: samples/intellij.md
           - IRC: samples/irc.md
           - Midi:
