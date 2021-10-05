@@ -118,7 +118,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Allows to connect to a nanoleaf controller and trigger custom lighting effects.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/nanoleaf.md)
 
 Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.5.10 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
