@@ -1,6 +1,6 @@
 ## Using the gsheets sample bundle
 
-The gsheets bundle in `samples/gsheets` demonstrates the ability of getting information of a playlist. Here is a guide to how to get it working.
+The gsheets bundle in `samples/gsheets` demonstrates the ability of retrieving all rows where column A is a filled. Here is a guide to how to get it working.
 
 ### Prerequisites
 
