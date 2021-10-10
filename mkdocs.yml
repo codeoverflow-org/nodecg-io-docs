@@ -54,6 +54,9 @@ nav:
           - Android: samples/android.md
           - Debug: samples/debug.md
           - Discord sample: samples/discord.md
+          - Googleapis:
+                - Youtube sample: samples/youtube.md
+                - GSheets example: samples/ghseets.md 
           - IntelliJ sample: samples/intellij.md
           - IRC: samples/irc.md
           - Midi:
