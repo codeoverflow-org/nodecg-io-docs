@@ -29,7 +29,7 @@ FontStyle Underline
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-elgato-light] as nodecg_io_elgato_light <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light]]
 [<u>@types/node-fetch] as types_node_fetch <<lib>> [[https://www.npmjs.com/package/@types/node-fetch]]
-[<u>nodecg-io-gsheets] as nodecg_io_gsheets <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-gsheets]]
+[<u>nodecg-io-googleapis] as nodecg_io_googleapis <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-googleapis]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
 [<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
@@ -91,7 +91,6 @@ FontStyle Underline
 [<u>@types/ws] as types_ws <<lib>> [[https://www.npmjs.com/package/@types/ws]]
 [<u>nodecg-io-websocket-server] as nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
-[<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
 nodecg_io_core ...> tslib
@@ -109,11 +108,11 @@ nodecg_io_discord --> nodecg_io_core
 nodecg_io_elgato_light ...> types_node_fetch
 nodecg_io_elgato_light ...> node_fetch
 nodecg_io_elgato_light --> nodecg_io_core
-nodecg_io_gsheets ...> types_gapi
-nodecg_io_gsheets ...> express
-nodecg_io_gsheets ...> googleapis
-nodecg_io_gsheets --> nodecg_io_core
-nodecg_io_gsheets ...> open
+nodecg_io_googleapis ...> types_gapi
+nodecg_io_googleapis ...> express
+nodecg_io_googleapis ...> googleapis
+nodecg_io_googleapis --> nodecg_io_core
+nodecg_io_googleapis ...> open
 nodecg_io_intellij ...> node_fetch
 nodecg_io_intellij --> nodecg_io_core
 nodecg_io_irc ...> types_irc
@@ -188,9 +187,4 @@ nodecg_io_websocket_server ...> ws
 nodecg_io_xdotool ...> rauschma_stringio
 nodecg_io_xdotool ...> node_fetch
 nodecg_io_xdotool --> nodecg_io_core
-nodecg_io_youtube ...> types_gapi
-nodecg_io_youtube ...> express
-nodecg_io_youtube ...> googleapis
-nodecg_io_youtube --> nodecg_io_core
-nodecg_io_youtube ...> open
 ::end-uml::

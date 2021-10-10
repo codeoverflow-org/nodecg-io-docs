@@ -65,9 +65,9 @@ Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) 
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
-## [nodecg-io-gsheets](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-gsheets)
+## [nodecg-io-googleapis](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-googleapis)
 
-**Allow to control Google Sheets.**
+**Allows to connect to and interact with many google-apis**
 
 There's no sample implementation for this service yet.
 
@@ -346,16 +346,4 @@ See the [sample implementation](samples/xdotool.md)
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
-
-## [nodecg-io-youtube](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube)
-
-**Allows to connect and interact to youtube**
-
-See the [sample implementation](samples/youtube.md)
-
-Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.39 <br>
-Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^73.0.0 <br>
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
-Depends on [open](https://www.npmjs.com/package/open) @ ^8.0.8 <br>
 
