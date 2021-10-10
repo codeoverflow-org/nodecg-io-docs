@@ -69,7 +69,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Allows to connect to and interact with many google-apis**
 
-See sample implementations for [the youtube data api](samples/youtube.md) or [the google sheets api](samples/gsheets.md)
+There's no sample implementation for this service yet.
 
 Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.39 <br>
 Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
