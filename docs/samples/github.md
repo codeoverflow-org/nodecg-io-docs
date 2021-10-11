@@ -7,7 +7,7 @@ The github example bundle in `samples/github` demonstrates the ability to access
 -   Working NodeCG & nodecg-io installation
 -   a GitHub token
 
-_Note:_ If you don't have a token yet, you can create one [here](https://github.com/settings/tokens/new).
+_Note:_ If you don't have a token yet, you can create one [here](https://github.com/settings/tokens/new). The token requires at least the `repo` scope.
 
 ### Configure the GitHub sample bundle
 
