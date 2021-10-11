@@ -29,6 +29,8 @@ FontStyle Underline
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-elgato-light] as nodecg_io_elgato_light <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light]]
 [<u>@types/node-fetch] as types_node_fetch <<lib>> [[https://www.npmjs.com/package/@types/node-fetch]]
+[<u>nodecg-io-github] as nodecg_io_github <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-github]]
+[<u>@octokit/rest] as octokit_rest <<lib>> [[https://www.npmjs.com/package/@octokit/rest]]
 [<u>nodecg-io-googleapis] as nodecg_io_googleapis <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-googleapis]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
 [<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
@@ -108,6 +110,8 @@ nodecg_io_discord --> nodecg_io_core
 nodecg_io_elgato_light ...> types_node_fetch
 nodecg_io_elgato_light ...> node_fetch
 nodecg_io_elgato_light --> nodecg_io_core
+nodecg_io_github --> nodecg_io_core
+nodecg_io_github ...> octokit_rest
 nodecg_io_googleapis ...> types_gapi
 nodecg_io_googleapis ...> express
 nodecg_io_googleapis ...> googleapis
