@@ -54,6 +54,10 @@ nav:
           - Android: samples/android.md
           - Debug: samples/debug.md
           - Discord sample: samples/discord.md
+          - GitHub sample: samples/github.md
+          - Googleapis:
+                - GSheets sample: samples/ghseets.md 
+                - Youtube sample: samples/youtube.md
           - IntelliJ sample: samples/intellij.md
           - IRC: samples/irc.md
           - Midi:
@@ -86,7 +90,6 @@ nav:
                 - Client sample: samples/websocket-client.md
                 - Server sample: samples/websocket-server.md
           - Xdotool sample: samples/xdotool.md
-          - YouTube sample: samples/youtube.md
           - Dependency Graph: dependencies.md
 
 extra_css:

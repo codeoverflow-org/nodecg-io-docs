@@ -23,12 +23,16 @@ FontStyle Underline
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
 [<u>nodecg-io-curseforge] as nodecg_io_curseforge <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge]]
+[<u>nodecg-io-dbus] as nodecg_io_dbus <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-dbus]]
+[<u>dbus-next] as dbus_next <<lib>> [[https://www.npmjs.com/package/dbus-next]]
 [<u>nodecg-io-debug] as nodecg_io_debug <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-debug]]
 [<u>monaco-editor] as monaco_editor <<lib>> [[https://www.npmjs.com/package/monaco-editor]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-elgato-light] as nodecg_io_elgato_light <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light]]
 [<u>@types/node-fetch] as types_node_fetch <<lib>> [[https://www.npmjs.com/package/@types/node-fetch]]
+[<u>nodecg-io-github] as nodecg_io_github <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-github]]
+[<u>@octokit/rest] as octokit_rest <<lib>> [[https://www.npmjs.com/package/@octokit/rest]]
 [<u>nodecg-io-googleapis] as nodecg_io_googleapis <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-googleapis]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
 [<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
@@ -101,6 +105,8 @@ nodecg_io_android ...> get_stream
 nodecg_io_android --> nodecg_io_core
 nodecg_io_curseforge ...> node_fetch
 nodecg_io_curseforge --> nodecg_io_core
+nodecg_io_dbus --> nodecg_io_core
+nodecg_io_dbus ...> dbus_next
 nodecg_io_debug --> nodecg_io_core
 nodecg_io_debug ...> monaco_editor
 nodecg_io_discord ...> discord_js
@@ -108,6 +114,8 @@ nodecg_io_discord --> nodecg_io_core
 nodecg_io_elgato_light ...> types_node_fetch
 nodecg_io_elgato_light ...> node_fetch
 nodecg_io_elgato_light --> nodecg_io_core
+nodecg_io_github --> nodecg_io_core
+nodecg_io_github ...> octokit_rest
 nodecg_io_googleapis ...> types_gapi
 nodecg_io_googleapis ...> express
 nodecg_io_googleapis ...> googleapis
