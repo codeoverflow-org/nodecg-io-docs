@@ -53,7 +53,9 @@ nav:
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
           - Debug: samples/debug.md
-          - Discord sample: samples/discord.md
+          - Discord:
+                - Discord API sample: samples/discord.md
+                - Discord RPC sample: samples/discord-rpc.md
           - GitHub sample: samples/github.md
           - Googleapis:
                 - GSheets sample: samples/ghseets.md 
