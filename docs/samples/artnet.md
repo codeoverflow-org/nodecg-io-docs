@@ -117,7 +117,3 @@ Since neither this library nor nodecg-io does not yet contain an abstraction, so
 > Net and sACN it is recommended that Art-Net devices actually use a re-transmit time of
 > 800mS to 1000mS).  
 >  — [Art-Net 4 Specification p. 48](https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf)
-
-```
-Test
-```
