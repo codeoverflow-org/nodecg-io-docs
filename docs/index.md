@@ -25,6 +25,7 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 
 - AutoHotkey
 - Android (using adb)
+- ArtNet
 - CurseForge
 - DBus
 - Discord
