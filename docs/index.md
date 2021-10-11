@@ -26,8 +26,10 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 - AutoHotkey
 - Android (using adb)
 - CurseForge
+- DBus
 - Discord
 - Elgato lights
+- GitHub
 - Google Apis
 - IntelliJ IDEs
 - IRC (Internet Relay Chat)
