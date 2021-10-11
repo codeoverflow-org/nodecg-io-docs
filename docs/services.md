@@ -37,6 +37,15 @@ See the [sample implementation](samples/curseforge.md)
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-dbus](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-dbus)
+
+**Allows to interface with DBus**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [dbus-next](https://www.npmjs.com/package/dbus-next) @ ^0.10.2 <br>
+
 ## [nodecg-io-debug](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-debug)
 
 **Debug helper service that helps to easily trigger your code for debugging purposes.**
