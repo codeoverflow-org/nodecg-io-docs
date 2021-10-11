@@ -55,6 +55,7 @@ nav:
           - DBus: samples/dbus-ratbagd.md
           - Debug: samples/debug.md
           - Discord sample: samples/discord.md
+          - GitHub sample: samples/github.md
           - Googleapis:
                 - GSheets sample: samples/ghseets.md 
                 - Youtube sample: samples/youtube.md

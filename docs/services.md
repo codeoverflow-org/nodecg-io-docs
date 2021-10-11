@@ -74,6 +74,15 @@ Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) 
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-github](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-github)
+
+**Allows to connect to the GitHub REST API**
+
+See the [sample implementation](samples/github.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^18.12.0 <br>
+
 ## [nodecg-io-googleapis](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-googleapis)
 
 **Allows to connect to and interact with many google-apis**
