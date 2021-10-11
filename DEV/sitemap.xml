@@ -1,187 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://nodecg.io/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/getting_started/install/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/getting_started/create_new_bundle/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/getting_started/existing_bundle/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/getting_started/configuration/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/contribute/contribute/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/contribute/create_service/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/contribute/create_sample/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/contribute/sample_documentation/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/contribute/contributors/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/services/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/ahk/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/curseforge/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/android/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/debug/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/discord/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://nodecg.io/samples/github/</loc>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/youtube/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/intellij/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/irc/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/midi-input/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/midi-output/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/midi-io/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/nanoleaf/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/obs/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/philipshue/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/rcon/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/reddit/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/sacn-receiver/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/sacn-sender/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/serial/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/slack/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/spotify/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/sql/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/streamdeck/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/streamelements/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/telegram/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/tiane/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/twitch-addons/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/twitch-api/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/twitch-chat/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/twitch-pubsub/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/twitter/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/websocket-client/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/websocket-server/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/samples/xdotool/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://nodecg.io/dependencies/</loc>
-     <lastmod>2021-10-10</lastmod>
+     <lastmod>2021-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
