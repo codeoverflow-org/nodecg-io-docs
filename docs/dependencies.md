@@ -22,6 +22,8 @@ FontStyle Underline
 [<u>nodecg-io-android] as nodecg_io_android <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
+[<u>nodecg-io-artnet] as nodecg_io_artnet <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-artnet]]
+[<u>artnet-protocol] as artnet_protocol <<lib>> [[https://www.npmjs.com/package/artnet-protocol]]
 [<u>nodecg-io-curseforge] as nodecg_io_curseforge <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge]]
 [<u>nodecg-io-dbus] as nodecg_io_dbus <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-dbus]]
 [<u>dbus-next] as dbus_next <<lib>> [[https://www.npmjs.com/package/dbus-next]]
@@ -106,6 +108,8 @@ nodecg_io_ahk --> nodecg_io_core
 nodecg_io_android ...> rauschma_stringio
 nodecg_io_android ...> get_stream
 nodecg_io_android --> nodecg_io_core
+nodecg_io_artnet --> nodecg_io_core
+nodecg_io_artnet ...> artnet_protocol
 nodecg_io_curseforge ...> node_fetch
 nodecg_io_curseforge --> nodecg_io_core
 nodecg_io_dbus --> nodecg_io_core

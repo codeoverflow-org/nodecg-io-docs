@@ -28,6 +28,15 @@ Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio
 Depends on [get-stream](https://www.npmjs.com/package/get-stream) @ ^6.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-artnet](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-artnet)
+
+**Allows you to send DMX512 data over Art-Net™ to to Art-Net nodes i.e. professional lighting fixtures.**
+
+See the [sample implementation](samples/artnet.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [artnet-protocol](https://www.npmjs.com/package/artnet-protocol) @ ^0.2.1 <br>
+
 ## [nodecg-io-curseforge](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge)
 
 **A service to communicate with the CurseForge API.**
