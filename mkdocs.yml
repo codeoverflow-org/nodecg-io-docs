@@ -50,6 +50,7 @@ nav:
     - Services:
           - Available services: services.md
           - AHK sample: samples/ahk.md
+          - Art-Net sample: samples/artnet.md
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
           - DBus: samples/dbus-ratbagd.md
@@ -59,7 +60,7 @@ nav:
                 - Discord RPC sample: samples/discord-rpc.md
           - GitHub sample: samples/github.md
           - Googleapis:
-                - GSheets sample: samples/ghseets.md 
+                - GSheets sample: samples/ghseets.md
                 - Youtube sample: samples/youtube.md
           - IntelliJ sample: samples/intellij.md
           - IRC: samples/irc.md
@@ -101,7 +102,7 @@ extra_css:
 
 extra:
     version:
-      provider: mike
+        provider: mike
     social:
         - icon: fontawesome/brands/discord
           link: https://discord.gg/sX2Gjbs

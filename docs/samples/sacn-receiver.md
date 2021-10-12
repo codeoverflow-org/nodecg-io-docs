@@ -7,7 +7,7 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
 -   Working NodeCG & nodecg-io installation
 -   A working sACN sender in the current network
 
-### Configure the Discord sample bundle
+### Configure the sACN sample bundle
 
 1. Start nodecg with nodecg-io installed. The sacn-receiver-sample bundle is currently part of it so it should also be loaded.
 
