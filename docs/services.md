@@ -64,6 +64,17 @@ See the [sample implementation](samples/discord.md)
 Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^12.5.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord-rpc)
+
+**Allows to interface with a locally running discord client via RPC**
+
+See the [sample implementation](samples/discord-rpc.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [discord-rpc](https://www.npmjs.com/package/discord-rpc) @ ^4.0.1 <br>
+Depends on [@types/discord-rpc](https://www.npmjs.com/package/@types/discord-rpc) @ ^4.0.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+
 ## [nodecg-io-elgato-light](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light)
 
 **Control your Elgato lights, e.g. key lights and light stripes.**

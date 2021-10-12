@@ -52,8 +52,11 @@ nav:
           - AHK sample: samples/ahk.md
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
+          - DBus: samples/dbus-ratbagd.md
           - Debug: samples/debug.md
-          - Discord sample: samples/discord.md
+          - Discord:
+                - Discord API sample: samples/discord.md
+                - Discord RPC sample: samples/discord-rpc.md
           - GitHub sample: samples/github.md
           - Googleapis:
                 - GSheets sample: samples/ghseets.md 

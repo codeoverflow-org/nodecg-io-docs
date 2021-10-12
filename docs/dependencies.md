@@ -29,6 +29,9 @@ FontStyle Underline
 [<u>monaco-editor] as monaco_editor <<lib>> [[https://www.npmjs.com/package/monaco-editor]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
+[<u>nodecg-io-discord-rpc] as nodecg_io_discord_rpc <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord-rpc]]
+[<u>discord-rpc] as discord_rpc <<lib>> [[https://www.npmjs.com/package/discord-rpc]]
+[<u>@types/discord-rpc] as types_discord_rpc <<lib>> [[https://www.npmjs.com/package/@types/discord-rpc]]
 [<u>nodecg-io-elgato-light] as nodecg_io_elgato_light <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light]]
 [<u>@types/node-fetch] as types_node_fetch <<lib>> [[https://www.npmjs.com/package/@types/node-fetch]]
 [<u>nodecg-io-github] as nodecg_io_github <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-github]]
@@ -111,6 +114,10 @@ nodecg_io_debug --> nodecg_io_core
 nodecg_io_debug ...> monaco_editor
 nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
+nodecg_io_discord_rpc --> nodecg_io_core
+nodecg_io_discord_rpc ...> discord_rpc
+nodecg_io_discord_rpc ...> types_discord_rpc
+nodecg_io_discord_rpc ...> node_fetch
 nodecg_io_elgato_light ...> types_node_fetch
 nodecg_io_elgato_light ...> node_fetch
 nodecg_io_elgato_light --> nodecg_io_core
