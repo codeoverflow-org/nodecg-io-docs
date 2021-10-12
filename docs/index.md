@@ -28,6 +28,7 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 - CurseForge
 - DBus
 - Discord
+- Discord RPC
 - Elgato lights
 - GitHub
 - Google Apis
