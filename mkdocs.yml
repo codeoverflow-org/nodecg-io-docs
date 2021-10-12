@@ -50,7 +50,7 @@ nav:
     - Services:
           - Available services: services.md
           - AHK sample: samples/ahk.md
-          - Atr-Net sample: samples/artnet.md
+          - Art-Net sample: samples/artnet.md
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
           - Debug: samples/debug.md
