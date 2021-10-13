@@ -67,6 +67,8 @@ FontStyle Underline
 [<u>@serialport/parser-readline] as serialport_parser_readline <<lib>> [[https://www.npmjs.com/package/@serialport/parser-readline]]
 [<u>@types/serialport] as types_serialport <<lib>> [[https://www.npmjs.com/package/@types/serialport]]
 [<u>serialport] as serialport <<lib>> [[https://www.npmjs.com/package/serialport]]
+[<u>nodecg-io-shlink] as nodecg_io_shlink <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-shlink]]
+[<u>shlink-client] as shlink_client <<lib>> [[https://www.npmjs.com/package/shlink-client]]
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
@@ -161,6 +163,8 @@ nodecg_io_serial ...> serialport_parser_readline
 nodecg_io_serial ...> types_serialport
 nodecg_io_serial --> nodecg_io_core
 nodecg_io_serial ...> serialport
+nodecg_io_shlink --> nodecg_io_core
+nodecg_io_shlink ...> shlink_client
 nodecg_io_slack ...> slack_web_api
 nodecg_io_slack --> nodecg_io_core
 nodecg_io_spotify ...> types_spotify_web_api_node

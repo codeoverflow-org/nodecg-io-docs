@@ -228,6 +228,15 @@ Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.0.7 <br>
 
+## [nodecg-io-shlink](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-shlink)
+
+**Allows you to create Shlink short links**
+
+See the [sample implementation](samples/shlink.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [shlink-client](https://www.npmjs.com/package/shlink-client) @ ^1.0.1 <br>
+
 ## [nodecg-io-slack](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack)
 
 **Allows to connect to your slack. This enables you to e.g. send messages and list all channel. Visit https://api.slack.com/methods to see all methods **
