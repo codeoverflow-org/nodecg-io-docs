@@ -77,6 +77,7 @@ nav:
                 - sACN Receiver sample: samples/sacn-receiver.md
                 - sACN Sender sample: samples/sacn-sender.md
           - Serial sample: samples/serial.md
+          - Shlink sample: samples/shlink.md
           - Slack sample: samples/slack.md
           - Spotify sample: samples/spotify.md
           - SQL sample: samples/sql.md
