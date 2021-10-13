@@ -45,6 +45,7 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 - sACN Receiver
 - sACN Sender
 - Serial Port (Arduino)
+- [Shlink](https://shlink.io/)
 - Slack WebAPI
 - Spotify
 - SQL (using [knex](https://knexjs.org/))
