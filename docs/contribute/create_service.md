@@ -2,9 +2,10 @@
 
 This guide helps you to create a service integration such as _twitch-chat_ or _discord_
 
-## Find a javascript library
+## Find a JavaScript library
 
-Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a package that wraps around the API of your service. If there's no such package you need to create one yourself. This process is not described here.
+Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a package that wraps around the API of your service. If there's no such package, you need to create one yourself. This process is not described here. You may read the
+[“Contributing packages to the registry” from the npm Docs](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
 
 ## Create a package
 
@@ -12,7 +13,7 @@ From here you will have to replace:
 
 -   `YourServiceName` to your service's name in [PascalCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class).
 -   `yourServiceName` to your service's name in [carmelCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function).
--   `your-service-name` to your service's name with only lowercase and hyphens ( `-` ) for example: ws-server.
+-   `your-service-name` to your service's name with only lowercase and hyphens (`-`) for example: ws-server.
 
 Now you need to create a package. You should call it `nodecg-io-your-service-name`.
 
@@ -35,6 +36,7 @@ Put the following into it:
         "url": "https://github.com/codeoverflow-org/nodecg-io.git",
         "directory": "nodecg-io-<your-service-name>"
     },
+    "files": ["**/*.js", "**/*.js.map", "**/*.d.ts", "*.json"],
     "main": "extension",
     "scripts": {
         "build": "tsc -b",
@@ -50,9 +52,9 @@ Put the following into it:
     },
     "license": "MIT",
     "devDependencies": {
-        "@types/node": "^14.14.33",
-        "nodecg": "^1.8.1",
-        "typescript": "^4.2.3"
+        "@types/node": "^15.0.2",
+        "nodecg-types": "^1.8.2",
+        "typescript": "^4.2.4"
     },
     "dependencies": {
         "nodecg-io-core": "^0.2.0",
@@ -73,19 +75,25 @@ Now run `npm install` and `npm run bootstrap` in the repository root.
 
 ## Create a configuration schema
 
-Next create a file called `your-service-name-schame.json`. This is a json schema file that indicates how the configuration for your service should be structured. If you need help here take a look at [this](https://json-schema.org/understanding-json-schema/) online resource and the schema-files of the other service implementations.
+Next create a file called `your-service-name-schame.json`. This is a JSON schema file that indicates how the configuration for your service should be structured. If you need help here take a look at [this](https://json-schema.org/understanding-json-schema/) online resource and the schema-files of the other service implementations.
 
 ## Create the service
 
-Create a file called `index.ts` in a folder called `extension` inside your services directory. You can then paste the following code and fill in your code instead of the comments.
+Create a file called `index.ts` in a folder called `extension` inside your service's directory. You can then paste the following code and fill in your code instead of the comments.
 
 ```typescript
-// TODO: Rename all occurences of "YourServiceName" in PascalCase
-// TODO: Rename all occurences of "yourServiceName" in carmelCase
-// TODO: Rename all occurences of "your-service-name" with only lowercase and hyphens ( - )
+// TODO: Rename all occurrences of "YourServiceName" in PascalCase
+// TODO: Rename all occurrences of "yourServiceName" in carmelCase
+// TODO: Rename all occurrences of "your-service-name" with only lowercase and hyphens ( - )
 
-import { NodeCG } from "nodecg/types/server";
-import { Result, emptySuccess, success, ServiceBundle, ServiceClient } from "nodecg-io-core";
+import { NodeCG } from "nodecg-types/types/server";
+import {
+    Result,
+    emptySuccess,
+    success,
+    ServiceBundle,
+    ServiceClient,
+} from "nodecg-io-core";
 // TODO: Replace the "fake" service class with that found on npm etc.
 import { ServiceClass } from "./";
 
@@ -103,18 +111,30 @@ interface YourServiceNameServiceConfig {
 export type YourServiceNameServiceClient = ServiceClient<ServiceClass>;
 
 module.exports = (nodecg: NodeCG) => {
-    new YourServiceNameService(nodecg, "your-service-name", __dirname, "../your-service-name-schema.json").register();
+    new YourServiceNameService(
+        nodecg,
+        "your-service-name",
+        __dirname,
+        "../your-service-name-schema.json"
+    ).register();
 };
 
-class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig, YourServiceNameServiceClient> {
-    async validateConfig(config: YourServiceNameServiceConfig): Promise<Result<void>> {
+class YourServiceNameService extends ServiceBundle<
+    YourServiceNameServiceConfig,
+    YourServiceNameServiceClient
+> {
+    async validateConfig(
+        config: YourServiceNameServiceConfig
+    ): Promise<Result<void>> {
         // TODO You can validate your config here. If this gets called, the schema is correct.
         // You should for example check whether oauth keys are valid and servers are online here
         // If everything is good return 'emptySuccess()'
         // If an error occurs return 'error(<The error message>)'
     }
 
-    async createClient(config: YourServiceNameServiceConfig): Promise<Result<YourServiceNameServiceClient>> {
+    async createClient(
+        config: YourServiceNameServiceConfig
+    ): Promise<Result<YourServiceNameServiceClient>> {
         // TODO Here you should return a <Your service name>ServiceClient that is exposed to bundles.
         // If everything is good return 'success({
         //     getNativeClient() {
@@ -126,7 +146,7 @@ class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig,
     }
 
     stopClient(client: YourServiceNameServiceClient): void {
-        // Here you shuld make sure you disconnect everything here (if possible).
+        // Here you should make sure you disconnect everything here (if possible).
     }
 }
 ```
@@ -150,4 +170,4 @@ No sample bundle for service `<the services name>`.
 [You can help us and create one!](https://github.com/codeoverflow-org/nodecg-io/blob/master/docs/docs/contribute.md)
 ```
 
-Do not remove the marker in the first line until the bundle is implemented and don't forget to add this file to `mkdocs.yml`.
+Do not remove the marker in the first line until there is a sample bundle, and it is documented there. Don't forget to add this file to `mkdocs.yml`.

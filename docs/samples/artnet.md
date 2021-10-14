@@ -15,7 +15,7 @@ The Art-Net example bundle in `samples/artnet-console` demonstrates the ability 
 
 3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
 
-4. Create a new artnet service instance using the left upper menu.
+4. Create a new Art-Net service instance using the left upper menu.
 
 5. Enter the needed option.
 
@@ -37,9 +37,9 @@ The Art-Net example bundle in `samples/artnet-console` demonstrates the ability 
 
     _Note:_ If you don't see monaco on the right, try reloading the page.
 
-6. Set the created artnet service instance to the service dependency of the artnet-console bundle.
+6. Set the created Art-Net service instance to the service dependency of the artnet-console bundle.
 
-    Select the artnet-console bundle and the artnet service in the left bottom dropdown and then select the service instance that should be used by the artnet-console bundle (in this case the name of the previously created artnet instance).
+    Select the artnet-console bundle and the Art-Net service in the left bottom dropdown and then select the service instance that should be used by the artnet-console bundle (in this case the name of the previously created Art-Net instance).
 
 7. Check the nodecg logs
 

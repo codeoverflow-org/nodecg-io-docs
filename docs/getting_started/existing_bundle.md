@@ -1,10 +1,10 @@
 # Migrating your existing bundle to nodecg-io
 
-This guide explains you how to migrate an existing nodecg bundle that already meets your requirements to use nodecg-io.
-nodecg-io manages service configuration and authentication so your bundle doesn't have to bother with it.
+This guide explains to you how to migrate an existing nodecg bundle that already meets your requirements to use nodecg-io.
+nodecg-io manages service configuration and authentication, so your bundle doesn't have to bother with it.
 
 If you are lucky and used the same library as we do for the service you want to migrate, nodecg-io is a drop-in replacement just doing authentication and configuration.
-If you have used another library you'll have to do a little more work to migrate to the library that our service uses.
+If you have used another library, you'll have to do a little more work to migrate to the library that our service uses.
 In that case make sure that the migration is worth the effort.
 You can use nodecg-io for one service and use your own library of choice for other services if you like to.
 
@@ -34,10 +34,10 @@ Now that you have `nodecg-io-core` installed in your bundle you can import the `
 
 ## Import Service type (TypeScript only)
 
-If you're using TypeScript you'll also need to install the package of the service that you want to use.
-You need it to be able to import its type for typesafety.
+If you're using TypeScript, you'll also need to install the package of the service that you want to use.
+You need it to be able to import its type for type safety.
 
-This example uses `twitch-chat` as an example but you can just replace it with the name of the service you need.
+This example uses `twitch-chat` as an example, but you can just replace it with the name of the service you need.
 
 === "TypeScript"
 
@@ -73,7 +73,7 @@ In case of TypeScript you'll also need to provide the type of the service.
 
 ### Using `onAvailable` and `onUnavailable` handlers
 
-You can setup handlers that are executed when the user assigns a service instance to your bundle, removes the assignment or when the service client got updated in some way.
+You can set up handlers that are executed when the user assigns a service instance to your bundle, removes the assignment or when the service client got updated in some way.
 
 Handlers added with `onAvailable` will get called if there was a change and you got a client:
 
@@ -87,7 +87,7 @@ twitchChat.onAvailable(client => {
 ```
 
 `onAvailable` is especially useful to add event handlers to clients.
-E.g. if you want to react to donations or chat messages you can add event handlers for these here.
+E.g., if you want to react to donations or chat messages you can add event handlers for these here.
 
 Handlers added with `onUnavailable` will get called if your bundle was not assigned a service instance or if there was an error in service client creation:
 
@@ -105,6 +105,6 @@ Instead of callbacks you can also get access to the client directly:
 const twitchChatClient = twitchChat.getClient();
 ```
 
-`getClient` will return the client if your bundle has an assigned service instance that has produced an service client without error
+`getClient` will return the client if your bundle has an assigned service instance that has produced a service client without error
 and will return `undefined` otherwise.
 This is useful for when you want to use the client due to some external event or from `onAvailable` handlers of other services.

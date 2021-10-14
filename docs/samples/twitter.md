@@ -8,14 +8,14 @@ The Twitter timeline bundle retrieves some of the latest tweets from _skate702_ 
 -   An [app](https://developer.twitter.com/en/apps) and their following keys and tokens
     -   The _API key_ here **oauthConsumerKey**
     -   The _API secret key_ here **oauthConsumerSecret**
-    -   The _Access token_ here **oauthToken**
+    -   The _Access token_ here **outspoken**
     -   The _Access token secret_ here **oauthTokenSecret**
 
-_Note:_ You will need a twitter developer account (https://developer.twitter.com/en/apply-for-access) to get the necessary keys and tokens.
+_Note:_ You will need a Twitter developer account (<https://developer.twitter.com/en/apply-for-access>) to get the necessary keys and tokens.
 
 ### Configure the sample bundle
 
-1. Start nodecg with nodecg-io installed. The twitter-timeline bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The twitter-timeline bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 

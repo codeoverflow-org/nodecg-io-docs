@@ -1,6 +1,6 @@
 ## Using the RCON sample bundle
 
-The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command to a minecraft server.
+The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command to a Minecraft server.
 
 ### Prerequisites
 
@@ -9,7 +9,7 @@ The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command t
 
 ### Configure the rcon sample bundle
 
-1. Start nodecg with nodecg-io installed. The rcon bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The rcon bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -17,7 +17,7 @@ The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command t
 
 4. Create a new rcon service instance using the left upper menu.
 
-5. Enter the host, port and password of the rcon connection. This can be found in the ``server.properties`` file (rcon.port, rcon.password)
+5. Enter the host, port, and password of the rcon connection. This can be found in the ``server.properties`` file (`rcon.port`, `rcon.password`)
 
     The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:
 
@@ -33,4 +33,4 @@ The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command t
 
 6. Set the created rcon service instance to the service dependency of the rcon-minecraft bundle.
 
-7. In the nodecg console you will see a list with all online players. It will also send a /say command to the minecraft server.
+7. In the nodecg console you will see a list with all online players. It will also send a /say command to the Minecraft server.

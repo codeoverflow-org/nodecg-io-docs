@@ -1,15 +1,15 @@
 ## Using the Nanoleaf sample bundle
 
-The Nanoleaf example bundle in `samples/nanoleaf` demonstrates the ability to control your nanoleaf lights. This example code sets all panels to an orange color. Here is a guide to how to get it working.
+The Nanoleaf example bundle in `samples/nanoleaf` demonstrates the ability to control your nanoleaf lights. This example code sets all panels to an orange colour. Here is a guide to how to get it working.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+-   Working NodeCG and a nodecg-io installation
 -   IP address of your nanoleaf controller
 
 ### Configure the nanoleaf sample bundle
 
-1. Start nodecg with nodecg-io installed. The nanoleaf sample bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The nanoleaf sample bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -37,6 +37,6 @@ The Nanoleaf example bundle in `samples/nanoleaf` demonstrates the ability to co
 
     Select the nanoleaf sample bundle and the nanoleaf service in the left bottom menu and then select the service instance that should be used by the nanoleaf sample bundle (in this case the name of the previously created nanoleaf instance).
 
-7. If everything worked your nanoleafs should now shine orange.
+7. If everything worked, your nanoleafs should now shine orange.
 
     If not you should check the nodecg logs for any errors.
