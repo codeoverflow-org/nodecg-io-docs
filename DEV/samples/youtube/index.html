@@ -689,10 +689,10 @@
       
         <li class="md-nav__item">
   <a href="#using-the-youtube-sample-bundle" class="md-nav__link">
-    Using the youtube sample bundle
+    Using the YouTube sample bundle
   </a>
   
-    <nav class="md-nav" aria-label="Using the youtube sample bundle">
+    <nav class="md-nav" aria-label="Using the YouTube sample bundle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -704,7 +704,7 @@
         
           <li class="md-nav__item">
   <a href="#configure-the-youtube-sample-bundle" class="md-nav__link">
-    Configure the youtube sample bundle
+    Configure the YouTube sample bundle
   </a>
   
 </li>
@@ -1313,10 +1313,10 @@
       
         <li class="md-nav__item">
   <a href="#using-the-youtube-sample-bundle" class="md-nav__link">
-    Using the youtube sample bundle
+    Using the YouTube sample bundle
   </a>
   
-    <nav class="md-nav" aria-label="Using the youtube sample bundle">
+    <nav class="md-nav" aria-label="Using the YouTube sample bundle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1328,7 +1328,7 @@
         
           <li class="md-nav__item">
   <a href="#configure-the-youtube-sample-bundle" class="md-nav__link">
-    Configure the youtube sample bundle
+    Configure the YouTube sample bundle
   </a>
   
 </li>
@@ -1357,22 +1357,22 @@
                 
                   <h1>Youtube sample</h1>
                 
-                <h2 id="using-the-youtube-sample-bundle">Using the youtube sample bundle</h2>
-<p>The youtube bundle in <code>samples/youtube-playlist</code> demonstrates the ability of getting information of a playlist. Here is a guide to how to get it working.</p>
+                <h2 id="using-the-youtube-sample-bundle">Using the YouTube sample bundle</h2>
+<p>The YouTube bundle in <code>samples/youtube-playlist</code> demonstrates the ability of getting information of a playlist. Here is a guide to how to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
 <li>Working NodeCG &amp; nodecg-io installation</li>
-<li>Google cloud API OAuth access (clientID, clientSecret)</li>
+<li>Google cloud API OAuth access (client ID, client Secret)</li>
 <li>Grant <code>YouTube Data API v3</code> access at the project's dashboard.<ul>
-<li>Shortcut URL: https://console.developers.google.com/apis/library/youtube.googleapis.com?project=&lt;project-id&gt;</li>
+<li>Shortcut URL: <a href="https://console.developers.google.com/apis/library/youtube.googleapis.com?project=&lt;project-id&gt;">https://console.developers.google.com/apis/library/youtube.googleapis.com?project=&lt;project-id&gt;</a></li>
 </ul>
 </li>
 </ul>
-<p><em>Note:</em> If you don't have such a key yet, you can generate them like <a href="https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred">this</a>. As redirect URI add "http://localhost:9090/nodecg-io-googleapis/oauth2callback".</p>
-<h3 id="configure-the-youtube-sample-bundle">Configure the youtube sample bundle</h3>
+<p><em>Note:</em> If you don't have such a key yet, you can generate them like <a href="https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred">this</a>. As redirect URI add <a href="http://localhost:9090/nodecg-io-googleapis/oauth2callback">http://localhost:9090/nodecg-io-googleapis/oauth2callback</a>.</p>
+<h3 id="configure-the-youtube-sample-bundle">Configure the YouTube sample bundle</h3>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The youtube bundle is currently part of it so it should also be loaded.</p>
+<p>Start nodecg with nodecg-io installed. The YouTube bundle is currently part of it, so it should also be loaded.</p>
 </li>
 <li>
 <p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
@@ -1385,7 +1385,7 @@
 </li>
 <li>
 <p>Enter credentials for googleapis.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your youtube oauth credentials in monaco (the text-editor on the right) in this format:</p>
+<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your YouTube OAuth credentials in monaco (the text-editor on the right) in this format:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;clientID&gt;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;clientSecret&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;clientSecret&gt;&quot;</span><span class="p">,</span>
@@ -1397,8 +1397,8 @@
 <em>Note:</em> You can add multiple scopes if the googleapis instance is used for multiple bundles.</p>
 </li>
 <li>
-<p>Set the created googleapis service instance to the service dependency of the youtube bundle.</p>
-<p>Select the youtube bundle and the googleapis service in the left bottom menu and then select the service instance that should be used by the youtube bundle (in this case the name of the previously created googleapis instance).</p>
+<p>Set the created googleapis service instance to the service dependency of the YouTube bundle.</p>
+<p>Select the YouTube bundle and the googleapis service in the left bottom menu and then select the service instance that should be used by the YouTube bundle (in this case the name of the previously created googleapis instance).</p>
 </li>
 <li>
 <p>Check the nodecg logs</p>

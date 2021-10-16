@@ -1356,7 +1356,7 @@
                   <h1>TIANE sample</h1>
                 
                 <h2 id="using-the-tiane-discord-sample-bundle">Using the TIANE-Discord sample bundle</h2>
-<p>The TIANE-Discord example bundle in <code>samples/tiane-discord</code> shows how to make tiane act as a discord bot. TIANE is a german open source smart home assistant written in python. Here is a guide to how to get it working.</p>
+<p>The TIANE-Discord example bundle in <code>samples/tiane-discord</code> shows how to make TIANE act as a discord bot. TIANE is a German open source smart home assistant written in python. Here is a guide to how to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
 <li>Working NodeCG &amp; nodecg-io installation</li>
@@ -1366,10 +1366,10 @@
 <h3 id="configure-the-tiane-sample-bundle">Configure the TIANE sample bundle</h3>
 <ol>
 <li>
-<p>Edit the file <code>samples/tiane-discord/extension/index.ts</code>. Look for this line</p>
+<p>Edit the file <code>samples/tiane-discord/extension/index.ts</code>. Look for this line:</p>
 <div class="highlight"><pre><span></span><code>const discordChannel = &quot;&quot;; // Insert channel for the discord bot here
 </code></pre></div>
-<p>Put the channel id of a discord channel where you want to talk to TIANE between the quotation marks. See <a href="https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord">here</a> to find out how to get a channel id.</p>
+<p>Put the channel ID of a discord channel where you want to talk to TIANE between the quotation marks. See <a href="https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord">here</a> to find out how to get a channel ID.</p>
 </li>
 <li>
 <p>Run <code>npm run build</code> in the main nodecg-io directory.</p>
@@ -1385,7 +1385,7 @@
 <p>Make sure <code>websocket</code> is either set to <code>enabled</code> or <code>secure</code> and set a port of your desire.</p>
 </li>
 <li>
-<p>Start nodecg with nodecg-io installed. The TIANE-Discord bundle is currently part of it so it should also be loaded.</p>
+<p>Start nodecg with nodecg-io installed. The TIANE-Discord bundle is currently part of it, so it should also be loaded.</p>
 </li>
 <li>
 <p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
@@ -1411,10 +1411,10 @@
 </li>
 <li>
 <p>Set the created TIANE and Discord service instances to the service dependency of the TIANE-Discord bundle.</p>
-<p>Select the TIANE-Discord bundle and the TIANE service in the left bottom menu and then select the service instance that should be used by the TIANE-Discord bundle (in this case the name of the previously created twitch instance). Then do the ame for the discord bundle.</p>
+<p>Select the TIANE-Discord bundle and the TIANE service in the left bottom menu and then select the service instance that should be used by the TIANE-Discord bundle (in this case the name of the previously created twitch instance). Then do the same for the discord bundle.</p>
 </li>
 <li>
-<p>Ping your discord bot in the channel you set in the first step and ask tiane something.</p>
+<p>Ping your discord bot in the channel you set in the first step and ask TIANE something.</p>
 </li>
 </ol>
                 

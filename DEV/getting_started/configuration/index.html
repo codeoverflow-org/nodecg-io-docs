@@ -1320,15 +1320,14 @@
                 
                 
                 <h1 id="configuration">Configuration</h1>
-<!-- TODO: introduction sentence -->
-
-<p>The configuration file for nodecg-io is at <code>cfg/nodecg-io-core.json</code> inside your nodecg installation. This file does not exist by default, you need to create it yourself.</p>
+<p>Since version <code>0.2.0</code> nodecg-io has a configuration feature to save some settings without needing to code something or log in. The configuration file for
+this feature is at <code>cfg/nodecg-io-core.json</code> inside your nodecg installation. This file does not exist by default, you need to create it yourself.</p>
 <p>The currently only thing you can configure is automatic login, but there may be more configurable options in the future.</p>
 <h2 id="automatic-login">Automatic login</h2>
 <p>Automatic login will automatically load nodecg-io when nodecg starts using the provided password.</p>
-<p>Therefore nodecg-io will be able to decrypt your configuration for your service instances and provide your bundles with service clients without you logging in to nodecg-io using the dashboard.
-This is especially useful if you are running nodecg with nodecg-io on a server which may reboot from time to time to ensure that your bundles are always working without you needing to manually login after each restart.</p>
-<p><strong>Security warning:</strong> Having both the encrypted configuration and your used password saved on disk defeats nodecg-ios data-at-rest encryption.
+<p>Therefore, nodecg-io will be able to decrypt your configuration for your service instances and provide your bundles with service clients without you logging in to nodecg-io using the dashboard.
+This is especially useful if you are running nodecg with nodecg-io on a server which may reboot from time to time to ensure that your bundles are always working without you needing to manually log in after each restart.</p>
+<p><strong>Security warning:</strong> Having both the encrypted configuration and your used password saved on disk defeats nodecg-io's data-at-rest encryption.
 Any program that can read disk contents can access your credentials of any service instance. We discourage using this and if you really want to use it you should be extra cautious about which bundles you install.</p>
 <p>Options of automatic login:</p>
 <ul>
@@ -1340,8 +1339,8 @@ Any program that can read disk contents can access your credentials of any servi
 <ul>
 <li><code>password</code> (string)</li>
 </ul>
-<p>This is the password that will be used to login. It should be the password you use to login to nodecg-io.
-  If this password is wrong a error will be logged after startup.</p>
+<p>This is the password that will be used to log in. It should be the password you use to log in to nodecg-io.
+  If this password is wrong an error will be logged after startup.</p>
 <p>Example config:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;automaticLogin&quot;</span><span class="p">:</span> <span class="p">{</span>

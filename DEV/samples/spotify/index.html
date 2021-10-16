@@ -1362,11 +1362,11 @@
 <li>Working NodeCG &amp; nodecg-io installation</li>
 <li>A Spotify account and a registered Spotify application and the associated client id/client secret.</li>
 </ul>
-<p><em>Note:</em> If you don't have a registered application yet you can follow <a href="https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app">this guide</a>. As a redirect url use <a href="http://localhost:9090/nodecg-io-spotify/spotifycallback">http://localhost:9090/nodecg-io-spotify/spotifycallback</a>.</p>
+<p><em>Note:</em> If you don't have a registered application, yet you can follow <a href="https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app">this guide</a>. As a redirect URL use <a href="http://localhost:9090/nodecg-io-spotify/spotifycallback">http://localhost:9090/nodecg-io-spotify/spotifycallback</a>.</p>
 <h3 id="configure-the-spotify-sample-bundle">Configure the Spotify sample bundle</h3>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The spotify-current-song bundle is currently part of it so it should also be loaded.</p>
+<p>Start nodecg with nodecg-io installed. The spotify-current-song bundle is currently part of it, so it should also be loaded.</p>
 </li>
 <li>
 <p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
@@ -1375,11 +1375,11 @@
 <p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
 </li>
 <li>
-<p>Create a new spotify service instance using the left upper menu.</p>
+<p>Create a new Spotify service instance using the left upper menu.</p>
 </li>
 <li>
-<p>Enter credentials for spotify.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your client id and secret in monaco (the text-editor on the right) in this format:</p>
+<p>Enter credentials for Spotify.</p>
+<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your client ID and secret in monaco (the text-editor on the right) in this format:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;scopes&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="s2">&quot;user-read-playback-state&quot;</span>
@@ -1394,8 +1394,8 @@
         A list of all scopes can be found <a href="https://developer.spotify.com/documentation/general/guides/scopes/">here</a>.</p>
 </li>
 <li>
-<p>Set the created spotify service instance to the service dependency of the spotify-current-song bundle.</p>
-<p>Select the spotify-current-song bundle and the spotify service in the left bottom menu and then select the service instance that should be used by the spotify-current-song bundle (in this case the name of the previously created spotify instance).</p>
+<p>Set the created Spotify service instance to the service dependency of the spotify-current-song bundle.</p>
+<p>Select the spotify-current-song bundle and the Spotify service in the left bottom menu and then select the service instance that should be used by the spotify-current-song bundle (in this case the name of the previously created Spotify instance).</p>
 </li>
 <li>
 <p>Check the nodecg logs</p>

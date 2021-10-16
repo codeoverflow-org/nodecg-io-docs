@@ -298,7 +298,7 @@
       
         <li class="md-nav__item">
   <a href="#create-your-bundle-using-the-nodecg-io-cli" class="md-nav__link">
-    Create your bundle using the nodecg-io cli
+    Create your bundle using the nodecg-io CLI
   </a>
   
 </li>
@@ -1325,7 +1325,7 @@
       
         <li class="md-nav__item">
   <a href="#create-your-bundle-using-the-nodecg-io-cli" class="md-nav__link">
-    Create your bundle using the nodecg-io cli
+    Create your bundle using the nodecg-io CLI
   </a>
   
 </li>
@@ -1378,16 +1378,16 @@
                 <h1 id="create-your-first-bundle">Create your first bundle</h1>
 <p>To actually use nodecg-io you need to create a bundle. Here's a step-by-step guide to create one.</p>
 <p>Think of what services your bundle needs. Take a look at the <a href="../../services/">service list</a> if to see what services are available. If you need a service that is not yet available consider <a href="../../contribute/create_service/">creating it</a>.</p>
-<h2 id="create-your-bundle-using-the-nodecg-io-cli">Create your bundle using the nodecg-io cli</h2>
-<p>Automatically generating a bundle that uses nodecg-io requires that you have the nodecg-io cli installed. A guide on how to do this is inside the <a href="../install/">install guide</a>. Also note that this currently only works when you have installed a release version, not development versions.</p>
+<h2 id="create-your-bundle-using-the-nodecg-io-cli">Create your bundle using the nodecg-io CLI</h2>
+<p>Automatically generating a bundle that uses nodecg-io requires that you have the nodecg-io CLI installed. A guide on how to do this is inside the <a href="../install/">installation guide</a>. Also note that this currently only works when you have installed a release version, not development versions.</p>
 <p>To start run this command while being inside your nodecg installation:</p>
 <div class="highlight"><pre><span></span><code>nodecg-io generate
 </code></pre></div>
 <p>This will ask you a couple details about your bundle like name, description and used services.
 Most questions have a reasonable default that you can choose if you don't care or are not sure about the asked thing.</p>
-<p>After finishing the prompt the cli will generate your bundle, install dependencies and, if you have chosen TypeScript, compile the generated code.</p>
+<p>After finishing the prompt the CLI will generate your bundle, install dependencies and, if you have chosen TypeScript, compile the generated code.</p>
 <h2 id="test-it">Test it</h2>
-<p>Start NodeCG and make sure that the bundle gets loaded successfully and it is displayed in the nodecg-io dashboard with all service dependencies.</p>
+<p>Start NodeCG and make sure that the bundle gets loaded successfully, and it is displayed in the nodecg-io dashboard with all service dependencies.</p>
 <h2 id="modify-it">Modify it</h2>
 <p>After that you should edit the <code>extension/index.ts</code> or <code>extension/index.js</code> depending on your chosen language to do something useful.
 You can start by updating the <code>onAvailable</code> callbacks.</p>
@@ -1396,7 +1396,7 @@ You can start by updating the <code>onAvailable</code> callbacks.</p>
 <p>A couple of steps you may want to do after generating a bundle:</p>
 <ul>
 <li>Create a git repository for you bundle (a <code>.gitignore</code> is automatically generated for you) and push it to a git platform of your choice</li>
-<li>Add a <a href="https://choosealicense.com">open source license</a>, don't forget it to also add it to the <code>package.json</code> file</li>
+<li>Add an <a href="https://choosealicense.com">open source licence</a>, don't forget it to also add it to the <code>package.json</code> file</li>
 <li>Add code formatters and linting tools like <a href="https://prettier.io/">prettier</a> and <a href="https://eslint.org/">ESLint</a></li>
 <li>Add a README that explains what your bundle does and how it can be used</li>
 </ul>
