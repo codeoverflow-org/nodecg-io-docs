@@ -1,6 +1,6 @@
 # Configuration
 
-Since version `1.0.0` nodecg-io has a configuration feature to save some settings without needing to code something or log in. The configuration file for
+Since version `0.2.0` nodecg-io has a configuration feature to save some settings without needing to code something or log in. The configuration file for
 this feature is at `cfg/nodecg-io-core.json` inside your nodecg installation. This file does not exist by default, you need to create it yourself.
 
 The currently only thing you can configure is automatic login, but there may be more configurable options in the future.

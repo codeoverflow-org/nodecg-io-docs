@@ -87,13 +87,7 @@ Create a file called `index.ts` in a folder called `extension` inside your servi
 // TODO: Rename all occurrences of "your-service-name" with only lowercase and hyphens ( - )
 
 import { NodeCG } from "nodecg-types/types/server";
-import {
-    Result,
-    emptySuccess,
-    success,
-    ServiceBundle,
-    ServiceClient,
-} from "nodecg-io-core";
+import {Result,emptySuccess,success,ServiceBundle} from "nodecg-io-core";
 // TODO: Replace the "fake" service class with that found on npm etc.
 import { ServiceClass } from "./";
 
@@ -119,10 +113,7 @@ module.exports = (nodecg: NodeCG) => {
     ).register();
 };
 
-class YourServiceNameService extends ServiceBundle<
-    YourServiceNameServiceConfig,
-    YourServiceNameServiceClient
-> {
+class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig,YourServiceNameServiceClient> {
     async validateConfig(
         config: YourServiceNameServiceConfig
     ): Promise<Result<void>> {
@@ -132,16 +123,10 @@ class YourServiceNameService extends ServiceBundle<
         // If an error occurs return 'error(<The error message>)'
     }
 
-    async createClient(
-        config: YourServiceNameServiceConfig
-    ): Promise<Result<YourServiceNameServiceClient>> {
+    async createClient(config: YourServiceNameServiceConfig): Promise<Result<YourServiceNameServiceClient>> {
         // TODO Here you should return a <Your service name>ServiceClient that is exposed to bundles.
-        // If everything is good return 'success({
-        //     getNativeClient() {
-        //         return <The raw client from the package from step 1>
-        //     }
-        // })'
         // Or create a instance of your class if you have any simplifications and return that.
+        // If everything is good return 'success(client)'
         // If an error occurs return 'error(<The error message>)'
     }
 
