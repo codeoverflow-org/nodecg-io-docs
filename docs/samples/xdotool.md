@@ -5,11 +5,11 @@ The Xdotool sample bundle in `samples/xdotool-windowminimize` shows how to use t
 ### Prerequisites
 
 -   Working NodeCG & nodecg-io installation
--   xdotool installed (Only works on linux)
+-   xdotool installed (Only works on Linux)
 
 ### Configure the Xdotool sample bundle
 
-1. Start nodecg with nodecg-io installed. The xdotool bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The xdotool bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 

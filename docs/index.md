@@ -18,21 +18,22 @@ nodecg-io is the successor of [ChatOverflow](https://github.com/codeoverflow-org
 
 ## How to use nodecg-io
 
-If you want to use nodecg-io, you should note that it is only a framework for your bundle, so you need at least a basic knowledge of the programming language JavaScript or any other language that compiles to JavaScript like TypeScript.
+If you want to use nodecg-io, you should note that it is only a framework for your bundle.
+So you need at least a basic knowledge of the programming language JavaScript or any other language that compiles to JavaScript like TypeScript.
 If that's no problem you can head over to the [installation guide](./getting_started/install.md) and take a look at the [available nodecg-io services](./services.md).
 
 ## Implemented Services and Interfaces
 
 - AutoHotkey
 - Android (using adb)
-- ArtNet
+- Art-Net
 - CurseForge
 - DBus
 - Discord
 - Discord RPC
 - Elgato lights
 - GitHub
-- Google Apis
+- Google APIs
 - IntelliJ IDEs
 - IRC (Internet Relay Chat)
 - MIDI Input
@@ -46,14 +47,14 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 - sACN Sender
 - Serial Port (Arduino)
 - [Shlink](https://shlink.io/)
-- Slack WebAPI
+- Slack Web API
 - Spotify
 - SQL (using [knex](https://knexjs.org/))
 - Elgato Stream Deck
 - StreamElements
 - Telegram
 - TIANE
-- Twitch Addons
+- Twitch Add-ons
 - Twitch API
 - Twitch Chat
 - Twitch PubSub
@@ -64,4 +65,4 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 
 ## How to contribute
 
-If you want to contribute to this bundle you can implement one of those services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing head over to the [How to contribute](./contribute/contribute.md) - Guide.
+If you want to contribute to this bundle you can implement one of those services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing head over to the [“How to contribute”](./contribute/contribute.md)-Guide.

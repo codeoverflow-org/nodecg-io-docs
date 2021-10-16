@@ -11,7 +11,7 @@ _Note:_ If you don't have such a token yet, you can follow [this](https://discor
 
 ### Configure the Discord sample bundle
 
-1. Start nodecg with nodecg-io installed. The Discord-guild-chat bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The Discord-guild-chat bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 

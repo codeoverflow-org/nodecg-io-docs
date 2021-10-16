@@ -8,7 +8,7 @@ The WebSocket-server sample bundle in `samples/websocket-server` shows how to se
 
 ### Configure the websocket-server sample bundle
 
-1. Start nodecg with nodecg-io installed. The websocket-server bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The websocket-server bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 

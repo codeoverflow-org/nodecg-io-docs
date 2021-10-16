@@ -9,7 +9,7 @@ The telegram sample bundle in `samples/telegram-bot` shows how to create a simpl
 
 ### Configure the telegram sample bundle
 
-1. Start nodecg with nodecg-io installed. The telegram bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The telegram bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -32,4 +32,4 @@ The telegram sample bundle in `samples/telegram-bot` shows how to create a simpl
 
 6. Set the created telegram service instance to the service dependency of the telegram bundle.
 
-7. You can send "/test" to your bot and it should respond with two messages.
+7. You can send `/test` to your bot, and it should respond with two messages.
