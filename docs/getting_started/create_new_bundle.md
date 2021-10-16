@@ -4,9 +4,9 @@ To actually use nodecg-io you need to create a bundle. Here's a step-by-step gui
 
 Think of what services your bundle needs. Take a look at the [service list](../services.md) if to see what services are available. If you need a service that is not yet available consider [creating it](../contribute/create_service.md).
 
-## Create your bundle using the nodecg-io cli
+## Create your bundle using the nodecg-io CLI
 
-Automatically generating a bundle that uses nodecg-io requires that you have the nodecg-io cli installed. A guide on how to do this is inside the [install guide](./install.md). Also note that this currently only works when you have installed a release version, not development versions.
+Automatically generating a bundle that uses nodecg-io requires that you have the nodecg-io CLI installed. A guide on how to do this is inside the [installation guide](./install.md). Also note that this currently only works when you have installed a release version, not development versions.
 
 To start run this command while being inside your nodecg installation:
 
@@ -17,11 +17,11 @@ nodecg-io generate
 This will ask you a couple details about your bundle like name, description and used services.
 Most questions have a reasonable default that you can choose if you don't care or are not sure about the asked thing.
 
-After finishing the prompt the cli will generate your bundle, install dependencies and, if you have chosen TypeScript, compile the generated code.
+After finishing the prompt the CLI will generate your bundle, install dependencies and, if you have chosen TypeScript, compile the generated code.
 
 ## Test it
 
-Start NodeCG and make sure that the bundle gets loaded successfully and it is displayed in the nodecg-io dashboard with all service dependencies.
+Start NodeCG and make sure that the bundle gets loaded successfully, and it is displayed in the nodecg-io dashboard with all service dependencies.
 
 ## Modify it
 
@@ -35,7 +35,7 @@ _Note:_ If you need to access another service inside the callback of a `onAvaila
 A couple of steps you may want to do after generating a bundle:
 
 - Create a git repository for you bundle (a `.gitignore` is automatically generated for you) and push it to a git platform of your choice
-- Add a [open source license](https://choosealicense.com), don't forget it to also add it to the `package.json` file
+- Add an [open source licence](https://choosealicense.com), don't forget it to also add it to the `package.json` file
 - Add code formatters and linting tools like [prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
 - Add a README that explains what your bundle does and how it can be used
 

@@ -9,7 +9,7 @@ The midi-output example bundle in `samples/midi-output` demonstrates the ability
 
 ### Configure the midi-output sample bundle
 
-1. Start nodecg with nodecg-io installed. The midi-output bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The midi-output bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -29,7 +29,7 @@ The midi-output example bundle in `samples/midi-output` demonstrates the ability
 
     After entering it, click save.
     __Note:__ A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-output` using the command `npm run list`. The devices should be listed with their device names and some other stuff.
-    under linux this looks for example like this:
+    Under Linux this looks for example like this:
     
     ```
     nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
@@ -43,8 +43,8 @@ The midi-output example bundle in `samples/midi-output` demonstrates the ability
 
 7. Check the nodecg logs
 
-    You should see an error or a success message and random midi messages should be sent to the device that is configured. The messages are only "note on" messages and have a random note and velocity value ranging 0-127. The channels they are sent from are either channel 0 or 1, but the midi protocol supports up to 16 channels, so it could technically range from 0-15.
+    You should see an error or a success message and random midi messages should be sent to the device that is configured. The messages are only `Noteon` messages and have a random note and velocity value ranging 0-127. The channels they are sent from are either channel 0 or 1, but the midi protocol supports up to 16 channels, so it could technically range from 0-15.
 
 ### Note
 
-Only sending "note on" messages is sufficient for most midi, because most of them don't really care if you use proper "note off" messages or simply send a "note on" with a velocity of 0. This is due to the early days of midi, when integrated circuits were expensive. Allowing a velocity of 0 as replacement for "note off" made instruments featuring midi more affordable.
+Only sending `Noteon` messages is sufficient for most midi, because most of them don't really care if you use proper `Noteoff` messages or simply send a `Noteon` with a velocity of 0. This is due to the early days of midi, when integrated circuits were expensive. Allowing a velocity of 0 as replacement for `Noteoff` made instruments featuring midi more affordable.

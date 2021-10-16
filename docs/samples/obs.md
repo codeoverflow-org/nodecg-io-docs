@@ -11,7 +11,7 @@ _Note:_ OBS is available [here](https://obsproject.com/de/download) and obs-webs
 
 ### Configure the OBS sample bundle
 
-1. Start nodecg with nodecg-io installed. The obs-scenelist bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The obs-scenelist bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -31,7 +31,7 @@ _Note:_ OBS is available [here](https://obsproject.com/de/download) and obs-webs
     }
     ```
 
-    If you don't want to use a password you can just remove the password property from the config.
+    If you don't want to use a password, you can just remove the password property from the config.
 
     After entering it, click save.
 

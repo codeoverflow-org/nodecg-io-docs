@@ -22,14 +22,23 @@ FontStyle Underline
 [<u>nodecg-io-android] as nodecg_io_android <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-android]]
 [<u>@rauschma/stringio] as rauschma_stringio <<lib>> [[https://www.npmjs.com/package/@rauschma/stringio]]
 [<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
+[<u>nodecg-io-artnet] as nodecg_io_artnet <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-artnet]]
+[<u>artnet-protocol] as artnet_protocol <<lib>> [[https://www.npmjs.com/package/artnet-protocol]]
 [<u>nodecg-io-curseforge] as nodecg_io_curseforge <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge]]
+[<u>nodecg-io-dbus] as nodecg_io_dbus <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-dbus]]
+[<u>dbus-next] as dbus_next <<lib>> [[https://www.npmjs.com/package/dbus-next]]
 [<u>nodecg-io-debug] as nodecg_io_debug <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-debug]]
 [<u>monaco-editor] as monaco_editor <<lib>> [[https://www.npmjs.com/package/monaco-editor]]
 [<u>nodecg-io-discord] as nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
+[<u>nodecg-io-discord-rpc] as nodecg_io_discord_rpc <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord-rpc]]
+[<u>discord-rpc] as discord_rpc <<lib>> [[https://www.npmjs.com/package/discord-rpc]]
+[<u>@types/discord-rpc] as types_discord_rpc <<lib>> [[https://www.npmjs.com/package/@types/discord-rpc]]
 [<u>nodecg-io-elgato-light] as nodecg_io_elgato_light <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light]]
 [<u>@types/node-fetch] as types_node_fetch <<lib>> [[https://www.npmjs.com/package/@types/node-fetch]]
-[<u>nodecg-io-gsheets] as nodecg_io_gsheets <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-gsheets]]
+[<u>nodecg-io-github] as nodecg_io_github <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-github]]
+[<u>@octokit/rest] as octokit_rest <<lib>> [[https://www.npmjs.com/package/@octokit/rest]]
+[<u>nodecg-io-googleapis] as nodecg_io_googleapis <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-googleapis]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
 [<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
@@ -58,6 +67,8 @@ FontStyle Underline
 [<u>@serialport/parser-readline] as serialport_parser_readline <<lib>> [[https://www.npmjs.com/package/@serialport/parser-readline]]
 [<u>@types/serialport] as types_serialport <<lib>> [[https://www.npmjs.com/package/@types/serialport]]
 [<u>serialport] as serialport <<lib>> [[https://www.npmjs.com/package/serialport]]
+[<u>nodecg-io-shlink] as nodecg_io_shlink <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-shlink]]
+[<u>shlink-client] as shlink_client <<lib>> [[https://www.npmjs.com/package/shlink-client]]
 [<u>nodecg-io-slack] as nodecg_io_slack <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack]]
 [<u>@slack/web-api] as slack_web_api <<lib>> [[https://www.npmjs.com/package/@slack/web-api]]
 [<u>nodecg-io-spotify] as nodecg_io_spotify <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-spotify]]
@@ -91,7 +102,6 @@ FontStyle Underline
 [<u>@types/ws] as types_ws <<lib>> [[https://www.npmjs.com/package/@types/ws]]
 [<u>nodecg-io-websocket-server] as nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-xdotool]]
-[<u>nodecg-io-youtube] as nodecg_io_youtube <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube]]
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
 nodecg_io_core ...> tslib
@@ -100,20 +110,30 @@ nodecg_io_ahk --> nodecg_io_core
 nodecg_io_android ...> rauschma_stringio
 nodecg_io_android ...> get_stream
 nodecg_io_android --> nodecg_io_core
+nodecg_io_artnet --> nodecg_io_core
+nodecg_io_artnet ...> artnet_protocol
 nodecg_io_curseforge ...> node_fetch
 nodecg_io_curseforge --> nodecg_io_core
+nodecg_io_dbus --> nodecg_io_core
+nodecg_io_dbus ...> dbus_next
 nodecg_io_debug --> nodecg_io_core
 nodecg_io_debug ...> monaco_editor
 nodecg_io_discord ...> discord_js
 nodecg_io_discord --> nodecg_io_core
+nodecg_io_discord_rpc --> nodecg_io_core
+nodecg_io_discord_rpc ...> discord_rpc
+nodecg_io_discord_rpc ...> types_discord_rpc
+nodecg_io_discord_rpc ...> node_fetch
 nodecg_io_elgato_light ...> types_node_fetch
 nodecg_io_elgato_light ...> node_fetch
 nodecg_io_elgato_light --> nodecg_io_core
-nodecg_io_gsheets ...> types_gapi
-nodecg_io_gsheets ...> express
-nodecg_io_gsheets ...> googleapis
-nodecg_io_gsheets --> nodecg_io_core
-nodecg_io_gsheets ...> open
+nodecg_io_github --> nodecg_io_core
+nodecg_io_github ...> octokit_rest
+nodecg_io_googleapis ...> types_gapi
+nodecg_io_googleapis ...> express
+nodecg_io_googleapis ...> googleapis
+nodecg_io_googleapis --> nodecg_io_core
+nodecg_io_googleapis ...> open
 nodecg_io_intellij ...> node_fetch
 nodecg_io_intellij --> nodecg_io_core
 nodecg_io_irc ...> types_irc
@@ -143,6 +163,8 @@ nodecg_io_serial ...> serialport_parser_readline
 nodecg_io_serial ...> types_serialport
 nodecg_io_serial --> nodecg_io_core
 nodecg_io_serial ...> serialport
+nodecg_io_shlink --> nodecg_io_core
+nodecg_io_shlink ...> shlink_client
 nodecg_io_slack ...> slack_web_api
 nodecg_io_slack --> nodecg_io_core
 nodecg_io_spotify ...> types_spotify_web_api_node
@@ -188,9 +210,4 @@ nodecg_io_websocket_server ...> ws
 nodecg_io_xdotool ...> rauschma_stringio
 nodecg_io_xdotool ...> node_fetch
 nodecg_io_xdotool --> nodecg_io_core
-nodecg_io_youtube ...> types_gapi
-nodecg_io_youtube ...> express
-nodecg_io_youtube ...> googleapis
-nodecg_io_youtube --> nodecg_io_core
-nodecg_io_youtube ...> open
 ::end-uml::

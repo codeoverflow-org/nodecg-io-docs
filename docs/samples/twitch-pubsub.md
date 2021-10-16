@@ -1,17 +1,17 @@
 ## Using the Twitch PubSub sample bundle
 
-The twitch-pubsub example bundle in `samples/twitch-pubsub` demonstrates the ability to use the Twitch PubSub api. Here is a guide to how to get it working.
+The twitch-pubsub example bundle in `samples/twitch-pubsub` demonstrates the ability to use the Twitch PubSub API. Here is a guide to how to get it working.
 
 ### Prerequisites
 
 -   Working NodeCG & nodecg-io installation
 -   a Twitch oAuth-Key
 
-_Note:_ If you don't have such a key yet, you can generate it on https://twitchtokengenerator.com/, select custom scope token and select these scopes: `channel_subscriptions`, `bits:read` and `channel:read:redemptions`
+_Note:_ If you don't have such a key yet, you can generate it on <https://twitchtokengenerator.com/>, select custom scope token and select these scopes: `channel_subscriptions`, `bits:read` and `channel:read:redemptions`
 
 ### Configure the Twitch PubSub sample bundle
 
-1. Start nodecg with nodecg-io installed. The twitch-pubsub sample bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The twitch-pubsub sample bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -21,7 +21,7 @@ _Note:_ If you don't have such a key yet, you can generate it on https://twitcht
 
 5. Enter credentials for twitch-pubsub.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch oauth Key in monaco (the text-editor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor on the right) in this format:
 
     ```json
     {

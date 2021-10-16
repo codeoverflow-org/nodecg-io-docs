@@ -50,11 +50,19 @@ nav:
     - Services:
           - Available services: services.md
           - AHK sample: samples/ahk.md
+          - Art-Net sample: samples/artnet.md
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
+          - DBus: samples/dbus-ratbagd.md
           - Debug: samples/debug.md
-          - Discord sample: samples/discord.md
+          - Discord:
+                - Discord API sample: samples/discord.md
+                - Discord RPC sample: samples/discord-rpc.md
           - Elgato Light sample: samples/elgato-light.md
+          - GitHub sample: samples/github.md
+          - Googleapis:
+                - GSheets sample: samples/gsheets.md
+                - Youtube sample: samples/youtube.md
           - IntelliJ sample: samples/intellij.md
           - IRC: samples/irc.md
           - Midi:
@@ -70,6 +78,7 @@ nav:
                 - sACN Receiver sample: samples/sacn-receiver.md
                 - sACN Sender sample: samples/sacn-sender.md
           - Serial sample: samples/serial.md
+          - Shlink sample: samples/shlink.md
           - Slack sample: samples/slack.md
           - Spotify sample: samples/spotify.md
           - SQL sample: samples/sql.md
@@ -87,7 +96,6 @@ nav:
                 - Client sample: samples/websocket-client.md
                 - Server sample: samples/websocket-server.md
           - Xdotool sample: samples/xdotool.md
-          - YouTube sample: samples/youtube.md
           - Dependency Graph: dependencies.md
 
 extra_css:
@@ -96,7 +104,7 @@ extra_css:
 
 extra:
     version:
-      provider: mike
+        provider: mike
     social:
         - icon: fontawesome/brands/discord
           link: https://discord.gg/sX2Gjbs

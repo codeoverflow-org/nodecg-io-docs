@@ -9,9 +9,9 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
 ### Configure the serial sample bundle
 
-1. Load a simple serial echo sketch on your microcontroller. You can find a working arduino sketch at the end of this article.
+1. Load a simple serial echo sketch on your microcontroller. You can find a working Arduino sketch at the end of this article.
 
-2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it so it should also be loaded. Make sure the device is already connected. Otherwise, you won't be able to see the device.
+2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it, so it should also be loaded. Make sure the device is already connected. Otherwise, you won't be able to see the device.
 
 3. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -21,7 +21,7 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
 6. Enter the information of your device.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the com port or other identifying information in one of these formats:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter the `com port` or other identifying information in one of these formats:
 
     ```json
     {
@@ -43,7 +43,7 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
     _Note:_ If you don't see monaco on the right, try reloading the page.
     _Note:_ If you want to list all connected devices you can open a terminal in `nodecg-io-serial` and run `npm run list`.
-    _Note:_ If you are using multiple devices you might want to use the pnpId, since ports can change between reboots!
+    _Note:_ If you are using multiple devices you might want to use the `pnpId`, since ports can change between reboots!
 
 7. Set the created serial service instance to the service dependency of the serial bundle.
 
@@ -51,11 +51,11 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
 8. Check the nodecg logs
 
-    You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The arduino device will respond with pong. You should see the pong message displayed in the log.
+    You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The Arduino device will respond with pong. You should see the pong message displayed in the log.
 
     If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted. 
 
-### Sample arduino sketch
+### Sample Arduino sketch
 
 ```cpp
 String inputString = "";

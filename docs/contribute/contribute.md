@@ -3,8 +3,8 @@
 There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
 First you'll need an installation of nodecg-io. Please refer to the [installation guide](../getting_started/install.md) and create a development installation.
-The cli asks you whether you want to clone the documentation. It's highly recommended that you do that and update the documentation as you add new services or features.
-To be able to create Pull Requests you should fork the corresponding repositories and add them as a remote (update url for e.g. documentation repository):
+The CLI asks you whether you want to clone the documentation. It's highly recommended that you do that and update the documentation as you add new services or features.
+To be able to create Pull Requests you should fork the corresponding repositories and add them as a remote (update URL for e.g., documentation repository):
 
 ```shell
 git remote add fork https://github.com/[YOUR_USERNAME]/nodecg-io.git
@@ -27,7 +27,7 @@ The watch builder will watch for file changes and compile those changes incremen
 It will even stay running in the background if you close VS Code.
 You can resume it by starting the build task with
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again.  
-ou can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd>) on macOS.  
+You can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd>) on macOS.  
 Errors and warnings will be shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS)
 
 ### Terminal
@@ -49,7 +49,7 @@ npm run watch
 ```
 
 _Note:_ Watching all packages requires a lot of RAM. 
-Instead, you can watch just the packages you are actively working on e.g. `npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat`.
+Instead, you can watch just the packages you are actively working on e.g., `npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat`.
 This will just spawn a watch process for the twitch-chat sample and service and require way less memory.
 
 ## Run
@@ -82,7 +82,7 @@ You may also occasionally need to merge upstream master in a pull request. To do
 
 ### Where to Contribute
 
-After cloning and building the repo, check out the [issues list](https://github.com/codeoverflow-org/nodecg-io/issues). Issues labeled [`help wanted`](https://github.com/codeoverflow-org/nodecg-io/labels/help%20wanted) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/codeoverflow-org/nodecg-io/labels/good%20first%20issue) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
+After cloning and building the repo, check out the [issues list](https://github.com/codeoverflow-org/nodecg-io/issues). Issues labelled [`help wanted`](https://github.com/codeoverflow-org/nodecg-io/labels/help%20wanted) are good issues to submit a PR for. Issues labelled [`good first issue`](https://github.com/codeoverflow-org/nodecg-io/labels/good%20first%20issue) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
 
 ## Suggestions
 

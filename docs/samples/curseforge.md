@@ -1,6 +1,6 @@
 ## Using the CurseForge sample bundle
 
-The CurseForge example bundle in `samples/curseforge` demonstrates the ability to search for different addons with the id or search with specific values for matching addons. Here is a guide how to get it working.
+The CurseForge example bundle in `samples/curseforge` demonstrates the ability to search for different add-ons with the ID or search with specific values for matching add-ons. Here is a guide how to get it working.
 
 ### Prerequisites
 
@@ -13,4 +13,4 @@ The CurseForge example bundle in `samples/curseforge` demonstrates the ability t
 3. Create a new CurseForge service instance using the left upper menu.
 4. Set the CurseForge service instance to the service dependency of the CurseForge bundle. 
     Select the CurseForge bundle and the CurseForge service in the left bottom menu and then select the service instance that should be used by the CurseForge bundle (in this case the name of the previously created CurseForge instance).
-5. Check the NodeCG logs. You should see two lists of addons.
+5. Check the NodeCG logs. You should see two lists of add-ons.

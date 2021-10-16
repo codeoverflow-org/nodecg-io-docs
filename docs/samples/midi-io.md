@@ -9,7 +9,7 @@ The midi-io example bundle in `samples/midi-io` demonstrates the ability to send
 
 ### Configure the midi-io sample bundle
 
-1. Start nodecg with nodecg-io installed. The midi-io bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The midi-io bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -29,7 +29,7 @@ The midi-io example bundle in `samples/midi-io` demonstrates the ability to send
 
     After entering it, click save.
     __Note:__ A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-io` using the command `npm run list`. The devices should be listed with their device names and some other stuff.
-    under linux this looks for example like this:
+    Under Linux this looks for example like this:
     
     ```
     nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
@@ -51,9 +51,9 @@ The midi-io example bundle in `samples/midi-io` demonstrates the ability to send
 
 10. Check the nodecg logs
 
-    You should see an error or a success message and midi messages that are received and echoed back to the device that is configured. The messages are only modified, if the received Message is a noteon with a velocity of greater than zero or a control change message with a value of at least 64. Noteoff messages are always echoed unmodified.
+    You should see an error or a success message and midi messages that are received and echoed back to the device that is configured. The messages are only modified, if the received Message is a `Noteon` with a velocity of greater than zero or a control change message with a value of at least 64. `Noteoff` messages are always echoed unmodified.
 
 ### Note
 
-A noteon message with a velocity of 0 should be handled like a noteoff message, so they are echoed unmodified. Otherwise, this would get annoying very fast.  
-If a control change is assigned to a push-butten values of 64 and up are interpreted as on and values lower than that are interpreted as off. Most somewhat modern Midi devices send 127 as on and 0 as off, but 63 and 64 should also be sufficient. 
+A `Noteon` message with a velocity of 0 should be handled like a `Noteoff` message, so they are echoed unmodified. Otherwise, this would get annoying very fast.  
+If a control change is assigned to the push-button values of 64 and up are interpreted as on and values lower than that are interpreted as off. Most somewhat modern Midi devices send 127 as on and 0 as off, but 63 and 64 should also be sufficient. 

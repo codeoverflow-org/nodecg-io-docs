@@ -28,6 +28,15 @@ Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio
 Depends on [get-stream](https://www.npmjs.com/package/get-stream) @ ^6.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-artnet](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-artnet)
+
+**Allows you to send DMX512 data over Art-Net™ to to Art-Net nodes i.e. professional lighting fixtures.**
+
+See the [sample implementation](samples/artnet.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [artnet-protocol](https://www.npmjs.com/package/artnet-protocol) @ ^0.2.1 <br>
+
 ## [nodecg-io-curseforge](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-curseforge)
 
 **A service to communicate with the CurseForge API.**
@@ -36,6 +45,15 @@ See the [sample implementation](samples/curseforge.md)
 
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+
+## [nodecg-io-dbus](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-dbus)
+
+**Allows to interface with DBus**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [dbus-next](https://www.npmjs.com/package/dbus-next) @ ^0.10.2 <br>
 
 ## [nodecg-io-debug](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-debug)
 
@@ -55,6 +73,17 @@ See the [sample implementation](samples/discord.md)
 Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^12.5.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-discord-rpc)
+
+**Allows to interface with a locally running discord client via RPC**
+
+See the [sample implementation](samples/discord-rpc.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [discord-rpc](https://www.npmjs.com/package/discord-rpc) @ ^4.0.1 <br>
+Depends on [@types/discord-rpc](https://www.npmjs.com/package/@types/discord-rpc) @ ^4.0.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
+
 ## [nodecg-io-elgato-light](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-elgato-light)
 
 **Control your Elgato lights, e.g. key lights and light stripes.**
@@ -65,9 +94,18 @@ Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) 
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
-## [nodecg-io-gsheets](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-gsheets)
+## [nodecg-io-github](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-github)
 
-**Allow to control Google Sheets.**
+**Allows to connect to the GitHub REST API**
+
+See the [sample implementation](samples/github.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^18.12.0 <br>
+
+## [nodecg-io-googleapis](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-googleapis)
+
+**Allows to connect to and interact with many google-apis**
 
 There's no sample implementation for this service yet.
 
@@ -118,7 +156,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Allows to connect to a nanoleaf controller and trigger custom lighting effects.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/nanoleaf.md)
 
 Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.5.10 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
@@ -189,6 +227,15 @@ Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialpo
 Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.0.7 <br>
+
+## [nodecg-io-shlink](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-shlink)
+
+**Allows you to create Shlink short links**
+
+See the [sample implementation](samples/shlink.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [shlink-client](https://www.npmjs.com/package/shlink-client) @ ^1.0.1 <br>
 
 ## [nodecg-io-slack](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-slack)
 
@@ -346,16 +393,4 @@ See the [sample implementation](samples/xdotool.md)
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
-
-## [nodecg-io-youtube](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-youtube)
-
-**Allows to connect and interact to youtube**
-
-See the [sample implementation](samples/youtube.md)
-
-Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.39 <br>
-Depends on [express](https://www.npmjs.com/package/express) @ ^4.17.1 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^73.0.0 <br>
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
-Depends on [open](https://www.npmjs.com/package/open) @ ^8.0.8 <br>
 

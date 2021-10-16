@@ -1,4 +1,4 @@
-## Using the SteamElements sample bundle
+## Using the StreamElements sample bundle
 
 The StreamElements-events example bundle in `samples/streamelements-events` demonstrates the ability to react to events like donations and subs. Here is a guide to how to get it working.
 
@@ -11,11 +11,11 @@ The StreamElements-events example bundle in `samples/streamelements-events` demo
 
 To use the StreamElements service you need a JWT Token that gives it access to your account.
 
-To get it goto https://streamelements.com/dashboard/account/channels, login, click on `Show Secrets` and copy it.
+To get it go to <https://streamelements.com/dashboard/account/channels>, login, click on `Show Secrets` and copy it.
 
-### Configure the SteamElements sample bundle
+### Configure the StreamElements sample bundle
 
-1. Start nodecg with nodecg-io installed. The streamelements-events bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The streamelements-events bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
