@@ -11,8 +11,8 @@
         <meta name="author" content="codeoverflow.org">
       
       
-      <link rel="shortcut icon" href="/assets/logo.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <link rel="icon" href="/DEV/assets/logo.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.3">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.77f3fd56.min.css">
+      <link rel="stylesheet" href="/DEV/assets/stylesheets/main.5143246d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.7fa14f5b.min.css">
+        <link rel="stylesheet" href="/DEV/assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -33,12 +33,14 @@
     
     
     
-      <link rel="stylesheet" href="/stylesheets/colors.css">
+      <link rel="stylesheet" href="/DEV/stylesheets/colors.css">
     
-      <link rel="stylesheet" href="/stylesheets/fonts.css">
+      <link rel="stylesheet" href="/DEV/stylesheets/fonts.css">
     
     
       
+
+
     
     
   </head>
@@ -50,8 +52,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
-      
   
+    
+    <script>function __prefix(e){return new URL("/DEV",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -67,9 +70,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://nodecg.io/" title="nodecg-io Documentation" class="md-header__button md-logo" aria-label="nodecg-io Documentation">
+    <a href="/DEV/." title="nodecg-io Documentation" class="md-header__button md-logo" aria-label="nodecg-io Documentation" data-md-component="logo">
       
-  <img src="/assets/logo.png" alt="logo">
+  <img src="/DEV/assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -91,9 +94,8 @@
         </div>
       </div>
     </div>
-    <div class="md-header__options">
-      
-    </div>
+    
+    
     
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
@@ -103,14 +105,18 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -131,7 +137,7 @@
 <a href="https://github.com/codeoverflow-org/nodecg-io/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     codeoverflow-org/nodecg-io
@@ -140,11 +146,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -158,13 +167,11 @@
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://nodecg.io/" title="nodecg-io Documentation" class="md-nav__button md-logo" aria-label="nodecg-io Documentation">
+    <a href="/DEV/." title="nodecg-io Documentation" class="md-nav__button md-logo" aria-label="nodecg-io Documentation" data-md-component="logo">
       
-  <img src="/assets/logo.png" alt="logo">
+  <img src="/DEV/assets/logo.png" alt="logo">
 
     </a>
     nodecg-io Documentation
@@ -175,7 +182,7 @@
 <a href="https://github.com/codeoverflow-org/nodecg-io/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     codeoverflow-org/nodecg-io
@@ -193,7 +200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="/DEV/." class="md-nav__link">
         Home
       </a>
     </li>
@@ -213,10 +220,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_2">
-        Getting Started
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -225,52 +236,60 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/getting_started/install/" class="md-nav__link">
+      <a href="/DEV/getting_started/install/" class="md-nav__link">
         Installation
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/getting_started/create_new_bundle/" class="md-nav__link">
+      <a href="/DEV/getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/getting_started/existing_bundle/" class="md-nav__link">
+      <a href="/DEV/getting_started/existing_bundle/" class="md-nav__link">
         Migrating an existing bundle
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/getting_started/configuration/" class="md-nav__link">
+      <a href="/DEV/getting_started/configuration/" class="md-nav__link">
         Configuration
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -291,10 +310,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
-      <label class="md-nav__link" for="__nav_3">
-        Contribute
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Contribute
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Contribute" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
@@ -303,64 +326,74 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/contribute/contribute/" class="md-nav__link">
+      <a href="/DEV/contribute/contribute/" class="md-nav__link">
         Basics
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/contribute/create_service/" class="md-nav__link">
+      <a href="/DEV/contribute/create_service/" class="md-nav__link">
         Create a Service
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/contribute/create_sample/" class="md-nav__link">
+      <a href="/DEV/contribute/create_sample/" class="md-nav__link">
         Create a sample bundle
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/contribute/sample_documentation/" class="md-nav__link">
+      <a href="/DEV/contribute/sample_documentation/" class="md-nav__link">
         Document a sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/contribute/contributors/" class="md-nav__link">
+      <a href="/DEV/contribute/contributors/" class="md-nav__link">
         Contributors
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -381,10 +414,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Services
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Services
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Services" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -393,90 +430,105 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/services/" class="md-nav__link">
+      <a href="/DEV/services/" class="md-nav__link">
         Available services
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/ahk/" class="md-nav__link">
+      <a href="/DEV/samples/ahk/" class="md-nav__link">
         AHK sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/artnet/" class="md-nav__link">
+      <a href="/DEV/samples/artnet/" class="md-nav__link">
         Art-Net sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/curseforge/" class="md-nav__link">
+      <a href="/DEV/samples/curseforge/" class="md-nav__link">
         Curseforge sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/android/" class="md-nav__link">
+      <a href="/DEV/samples/android/" class="md-nav__link">
         Android
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/dbus-ratbagd/" class="md-nav__link">
+      <a href="/DEV/samples/dbus-ratbagd/" class="md-nav__link">
         DBus
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/debug/" class="md-nav__link">
+      <a href="/DEV/samples/debug/" class="md-nav__link">
         Debug
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -486,10 +538,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
       
-      <label class="md-nav__link" for="__nav_4_8">
-        Discord
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_8">
+          Discord
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Discord" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_8">
           <span class="md-nav__icon md-icon"></span>
@@ -498,48 +554,56 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/discord/" class="md-nav__link">
+      <a href="/DEV/samples/discord/" class="md-nav__link">
         Discord API sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/discord-rpc/" class="md-nav__link">
+      <a href="/DEV/samples/discord-rpc/" class="md-nav__link">
         Discord RPC sample
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/github/" class="md-nav__link">
+      <a href="/DEV/samples/github/" class="md-nav__link">
         GitHub sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -549,10 +613,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Googleapis
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Googleapis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Googleapis" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -561,60 +629,70 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/gsheets/" class="md-nav__link">
+      <a href="/DEV/samples/gsheets/" class="md-nav__link">
         GSheets sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/youtube/" class="md-nav__link">
+      <a href="/DEV/samples/youtube/" class="md-nav__link">
         Youtube sample
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/intellij/" class="md-nav__link">
+      <a href="/DEV/samples/intellij/" class="md-nav__link">
         IntelliJ sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/irc/" class="md-nav__link">
+      <a href="/DEV/samples/irc/" class="md-nav__link">
         IRC
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -624,10 +702,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
       
-      <label class="md-nav__link" for="__nav_4_13">
-        Midi
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_13">
+          Midi
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Midi" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_13">
           <span class="md-nav__icon md-icon"></span>
@@ -636,108 +718,126 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/midi-input/" class="md-nav__link">
+      <a href="/DEV/samples/midi-input/" class="md-nav__link">
         Midi-Input sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/midi-output/" class="md-nav__link">
+      <a href="/DEV/samples/midi-output/" class="md-nav__link">
         Midi-Output sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/midi-io/" class="md-nav__link">
+      <a href="/DEV/samples/midi-io/" class="md-nav__link">
         Midi-IO sample
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/nanoleaf/" class="md-nav__link">
+      <a href="/DEV/samples/nanoleaf/" class="md-nav__link">
         Nanoleaf
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/obs/" class="md-nav__link">
+      <a href="/DEV/samples/obs/" class="md-nav__link">
         OBS
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/philipshue/" class="md-nav__link">
+      <a href="/DEV/samples/philipshue/" class="md-nav__link">
         Philips Hue sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/rcon/" class="md-nav__link">
+      <a href="/DEV/samples/rcon/" class="md-nav__link">
         Rcon sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/reddit/" class="md-nav__link">
+      <a href="/DEV/samples/reddit/" class="md-nav__link">
         Reddit sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -747,10 +847,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_19" type="checkbox" id="__nav_4_19" >
       
-      <label class="md-nav__link" for="__nav_4_19">
-        sACN
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_19">
+          sACN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="sACN" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_19">
           <span class="md-nav__icon md-icon"></span>
@@ -759,144 +863,168 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/sacn-receiver/" class="md-nav__link">
+      <a href="/DEV/samples/sacn-receiver/" class="md-nav__link">
         sACN Receiver sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/sacn-sender/" class="md-nav__link">
+      <a href="/DEV/samples/sacn-sender/" class="md-nav__link">
         sACN Sender sample
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/serial/" class="md-nav__link">
+      <a href="/DEV/samples/serial/" class="md-nav__link">
         Serial sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/shlink/" class="md-nav__link">
+      <a href="/DEV/samples/shlink/" class="md-nav__link">
         Shlink sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/slack/" class="md-nav__link">
+      <a href="/DEV/samples/slack/" class="md-nav__link">
         Slack sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/spotify/" class="md-nav__link">
+      <a href="/DEV/samples/spotify/" class="md-nav__link">
         Spotify sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/sql/" class="md-nav__link">
+      <a href="/DEV/samples/sql/" class="md-nav__link">
         SQL sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/streamdeck/" class="md-nav__link">
+      <a href="/DEV/samples/streamdeck/" class="md-nav__link">
         Streamdeck sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/streamelements/" class="md-nav__link">
+      <a href="/DEV/samples/streamelements/" class="md-nav__link">
         StreamElements sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/telegram/" class="md-nav__link">
+      <a href="/DEV/samples/telegram/" class="md-nav__link">
         Telegram sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/tiane/" class="md-nav__link">
+      <a href="/DEV/samples/tiane/" class="md-nav__link">
         TIANE sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -906,10 +1034,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_29" type="checkbox" id="__nav_4_29" >
       
-      <label class="md-nav__link" for="__nav_4_29">
-        Twitch
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_29">
+          Twitch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Twitch" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_29">
           <span class="md-nav__icon md-icon"></span>
@@ -918,72 +1050,84 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/twitch-addons/" class="md-nav__link">
+      <a href="/DEV/samples/twitch-addons/" class="md-nav__link">
         Twitch-Addons sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/twitch-api/" class="md-nav__link">
+      <a href="/DEV/samples/twitch-api/" class="md-nav__link">
         Twitch-Api sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/twitch-chat/" class="md-nav__link">
+      <a href="/DEV/samples/twitch-chat/" class="md-nav__link">
         Twitch-Chat sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/twitch-pubsub/" class="md-nav__link">
+      <a href="/DEV/samples/twitch-pubsub/" class="md-nav__link">
         Twitch-Pubsub sample
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/twitter/" class="md-nav__link">
+      <a href="/DEV/samples/twitter/" class="md-nav__link">
         Twitter sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -993,10 +1137,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_31" type="checkbox" id="__nav_4_31" >
       
-      <label class="md-nav__link" for="__nav_4_31">
-        WebSocket
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_31">
+          WebSocket
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="WebSocket" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_31">
           <span class="md-nav__icon md-icon"></span>
@@ -1005,58 +1153,67 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/websocket-client/" class="md-nav__link">
+      <a href="/DEV/samples/websocket-client/" class="md-nav__link">
         Client sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/websocket-server/" class="md-nav__link">
+      <a href="/DEV/samples/websocket-server/" class="md-nav__link">
         Server sample
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/samples/xdotool/" class="md-nav__link">
+      <a href="/DEV/samples/xdotool/" class="md-nav__link">
         Xdotool sample
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="/dependencies/" class="md-nav__link">
+      <a href="/DEV/dependencies/" class="md-nav__link">
         Dependency Graph
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1081,6 +1238,7 @@
             </article>
           </div>
         </div>
+        
       </main>
       
         
@@ -1094,10 +1252,12 @@
             © 2020 codeoverflow.org CC-BY-4.0
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -1109,7 +1269,7 @@
         
       
       <a href="https://discord.gg/sX2Gjbs" target="_blank" rel="noopener" title="discord.gg" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541zM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241z"/></svg>
       </a>
     
   </div>
@@ -1122,10 +1282,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "/assets/javascripts/workers/search.fb4a9340.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "/DEV", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "/DEV/assets/javascripts/workers/search.8397ff9e.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.5cf3e710.min.js"></script>
+      <script src="/DEV/assets/javascripts/bundle.f89c2efe.min.js"></script>
       
     
   </body>
