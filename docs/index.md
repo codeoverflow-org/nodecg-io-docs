@@ -38,6 +38,7 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 - IRC (Internet Relay Chat)
 - MIDI Input
 - MIDI Output
+- MQTT
 - Nanoleafs
 - OBS
 - Philips Hue
