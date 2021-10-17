@@ -17,16 +17,16 @@ Any program that can read disk contents can access your credentials of any servi
 
 Options of automatic login:
 
-- `enabled` (boolean)
+-   `enabled` (boolean)
 
-  Automatic login will be only enabled if this `enabled` option is set to `true`.
-  This option can be used to temporarily disable automatic login without needing to delete the whole automatic login configuration
-  and allows for easy re-enabling without needing to enter the password in the config again.
+    Automatic login will be only enabled if this `enabled` option is set to `true`.
+    This option can be used to temporarily disable automatic login without needing to delete the whole automatic login configuration
+    and allows for easy re-enabling without needing to enter the password in the config again.
 
-- `password` (string)
+-   `password` (string)
 
-  This is the password that will be used to log in. It should be the password you use to log in to nodecg-io.
-  If this password is wrong an error will be logged after startup.
+    This is the password that will be used to log in. It should be the password you use to log in to nodecg-io.
+    If this password is wrong an error will be logged after startup.
 
 Example config:
 

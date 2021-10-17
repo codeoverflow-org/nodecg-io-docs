@@ -1,6 +1,6 @@
 ## Using the midi-io sample bundle
 
-The midi-io example bundle in `samples/midi-io` demonstrates the ability to send/receive data to/from a midi device. 
+The midi-io example bundle in `samples/midi-io` demonstrates the ability to send/receive data to/from a midi device.
 
 ### Prerequisites
 
@@ -28,9 +28,9 @@ The midi-io example bundle in `samples/midi-io` demonstrates the ability to send
     ```
 
     After entering it, click save.
-    __Note:__ A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-io` using the command `npm run list`. The devices should be listed with their device names and some other stuff.
+    **Note:** A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-io` using the command `npm run list`. The devices should be listed with their device names and some other stuff.
     Under Linux this looks for example like this:
-    
+
     ```
     nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
     ```
@@ -56,4 +56,4 @@ The midi-io example bundle in `samples/midi-io` demonstrates the ability to send
 ### Note
 
 A `Noteon` message with a velocity of 0 should be handled like a `Noteoff` message, so they are echoed unmodified. Otherwise, this would get annoying very fast.  
-If a control change is assigned to the push-button values of 64 and up are interpreted as on and values lower than that are interpreted as off. Most somewhat modern Midi devices send 127 as on and 0 as off, but 63 and 64 should also be sufficient. 
+If a control change is assigned to the push-button values of 64 and up are interpreted as on and values lower than that are interpreted as off. Most somewhat modern Midi devices send 127 as on and 0 as off, but 63 and 64 should also be sufficient.

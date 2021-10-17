@@ -48,7 +48,7 @@ cd path/to/nodecg-io
 npm run watch
 ```
 
-_Note:_ Watching all packages requires a lot of RAM. 
+_Note:_ Watching all packages requires a lot of RAM.
 Instead, you can watch just the packages you are actively working on e.g., `npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat`.
 This will just spawn a watch process for the twitch-chat sample and service and require way less memory.
 

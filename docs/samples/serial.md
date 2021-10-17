@@ -26,16 +26,16 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
     ```json
     {
         "device": {
-          "port": "COM1"
+            "port": "COM1"
         }
     }
     ```
 
     ```json
     {
-      "device": {
-        "pnpId": "usb-Arduino__www.arduino.cc__0043_75835343030351E0D171-if00"
-      }
+        "device": {
+            "pnpId": "usb-Arduino__www.arduino.cc__0043_75835343030351E0D171-if00"
+        }
     }
     ```
 
@@ -53,13 +53,13 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
     You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The Arduino device will respond with pong. You should see the pong message displayed in the log.
 
-    If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted. 
+    If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted.
 
 ### Sample Arduino sketch
 
 ```cpp
 String inputString = "";
-boolean stringComplete = false; 
+boolean stringComplete = false;
 
 void setup() {
     Serial.begin(9600);

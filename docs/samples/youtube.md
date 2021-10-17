@@ -7,7 +7,7 @@ The YouTube bundle in `samples/youtube-playlist` demonstrates the ability of get
 -   Working NodeCG & nodecg-io installation
 -   Google cloud API OAuth access (client ID, client Secret)
 -   Grant `YouTube Data API v3` access at the project's dashboard.
-    -   Shortcut URL: <https://console.developers.google.com/apis/library/youtube.googleapis.com?project=&lt;project-id&gt;>
+    -   Shortcut URL: <https://console.developers.google.com/apis/library/youtube.googleapis.com?project=<project-id>>
 
 _Note:_ If you don't have such a key yet, you can generate them like [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred). As redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
 

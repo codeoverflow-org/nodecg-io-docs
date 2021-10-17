@@ -7,7 +7,7 @@ The gsheets bundle in `samples/gsheets` demonstrates the ability of retrieving a
 -   Working NodeCG & nodecg-io installation
 -   Google cloud API OAuth access (client ID, client Secret)
 -   Grant `Google Sheets API v4` access at the project's dashboard.
-    -   Shortcut URL: <https://console.developers.google.com/apis/library/sheets.googleapis.com?project=&lt;project-id&gt;>
+    -   Shortcut URL: <https://console.developers.google.com/apis/library/sheets.googleapis.com?project=<project-id>>
 
 _Note:_ If you don't have such a key yet, you can generate them like [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred). As the redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
 

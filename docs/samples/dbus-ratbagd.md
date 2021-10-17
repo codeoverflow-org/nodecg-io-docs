@@ -19,20 +19,20 @@ The dbus-ratbagd example bundle in `samples/dbus-ratbagd` demonstrates how to ac
 
 5. Configure the dbus service
 
-   There should not be any additional configuration needed for the dbus service. Just enter an empty json object like this:
+    There should not be any additional configuration needed for the dbus service. Just enter an empty json object like this:
 
     ```json
     {}
     ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   _Note:_ If you don't see monaco on the right, try reloading the page.
+    _Note:_ If you don't see monaco on the right, try reloading the page.
 
 6. Set the created dbus service instance to the service dependency of the dbus-ratbagd bundle.
 
-   Select the dbus-ratbagd bundle and the dbus service in the left bottom menu and then select the service instance that should be used by the dbus-ratbagd sample bundle (in this case the name of the previously created dbus instance).
+    Select the dbus-ratbagd bundle and the dbus service in the left bottom menu and then select the service instance that should be used by the dbus-ratbagd sample bundle (in this case the name of the previously created dbus instance).
 
 7. Check the nodecg logs
 
-   You should see an error or a success message and a list of connected device names
+    You should see an error or a success message and a list of connected device names

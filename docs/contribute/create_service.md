@@ -87,7 +87,7 @@ Create a file called `index.ts` in a folder called `extension` inside your servi
 // TODO: Rename all occurrences of "your-service-name" with only lowercase and hyphens ( - )
 
 import { NodeCG } from "nodecg-types/types/server";
-import { Result,emptySuccess,success,ServiceBundle } from "nodecg-io-core";
+import { Result, emptySuccess, success, ServiceBundle } from "nodecg-io-core";
 // TODO: Replace the "fake" service class with that found on npm etc.
 import { ServiceClass } from "./";
 
@@ -108,7 +108,7 @@ module.exports = (nodecg: NodeCG) => {
     new YourServiceNameService(nodecg, "your-service-name", __dirname, "../your-service-name-schema.json").register();
 };
 
-class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig,YourServiceNameServiceClient> {
+class YourServiceNameService extends ServiceBundle<YourServiceNameServiceConfig, YourServiceNameServiceClient> {
     async validateConfig(config: YourServiceNameServiceConfig): Promise<Result<void>> {
         // TODO You can validate your config here. If this gets called, the schema is correct.
         // You should for example check whether oauth keys are valid and servers are online here

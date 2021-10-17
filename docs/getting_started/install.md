@@ -24,7 +24,7 @@ Here's how to install the native build tools on the most popular operating syste
 #### Windows
 
 For Windows, you'll need the Visual Studio Build Tools, if you have Visual Studio installed you should already have them.
-If you don't have Visual Studio just install the Visual Studio Build Tools by running the following command as an __Administrator__:
+If you don't have Visual Studio just install the Visual Studio Build Tools by running the following command as an **Administrator**:
 
 ```shell
 npm install -g windows-build-tools
@@ -58,7 +58,6 @@ npm install -g nodecg-io-cli
 
 _Note:_ If you are running on Linux, you may need to use `sudo` if your npm installation uses a non-writeable path (default on Ubuntu apt packages, usually does not apply to packages installed using [nvm](https://github.com/nvm-sh/nvm))
 
-
 ## Install nodecg-io using the nodecg-io CLI
 
 With the nodecg-io CLI installed you can run this command inside a nodecg installation to install nodecg-io:
@@ -67,11 +66,11 @@ With the nodecg-io CLI installed you can run this command inside a nodecg instal
 nodecg-io install
 ```
 
-You will get a prompt which asks you which version you want to install. 
+You will get a prompt which asks you which version you want to install.
 
-- By selecting an actual version (e.g., `0.1`) you create a production install that downloads the required packages from npm and setups a npm workspace to install all dependencies. Here you can choose which services you want to install.
+-   By selecting an actual version (e.g., `0.1`) you create a production install that downloads the required packages from npm and setups a npm workspace to install all dependencies. Here you can choose which services you want to install.
 
-- By selecting `development` you create a development install that clones the nodecg-io git repo and builds everything from scratch. We only recommend a dev install if you are sure that you want to contribute to nodecg-io. Here you always must install all services.
+-   By selecting `development` you create a development install that clones the nodecg-io git repo and builds everything from scratch. We only recommend a dev install if you are sure that you want to contribute to nodecg-io. Here you always must install all services.
 
 For starters, we recommend using the latest non-development version.
 

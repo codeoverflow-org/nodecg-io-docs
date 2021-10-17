@@ -80,7 +80,7 @@ Handlers added with `onAvailable` will get called if there was a change and you 
 ```typescript
 // This is the variable with the return value of requireService().
 // You may want to change the variable name for the service you are using.
-twitchChat.onAvailable(client => {
+twitchChat.onAvailable((client) => {
     nodecg.log.info("Client was set");
     // You can use the passed client in here to e.g. setup handlers on the client
 });

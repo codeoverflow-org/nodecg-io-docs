@@ -43,6 +43,6 @@ _Note:_ If you don't have a database yet and just want to test things you can us
 
 7. Check the nodecg logs
 
-    Your first run of the sample bundle will probably fail because your database doesn't contain the used tables. 
+    Your first run of the sample bundle will probably fail because your database doesn't contain the used tables.
     Check `samples/sql/extension/index.ts` and create the tables as used or create your own tables and adapt the sample accordingly.
     You can also use this code as a reference on how to use the SQL client to do your queries.
