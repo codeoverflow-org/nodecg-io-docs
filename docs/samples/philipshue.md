@@ -1,6 +1,6 @@
 ## Using the Philips Hue sample bundle
 
-The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates the ability to connect to the Philips Hue bridge and control philips hue accessories.
+The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates the ability to connect to the Philips Hue bridge and control Philips Hue accessories.
 
 ### Prerequisites
 
@@ -9,13 +9,13 @@ The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
 
 ### Configure the Philips Hue sample bundle
 
-1. Start nodecg with nodecg-io installed. The philipshue-lights sample bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The philipshue-lights sample bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
 3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
 
-4. Create a new philipshue service instance using the left upper menu.
+4. Create a new Philips Hue service instance using the left upper menu.
 
 5. Enter configuration for hue.
 
@@ -27,7 +27,7 @@ The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
     }
     ```
 
-    If you want to provide the ip address manually you can provide them like this:
+    If you want to provide the IP address manually you can provide them like this:
 
     ```json
     {
@@ -42,9 +42,9 @@ The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
 
     _Note:_ If you don't see monaco on the right, try reloading the page.
 
-6. Set the created philipshue service instance to the service dependency of the philipshue-lights sample bundle.
+6. Set the created Philips Hue service instance to the service dependency of the philipshue-lights sample bundle.
 
-    Select the philipshue-lights sample bundle and the philipshue service in the left bottom menu and then select the service instance that should be used by the philipshue-lights sample bundle (in this case the name of the previously created philipshue instance).
+    Select the philipshue-lights sample bundle and the Philips Hue service in the left bottom menu and then select the service instance that should be used by the philipshue-lights sample bundle (in this case the name of the previously created Philips Hue instance).
 
 7. Check the nodecg logs
 

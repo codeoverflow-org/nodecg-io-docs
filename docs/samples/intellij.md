@@ -6,7 +6,7 @@ The IntelliJ example bundle in `samples/intellij-integration` Shows how to conne
 
 2. Make sure you've Java 11 or newer installed.
 
-3. Run `gradlew build` (on Windows) or `./gradlew build` (on linux) inside the cloned repository.
+3. Run `gradlew build` (on Windows) or `./gradlew build` (on Linux) inside the cloned repository.
 
 4. Inside your JetBrains IDE go to `Settings` and then `Plugins`. Click on the little gear in the top right corner. Then click `Install from file`.
 
@@ -14,13 +14,13 @@ The IntelliJ example bundle in `samples/intellij-integration` Shows how to conne
 
 6. Restart the IDE
 
-7. Start nodecg with nodecg-io installed. The bundle is currently part of it so it should also be loaded.
+7. Start nodecg with nodecg-io installed. The bundle is currently part of it, so it should also be loaded.
 
 8. Go to the `nodecg-io` tab in the nodecg dashboard.
 
 9. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
 
-10. Create a new intellij service instance using the left upper menu.
+10. Create a new IntelliJ service instance using the left upper menu.
 
 11. Enter the following
 
@@ -30,11 +30,11 @@ The IntelliJ example bundle in `samples/intellij-integration` Shows how to conne
     }
     ```
 
-    This tells nodecg-io to look for your IDE's HTTP server on your computer at port `19524`. If you want it to run on another port please follow the guidelines [here](https://github.com/noeppi-noeppi/nodecg-io-intellij/blob/master/README.md)
+    This tells nodecg-io to look for your IDE's HTTP server on your computer at port `19524`. If you want it to run on another port, please follow the guidelines [here](https://github.com/noeppi-noeppi/nodecg-io-intellij/blob/master/README.md).
 
-12. Set the created intellij service instance to the service dependency of the sample-intellij bundle.
+12. Set the created IntelliJ service instance to the service dependency of the sample-intellij bundle.
 
-    Select the sample-intellij bundle and the intellij service in the left bottom menu and then select the service instance that should be used by the sample-intellij bundle (in this case the name of the previously created intellij instance).
+    Select the sample-intellij bundle and the IntelliJ service in the left bottom menu and then select the service instance that should be used by the sample-intellij bundle (in this case the name of the previously created IntelliJ instance).
 
 13. Check the nodecg logs
 

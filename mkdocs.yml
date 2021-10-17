@@ -60,7 +60,7 @@ nav:
                 - Discord RPC sample: samples/discord-rpc.md
           - GitHub sample: samples/github.md
           - Googleapis:
-                - GSheets sample: samples/ghseets.md
+                - GSheets sample: samples/gsheets.md
                 - Youtube sample: samples/youtube.md
           - IntelliJ sample: samples/intellij.md
           - IRC: samples/irc.md

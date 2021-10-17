@@ -1,19 +1,19 @@
 ## Using the gsheets sample bundle
 
-The gsheets bundle in `samples/gsheets` demonstrates the ability of retrieving all rows where column A is a filled. Here is a guide to how to get it working.
+The gsheets bundle in `samples/gsheets` demonstrates the ability of retrieving all rows where column A is filled. Here is a guide to how to get it working.
 
 ### Prerequisites
 
 -   Working NodeCG & nodecg-io installation
--   Google cloud API OAuth access (clientID, clientSecret)
+-   Google cloud API OAuth access (client ID, client Secret)
 -   Grant `Google Sheets API v4` access at the project's dashboard.
-    -   Shortcut URL: https://console.developers.google.com/apis/library/sheets.googleapis.com?project=&lt;project-id&gt;
+    -   Shortcut URL: <https://console.developers.google.com/apis/library/sheets.googleapis.com?project=&lt;project-id&gt;>
 
-_Note:_ If you don't have such a key yet, you can generate them like [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred). As redirect URI add "http://localhost:9090/nodecg-io-googleapis/oauth2callback".
+_Note:_ If you don't have such a key yet, you can generate them like [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred). As the redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
 
 ### Configure the gsheets sample bundle
 
-1. Start nodecg with nodecg-io installed. The gsheets bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The gsheets bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -23,7 +23,7 @@ _Note:_ If you don't have such a key yet, you can generate them like [this](http
 
 5. Enter credentials for googleapis.
 
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your gsheets oauth credentials in monaco (the text-editor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your gsheets OAuth credentials in monaco (the text-editor on the right) in this format:
 
     ```json
     {

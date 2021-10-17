@@ -9,7 +9,7 @@ The AHK sample bundle in `samples/ahk-sendcommand` shows how to send a command t
 
 ### Configure the ahk sample bundle
 
-1. Start nodecg with nodecg-io installed. The ahk bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The ahk bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -32,4 +32,4 @@ The AHK sample bundle in `samples/ahk-sendcommand` shows how to send a command t
 
 6. Set the created ahk service instance to the service dependency of the ahk bundle.
 
-7. A small window with the text "Hello World" should have popped up.
+7. A small window with the text “Hello World” should have popped up.

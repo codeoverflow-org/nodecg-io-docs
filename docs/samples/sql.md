@@ -7,11 +7,11 @@ The SQL example bundle in `samples/sql` demonstrates the ability to access datab
 -   Working NodeCG & nodecg-io installation
 -   A database supported by [knex](https://knexjs.org/#Installation)
 
-_Note:_ If you don't have a database yet and just want to test things you can use sqlite3 and don't need to setup a database server. You can always move to a different database type later.
+_Note:_ If you don't have a database yet and just want to test things you can use sqlite3 and don't need to set up a database server. You can always move to a different database type later.
 
 ### Configure the SQL sample bundle
 
-1. Start nodecg with nodecg-io installed. The SQL sample bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The SQL sample bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -45,4 +45,4 @@ _Note:_ If you don't have a database yet and just want to test things you can us
 
     Your first run of the sample bundle will probably fail because your database doesn't contain the used tables. 
     Check `samples/sql/extension/index.ts` and create the tables as used or create your own tables and adapt the sample accordingly.
-    You can also use this code as a reference on how to use the sql client to do your queries.
+    You can also use this code as a reference on how to use the SQL client to do your queries.

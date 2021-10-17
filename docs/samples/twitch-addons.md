@@ -5,13 +5,13 @@ The Twitch-Addons example bundle in `samples/twitch-addons` demonstrates the abi
 ### Prerequisites
 
 -   Working NodeCG & nodecg-io installation
--   a Twitch oAuth-Key
+-   a Twitch OAuth Key
 
-_Note:_ If you don't have such a key yet, you can generate it on https://twitchapps.com/tmi/. Just log into your Twitch account and copy the token. You can also use any other token. There are no special scope requirements as the token is only used to convert channel names to ids.
+_Note:_ If you don't have such a key yet, you can generate it on <https://twitchapps.com/tmi/>. Just log into your Twitch account and copy the token. You can also use any other token. There are no special scope requirements as the token is only used to convert channel names to IDs.
 
 ### Configure the Twitch-Addons sample bundle
 
-1. Start nodecg with nodecg-io installed. The Twitch-Addons bundle is currently part of it so it should also be loaded.
+1. Start nodecg with nodecg-io installed. The Twitch-Addons bundle is currently part of it, so it should also be loaded.
 
 2. Go to the `nodecg-io` tab in the nodecg dashboard.
 
@@ -21,7 +21,7 @@ _Note:_ If you don't have such a key yet, you can generate it on https://twitcha
 
 5. Enter credentials for twitch.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch oauth Key in monaco (the text-editor on the right) in this format:
+   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor on the right) in this format:
 
     ```json
     {
