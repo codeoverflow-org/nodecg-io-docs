@@ -156,7 +156,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 **Allows you to connect with an MQTT server.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/mqtt-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.2.8 <br>
