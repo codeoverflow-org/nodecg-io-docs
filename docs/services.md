@@ -152,6 +152,15 @@ See the [sample implementation](samples/midi-output.md)
 Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.1.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 
+## [nodecg-io-mqtt-client](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-mqtt-client)
+
+**Allows you to connect with an MQTT server.**
+
+There's no sample implementation for this service yet.
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.2.8 <br>
+
 ## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-nanoleaf)
 
 **Allows to connect to a nanoleaf controller and trigger custom lighting effects.**
