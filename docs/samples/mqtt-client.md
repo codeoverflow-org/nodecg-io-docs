@@ -37,6 +37,6 @@ The MQTT-client sample bundle in `samples/mqtt-client` shows how to connect to a
 
     After entering it, click save.
 
-7. Set the created mqtt-client service instance to the service dependency of the mqtt-client bundle.
+6. Set the created mqtt-client service instance to the service dependency of the mqtt-client bundle.
 
-8. The console should display if the connction was successfully established and should show inbound messages on the subscribed topic.
+7. The console should display if the connction was successfully established and should show inbound messages on the subscribed topic.
