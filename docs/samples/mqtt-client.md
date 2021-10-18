@@ -19,7 +19,7 @@ The MQTT-client sample bundle in `samples/mqtt-client` shows how to connect to a
 
 5. Enter the connection parameters of the mqtt server. The URL should be in following the pattern `<protocol>://<address>:<port>`. Allowed protcols are: `mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`
 
-    In case your server need authentification set the `username` and `password` fields else remove them from the configuration.
+    In case your server needs authentification set the `username` and `password` fields otherwise remove them from the configuration.
 
     The created instance should be automatically selected, if not select it in the upper left menu. Enter your configuration in monaco (the text-editor on the right) in this format:
     
