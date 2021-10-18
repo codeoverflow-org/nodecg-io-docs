@@ -136,6 +136,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://nodecg.io/DEV/samples/mqtt-client/</loc>
+         <lastmod>2021-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://nodecg.io/DEV/samples/nanoleaf/</loc>
          <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>

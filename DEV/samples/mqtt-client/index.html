@@ -11,14 +11,14 @@
         <meta name="author" content="codeoverflow.org">
       
       
-        <link rel="canonical" href="https://nodecg.io/DEV/contribute/create_service/">
+        <link rel="canonical" href="https://nodecg.io/DEV/samples/mqtt-client/">
       
       <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Create a Service - nodecg-io Documentation</title>
+        <title>MQTT - nodecg-io Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-a-service-integration" class="md-skip">
+        <a href="#using-the-mqtt-client-sample-bundle" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Create a Service
+              MQTT
             
           </span>
         </div>
@@ -310,14 +310,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -340,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contribute/" class="md-nav__link">
+      <a href="../../contribute/contribute/" class="md-nav__link">
         Basics
       </a>
     </li>
@@ -352,79 +350,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Create a Service
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../contribute/create_service/" class="md-nav__link">
         Create a Service
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#find-a-javascript-library" class="md-nav__link">
-    Find a JavaScript library
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-package" class="md-nav__link">
-    Create a package
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-configuration-schema" class="md-nav__link">
-    Create a configuration schema
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-the-service" class="md-nav__link">
-    Create the service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    Next steps
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -436,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create_sample/" class="md-nav__link">
+      <a href="../../contribute/create_sample/" class="md-nav__link">
         Create a sample bundle
       </a>
     </li>
@@ -450,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/sample_documentation/" class="md-nav__link">
         Document a sample
       </a>
     </li>
@@ -464,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributors/" class="md-nav__link">
+      <a href="../../contribute/contributors/" class="md-nav__link">
         Contributors
       </a>
     </li>
@@ -484,12 +414,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -526,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/ahk/" class="md-nav__link">
+      <a href="../ahk/" class="md-nav__link">
         AHK sample
       </a>
     </li>
@@ -540,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/artnet/" class="md-nav__link">
+      <a href="../artnet/" class="md-nav__link">
         Art-Net sample
       </a>
     </li>
@@ -554,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/curseforge/" class="md-nav__link">
+      <a href="../curseforge/" class="md-nav__link">
         Curseforge sample
       </a>
     </li>
@@ -568,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/android/" class="md-nav__link">
+      <a href="../android/" class="md-nav__link">
         Android
       </a>
     </li>
@@ -582,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/dbus-ratbagd/" class="md-nav__link">
+      <a href="../dbus-ratbagd/" class="md-nav__link">
         DBus
       </a>
     </li>
@@ -596,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/debug/" class="md-nav__link">
+      <a href="../debug/" class="md-nav__link">
         Debug
       </a>
     </li>
@@ -636,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/discord/" class="md-nav__link">
+      <a href="../discord/" class="md-nav__link">
         Discord API sample
       </a>
     </li>
@@ -650,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/discord-rpc/" class="md-nav__link">
+      <a href="../discord-rpc/" class="md-nav__link">
         Discord RPC sample
       </a>
     </li>
@@ -671,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/github/" class="md-nav__link">
+      <a href="../github/" class="md-nav__link">
         GitHub sample
       </a>
     </li>
@@ -711,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/gsheets/" class="md-nav__link">
+      <a href="../gsheets/" class="md-nav__link">
         GSheets sample
       </a>
     </li>
@@ -725,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/youtube/" class="md-nav__link">
+      <a href="../youtube/" class="md-nav__link">
         Youtube sample
       </a>
     </li>
@@ -746,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/intellij/" class="md-nav__link">
+      <a href="../intellij/" class="md-nav__link">
         IntelliJ sample
       </a>
     </li>
@@ -760,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/irc/" class="md-nav__link">
+      <a href="../irc/" class="md-nav__link">
         IRC
       </a>
     </li>
@@ -800,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/midi-input/" class="md-nav__link">
+      <a href="../midi-input/" class="md-nav__link">
         Midi-Input sample
       </a>
     </li>
@@ -814,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/midi-output/" class="md-nav__link">
+      <a href="../midi-output/" class="md-nav__link">
         Midi-Output sample
       </a>
     </li>
@@ -828,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/midi-io/" class="md-nav__link">
+      <a href="../midi-io/" class="md-nav__link">
         Midi-IO sample
       </a>
     </li>
@@ -847,11 +779,67 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../samples/mqtt-client/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MQTT
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         MQTT
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-mqtt-client-sample-bundle" class="md-nav__link">
+    Using the MQTT-client sample bundle
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the MQTT-client sample bundle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-mqtt-client-sample-bundle" class="md-nav__link">
+    Configure the MQTT-client sample bundle
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -863,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/nanoleaf/" class="md-nav__link">
+      <a href="../nanoleaf/" class="md-nav__link">
         Nanoleaf
       </a>
     </li>
@@ -877,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/obs/" class="md-nav__link">
+      <a href="../obs/" class="md-nav__link">
         OBS
       </a>
     </li>
@@ -891,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/philipshue/" class="md-nav__link">
+      <a href="../philipshue/" class="md-nav__link">
         Philips Hue sample
       </a>
     </li>
@@ -905,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/rcon/" class="md-nav__link">
+      <a href="../rcon/" class="md-nav__link">
         Rcon sample
       </a>
     </li>
@@ -919,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/reddit/" class="md-nav__link">
+      <a href="../reddit/" class="md-nav__link">
         Reddit sample
       </a>
     </li>
@@ -959,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/sacn-receiver/" class="md-nav__link">
+      <a href="../sacn-receiver/" class="md-nav__link">
         sACN Receiver sample
       </a>
     </li>
@@ -973,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/sacn-sender/" class="md-nav__link">
+      <a href="../sacn-sender/" class="md-nav__link">
         sACN Sender sample
       </a>
     </li>
@@ -994,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/serial/" class="md-nav__link">
+      <a href="../serial/" class="md-nav__link">
         Serial sample
       </a>
     </li>
@@ -1008,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/shlink/" class="md-nav__link">
+      <a href="../shlink/" class="md-nav__link">
         Shlink sample
       </a>
     </li>
@@ -1022,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/slack/" class="md-nav__link">
+      <a href="../slack/" class="md-nav__link">
         Slack sample
       </a>
     </li>
@@ -1036,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/spotify/" class="md-nav__link">
+      <a href="../spotify/" class="md-nav__link">
         Spotify sample
       </a>
     </li>
@@ -1050,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/sql/" class="md-nav__link">
+      <a href="../sql/" class="md-nav__link">
         SQL sample
       </a>
     </li>
@@ -1064,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/streamdeck/" class="md-nav__link">
+      <a href="../streamdeck/" class="md-nav__link">
         Streamdeck sample
       </a>
     </li>
@@ -1078,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/streamelements/" class="md-nav__link">
+      <a href="../streamelements/" class="md-nav__link">
         StreamElements sample
       </a>
     </li>
@@ -1092,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/telegram/" class="md-nav__link">
+      <a href="../telegram/" class="md-nav__link">
         Telegram sample
       </a>
     </li>
@@ -1106,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/tiane/" class="md-nav__link">
+      <a href="../tiane/" class="md-nav__link">
         TIANE sample
       </a>
     </li>
@@ -1146,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/twitch-addons/" class="md-nav__link">
+      <a href="../twitch-addons/" class="md-nav__link">
         Twitch-Addons sample
       </a>
     </li>
@@ -1160,7 +1148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/twitch-api/" class="md-nav__link">
+      <a href="../twitch-api/" class="md-nav__link">
         Twitch-Api sample
       </a>
     </li>
@@ -1174,7 +1162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/twitch-chat/" class="md-nav__link">
+      <a href="../twitch-chat/" class="md-nav__link">
         Twitch-Chat sample
       </a>
     </li>
@@ -1188,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/twitch-pubsub/" class="md-nav__link">
+      <a href="../twitch-pubsub/" class="md-nav__link">
         Twitch-Pubsub sample
       </a>
     </li>
@@ -1209,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/twitter/" class="md-nav__link">
+      <a href="../twitter/" class="md-nav__link">
         Twitter sample
       </a>
     </li>
@@ -1249,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/websocket-client/" class="md-nav__link">
+      <a href="../websocket-client/" class="md-nav__link">
         Client sample
       </a>
     </li>
@@ -1263,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/websocket-server/" class="md-nav__link">
+      <a href="../websocket-server/" class="md-nav__link">
         Server sample
       </a>
     </li>
@@ -1284,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/xdotool/" class="md-nav__link">
+      <a href="../xdotool/" class="md-nav__link">
         Xdotool sample
       </a>
     </li>
@@ -1328,8 +1316,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1338,37 +1324,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#find-a-javascript-library" class="md-nav__link">
-    Find a JavaScript library
+  <a href="#using-the-mqtt-client-sample-bundle" class="md-nav__link">
+    Using the MQTT-client sample bundle
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the MQTT-client sample bundle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-package" class="md-nav__link">
-    Create a package
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-mqtt-client-sample-bundle" class="md-nav__link">
+    Configure the MQTT-client sample bundle
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-configuration-schema" class="md-nav__link">
-    Create a configuration schema
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-the-service" class="md-nav__link">
-    Create the service
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    Next steps
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1384,135 +1362,57 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/contribute/create_service.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/samples/mqtt-client.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="create-a-service-integration">Create a service integration</h1>
-<p>This guide helps you to create a service integration such as <em>twitch-chat</em> or <em>discord</em></p>
-<h2 id="find-a-javascript-library">Find a JavaScript library</h2>
-<p>Go to <a href="https://www.npmjs.com/">npmjs.com</a> and look whether there's already a package that wraps around the API of your service. If there's no such package, you need to create one yourself. This process is not described here. You may read the
-<a href="https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry">“Contributing packages to the registry” from the npm Docs</a>.</p>
-<h2 id="create-a-package">Create a package</h2>
-<p>From here you will have to replace:</p>
+                  <h1>MQTT</h1>
+                
+                <h2 id="using-the-mqtt-client-sample-bundle">Using the MQTT-client sample bundle</h2>
+<p>The MQTT-client sample bundle in <code>samples/mqtt-client</code> shows how to connect to an MQTT server. This client is based on the <a href="https://github.com/mqttjs/MQTT.js">MQTT.js</a> package.</p>
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li><code>YourServiceName</code> to your service's name in <a href="https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class">PascalCase</a>.</li>
-<li><code>yourServiceName</code> to your service's name in <a href="https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function">carmelCase</a>.</li>
-<li><code>your-service-name</code> to your service's name with only lowercase and hyphens (<code>-</code>) for example: ws-server.</li>
+<li>Working NodeCG &amp; nodecg-io installation</li>
+<li>MQTT-server</li>
 </ul>
-<p>Now you need to create a package. You should call it <code>nodecg-io-your-service-name</code>.</p>
-<p>First create a directory with that name put file called <code>package.json</code> into it.</p>
-<p>Put the following into it:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;nodecg-io-&lt;your-service-name&gt;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;Short description what is possible with your service.&gt;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;homepage&quot;</span><span class="p">:</span> <span class="s2">&quot;https://nodecg.io/RELEASE/samples/&lt;your-service-name&gt;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;Your name&gt;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;Your github profile url&gt;&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/codeoverflow-org/nodecg-io.git&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;directory&quot;</span><span class="p">:</span> <span class="s2">&quot;nodecg-io-&lt;your-service-name&gt;&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;**/*.js&quot;</span><span class="p">,</span> <span class="s2">&quot;**/*.js.map&quot;</span><span class="p">,</span> <span class="s2">&quot;**/*.d.ts&quot;</span><span class="p">,</span> <span class="s2">&quot;*.json&quot;</span><span class="p">],</span>
-    <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;extension&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;build&quot;</span><span class="p">:</span> <span class="s2">&quot;tsc -b&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;watch&quot;</span><span class="p">:</span> <span class="s2">&quot;tsc -b -w&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;clean&quot;</span><span class="p">:</span> <span class="s2">&quot;tsc -b --clean&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;nodecg-io&quot;</span><span class="p">,</span> <span class="s2">&quot;nodecg-bundle&quot;</span><span class="p">],</span>
-    <span class="nt">&quot;nodecg&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;compatibleRange&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.1.1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;bundleDependencies&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;nodecg-io-core&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.2.0&quot;</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;devDependencies&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;@types/node&quot;</span><span class="p">:</span> <span class="s2">&quot;^15.0.2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;nodecg-types&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.8.2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;typescript&quot;</span><span class="p">:</span> <span class="s2">&quot;^4.2.4&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;dependencies&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;nodecg-io-core&quot;</span><span class="p">:</span> <span class="s2">&quot;^0.2.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;&lt;the package you found in step 1&gt;&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;the packages version you want to use&gt;&quot;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<h3 id="configure-the-mqtt-client-sample-bundle">Configure the MQTT-client sample bundle</h3>
+<ol>
+<li>
+<p>Start nodecg with nodecg-io installed. The mqtt-client bundle is currently part of it, so it should also be loaded.</p>
+</li>
+<li>
+<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
+</li>
+<li>
+<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
+</li>
+<li>
+<p>Create a new mqtt-client service instance using the left upper menu.</p>
+</li>
+<li>
+<p>Enter the connection parameters of the mqtt server. The URL should be in following the pattern <code>&lt;protocol&gt;://&lt;address&gt;:&lt;port&gt;</code>. Allowed protcols are: <code>mqtt</code>, <code>mqtts</code>, <code>tcp</code>, <code>tls</code>, <code>ws</code>, <code>wss</code></p>
+<p>In case your server needs authentification set the <code>username</code> and <code>password</code> fields otherwise remove them from the configuration.</p>
+<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your configuration in monaco (the text-editor on the right) in this format:</p>
+<div class="highlight"><pre><span></span><code> <span class="p">{</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;mqtt://localhost&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;topics&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;sample/topic&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;diffrent/topic2&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;yourUser&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;yourPassword&quot;</span>
+ <span class="p">}</span>
 </code></pre></div>
-<p>Next you need to put a file called <code>tsconfig.json</code> next to your <code>package.json</code>. The <code>tsconfig.json</code> should look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;extends&quot;</span><span class="p">:</span> <span class="s2">&quot;../tsconfig.common.json&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Now run <code>npm install</code> and <code>npm run bootstrap</code> in the repository root.</p>
-<h2 id="create-a-configuration-schema">Create a configuration schema</h2>
-<p>Next create a file called <code>your-service-name-schame.json</code>. This is a JSON schema file that indicates how the configuration for your service should be structured. If you need help here take a look at <a href="https://json-schema.org/understanding-json-schema/">this</a> online resource and the schema-files of the other service implementations.</p>
-<h2 id="create-the-service">Create the service</h2>
-<p>Create a file called <code>index.ts</code> in a folder called <code>extension</code> inside your service's directory. You can then paste the following code and fill in your code instead of the comments.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// TODO: Rename all occurrences of &quot;YourServiceName&quot; in PascalCase</span>
-<span class="c1">// TODO: Rename all occurrences of &quot;yourServiceName&quot; in carmelCase</span>
-<span class="c1">// TODO: Rename all occurrences of &quot;your-service-name&quot; with only lowercase and hyphens ( - )</span>
-
-<span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">Result</span><span class="p">,</span><span class="nx">emptySuccess</span><span class="p">,</span><span class="nx">success</span><span class="p">,</span><span class="nx">ServiceBundle</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
-<span class="c1">// TODO: Replace the &quot;fake&quot; service class with that found on npm etc.</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">ServiceClass</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./&quot;</span><span class="p">;</span>
-
-<span class="kd">interface</span> <span class="nx">YourServiceNameServiceConfig</span> <span class="p">{</span>
-    <span class="c1">// TODO Fill in the values from your json schema here. The json</span>
-    <span class="c1">// schema will load into an instance of this.</span>
-<span class="p">}</span>
-
-<span class="c1">// ServiceClient ensures that you will provide a `getNativeClient` function that should give</span>
-<span class="c1">// access to the underlying client from the library that you are using.</span>
-<span class="c1">// TODO: if you want to provide simplifications for the service then make this</span>
-<span class="c1">// type-alias a separate class in a separate file and directly implement those simplifications</span>
-<span class="c1">// there.</span>
-<span class="c1">// TODO: Replace the `ServiceClass` with the class of the package from step 1</span>
-<span class="k">export</span> <span class="kr">type</span> <span class="nx">YourServiceNameServiceClient</span> <span class="o">=</span> <span class="nx">ServiceClient</span><span class="o">&lt;</span><span class="nx">ServiceClass</span><span class="o">&gt;</span><span class="p">;</span>
-
-<span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="ow">new</span> <span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span> <span class="nx">__dirname</span><span class="p">,</span> <span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
-<span class="p">};</span>
-
-<span class="kd">class</span> <span class="nx">YourServiceNameService</span> <span class="k">extends</span> <span class="nx">ServiceBundle</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;</span> <span class="p">{</span>
-    <span class="k">async</span> <span class="nx">validateConfig</span><span class="p">(</span><span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span><span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
-        <span class="c1">// TODO You can validate your config here. If this gets called, the schema is correct.</span>
-        <span class="c1">// You should for example check whether oauth keys are valid and servers are online here</span>
-        <span class="c1">// If everything is good return &#39;emptySuccess()&#39;</span>
-        <span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span>
-    <span class="p">}</span>
-
-    <span class="k">async</span> <span class="nx">createClient</span><span class="p">(</span><span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span><span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
-        <span class="c1">// TODO Here you should return a &lt;Your service name&gt;ServiceClient that is exposed to bundles.</span>
-        <span class="c1">// Or create a instance of your class if you have any simplifications and return that.</span>
-        <span class="c1">// If everything is good return &#39;success(client)&#39;</span>
-        <span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span>
-    <span class="p">}</span>
-
-    <span class="nx">stopClient</span><span class="p">(</span><span class="nx">client</span>: <span class="kt">YourServiceNameServiceClient</span><span class="p">)</span><span class="o">:</span> <span class="ow">void</span> <span class="p">{</span>
-        <span class="c1">// Here you should make sure you disconnect everything here (if possible).</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Now run <code>npm run build</code> in the repository root, start NodeCG and test your service out.</p>
-<h2 id="next-steps">Next steps</h2>
-<p>You could <a href="../create_sample/">create a sample bundle</a> for your brand-new service.</p>
-<p>If you don't do so, make sure you add a placeholder file called <code>&lt;the services name&gt;.md</code> in <code>docs/samples</code> in your fork of the documentation.</p>
-<p>The file should look like this:</p>
-<div class="highlight"><pre><span></span><code>&lt;!-- Marker for build.py that there&#39;s no sample bundle. Remove this if you created one --&gt;
-
-<span class="gu">## Using the &lt;the services name&gt; sample bundle</span>
-
-No sample bundle for service <span class="sb">`&lt;the services name&gt;`</span>.  
-[<span class="nt">You can help us and create one!</span>](<span class="na">https://github.com/codeoverflow-org/nodecg-io/blob/master/docs/docs/contribute.md</span>)
-</code></pre></div>
-<p>Do not remove the marker in the first line until there is a sample bundle, and it is documented there. Don't forget to add this file to <code>mkdocs.yml</code>.</p>
+<p>After entering it, click save.</p>
+</li>
+<li>
+<p>Set the created mqtt-client service instance to the service dependency of the mqtt-client bundle.</p>
+</li>
+<li>
+<p>The console should display if the connction was successfully established and should show inbound messages on the subscribed topic.</p>
+</li>
+</ol>
                 
               
               
@@ -1532,7 +1432,7 @@ No sample bundle for service <span class="sb">`&lt;the services name&gt;`</span>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../contribute/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Basics" rel="prev">
+        <a href="../midi-io/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Midi-IO sample" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1541,20 +1441,20 @@ No sample bundle for service <span class="sb">`&lt;the services name&gt;`</span>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Basics
+              Midi-IO sample
             </div>
           </div>
         </a>
       
       
         
-        <a href="../create_sample/" class="md-footer__link md-footer__link--next" aria-label="Next: Create a sample bundle" rel="next">
+        <a href="../nanoleaf/" class="md-footer__link md-footer__link--next" aria-label="Next: Nanoleaf" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Create a sample bundle
+              Nanoleaf
             </div>
           </div>
           <div class="md-footer__button md-icon">
