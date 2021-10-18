@@ -1482,7 +1482,7 @@ In case of TypeScript you'll also need to provide the type of the service.</p>
 <p>Handlers added with <code>onAvailable</code> will get called if there was a change and you got a client:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// This is the variable with the return value of requireService().</span>
 <span class="c1">// You may want to change the variable name for the service you are using.</span>
-<span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">(</span><span class="nx">client</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was set&quot;</span><span class="p">);</span>
     <span class="c1">// You can use the passed client in here to e.g. setup handlers on the client</span>
 <span class="p">});</span>

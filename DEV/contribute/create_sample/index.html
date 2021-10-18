@@ -1374,19 +1374,14 @@ E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
 <span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Sample bundle for &lt;the-service-name&gt; started&quot;</span><span class="p">);</span>
 
-    <span class="kd">const</span> <span class="nx">service</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TheServicesExportedClient</span><span class="o">&gt;</span><span class="p">(</span>
-        <span class="nx">nodecg</span><span class="p">,</span>
-        <span class="s2">&quot;&lt;the-service-name&gt;&quot;</span>
-    <span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">service</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TheServicesExportedClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;&lt;the-service-name&gt;&quot;</span><span class="p">);</span>
     <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
         <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been updated.&quot;</span><span class="p">);</span>
 
         <span class="c1">// TODO do something with the client to demonstrate the functionality.</span>
     <span class="p">});</span>
 
-    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span>
-        <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been unset.&quot;</span><span class="p">)</span>
-    <span class="p">);</span>
+    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been unset.&quot;</span><span class="p">));</span>
 <span class="p">};</span>
 </code></pre></div>
 <h2 id="next-steps">Next steps</h2>

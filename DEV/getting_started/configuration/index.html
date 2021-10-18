@@ -1345,16 +1345,18 @@ This is especially useful if you are running nodecg with nodecg-io on a server w
 Any program that can read disk contents can access your credentials of any service instance. We discourage using this and if you really want to use it you should be extra cautious about which bundles you install.</p>
 <p>Options of automatic login:</p>
 <ul>
-<li><code>enabled</code> (boolean)</li>
-</ul>
+<li>
+<p><code>enabled</code> (boolean)</p>
 <p>Automatic login will be only enabled if this <code>enabled</code> option is set to <code>true</code>.
-  This option can be used to temporarily disable automatic login without needing to delete the whole automatic login configuration
-  and allows for easy re-enabling without needing to enter the password in the config again.</p>
-<ul>
-<li><code>password</code> (string)</li>
-</ul>
+This option can be used to temporarily disable automatic login without needing to delete the whole automatic login configuration
+and allows for easy re-enabling without needing to enter the password in the config again.</p>
+</li>
+<li>
+<p><code>password</code> (string)</p>
 <p>This is the password that will be used to log in. It should be the password you use to log in to nodecg-io.
-  If this password is wrong an error will be logged after startup.</p>
+If this password is wrong an error will be logged after startup.</p>
+</li>
+</ul>
 <p>Example config:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;automaticLogin&quot;</span><span class="p">:</span> <span class="p">{</span>

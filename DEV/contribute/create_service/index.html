@@ -1459,7 +1459,7 @@
 <span class="c1">// TODO: Rename all occurrences of &quot;your-service-name&quot; with only lowercase and hyphens ( - )</span>
 
 <span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">Result</span><span class="p">,</span><span class="nx">emptySuccess</span><span class="p">,</span><span class="nx">success</span><span class="p">,</span><span class="nx">ServiceBundle</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Result</span><span class="p">,</span> <span class="nx">emptySuccess</span><span class="p">,</span> <span class="nx">success</span><span class="p">,</span> <span class="nx">ServiceBundle</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
 <span class="c1">// TODO: Replace the &quot;fake&quot; service class with that found on npm etc.</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">ServiceClass</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./&quot;</span><span class="p">;</span>
 
@@ -1480,7 +1480,7 @@
     <span class="ow">new</span> <span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span> <span class="nx">__dirname</span><span class="p">,</span> <span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
 <span class="p">};</span>
 
-<span class="kd">class</span> <span class="nx">YourServiceNameService</span> <span class="k">extends</span> <span class="nx">ServiceBundle</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;</span> <span class="p">{</span>
+<span class="kd">class</span> <span class="nx">YourServiceNameService</span> <span class="k">extends</span> <span class="nx">ServiceBundle</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span> <span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;</span> <span class="p">{</span>
     <span class="k">async</span> <span class="nx">validateConfig</span><span class="p">(</span><span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span><span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
         <span class="c1">// TODO You can validate your config here. If this gets called, the schema is correct.</span>
         <span class="c1">// You should for example check whether oauth keys are valid and servers are online here</span>

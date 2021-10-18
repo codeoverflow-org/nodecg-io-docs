@@ -1392,24 +1392,21 @@
 </li>
 <li>
 <p>Configure the dbus service</p>
-</li>
-</ol>
 <p>There should not be any additional configuration needed for the dbus service. Just enter an empty json object like this:</p>
-<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code>```json
-{}
-```
+<div class="highlight"><pre><span></span><code><span class="p">{}</span>
 </code></pre></div>
-
 <p>After entering it, click save.</p>
 <p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
-<ol>
-<li>Set the created dbus service instance to the service dependency of the dbus-ratbagd bundle.</li>
-</ol>
+</li>
+<li>
+<p>Set the created dbus service instance to the service dependency of the dbus-ratbagd bundle.</p>
 <p>Select the dbus-ratbagd bundle and the dbus service in the left bottom menu and then select the service instance that should be used by the dbus-ratbagd sample bundle (in this case the name of the previously created dbus instance).</p>
-<ol>
-<li>Check the nodecg logs</li>
-</ol>
+</li>
+<li>
+<p>Check the nodecg logs</p>
 <p>You should see an error or a success message and a list of connected device names</p>
+</li>
+</ol>
                 
               
               

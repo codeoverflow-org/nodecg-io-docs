@@ -1412,14 +1412,14 @@
 <p>The created instance should be automatically selected, if not select it in the upper left menu. Enter the <code>com port</code> or other identifying information in one of these formats:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;COM1&quot;</span>
+        <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;COM1&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;pnpId&quot;</span><span class="p">:</span> <span class="s2">&quot;usb-Arduino__www.arduino.cc__0043_75835343030351E0D171-if00&quot;</span>
-  <span class="p">}</span>
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;pnpId&quot;</span><span class="p">:</span> <span class="s2">&quot;usb-Arduino__www.arduino.cc__0043_75835343030351E0D171-if00&quot;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
@@ -1434,12 +1434,12 @@
 <li>
 <p>Check the nodecg logs</p>
 <p>You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The Arduino device will respond with pong. You should see the pong message displayed in the log.</p>
-<p>If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted. </p>
+<p>If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted.</p>
 </li>
 </ol>
 <h3 id="sample-arduino-sketch">Sample Arduino sketch</h3>
 <div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">inputString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="n">boolean</span><span class="w"> </span><span class="n">stringComplete</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span>
+<span class="n">boolean</span><span class="w"> </span><span class="n">stringComplete</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>

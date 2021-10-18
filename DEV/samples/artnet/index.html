@@ -1492,7 +1492,8 @@
 <div class="highlight"><pre><span></span><code><span class="c1">// send new data every 0,8 seconds.</span>
 <span class="c1">// This is the official timing for re-transmiting data in the artnet specifciation.</span>
 <span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">universe</span><span class="p">,</span>
+    <span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span>
+        <span class="nx">universe</span><span class="p">,</span>
         <span class="nx">values</span> <span class="c1">// number[] of values for each of the 512 channels</span>
     <span class="p">);</span>
 <span class="p">},</span> <span class="mf">800</span><span class="p">);</span>
