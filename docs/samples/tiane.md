@@ -11,15 +11,14 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make TI
 ### Configure the TIANE sample bundle
 
 1. Edit the file `samples/tiane-discord/extension/index.ts`. Look for this line:
-    
+
     ```
     const discordChannel = ""; // Insert channel for the discord bot here
     ```
-    
+
     Put the channel ID of a discord channel where you want to talk to TIANE between the quotation marks. See [here](https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord) to find out how to get a channel ID.
-   
+
 2. Run `npm run build` in the main nodecg-io directory.
-   
 3. Edit the file `server/TIANE_config.json` on your TIANE server:
 
     ```json
@@ -29,7 +28,7 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make TI
         "websocket_timeout": 20
     }
     ```
-   
+
     Make sure `websocket` is either set to `enabled` or `secure` and set a port of your desire.
 
 4. Start nodecg with nodecg-io installed. The TIANE-Discord bundle is currently part of it, so it should also be loaded.
@@ -53,7 +52,7 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make TI
     After entering it, click save.
 
     _Note:_ If you don't see the editor on the right, try reloading the page.
-    
+
 9. Create a new Discord service instance. (See the [Discord Sample](discord.md) on how to do this)
 
 10. Set the created TIANE and Discord service instances to the service dependency of the TIANE-Discord bundle.

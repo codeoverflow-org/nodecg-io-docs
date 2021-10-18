@@ -80,7 +80,8 @@ declare class ArtDmx {
 // send new data every 0,8 seconds.
 // This is the official timing for re-transmiting data in the artnet specifciation.
 setInterval(() => {
-    client.send(universe,
+    client.send(
+        universe,
         values // number[] of values for each of the 512 channels
     );
 }, 800);

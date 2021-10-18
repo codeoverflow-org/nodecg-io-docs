@@ -34,10 +34,10 @@ _Note:_ If you need to access another service inside the callback of a `onAvaila
 
 A couple of steps you may want to do after generating a bundle:
 
-- Create a git repository for you bundle (a `.gitignore` is automatically generated for you) and push it to a git platform of your choice
-- Add an [open source licence](https://choosealicense.com), don't forget it to also add it to the `package.json` file
-- Add code formatters and linting tools like [prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
-- Add a README that explains what your bundle does and how it can be used
+-   Create a git repository for you bundle (a `.gitignore` is automatically generated for you) and push it to a git platform of your choice
+-   Add an [open source licence](https://choosealicense.com), don't forget it to also add it to the `package.json` file
+-   Add code formatters and linting tools like [prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
+-   Add a README that explains what your bundle does and how it can be used
 
 ## Share it!
 

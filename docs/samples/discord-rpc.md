@@ -21,7 +21,7 @@ _Note:_ If you don't have an application yet, you can create one [here](https://
 
 5. Enter required information.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your information in monaco (the text-editor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your information in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -30,14 +30,14 @@ _Note:_ If you don't have an application yet, you can create one [here](https://
     }
     ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   _Note:_ If you don't see monaco on the right, try reloading the page.
+    _Note:_ If you don't see monaco on the right, try reloading the page.
 
 6. Set the created discord-rpc service instance to the service dependency of the discord-rpc bundle.
 
-   Select the discord-rpc bundle and the discord-rpc service in the left bottom menu and then select the service instance that should be used by the discord-rpc sample bundle (in this case the name of the previously created discord-rpc instance).
+    Select the discord-rpc bundle and the discord-rpc service in the left bottom menu and then select the service instance that should be used by the discord-rpc sample bundle (in this case the name of the previously created discord-rpc instance).
 
 7. Check the nodecg logs
 
-   You should see an error or a success message displaying your discord username.
+    You should see an error or a success message displaying your discord username.

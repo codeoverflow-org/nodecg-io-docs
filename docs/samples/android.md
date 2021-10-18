@@ -20,11 +20,11 @@ The Android example bundle in `samples/android` shows how to connect to an andro
 
 9. Run `adb device -l`. The output might look like this:
 
-   ```
-   ########               device usb:2-1.7 product:######## model:######## device:######## transport_id:2
-   ```
-   
-   The hexadecimal number in the first column is your device ID. You'll need this later.
+    ```
+    ########               device usb:2-1.7 product:######## model:######## device:######## transport_id:2
+    ```
+
+    The hexadecimal number in the first column is your device ID. You'll need this later.
 
 10. Start nodecg with nodecg-io installed. The bundle is currently part of it, so it should also be loaded.
 

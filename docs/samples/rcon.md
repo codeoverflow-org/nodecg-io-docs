@@ -17,7 +17,7 @@ The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command t
 
 4. Create a new rcon service instance using the left upper menu.
 
-5. Enter the host, port, and password of the rcon connection. This can be found in the ``server.properties`` file (`rcon.port`, `rcon.password`)
+5. Enter the host, port, and password of the rcon connection. This can be found in the `server.properties` file (`rcon.port`, `rcon.password`)
 
     The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:
 

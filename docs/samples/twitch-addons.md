@@ -21,7 +21,7 @@ _Note:_ If you don't have such a key yet, you can generate it on <https://twitch
 
 5. Enter credentials for twitch.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -29,14 +29,14 @@ _Note:_ If you don't have such a key yet, you can generate it on <https://twitch
     }
     ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   _Note:_ If you don't see monaco on the right, try reloading the page.
+    _Note:_ If you don't see monaco on the right, try reloading the page.
 
 6. Set the created twitch-addons service instance to the service dependency of the twitch-addons bundle.
 
-   Select the twitch-addons bundle and the twitch-addons service in the left bottom menu and then select the service instance that should be used by the bundle (in this case the name of the previously created twitch-addons instance).
+    Select the twitch-addons bundle and the twitch-addons service in the left bottom menu and then select the service instance that should be used by the bundle (in this case the name of the previously created twitch-addons instance).
 
 7. Check the nodecg logs
 
-   You should see an error or a success message and all BetterTTV and FFZ emotes from the twitch channel `#derniklaas`
+    You should see an error or a success message and all BetterTTV and FFZ emotes from the twitch channel `#derniklaas`

@@ -25,9 +25,7 @@ _Note:_ If you don't have a registered application, yet you can follow [this gui
 
     ```json
     {
-        "scopes": [
-            "user-read-playback-state"
-        ],
+        "scopes": ["user-read-playback-state"],
         "clientId": "0123456789abcdef0123456789abcdef",
         "clientSecret": "0123456789abcdef0123456789abcdef"
     }
@@ -37,7 +35,7 @@ _Note:_ If you don't have a registered application, yet you can follow [this gui
 
     _Note:_ If you don't see monaco on the right, try reloading the page.
     _Note:_ This sample requires the `user-read-playback-state` scope, but you can require other scopes if you want to use functions that require them.
-            A list of all scopes can be found [here](https://developer.spotify.com/documentation/general/guides/scopes/).
+    A list of all scopes can be found [here](https://developer.spotify.com/documentation/general/guides/scopes/).
 
 6. Set the created Spotify service instance to the service dependency of the spotify-current-song bundle.
 

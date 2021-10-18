@@ -21,7 +21,7 @@ _Note:_ If you don't have a token yet, you can create one [here](https://github.
 
 5. Enter the GitHub token.
 
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your GitHub token in monaco (the text-editor on the right) in this format:
+    The created instance should be automatically selected, if not select it in the upper left menu. Enter your GitHub token in monaco (the text-editor on the right) in this format:
 
     ```json
     {
@@ -29,14 +29,14 @@ _Note:_ If you don't have a token yet, you can create one [here](https://github.
     }
     ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   _Note:_ If you don't see monaco on the right, try reloading the page.
+    _Note:_ If you don't see monaco on the right, try reloading the page.
 
 6. Set the created GitHub service instance to the service dependency of the GitHub bundle.
 
-   Select the GitHub bundle and the GitHub service in the left bottom menu and then select the service instance that should be used by the GitHub sample bundle (in this case the name of the previously created GitHub instance).
+    Select the GitHub bundle and the GitHub service in the left bottom menu and then select the service instance that should be used by the GitHub sample bundle (in this case the name of the previously created GitHub instance).
 
 7. Check the nodecg logs
 
-   You should see an error or a success message and a list of all your repositories.
+    You should see an error or a success message and a list of all your repositories.

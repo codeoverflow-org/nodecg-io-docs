@@ -1,7 +1,11 @@
 {
     "default": true,
     "MD003": { "style": "atx" },
-    "MD007": { "indent": 4 },
+    "ul-indent": { "indent": 4 },
+    "list-marker-space": {
+        "ul_single": 3,
+        "ul_multi": 3
+    },
     "MD012": false,
     "MD013": false,
     "MD026": false,
@@ -11,7 +15,7 @@
     "MD040": false,
     "MD041": false,
     "MD046": false,
-    "MD047": false,
+    "MD047": true,
     "no-hard-tabs": true,
     "whitespace": false
 }

@@ -1,6 +1,6 @@
 ## Using the midi-output sample bundle
 
-The midi-output example bundle in `samples/midi-output` demonstrates the ability to send data to a midi device. 
+The midi-output example bundle in `samples/midi-output` demonstrates the ability to send data to a midi device.
 
 ### Prerequisites
 
@@ -28,9 +28,9 @@ The midi-output example bundle in `samples/midi-output` demonstrates the ability
     ```
 
     After entering it, click save.
-    __Note:__ A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-output` using the command `npm run list`. The devices should be listed with their device names and some other stuff.
+    **Note:** A script is provided to list all inputs and outputs. It can be run from the sample directory `samples/midi-output` using the command `npm run list`. The devices should be listed with their device names and some other stuff.
     Under Linux this looks for example like this:
-    
+
     ```
     nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
     ```

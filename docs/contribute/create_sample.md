@@ -48,19 +48,14 @@ import { TheServicesExportedClient } from "nodecg-io-<the services name>";
 module.exports = function (nodecg: NodeCG) {
     nodecg.log.info("Sample bundle for <the-service-name> started");
 
-    const service = requireService<TheServicesExportedClient>(
-        nodecg,
-        "<the-service-name>"
-    );
+    const service = requireService<TheServicesExportedClient>(nodecg, "<the-service-name>");
     service?.onAvailable((client) => {
         nodecg.log.info("<the-service-name> client has been updated.");
 
         // TODO do something with the client to demonstrate the functionality.
     });
 
-    service?.onUnavailable(() =>
-        nodecg.log.info("<the-service-name> client has been unset.")
-    );
+    service?.onUnavailable(() => nodecg.log.info("<the-service-name> client has been unset."));
 };
 ```
 
