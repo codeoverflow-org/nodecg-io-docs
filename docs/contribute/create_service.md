@@ -11,7 +11,7 @@ Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a pac
 
 To create the service you can either use a premade Python 3 script in `.scripts/create-service.py`, or create the files manually.
 
-## Using the script
+## Using the script (recommended)
 
 What this script does:
 
@@ -93,7 +93,7 @@ Next you need to put a file called `tsconfig.json` next to your `package.json`. 
 
 ```json
 {
-    "extends": "../tsconfig.common.json",
+    "extends": "../../tsconfig.common.json",
     "references": [
         {
             "path": "../../nodecg-io-core"
