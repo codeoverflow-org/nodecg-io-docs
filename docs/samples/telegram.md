@@ -1,25 +1,30 @@
 ## Using the telegram sample bundle
 
-The telegram sample bundle in `samples/telegram-bot` shows how to create a simple command.
+The telegram sample bundle in `samples/telegram-bot` shows how to create a
+simple command.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
--   A telegram bot API token. You can create your bot [here](https://t.me/botfather).
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
+-   A telegram-bot API token. You can create your bot
+    [here](https://t.me/botfather).
 
 ### Configure the telegram sample bundle
 
-1. Start nodecg with nodecg-io installed. The telegram bundle is currently part of it, so it should also be loaded.
+1. Create a new telegram service instance using the left upper menu.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
+2. Enter the token and set polling to true.
 
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new telegram service instance using the left upper menu.
-
-5. Enter the token and set polling to true.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:
+    The created instance should be automatically selected, if not select it in
+    the upper left menu. Enter your host and port in monaco (the text-editor on
+    the right) in this format:
 
     ```json
     {
@@ -30,6 +35,7 @@ The telegram sample bundle in `samples/telegram-bot` shows how to create a simpl
 
     After entering it, click save.
 
-6. Set the created telegram service instance to the service dependency of the telegram bundle.
+3. Set the created telegram service instance to the service dependency of the
+   telegram bundle.
 
-7. You can send `/test` to your bot, and it should respond with two messages.
+4. You can send `/test` to your bot, and it should respond with two messages.

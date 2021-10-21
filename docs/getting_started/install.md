@@ -74,15 +74,19 @@ You will get a prompt which asks you which version you want to install.
 
 For starters, we recommend using the latest non-development version.
 
-nodecg-io will always be installed into a `nodecg-io/` directory inside your nodecg installation so that your bundles and all bundles from nodecg-io are separated. The CLI will add this path to the loaded bundles in your nodecg configuration automatically, you don't need to worry about it.
+nodecg-io will always be installed into a `nodecg-io/` directory inside your NodeCG installation so that your bundles and all bundles from nodecg-io are separated. The CLI will add this path to the loaded bundles in your NodeCG configuration automatically, you don't need to worry about it.
 
 If you want to every change your nodecg-io installation to add/remove a service or change the version, you can always re-run `nodecg-io install`. If a nodecg-io installation is found, its options will be preselected in the prompt. Re-running `nodecg-io install` will also update all packages to the latest patch version, if you have a production installation, and pull the repository and rebuild, if you have a development installation.
 
-## Start nodecg
+## Start NodeCG
 
-When starting nodecg you should see that all nodecg-io related bundles should be loaded and that you can now access nodecg-io in your nodecg dashboard.
+When starting NodeCG you should see that all nodecg-io related bundles should be loaded and that you can now access nodecg-io in your NodeCG dashboard.
 
-Now you can either install an already existing bundle that uses nodecg-io, [create a new bundle](./create_new_bundle.md) or [integrate an existing bundle](./existing_bundle.md).
+There are many example bundles premade for most services, so you may take a
+look at the [“Try an included sample”](../getting_started/try_example_bundle.md)-Guide.
+Or you could directly take a deep dive into our framework and either [create a new bundle](./create_new_bundle.md)
+or [integrate an existing bundle](./existing_bundle.md). There are other bundles
+using nodecg-io, witch you could try, so may take a look around GitHub or GitLab.
 
 ## Uninstall nodecg-io
 

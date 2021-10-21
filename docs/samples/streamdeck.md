@@ -1,22 +1,31 @@
 ## Using the StreamDeck rainbow sample bundle
 
-The streamdeck-rainbow bundle paints your streamdeck with different colours. It is located in `samples/streamdeck-rainbow`.
+The streamdeck-rainbow bundle paints your streamdeck with different colours. It
+is located in `samples/streamdeck-rainbow`.
 
-Sadly you can't access the StreamDeck while another application accesses it. So you need to stop your StreamDeck Software before.
+Sadly you can't access the StreamDeck while another application accesses it. So
+you need to stop your StreamDeck Software before.
+
+### Prerequisites
+
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:** (If you're on Linux)
+
+Follow the instructions listed under Manual Installation
+[here](https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md).
+Everything after the `sudo udevadm` command can be omitted.
 
 ### Configure the Streamdeck Rainbow bundle
 
-1. If you're on Linux, follow the instructions listed under Manual Installation [here](https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md). Everything after the `sudo udevadm` command can be omitted.
+1. In NodeCG, create a new StreamDeck service instance using the left upper
+   menu.
 
-2. Start nodecg with nodecg-io installed. The streamdeck-rainbow bundle is currently part of it, so it should also be loaded.
-
-3. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-4. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-5. Create a new StreamDeck service instance using the left upper menu.
-
-6. Enter the configuration
+2. Enter the configuration
 
     ```json
     {
@@ -24,8 +33,10 @@ Sadly you can't access the StreamDeck while another application accesses it. So 
     }
     ```
 
-    `default` tells the bundle to automatically find a StreamDeck. If you use multiple StreamDecks, you need to put in an ID here.
+    `default` tells the bundle to automatically find a StreamDeck. If you use
+    multiple StreamDecks, you need to put in an ID here.
 
-7. Set the created StreamDeck service instance to the service dependency of the streamdeck-rainbow bundle.
+3. Set the created StreamDeck service instance to the service dependency of the
+   streamdeck-rainbow bundle.
 
-8. Watch your streamdeck.
+4. Watch your streamdeck.

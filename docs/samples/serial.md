@@ -1,27 +1,31 @@
 ## Using the serial sample bundle
 
-The serial example bundle in `samples/serial` demonstrates the ability to exchange data with a device that is connected via serial. Here is a guide to how to get it working.
+The serial example bundle in `samples/serial` demonstrates the ability to
+exchange data with a device that is connected via serial. Here is a guide to how
+to get it working.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
--   An Arduino or any other microcontroller development board that can send and receive data via serial.
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
+-   An Arduino or any other microcontroller development board that can send and
+    receive data via serial.
 
 ### Configure the serial sample bundle
 
-1. Load a simple serial echo sketch on your microcontroller. You can find a working Arduino sketch at the end of this article.
+1. In NodeCG, create a new serial service instance using the left upper menu.
 
-2. Start nodecg with nodecg-io installed. The serial bundle is currently part of it, so it should also be loaded. Make sure the device is already connected. Otherwise, you won't be able to see the device.
+2. Enter the information of your device.
 
-3. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-4. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-5. Create a new serial service instance using the left upper menu.
-
-6. Enter the information of your device.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the `com port` or other identifying information in one of these formats:
+    The created instance should be automatically selected, if not select it in
+    the upper left menu. Enter the `com port` or other identifying information
+    in one of these formats:
 
     ```json
     {
@@ -41,19 +45,27 @@ The serial example bundle in `samples/serial` demonstrates the ability to exchan
 
     After entering it, click save.
 
-    _Note:_ If you don't see monaco on the right, try reloading the page.
-    _Note:_ If you want to list all connected devices you can open a terminal in `nodecg-io-serial` and run `npm run list`.
-    _Note:_ If you are using multiple devices you might want to use the `pnpId`, since ports can change between reboots!
+    _Note:_ If you want to list all connected devices you can open a terminal in
+    `nodecg-io-serial` and run `npm run list`. _Note:_ If you are using multiple
+    devices you might want to use the `pnpId`, since ports can change between
+    reboots!
 
-7. Set the created serial service instance to the service dependency of the serial bundle.
+3. Set the created serial service instance to the service dependency of the
+   serial bundle.
 
-    Select the serial bundle and the serial service in the left bottom menu and then select the service instance that should be used by the serial bundle (in this case the name of the previously created serial instance).
+    Select the serial bundle and the serial service in the left bottom menu.
+    Then select the service instance that should be used by the serial bundle
+    (in this case the name of the previously created serial instance).
 
-8. Check the nodecg logs
+4. Check the NodeCG logs
 
-    You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The Arduino device will respond with pong. You should see the pong message displayed in the log.
+    You should see an error or a success message and nodecg-io will send ping to
+    the microcontroller every 10 seconds. The Arduino device will respond with
+    pong. You should see the pong message displayed in the log.
 
-    If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted.
+    If you see an error or nothing at all, try making sure your microcontroller
+    is plugged in and recognized correctly. Then restart nodecg, so the service
+    is cleanly restarted.
 
 ### Sample Arduino sketch
 

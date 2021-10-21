@@ -1,25 +1,30 @@
 ## Using the sACN receiver sample bundle
 
-The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demonstrates the ability receive data send via sACN from e.g., professional lighting consoles. Here is a guide to how to get it working.
+The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample`
+demonstrates the ability receive data send via sACN from e.g., professional
+lighting consoles. Here is a guide to how to get it working.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   A working sACN sender in the current network
 
 ### Configure the sACN sample bundle
 
-1. Start nodecg with nodecg-io installed. The sacn-receiver-sample bundle is currently part of it, so it should also be loaded.
+1. In NodeCG, create a new sacn-receiver service instance using the left upper
+   menu.
+2. Enter the needed options.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new sacn-receiver service instance using the left upper menu.
-
-5. Enter the needed options.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the text-editor on the right) in this format:
+    The created instance should be automatically selected, if not select it in
+    the upper left menu. Enter your Bot token in monaco (the text-editor on the
+    right) in this format:
 
     **Universes**
 
@@ -33,7 +38,8 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
 
     **Port**
 
-    Optional. The multicast port to use. All professional consoles broadcast to the default port 5568.
+    Optional. The multicast port to use. All professional consoles broadcast to
+    the default port 5568.
 
     ```json
     {
@@ -42,8 +48,9 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
     }
     ```
 
-    **Iface**
-    Optional. If the computer is connected to multiple networks, specify which network adaptor to use by using this computer's local IP address.
+    **Iface** Optional. If the computer is connected to multiple networks,
+    specify which network adaptor to use by using this computer's local IP
+    address.
 
     ```json
     {
@@ -52,8 +59,8 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
     }
     ```
 
-    **ReuseAddr**
-    Optional. Allow multiple programs on your computer to listen to the same sACN universe.
+    **ReuseAddr** Optional. Allow multiple programs on your computer to listen
+    to the same sACN universe.
 
     ```json
     {
@@ -64,12 +71,14 @@ The sacn-receiver-sample example bundle in `samples/sacn-receiver-sample` demons
 
     After entering them, click save.
 
-    _Note:_ If you don't see monaco on the right, try reloading the page.
+3. Set the created sacn-receiver service instance to the service dependency of
+   the sacn-receiver-sample bundle.
 
-6. Set the created sacn-receiver service instance to the service dependency of the sacn-receiver-sample bundle.
+    Select the sacn-receiver-sample bundle and the sacn-receiver service in the
+    left bottom menu. Then select the service instance that should be used by
+    the sacn-receiver-sample bundle (in this case the name of the previously
+    created sACN instance).
 
-    Select the sacn-receiver-sample bundle and the sacn-receiver service in the left bottom menu and then select the service instance that should be used by the sacn-receiver-sample bundle (in this case the name of the previously created sACN instance).
-
-7. Check the nodecg logs
+4. Check the NodeCG logs
 
     You should see data logged.
