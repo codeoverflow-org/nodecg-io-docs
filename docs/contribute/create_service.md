@@ -47,7 +47,7 @@ From here you will have to replace:
 
 Now you need to create a package. You should call it `nodecg-io-your-service-name`.
 
-First create a directory with that name in `/services/` put file called `package.json` into it.
+First create a directory with that name in `/services/` and put file called `package.json` into it.
 
 Put the following into it:
 
@@ -102,7 +102,7 @@ Next you need to put a file called `tsconfig.json` next to your `package.json`. 
 }
 ```
 
-Now run `npm install` and in the repository root.
+Now run `npm install` in the repository root.
 
 ## Create a configuration schema
 
