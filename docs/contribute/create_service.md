@@ -7,7 +7,37 @@ This guide helps you to create a service integration such as _twitch-chat_ or _d
 Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a package that wraps around the API of your service. If there's no such package, you need to create one yourself. This process is not described here. You may read the
 [“Contributing packages to the registry” from the npm Docs](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
 
-## Create a package
+## Create a service
+
+To create the service you can either use a premade Python 3 script in `.scripts/create-service.py`, or create the files manually.
+
+## Using the script (recommended)
+
+What this script does:
+
+-   It creates all required files for a new nodecg-io service
+-   It copies version and dependency information (e.g., for typescript) from `noodecg-io-template`
+
+It'll also create a sample and the files for the docs
+Requirements:
+
+-   python3 in your PATH
+-   executed from root of nodecg-io repo
+
+The script waits for your input for each of those fields:
+
+```shell
+$ python3 .scripts/create-service.py
+Service name: <name here>
+Short description: <description here>
+Author name: <author here>
+Author url: <url here>
+Sample name: <name here>
+```
+
+Now the script will rebuild your environment.
+
+## Create the files manually
 
 From here you will have to replace:
 
@@ -17,7 +47,7 @@ From here you will have to replace:
 
 Now you need to create a package. You should call it `nodecg-io-your-service-name`.
 
-First create a directory with that name put file called `package.json` into it.
+First create a directory with that name in `/services/` and put file called `package.json` into it.
 
 Put the following into it:
 
@@ -34,15 +64,11 @@ Put the following into it:
     "repository": {
         "type": "git",
         "url": "https://github.com/codeoverflow-org/nodecg-io.git",
-        "directory": "nodecg-io-<your-service-name>"
+        "directory": "services/nodecg-io-<your-service-name>"
     },
     "files": ["**/*.js", "**/*.js.map", "**/*.d.ts", "*.json"],
     "main": "extension",
-    "scripts": {
-        "build": "tsc -b",
-        "watch": "tsc -b -w",
-        "clean": "tsc -b --clean"
-    },
+    "scripts": {},
     "keywords": ["nodecg-io", "nodecg-bundle"],
     "nodecg": {
         "compatibleRange": "^1.1.1",
@@ -67,11 +93,16 @@ Next you need to put a file called `tsconfig.json` next to your `package.json`. 
 
 ```json
 {
-    "extends": "../tsconfig.common.json"
+    "extends": "../../tsconfig.common.json",
+    "references": [
+        {
+            "path": "../../nodecg-io-core"
+        }
+    ]
 }
 ```
 
-Now run `npm install` and `npm run bootstrap` in the repository root.
+Now run `npm install` in the repository root.
 
 ## Create a configuration schema
 

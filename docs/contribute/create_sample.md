@@ -5,6 +5,8 @@ E.g. `twitch-chat` or `obs-scenelist`.
 
 Create a folder in `samples` named after the sample and add a `package.json` and a `tsconfig.json`:
 
+`package.json`
+
 ```json
 {
     "name": "<the sample name>",
@@ -32,9 +34,19 @@ Create a folder in `samples` named after the sample and add a `package.json` and
 }
 ```
 
+`tsconfig.json`
+
 ```json
 {
-    "extends": "../../tsconfig.common.json"
+    "extends": "../../tsconfig.common.json",
+    "references": [
+        {
+            "path": "../../nodecg-io-core"
+        },
+        {
+            "path": "../../services/nodecg-io-<the service name>"
+        }
+    ]
 }
 ```
 

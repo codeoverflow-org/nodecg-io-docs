@@ -48,19 +48,15 @@ cd path/to/nodecg-io
 npm run watch
 ```
 
-_Note:_ Watching all packages requires a lot of RAM.
-Instead, you can watch just the packages you are actively working on e.g., `npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat`.
-This will just spawn a watch process for the twitch-chat sample and service and require way less memory.
-
 ## Run
 
-To test the changes you simply need to start/restart nodecg.
+To test the changes you simply need to start/restart NodeCG.
 
 ## Adding dependencies to packages
 
-This project uses [lerna](https://lerna.js.org) to manage our monorepo, and most importantly link all our packages together.
+This project uses [npm workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces/) to manage our monorepo, and most importantly link all our packages together.
 Because of linking you should not use `npm install xyz --save` to add dependencies because npm can't get the development version of internal packages like `nodecg-io-core`. Doing so will result in an error and break the link.
-Instead, you should edit the `package.json` directly using a text editor and the run `npm run bootstrap` in the repository root.
+Instead, you should edit the `package.json` directly using a text editor and the run `npm install` in the repository root.
 
 ## Open a Pull Request
 
