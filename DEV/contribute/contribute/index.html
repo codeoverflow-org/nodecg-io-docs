@@ -1514,15 +1514,12 @@ npm run build
 <div class="highlight"><pre><span></span><code>cd path/to/nodecg-io
 npm run watch
 </code></pre></div>
-<p><em>Note:</em> Watching all packages requires a lot of RAM.
-Instead, you can watch just the packages you are actively working on e.g., <code>npm run watch -- --scope nodecg-io-twitch-chat --scope twitch-chat</code>.
-This will just spawn a watch process for the twitch-chat sample and service and require way less memory.</p>
 <h2 id="run">Run</h2>
-<p>To test the changes you simply need to start/restart nodecg.</p>
+<p>To test the changes you simply need to start/restart NodeCG.</p>
 <h2 id="adding-dependencies-to-packages">Adding dependencies to packages</h2>
-<p>This project uses <a href="https://lerna.js.org">lerna</a> to manage our monorepo, and most importantly link all our packages together.
+<p>This project uses <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces/">npm workspaces</a> to manage our monorepo, and most importantly link all our packages together.
 Because of linking you should not use <code>npm install xyz --save</code> to add dependencies because npm can't get the development version of internal packages like <code>nodecg-io-core</code>. Doing so will result in an error and break the link.
-Instead, you should edit the <code>package.json</code> directly using a text editor and the run <code>npm run bootstrap</code> in the repository root.</p>
+Instead, you should edit the <code>package.json</code> directly using a text editor and the run <code>npm install</code> in the repository root.</p>
 <h2 id="open-a-pull-request">Open a Pull Request</h2>
 <p>Once you have implemented your feature or fixed a bug push it to your fork and start a Pull Request.</p>
 <h2 id="merge-upstream-changes">Merge Upstream Changes</h2>

@@ -1337,6 +1337,7 @@
 <p>A sample should have the same name as the service, but it may include a short description in the name after the service name as well.
 E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
 <p>Create a folder in <code>samples</code> named after the sample and add a <code>package.json</code> and a <code>tsconfig.json</code>:</p>
+<p><code>package.json</code></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;the sample name&gt;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;private&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -1362,8 +1363,17 @@ E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+<p><code>tsconfig.json</code></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;extends&quot;</span><span class="p">:</span> <span class="s2">&quot;../../tsconfig.common.json&quot;</span>
+    <span class="nt">&quot;extends&quot;</span><span class="p">:</span> <span class="s2">&quot;../../tsconfig.common.json&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;references&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;../../nodecg-io-core&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;../../services/nodecg-io-&lt;the service name&gt;&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Now you can create a file called <code>extension/index.ts</code>. Here's a template. Make sure you replace all the comments with your own code.</p>

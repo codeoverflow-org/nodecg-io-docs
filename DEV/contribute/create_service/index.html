@@ -394,8 +394,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-package" class="md-nav__link">
-    Create a package
+  <a href="#create-a-service" class="md-nav__link">
+    Create a service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-script-recommended" class="md-nav__link">
+    Using the script (recommended)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-files-manually" class="md-nav__link">
+    Create the files manually
   </a>
   
 </li>
@@ -1345,8 +1359,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-package" class="md-nav__link">
-    Create a package
+  <a href="#create-a-service" class="md-nav__link">
+    Create a service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-script-recommended" class="md-nav__link">
+    Using the script (recommended)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-files-manually" class="md-nav__link">
+    Create the files manually
   </a>
   
 </li>
@@ -1394,7 +1422,30 @@
 <h2 id="find-a-javascript-library">Find a JavaScript library</h2>
 <p>Go to <a href="https://www.npmjs.com/">npmjs.com</a> and look whether there's already a package that wraps around the API of your service. If there's no such package, you need to create one yourself. This process is not described here. You may read the
 <a href="https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry">“Contributing packages to the registry” from the npm Docs</a>.</p>
-<h2 id="create-a-package">Create a package</h2>
+<h2 id="create-a-service">Create a service</h2>
+<p>To create the service you can either use a premade Python 3 script in <code>.scripts/create-service.py</code>, or create the files manually.</p>
+<h2 id="using-the-script-recommended">Using the script (recommended)</h2>
+<p>What this script does:</p>
+<ul>
+<li>It creates all required files for a new nodecg-io service</li>
+<li>It copies version and dependency information (e.g., for typescript) from <code>noodecg-io-template</code></li>
+</ul>
+<p>It'll also create a sample and the files for the docs
+Requirements:</p>
+<ul>
+<li>python3 in your PATH</li>
+<li>executed from root of nodecg-io repo</li>
+</ul>
+<p>The script waits for your input for each of those fields:</p>
+<div class="highlight"><pre><span></span><code>$ python3 .scripts/create-service.py
+Service name: &lt;name here&gt;
+Short description: &lt;description here&gt;
+Author name: &lt;author here&gt;
+Author url: &lt;url here&gt;
+Sample name: &lt;name here&gt;
+</code></pre></div>
+<p>Now the script will rebuild your environment.</p>
+<h2 id="create-the-files-manually">Create the files manually</h2>
 <p>From here you will have to replace:</p>
 <ul>
 <li><code>YourServiceName</code> to your service's name in <a href="https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class">PascalCase</a>.</li>
@@ -1402,7 +1453,7 @@
 <li><code>your-service-name</code> to your service's name with only lowercase and hyphens (<code>-</code>) for example: ws-server.</li>
 </ul>
 <p>Now you need to create a package. You should call it <code>nodecg-io-your-service-name</code>.</p>
-<p>First create a directory with that name put file called <code>package.json</code> into it.</p>
+<p>First create a directory with that name in <code>/services/</code> and put file called <code>package.json</code> into it.</p>
 <p>Put the following into it:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;nodecg-io-&lt;your-service-name&gt;&quot;</span><span class="p">,</span>
@@ -1416,15 +1467,11 @@
     <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
         <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/codeoverflow-org/nodecg-io.git&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;directory&quot;</span><span class="p">:</span> <span class="s2">&quot;nodecg-io-&lt;your-service-name&gt;&quot;</span>
+        <span class="nt">&quot;directory&quot;</span><span class="p">:</span> <span class="s2">&quot;services/nodecg-io-&lt;your-service-name&gt;&quot;</span>
     <span class="p">},</span>
     <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;**/*.js&quot;</span><span class="p">,</span> <span class="s2">&quot;**/*.js.map&quot;</span><span class="p">,</span> <span class="s2">&quot;**/*.d.ts&quot;</span><span class="p">,</span> <span class="s2">&quot;*.json&quot;</span><span class="p">],</span>
     <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;extension&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;build&quot;</span><span class="p">:</span> <span class="s2">&quot;tsc -b&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;watch&quot;</span><span class="p">:</span> <span class="s2">&quot;tsc -b -w&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;clean&quot;</span><span class="p">:</span> <span class="s2">&quot;tsc -b --clean&quot;</span>
-    <span class="p">},</span>
+    <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{},</span>
     <span class="nt">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;nodecg-io&quot;</span><span class="p">,</span> <span class="s2">&quot;nodecg-bundle&quot;</span><span class="p">],</span>
     <span class="nt">&quot;nodecg&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;compatibleRange&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.1.1&quot;</span><span class="p">,</span>
@@ -1446,10 +1493,15 @@
 </code></pre></div>
 <p>Next you need to put a file called <code>tsconfig.json</code> next to your <code>package.json</code>. The <code>tsconfig.json</code> should look like this:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;extends&quot;</span><span class="p">:</span> <span class="s2">&quot;../tsconfig.common.json&quot;</span>
+    <span class="nt">&quot;extends&quot;</span><span class="p">:</span> <span class="s2">&quot;../../tsconfig.common.json&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;references&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;../../nodecg-io-core&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Now run <code>npm install</code> and <code>npm run bootstrap</code> in the repository root.</p>
+<p>Now run <code>npm install</code> in the repository root.</p>
 <h2 id="create-a-configuration-schema">Create a configuration schema</h2>
 <p>Next create a file called <code>your-service-name-schame.json</code>. This is a JSON schema file that indicates how the configuration for your service should be structured. If you need help here take a look at <a href="https://json-schema.org/understanding-json-schema/">this</a> online resource and the schema-files of the other service implementations.</p>
 <h2 id="create-the-service">Create the service</h2>
