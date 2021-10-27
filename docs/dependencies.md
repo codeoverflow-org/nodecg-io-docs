@@ -79,7 +79,7 @@ FontStyle Underline
 [<u>nodecg-io-sql] as services_nodecg_io_sql <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-sql]]
 [<u>knex] as knex <<lib>> [[https://www.npmjs.com/package/knex]]
 [<u>nodecg-io-streamdeck] as services_nodecg_io_streamdeck <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-streamdeck]]
-[<u>elgato-stream-deck] as elgato_stream_deck <<lib>> [[https://www.npmjs.com/package/elgato-stream-deck]]
+[<u>@elgato-stream-deck/node] as elgato_stream_deck_node <<lib>> [[https://www.npmjs.com/package/@elgato-stream-deck/node]]
 [<u>nodecg-io-streamelements] as services_nodecg_io_streamelements <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-streamelements]]
 [<u>@types/socket.io-client] as types_socket_io_client <<lib>> [[https://www.npmjs.com/package/@types/socket.io-client]]
 [<u>socket.io-client] as socket_io_client <<lib>> [[https://www.npmjs.com/package/socket.io-client]]
@@ -92,11 +92,11 @@ FontStyle Underline
 [<u>nodecg-io-twitch-addons] as services_nodecg_io_twitch_addons <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-twitch-addons]]
 [<u>nodecg-io-twitch-auth] as nodecg_io_twitch_auth <<lib>> [[https://www.npmjs.com/package/nodecg-io-twitch-auth]]
 [<u>nodecg-io-twitch-api] as services_nodecg_io_twitch_api <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-twitch-api]]
-[<u>twitch] as twitch <<lib>> [[https://www.npmjs.com/package/twitch]]
+[<u>@twurple/api] as twurple_api <<lib>> [[https://www.npmjs.com/package/@twurple/api]]
 [<u>nodecg-io-twitch-chat] as services_nodecg_io_twitch_chat <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-twitch-chat]]
-[<u>twitch-chat-client] as twitch_chat_client <<lib>> [[https://www.npmjs.com/package/twitch-chat-client]]
+[<u>@twurple/chat] as twurple_chat <<lib>> [[https://www.npmjs.com/package/@twurple/chat]]
 [<u>nodecg-io-twitch-pubsub] as services_nodecg_io_twitch_pubsub <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-twitch-pubsub]]
-[<u>twitch-pubsub-client] as twitch_pubsub_client <<lib>> [[https://www.npmjs.com/package/twitch-pubsub-client]]
+[<u>@twurple/pubsub] as twurple_pubsub <<lib>> [[https://www.npmjs.com/package/@twurple/pubsub]]
 [<u>nodecg-io-twitter] as services_nodecg_io_twitter <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-twitter]]
 [<u>@types/twitter] as types_twitter <<lib>> [[https://www.npmjs.com/package/@types/twitter]]
 [<u>twitter] as twitter <<lib>> [[https://www.npmjs.com/package/twitter]]
@@ -178,7 +178,7 @@ services_nodecg_io_spotify ...> open
 services_nodecg_io_spotify ...> spotify_web_api_node
 services_nodecg_io_sql ...> knex
 services_nodecg_io_sql --> nodecg_io_core
-services_nodecg_io_streamdeck ...> elgato_stream_deck
+services_nodecg_io_streamdeck ...> elgato_stream_deck_node
 services_nodecg_io_streamdeck --> nodecg_io_core
 services_nodecg_io_streamelements ...> types_socket_io_client
 services_nodecg_io_streamelements --> nodecg_io_core
@@ -194,14 +194,14 @@ services_nodecg_io_twitch_addons --> nodecg_io_core
 services_nodecg_io_twitch_addons ...> nodecg_io_twitch_auth
 services_nodecg_io_twitch_api --> nodecg_io_core
 services_nodecg_io_twitch_api ...> nodecg_io_twitch_auth
-services_nodecg_io_twitch_api ...> twitch
+services_nodecg_io_twitch_api ...> twurple_api
 services_nodecg_io_twitch_chat --> nodecg_io_core
 services_nodecg_io_twitch_chat ...> nodecg_io_twitch_auth
-services_nodecg_io_twitch_chat ...> twitch_chat_client
+services_nodecg_io_twitch_chat ...> twurple_chat
 services_nodecg_io_twitch_pubsub --> nodecg_io_core
 services_nodecg_io_twitch_pubsub ...> nodecg_io_twitch_auth
-services_nodecg_io_twitch_pubsub ...> twitch
-services_nodecg_io_twitch_pubsub ...> twitch_pubsub_client
+services_nodecg_io_twitch_pubsub ...> twurple_api
+services_nodecg_io_twitch_pubsub ...> twurple_pubsub
 services_nodecg_io_twitter ...> types_twitter
 services_nodecg_io_twitter --> nodecg_io_core
 services_nodecg_io_twitter ...> twitter
