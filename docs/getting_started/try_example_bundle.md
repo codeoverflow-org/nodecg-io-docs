@@ -1,6 +1,6 @@
 # Try an included sample
 
-Trying one of the premade example bundles, is a good way to get to know the
+Trying one of the premade example bundles is a good way to get to know the
 framework and especially the selected service.
 
 ## Step 1: Installing the Sample
@@ -8,10 +8,8 @@ framework and especially the selected service.
 If you installed **dev** branch or cloned nodecg-io directly from GitHub all the
 samples should be already installed (you can move to step 2). In case you
 installed the **production** branch of nodecg-io, you may have to download the
-sample before you can use it. In case you already installed it previously you
-can move on to step 2.  
-Installing and uninstalling of sample bundles can be done with the nodecg-io
-CLI.
+sample before you can use it. Installing and uninstalling of sample bundles can be done with the nodecg-io
+CLI. This can be done as follows.
 
 Run this command inside your NodeCG folder:
 
@@ -24,14 +22,14 @@ You will be presented with a pair of options:
 
 <!-- prettier-ignore-start -->
 
-1. You can select the version of nodecg-io to install. **Select here the version already installed.** (Since this is not the migration guide)
+1. You can select the version of nodecg-io to install. **Select the version that is already installed here.** (Since this is not the migration guide)
     <pre><b><span style="color:#1cdc9a">user@computer</span>:<span    style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
    Installing nodecg-io...
    Detected nodecg installation at /home/user/nodecg.
    <span style="color:#11d116">?</span> <b>Which version do you want to install?</b>  (Use arrow keys) 
      development 
    <span style="color:#1abc9c">❯ 0.1</span></pre>
-2. You can select the sample bundles to be included. **Select here the sample(s) you want to try.**
+2. You can select the sample bundles to be included. **Select the sample(s) you want to try here.**
    <pre><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
    Installing nodecg-io...
    Detected nodecg installation at /home/user/nodecg.
@@ -61,7 +59,7 @@ the `Run and Debug` Explorer View:
 
 ### Using the terminal
 
-You also launch NodeCG using your terminal with:
+You may also launch NodeCG using your terminal with:
 
 <pre><b><span style="color:#1cdc9a">user@computer</span>:<spanstyle="color:#3daee9">~/nodecg</span></b>$ npm run start
 
@@ -75,7 +73,7 @@ info: [nodecg-io-core] Minzig!
 
 info: [nodecg/lib/server] NodeCG running on http://localhost:9090</pre>
 
-Now you can open the NodeCG dashboard under <http://localhost:9090>.
+Now you can open the NodeCG dashboard (by default) under <http://localhost:9090>.
 
 ## Step 3: Log in to nodecg-io
 
@@ -87,23 +85,23 @@ If you are logging in for the first time you will have to set your password.
 
 Else you simply have to log in with your previously chosen password.
 
-Now you are in the `nodecg-io` config menu. It should look like this:
+Now you are looking at the `nodecg-io` config menu. It should look like this:
 
 ![`nodcg-io` config menu](../assets/nodcg-io-dashboard.png)
 
 ## Step 4: Learning how to use the GUI
 
-The current GUI is just intended to make the project usable, but is not very
+The current GUI is just intended to make the project usable, but it is not very
 user-friendly. As a more long term solution, a new GUI will be developed that
-also focuses at user experience. But till the new GUI is developed you will have
+also focuses on user experience. Until the new GUI is developed, you will have
 to arrange yourself with this one. So, to get started:
 
 ![`nodcg-io` colour coded](../assets/nodcg-io-colored.png)
 
 ### In <span style="color:#b06770">pink</span>: NodeCG Tabs
 
-Here you will find every NodeCG-bundle, which has a dashboard. Here you may
-select the [`nodecg-io-debug`](../samples/debug.md)-dashboard, if you have it
+Here you will find every NodeCG-bundle that has a dashboard. Here you may
+select the [`nodecg-io-debug`](../samples/debug.md)-dashboard, if it is
 installed.
 
 ### In <span style="color:#b6b61c">yellow</span>: Monaco editor
@@ -121,7 +119,7 @@ _Creating a new service instance_:
 
 This can be accomplished by selecting the item `'New'`. Then a new dropdown will
 be revealed, in witch you may select the service type. Additionally, you must
-select an instance name. Then click `'Create'`. The new created instance should
+select an instance name. Then click `'Create'`. The newly created instance should
 be selected.
 
 _Configure a service instance_:
@@ -136,11 +134,11 @@ This can be accomplished by selecting an existing instance. Then click
 
 ### In <span style="color:#69318e">violet</span>: Bundles section
 
-This section has tree dropdowns:
+This section has three dropdowns:
 
 1. Bundle: Here you can select a bundle to configure.
-2. Service: If this bundle uses more than one service, you can select her the
-   service to set or unset.
+2. Service: If this bundle uses more than one service, you may select the
+   service to set or unset here.
 3. Service Instance: Here you can select one instance of the service type set at
    2 or `none`.
 
@@ -148,11 +146,11 @@ This section has tree dropdowns:
 
 This button will set the service instance for every bundle/service combination
 to none, effectively removing the access to every service from all bundles.  
-**Caution**: This cant be undone, and you will have to set up all the bundles
+**Caution**: This can not be undone, and you will have to set up all the bundles
 again. _The service instances will be unaffected._
 
 ## Step 5: Configure the sample
 
-The configuration for every sample bundle is too different to be included here,
+The configurations for every sample bundle differ too greatly from each other to be included here,
 so you have to take a look at the documentation for your sample bundle. You will
 find it on the left-hand side of this page in the category `Services`.

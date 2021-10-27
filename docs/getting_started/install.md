@@ -9,8 +9,8 @@ In order to download necessary tools and to install nodecg-io using the CLI you 
 You'll need the following tools:
 
 -   [Git](https://git-scm.com)
--   [Node.JS](https://nodejs.org/en/) v12.0.0 or newer
--   [Npm](https://www.npmjs.com/get-npm) 7.0.0 or newer
+-   [Node.js](https://nodejs.org/en/) v12.0.0 or newer
+-   [npm](https://www.npmjs.com/get-npm) 7.0.0 or newer
 -   [NodeCG](https://nodecg.dev/) 1.4.0 or newer (1.7.0 or higher recommended)
 
 ### Native Build Tools
@@ -60,7 +60,7 @@ _Note:_ If you are running on Linux, you may need to use `sudo` if your npm inst
 
 ## Install nodecg-io using the nodecg-io CLI
 
-With the nodecg-io CLI installed you can run this command inside a nodecg installation to install nodecg-io:
+With the nodecg-io CLI installed you can run this command inside a NodeCG installation to install nodecg-io:
 
 ```shell
 nodecg-io install
@@ -83,7 +83,8 @@ If you want to every change your nodecg-io installation to add/remove a service 
 When starting NodeCG you should see that all nodecg-io related bundles should be loaded and that you can now access nodecg-io in your NodeCG dashboard.
 
 There are many example bundles premade for most services, so you may take a
-look at the [“Try an included sample”](../getting_started/try_example_bundle.md)-Guide.
+look at the [“Try an included sample”](../getting_started/try_example_bundle.md)-Guide (It
+will also tell you how to log in and how to use the GUI).
 Or you could directly take a deep dive into our framework and either [create a new bundle](./create_new_bundle.md)
 or [integrate an existing bundle](./existing_bundle.md). There are other bundles
 using nodecg-io, witch you could try, so may take a look around GitHub or GitLab.
@@ -96,4 +97,4 @@ If you want to uninstall nodecg-io you can run the following command:
 nodecg-io uninstall
 ```
 
-This will remove the `nodecg-io` directory inside your nodecg installation and also will remove it from the loaded bundle paths in your nodecg configuration.
+This will remove the `nodecg-io` directory inside your NodeCG installation and also will remove it from the loaded bundle paths in your NodeCG configuration.
