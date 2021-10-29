@@ -18,13 +18,8 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the sACN sample bundle
 
-1. In NodeCG, create a new sacn-receiver service instance using the left upper
-   menu.
-2. Enter the needed options.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your Bot token in monaco (the text-editor on the
-    right) in this format:
+1. In NodeCG, create a new sacn-receiver service instance.
+2. Enter the needed options:
 
     **Universes**
 
@@ -71,14 +66,9 @@ will also tell you how to log in and how to use the GUI.
 
     After entering them, click save.
 
-3. Set the created sacn-receiver service instance to the service dependency of
-   the sacn-receiver-sample bundle.
+3. Set the sample's (`sacn-receiver-sample`) dependency to be the newly created
+   service instance (of type `sacn-receiver`).
 
-    Select the sacn-receiver-sample bundle and the sacn-receiver service in the
-    left bottom menu. Then select the service instance that should be used by
-    the sacn-receiver-sample bundle (in this case the name of the previously
-    created sACN instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see data logged.

@@ -27,9 +27,8 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the IntelliJ sample bundle
 
-1. In NodeCG, create a new IntelliJ service instance using the left upper menu.
-
-2. Enter the following
+1. In NodeCG, create a new IntelliJ service instance.
+2. Enter the host and port of your IDE's HTTP server:
 
     ```
     {
@@ -42,15 +41,9 @@ will also tell you how to log in and how to use the GUI.
     guidelines
     [here](https://github.com/noeppi-noeppi/nodecg-io-intellij/blob/master/README.md).
 
-3. Set the created IntelliJ service instance to the service dependency of the
-   sample-intellij bundle.
-
-    Select the sample-intellij bundle and the IntelliJ service in the left
-    bottom menu. Then select the service instance that should be used by the
-    sample-intellij bundle (in this case the name of the previously created
-    IntelliJ instance).
-
-4. Check the NodeCG logs
+3. Set the sample's (`intellij-integration`) dependency to be the newly created
+   service instance (of type `intellij`).
+4. Check the NodeCG logs:
 
     You should see an error or a list of all plugins installed at your IDE
     including the preinstalled ones by JetBrains.

@@ -13,13 +13,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the IRC sample bundle
 
-1. In NodeCG, create a new IRC service instance using the left upper menu.
-
-2. Enter credentials for IRC.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. In this example we will "anonymously" connect to the
-    twitch IRC chat. Enter the config in this format:
+1. In NodeCG, create a new IRC service instance.
+2. Enter the credentials for IRC. In this example we will “anonymously” connect
+   to the twitch IRC chat. Enter the host, port, and nick in this format:
 
     ```json
     {
@@ -33,14 +29,9 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-3. Set the created IRC service instance to the service dependency of the IRC
-   sample bundle.
-
-    Select the IRC sample bundle and the IRC service in the left bottom menu.
-    Then select the service instance that should be used by the IRC sample
-    bundle (in this case the name of the previously created IRC instance).
-
-4. Check the NodeCG logs
+3. Set the sample's (`irc`) dependency to be the newly created service instance
+   (of type `irc`).
+4. Check the NodeCG logs:
 
     You should see an error or a success message and all twitch messages that
     are written in the twitch channel that is hardcoded in

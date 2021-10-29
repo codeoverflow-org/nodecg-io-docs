@@ -17,13 +17,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the Xdotool sample bundle
 
-1. In NodeCG, create a new xdotool service instance using the left upper menu.
+1. In NodeCG, create a new xdotool service instance.
 
-2. Enter settings port `-1` tells nodecg-io to use a locally installed xdotool.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Configure local xdotool in monaco (the text-editor on
-    the right) using this config:
+2. Enter settings port `-1` tells nodecg-io to use a locally installed xdotool:
 
     ```json
     {
@@ -34,7 +30,7 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-3. Set the created xdotool service instance to the service dependency of the
-   xdotool bundle.
+3. Set the sample's (`xdotool-windowminimize`) dependency to be the newly
+   created service instance (of type `xdotool`).
 
 4. Your browser window should get minimized.

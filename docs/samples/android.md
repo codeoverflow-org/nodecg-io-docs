@@ -40,7 +40,7 @@ will also tell you how to log in and how to use the GUI.
     The hexadecimal number in the first column is your device ID. You'll need
     this later.
 
-10. In NodeCG, create a new android service instance using the left upper menu.
+10. In NodeCG, create a new android service instance.
 11. Enter the following:
 
     ```json
@@ -51,9 +51,8 @@ will also tell you how to log in and how to use the GUI.
 
     Replace `device_id` with your device ID.
 
-12. Set the created android service instance to the service dependency of the
-    android sample bundle.  
-    Select the android bundle and the android service in the left bottom menu.
-    Then select the service instance that should be used by the android sample
-    bundle (in this case the name of the previously created android instance).
+    After entering it, click save.
+
+12. Set the sample's (`android`) dependency to be the newly created service
+    instance (of type `android`).
 13. You should see that WLAN is now activated on your device.

@@ -18,13 +18,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the telegram sample bundle
 
-1. Create a new telegram service instance using the left upper menu.
+1. Create a new telegram service instance.
 
-2. Enter the token and set polling to true.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your host and port in monaco (the text-editor on
-    the right) in this format:
+2. Enter the token and set polling to true:
 
     ```json
     {
@@ -35,7 +31,7 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-3. Set the created telegram service instance to the service dependency of the
-   telegram bundle.
+3. Set the sample's (`telegram-bot`) dependency to be the newly created service
+   instance (of type `telegram`).
 
 4. You can send `/test` to your bot, and it should respond with two messages.

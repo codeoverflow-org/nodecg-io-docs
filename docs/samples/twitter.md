@@ -26,13 +26,9 @@ and tokens.
 
 ### Configure the sample bundle
 
-1. In NodeCG, create a new twitter service instance using the left upper menu.
+1. In NodeCG, create a new twitter service instance.
 
-2. Enter credentials for twitter.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your Twitter keys and tokens in monaco (the
-    text-editor on the right) in this format:
+2. Enter your Twitter keys and tokens:
 
     ```json
     {
@@ -45,15 +41,10 @@ and tokens.
 
     After entering it, click save.
 
-3. Set the created twitter service instance to the service dependency of the
-   twitter-timeline bundle.
+3. Set the sample's (`twitter-timeline`) dependency to be the newly created
+   service instance (of type `twitter`).
 
-    Select the twitter-timeline bundle and the twitter service in the left
-    bottom menu. Then select the service instance that should be used by the
-    twitter-timeline bundle (in this case the name of the previously created
-    twitter instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and up to 50 Twitter messages
     tweeted by the user that is hardcoded in

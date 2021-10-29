@@ -22,13 +22,9 @@ obs-websocket with install instructions is available
 
 ### Configure the OBS sample bundle
 
-1. In NodeCG, create a new obs service instance using the left upper menu.
+1. In NodeCG, create a new obs service instance.
 
-2. Enter configuration for obs.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your obs-websocket connection information in
-    monaco (the text-editor on the right) in this format:
+2. Enter the configuration for obs:
 
     ```json
     {
@@ -43,14 +39,10 @@ obs-websocket with install instructions is available
 
     After entering it, click save.
 
-3. Set the created obs service instance to the service dependency of the
-   obs-scenelist bundle.
+3. Set the sample's (`obs-scenelist`) dependency to be the newly created service
+   instance (of type `obs`).
 
-    Select the obs-scenelist bundle and the OBS service in the left bottom menu.
-    Then select the service instance that should be used by the obs-scenelist
-    bundle (in this case the name of the previously created OBS instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and the names of all you scenes
     that you have set in OBS.

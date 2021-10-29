@@ -23,14 +23,9 @@ can leave everything off.
 
 ### Configure the Twitch API sample bundle
 
-1. In NodeCG, create a new twitch-api service instance using the left upper
-   menu.
+1. In NodeCG, create a new twitch-api service instance.
 
-2. Enter credentials for the twitch API.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor
-    on the right) in this format:
+2. Enter your Twitch OAuth Key:
 
     ```json
     {
@@ -40,15 +35,10 @@ can leave everything off.
 
     After entering it, click save.
 
-3. Set the created twitch-api service instance to the service dependency of the
-   twitch-api bundle.
+3. Set the sample's (`twitch-api`) dependency to be the newly created service
+   instance (of type `twitch-api`).
 
-    Select the twitch-api bundle and the twitch-api service in the left bottom
-    menu. Then select the service instance that should be used by the twitch-api
-    sample bundle (in this case the name of the previously created twitch-api
-    instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and you current username, how
     many people you follow and if you are currently streaming.

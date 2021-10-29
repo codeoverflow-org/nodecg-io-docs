@@ -20,15 +20,11 @@ _Note:_ If you don't have such an application yet, you can get one
 
 ### Configure the Reddit sample bundle
 
-1. In NodeCG, create a new Reddit service instance using the left upper menu.
+1. In NodeCG, create a new Reddit service instance.
 
 2. Enter your applications ID and secret and your own username and password. The
    entered username and password must be for the user who registered the
-   application.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your data in monaco (the text-editor on the
-    right) in this format:
+   application:
 
     ```json
     {
@@ -41,14 +37,9 @@ _Note:_ If you don't have such an application yet, you can get one
 
     After entering it, click save.
 
-3. Set the created Reddit service instance to the service dependency of the
-   reddit-message-read bundle.
+3. Set the sample's (`reddit-msg-read`) dependency to be the newly created
+   service instance (of type `reddit`).
 
-    Select the reddit-message-read bundle and the Reddit service in the left
-    bottom menu. Then select the service instance that should be used by the
-    reddit-message-read bundle (in this case the name of the previously created
-    Reddit instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see the recent posts in `r/skate702`

@@ -23,14 +23,9 @@ as the token is only used to convert channel names to IDs.
 
 ### Configure the Twitch-Addons sample bundle
 
-1. In NodeCG, create a new twitch-addons service instance using the left upper
-   menu.
+1. In NodeCG, create a new twitch-addons service instance.
 
-2. Enter credentials for twitch.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor
-    on the right) in this format:
+2. Enter your Twitch OAuth Key:
 
     ```json
     {
@@ -40,15 +35,10 @@ as the token is only used to convert channel names to IDs.
 
     After entering it, click save.
 
-3. Set the created twitch-addons service instance to the service dependency of
-   the twitch-addons bundle.
+3. Set the sample's (`twitch-addons`) dependency to be the newly created service
+   instance (of type `twitch-addons`).
 
-    Select the twitch-addons bundle and the twitch-addons service in the left
-    bottom menu. Then select the service instance that should be used by the
-    bundle (in this case the name of the previously created twitch-addons
-    instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and all BetterTTV and FFZ
     emotes from the twitch channel `#derniklaas`

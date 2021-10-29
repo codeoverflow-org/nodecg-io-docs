@@ -21,14 +21,9 @@ scopes: `channel_subscriptions`, `bits:read` and `channel:read:redemptions`
 
 ### Configure the Twitch PubSub sample bundle
 
-1. In NodeCG, create a new twitch-pubsub service instance using the left upper
-   menu.
+1. In NodeCG, create a new twitch-pubsub service instance.
 
-2. Enter credentials for twitch-pubsub.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor
-    on the right) in this format:
+2. Enter your Twitch OAuth Key:
 
     ```json
     {
@@ -38,15 +33,10 @@ scopes: `channel_subscriptions`, `bits:read` and `channel:read:redemptions`
 
     After entering it, click save.
 
-3. Set the created twitch-pubsub service instance to the service dependency of
-   the twitch-pubsub sample bundle.
+3. Set the sample's (`twitch-pubsub`) dependency to be the newly created service
+   instance (of type `twitch-pubsub`).
 
-    Select the twitch-pubsub sample bundle and the twitch-pubsub service in the
-    left bottom menu. Then select the service instance that should be used by
-    the twitch-pubsub sample bundle (in this case the name of the previously
-    created twitch-pubsub instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and a log entry for each
     subscription, bits, bits badge unlock and channel point redemption event.

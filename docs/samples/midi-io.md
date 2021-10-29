@@ -17,14 +17,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the midi-io sample bundle
 
-1. In NodeCG, create a new midi-input service instance using the left upper
-   menu.
+1. In NodeCG, create a new midi-input service instance.
 
-2. Enter your device information
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter the name of your device in monaco (the
-    text-editor on the right) in this format:
+2. Enter your device information:
 
     ```json
     {
@@ -32,11 +27,12 @@ will also tell you how to log in and how to use the GUI.
     }
     ```
 
-    After entering it, click save. **Note:** A script is provided to list all
-    inputs and outputs. It can be run from the sample directory
-    `samples/midi-io` using the command `npm run list`. The devices should be
-    listed with their device names and some other stuff. Under Linux this looks
-    for example like this:
+    After entering it, click save.  
+    **Note:** A script is provided to list all inputs and outputs. It can be run
+    from the sample directory `samples/midi-io` using the command
+    `npm run list`. The devices should be listed with their device names and
+    some other stuff.  
+    Under Linux this looks for example like this:
 
     ```
     nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
@@ -44,26 +40,10 @@ will also tell you how to log in and how to use the GUI.
 
 3. Create a new midi-output service instance using the left upper menu.
 
-4. Repeat step 5 for your midi-output service. In most cases you want to use the
-   same device for input and output.
+4. Set the sample's (`midi-io`) dependencies to be the newly created service
+   instances (of type `midi-input` & `midi-output`).
 
-5. Set the created midi-output service instance to the service dependency of the
-   midi-io sample bundle.
-
-    Select the midi-io bundle and the midi-output service in the left bottom
-    menu. Then select the service instance that should be used by the midi-io
-    bundle (in this case the name of the previously created midi-output
-    instance).
-
-6. Set the created midi-input service instance to the service dependency of the
-   midi-io sample bundle.
-
-    Select the midi-io bundle and the midi-input service in the left bottom
-    menu. Then select the service instance that should be used by the midi-io
-    bundle (in this case the name of the previously created midi-input
-    instance).
-
-7. Check the NodeCG logs
+5. Check the NodeCG logs:
 
     You should see an error or a success message and midi messages that are
     received and echoed back to the device that is configured. The messages are

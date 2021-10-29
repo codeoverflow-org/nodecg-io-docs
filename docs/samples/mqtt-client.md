@@ -18,18 +18,14 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the MQTT-client sample bundle
 
-1. In NodeCG, create a new mqtt-client service instance using the left upper
-   menu.
+1. In NodeCG, create a new mqtt-client service instance.
 
 2. Enter the connection parameters of the mqtt server. The URL should be in
    following the pattern `<protocol>://<address>:<port>`. Allowed protocols are:
    `mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`.
 
     In case your server needs authentication, set the `username` and `password`
-    fields otherwise remove them from the configuration. The created instance
-    should be automatically selected, if not select it in the upper left menu.
-    Enter your configuration in monaco (the text-editor on the right) in this
-    format:
+    fields otherwise remove them from the configuration:
 
     ```json
     {
@@ -42,7 +38,7 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-3. Set the created mqtt-client service instance to the service dependency of the
-   mqtt-client bundle.
+3. Set the sample's (`mqtt-client`) dependency to be the newly created service
+   instance (of type `mqtt-client`).
 4. The console should display if the connection was successfully established and
    should show inbound messages on the subscribed topic.

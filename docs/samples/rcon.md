@@ -17,14 +17,10 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the rcon sample bundle
 
-1. In NodeCG, create a new rcon service instance using the left upper menu.
+1. In NodeCG, create a new rcon service instance.
 
 2. Enter the host, port, and password of the rcon connection. This can be found
-   in the `server.properties` file (`rcon.port`, `rcon.password`)
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your host and port in monaco (the text-editor on
-    the right) in this format:
+   in the `server.properties` file (`rcon.port`, `rcon.password`):
 
     ```json
     {
@@ -36,8 +32,8 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-3. Set the created rcon service instance to the service dependency of the
-   rcon-minecraft bundle.
+3. Set the sample's (`rcon-minecraft`) dependency to be the newly created
+   service instance (of type `rcon`).
 
 4. In the NodeCG console you will see a list with all online players. It will
    also send a /say command to the Minecraft server.

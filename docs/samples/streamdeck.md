@@ -22,10 +22,9 @@ Everything after the `sudo udevadm` command can be omitted.
 
 ### Configure the Streamdeck Rainbow bundle
 
-1. In NodeCG, create a new StreamDeck service instance using the left upper
-   menu.
+1. In NodeCG, create a new StreamDeck service instance.
 
-2. Enter the configuration
+2. Enter the configuration:
 
     ```json
     {
@@ -36,7 +35,7 @@ Everything after the `sudo udevadm` command can be omitted.
     `default` tells the bundle to automatically find a StreamDeck. If you use
     multiple StreamDecks, you need to put in an ID here.
 
-3. Set the created StreamDeck service instance to the service dependency of the
-   streamdeck-rainbow bundle.
+3. Set the sample's (`streamdeck-rainbow`) dependency to be the newly created
+   service instance (of type `streamdeck`).
 
 4. Watch your streamdeck.

@@ -24,14 +24,9 @@ As redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
 
 ### Configure the YouTube sample bundle
 
-1. In NodeCG, create a new googleapis service instance using the left upper
-   menu.
+1. In NodeCG, create a new googleapis service instance.
 
-2. Enter credentials for googleapis.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your YouTube OAuth credentials in monaco (the
-    text-editor on the right) in this format:
+2. Enter your YouTube OAuth credentials:
 
     ```json
     {
@@ -46,15 +41,10 @@ As redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
     _Note:_ You can add multiple scopes if the googleapis instance is used for
     multiple bundles.
 
-3. Set the created googleapis service instance to the service dependency of the
-   YouTube bundle.
+3. Set the sample's (`youtube-playlist`) dependency to be the newly created
+   service instance (of type `googleapis`).
 
-    Select the YouTube bundle and the googleapis service in the left bottom
-    menu. Then select the service instance that should be used by the YouTube
-    bundle (in this case the name of the previously created googleapis
-    instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message that is hardcoded in
     `samples/youtube-playlist/extension/index.ts`.

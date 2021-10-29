@@ -26,14 +26,9 @@ click on `Show Secrets` and copy it.
 
 ### Configure the StreamElements sample bundle
 
-1. In NodeCG, create a new StreamElements service instance using the left upper
-   menu.
+1. In NodeCG, create a new StreamElements service instance.
 
-2. Enter credentials for StreamElements.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your JWT Token in monaco (the text-editor on the
-    right) in this format:
+2. Enter the JWT Token for StreamElements:
 
     ```json
     {
@@ -43,15 +38,10 @@ click on `Show Secrets` and copy it.
 
     After entering it, click save.
 
-3. Set the created StreamElements service instance to the service dependency of
-   the streamelements-events bundle.
+3. Set the sample's (`streamelements-events`) dependency to be the newly created
+   service instance (of type `streamelements`).
 
-    Select the streamelements-events bundle and the StreamElements service in
-    the left bottom menu. Then select the service instance that should be used
-    by the streamelements-events bundle (in this case the name of the previously
-    created streamelements-events instance).
-
-4. Check the nodecg logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and a log message for each
     event of your channel like subs, follows, cheers, raids and so on.

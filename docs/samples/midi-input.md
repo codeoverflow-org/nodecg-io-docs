@@ -17,14 +17,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the midi-input sample bundle
 
-1. In NodeCG, create a new midi-input service instance using the left upper
-   menu.
+1. In NodeCG, create a new midi-input service instance.
 
-2. Enter your device information
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter the name of your device in monaco (the
-    text-editor on the right) in this format:
+2. Enter your device information:
 
     ```json
     {
@@ -32,25 +27,20 @@ will also tell you how to log in and how to use the GUI.
     }
     ```
 
-    After entering it, click save. **Note:** A script is provided to list all
-    inputs and outputs. It can be run from the sample directory
-    `samples/midi-input` using the command `npm run list`. The devices should be
-    listed with their device names and some other stuff. Under Linux this looks
-    for example like this:
+    After entering it, click save.  
+    **Note:** A script is provided to list all inputs and outputs. It can be run
+    from the sample directory `samples/midi-input` using the command
+    `npm run list`. The devices should be listed with their device names and
+    some other stuff.  
+    Under Linux this looks for example like this:
 
     ```
     nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
     ```
 
-3. Set the created midi-input service instance to the service dependency of the
-   midi-input sample bundle.
-
-    Select the midi-input bundle and the midi-input service in the left bottom
-    menu. Then select the service instance that should be used by the midi-input
-    bundle (in this case the name of the previously created midi-input
-    instance).
-
-4. Check the NodeCG logs
+3. Set the sample's (`midi-input`) dependency to be the newly created service
+   instance (of type `midi-input`).
+4. Check the NodeCG logs:
 
     You should see an error or a success message and all midi messages that are
     sent by the device that is configured.

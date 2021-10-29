@@ -23,13 +23,9 @@ As a redirect URL use <http://localhost:9090/nodecg-io-spotify/spotifycallback>.
 
 ### Configure the Spotify sample bundle
 
-1. In NodeCG, create a new Spotify service instance using the left upper menu.
+1. In NodeCG, create a new Spotify service instance.
 
-2. Enter credentials for Spotify.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your client ID and secret in monaco (the
-    text-editor on the right) in this format:
+2. Enter your client ID and secret for Spotify:
 
     ```json
     {
@@ -46,15 +42,10 @@ As a redirect URL use <http://localhost:9090/nodecg-io-spotify/spotifycallback>.
     list of all scopes can be found
     [here](https://developer.spotify.com/documentation/general/guides/scopes/).
 
-3. Set the created Spotify service instance to the service dependency of the
-   spotify-current-song bundle.
+3. Set the sample's (`spotify-current-song`) dependency to be the newly created
+   service instance (of type `spotify`).
 
-    Select the spotify-current-song bundle and the Spotify service in the left
-    bottom menu. Then select the service instance that should be used by the
-    spotify-current-song bundle (in this case the name of the previously created
-    Spotify instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and the current playing song
     with names and artists.

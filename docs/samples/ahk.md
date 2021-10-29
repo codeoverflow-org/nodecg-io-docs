@@ -17,11 +17,8 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the AutoHotkey sample bundle
 
-1. In NodeCG, create a new ahk service instance using the left upper menu.
-2. Enter the host and port of the HotkeylessAHK Server.  
-   The created instance should be automatically selected, if not select it in
-   the upper left menu. Enter your host and port in monaco (the text-editor on
-   the right) in this format:
+1. In NodeCG, create a new ahk service instance.
+2. Enter the host and port of the HotkeylessAHK Server:
 
     ```json
     {
@@ -32,6 +29,6 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-3. Set the created ahk service instance to the service dependency of the ahk
-   bundle.
+3. Set the sample's (`ahk-sendcommand`) dependency to be the newly created
+   service instance (of type `ahk`).
 4. A small window with the text “Hello World” should have popped up.

@@ -21,11 +21,8 @@ _Note:_ If you don't have a token yet, you can create one
 
 ### Configure the GitHub sample bundle
 
-1. In NodeCG, create a new GitHub service instance using the left upper menu.
-2. Enter the GitHub token.  
-   The created instance should be automatically selected, if not select it in
-   the upper left menu. Enter your GitHub token in monaco (the text-editor on
-   the right) in this format:
+1. In NodeCG, create a new GitHub service instance.
+2. Enter the GitHub token:
 
     ```json
     {
@@ -35,12 +32,9 @@ _Note:_ If you don't have a token yet, you can create one
 
     After entering it, click save.
 
-3. Set the created GitHub service instance to the service dependency of the
-   GitHub bundle.  
-   Select the GitHub bundle and the GitHub service in the left bottom menu. Then
-   select the service instance that should be used by the GitHub sample bundle
-   (in this case the name of the previously created GitHub instance).
+3. Set the sample's (`github`) dependency to be the newly created service
+   instance (of type `github`).
+4. Check the NodeCG logs:
 
-4. Check the NodeCG logs  
-   You should see an error or a success message and a list of all your
-   repositories.
+    You should see an error or a success message and a list of all your
+    repositories.

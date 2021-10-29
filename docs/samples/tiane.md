@@ -49,14 +49,10 @@ guide.
     Make sure `websocket` is either set to `enabled` or `secure` and set a port
     of your desire.
 
-4. In the NodeCG dashboard, create a new TIANE service instance using the left
-   upper menu.
+4. In the NodeCG dashboard, create a new TIANE service instance.
 
-5. Enter address of the TIANE-Server
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter host and port you just set in
-    `server/TIANE_config.json` in this format:
+5. Enter address of the TIANE-Server. Enter host and port you just set in
+   `server/TIANE_config.json` in this format:
 
     ```json
     {
@@ -66,16 +62,10 @@ guide.
 
     After entering it, click save.
 
-6. Create a new Discord service instance. (See the [Discord Sample](discord.md)
-   on how to do this)
+6. Create a new Discord service instance.
 
-7. Set the created TIANE and Discord service instances to the service dependency
-   of the TIANE-Discord bundle.
-
-    Select the TIANE-Discord bundle and the TIANE service in the left bottom
-    menu. Then select the service instance that should be used by the
-    TIANE-Discord bundle (in this case the name of the previously created twitch
-    instance). Then do the same for the discord bundle.
+7. Set the sample's (`tiane-discord`) dependencies to be the newly created
+   service instances (of type `tiane` & `discord`).
 
 8. Ping your discord bot in the channel you set in the first step and ask TIANE
    something.

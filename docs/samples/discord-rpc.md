@@ -21,12 +21,8 @@ _Note:_ If you don't have an application yet, you can create one
 
 ### Configure the Discord RPC sample bundle
 
-1. In NodeCG, create a new `discord-rpc` service instance using the left upper
-   menu.
-2. Enter required information.  
-   The created instance should be automatically selected, if not select it in
-   the upper left menu. Enter your information in monaco (the text-editor on the
-   right) in this format:
+1. In NodeCG, create a new `discord-rpc` service instance.
+2. Enter the `clientId` and `clientSecret` for the service:
 
     ```json
     {
@@ -37,12 +33,9 @@ _Note:_ If you don't have an application yet, you can create one
 
     After entering it, click save.
 
-3. Set the created `discord-rpc` service instance to the service dependency of
-   the `discord-rpc` bundle.  
-   Select the `discord-rpc` bundle and the `discord-rpc` service in the left
-   bottom menu. Then select the service instance that should be used by the
-   `discord-rpc` sample bundle (in this case the name of the previously created
-   `discord-rpc` instance).
-4. Check the NodeCG logs  
-   You should see an error or a success message displaying your discord
-   username.
+3. Set the sample's (`discord-rpc`) dependency to be the newly created service
+   instance (of type `discord-rpc`).
+4. Check the NodeCG logs:
+
+    You should see an error or a success message displaying your discord
+    username.

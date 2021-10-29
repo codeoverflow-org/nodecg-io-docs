@@ -21,14 +21,10 @@ different database type later.
 
 ### Configure the SQL sample bundle
 
-1. In NodeCG, create a new SQL service instance using the left upper menu.
+1. In NodeCG, create a new SQL service instance.
 
-2. Enter configuration for SQL.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your used database client and a
-    [knex connection object](https://knexjs.org/#Installation-client) in monaco
-    (the text-editor on the right) in this format:
+2. Enter your used database client and a
+   [knex connection object](https://knexjs.org/#Installation-client) for SQL:
 
     ```json
     {
@@ -42,14 +38,10 @@ different database type later.
 
     After entering it, click save.
 
-3. Set the created SQL service instance to the service dependency of the SQL
-   sample bundle.
+3. Set the sample's (`sql`) dependency to be the newly created service instance
+   (of type `sql`).
 
-    Select the SQL sample bundle and the SQL service in the left bottom menu.
-    Then select the service instance that should be used by the SQL sample
-    bundle (in this case the name of the previously created SQL instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     Your first run of the sample bundle will probably fail because your database
     doesn't contain the used tables. Check `samples/sql/extension/index.ts` and

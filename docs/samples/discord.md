@@ -22,11 +22,8 @@ guide.
 
 ### Configure the Discord sample bundle
 
-1. In NodeCG, create a new discord service instance using the left upper menu.
-2. Enter your bot token.  
-   The created instance should be automatically selected, if not select it in
-   the upper left menu. Enter your Bot token in monaco (the text-editor on the
-   right) in this format:
+1. In NodeCG, create a new discord service instance.
+2. Enter your bot token:
 
     ```json
     {
@@ -36,11 +33,8 @@ guide.
 
     After entering it, click save.
 
-3. Set the created discord service instance to the service dependency of the
-   Discord-guild-chat bundle.  
-   Select the Discord-guild-chat bundle and the Discord service in the left
-   bottom menu. Then select the service instance that should be used by the
-   Discord-guild-chat bundle (in this case the name of the previously created
-   discord instance).
-4. Check the NodeCG logs.  
-   You should see an error or a Login message.
+3. Set the sample's (`discord-guild-chat`) dependency to be the newly created
+   service instance (of type `discord`).
+4. Check the NodeCG logs:
+
+    You should see an error or a Login message.

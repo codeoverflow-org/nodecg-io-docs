@@ -18,13 +18,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the nanoleaf sample bundle
 
-1. In NodeCG, create a new nanoleaf service instance using the left upper menu.
+1. In NodeCG, create a new nanoleaf service instance.
 
-2. Enter configuration.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your nanoleaf controller IP address in this
-    format (change the IP accordingly):
+2. Enter the IP address of your nanoleaf controller:
 
     ```json
     {
@@ -37,14 +33,8 @@ will also tell you how to log in and how to use the GUI.
 
     After entering your config and entering pairing mode, click save.
 
-3. Set the created nanoleaf service instance to the service dependency of the
-   nanoleaf sample bundle.
+3. Set the sample's (`nanoleaf`) dependency to be the newly created service
+   instance (of type `nanoleaf`).
 
-    Select the nanoleaf sample bundle and the nanoleaf service in the left
-    bottom menu. Then select the service instance that should be used by the
-    nanoleaf sample bundle (in this case the name of the previously created
-    nanoleaf instance).
-
-4. If everything worked, your nanoleafs should now shine orange.
-
-    If not you should check the NodeCG logs for any errors.
+4. If everything worked, your nanoleafs should now shine orange.  
+   If not you should check the NodeCG logs for any errors.

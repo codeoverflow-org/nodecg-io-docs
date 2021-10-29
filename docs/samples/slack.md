@@ -21,13 +21,9 @@ token on [this](https://app.slack.com/apps-manage/) page.
 
 ### Configure the Slack sample bundle
 
-1. In NodeCG, create a new slack service instance using the left upper menu.
+1. In NodeCG, create a new slack service instance.
 
-2. Enter your Slack app token.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your token in monaco (the text-editor on the
-    right) in this format:
+2. Enter your Slack app token:
 
     ```json
     {
@@ -37,13 +33,9 @@ token on [this](https://app.slack.com/apps-manage/) page.
 
     After entering it, click save.
 
-3. Set the created slack service instance to the service dependency of the slack
-   bundle.
+3. Set the sample's (`slack-post`) dependency to be the newly created service
+   instance (of type `slack`).
 
-    Select the slack bundle and the slack service in the left bottom menu. Then
-    select the service instance that should be used by the slack bundle (in this
-    case the name of the previously created slack instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a login message.

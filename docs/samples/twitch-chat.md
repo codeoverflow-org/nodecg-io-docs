@@ -22,14 +22,9 @@ token.
 
 ### Configure the Twitch sample bundle
 
-1. In NodeCG, create a new twitch-chat service instance using the left upper
-   menu.
+1. In NodeCG, create a new twitch-chat service instance.
 
-2. Enter credentials for twitch.
-
-    The created instance should be automatically selected, if not select it in
-    the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor
-    on the right) in this format:
+2. Enter your Twitch OAuth Key:
 
     ```json
     {
@@ -39,15 +34,10 @@ token.
 
     After entering it, click save.
 
-3. Set the created twitch-chat service instance to the service dependency of the
-   Twitch-chat bundle.
+3. Set the sample's (`twitch-chat`) dependency to be the newly created service
+   instance (of type `twitch-chat`).
 
-    Select the Twitch-chat bundle and the twitch-chat service in the left bottom
-    menu. Then select the service instance that should be used by the
-    Twitch-chat bundle (in this case the name of the previously created
-    twitch-chat instance).
-
-4. Check the NodeCG logs
+4. Check the NodeCG logs:
 
     You should see an error or a success message and all twitch messages that
     are written in the twitch channel that is hardcoded in
