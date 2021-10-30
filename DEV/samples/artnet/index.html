@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1428,29 +1442,27 @@
                   <h1>Art-Net sample</h1>
                 
                 <h2 id="using-the-art-net-sample-bundle">Using the Art-Net sample bundle</h2>
-<p>The Art-Net example bundle in <code>samples/artnet-console</code> demonstrates the ability send data via Art-Net to e.g., open lighting architecture or professional lighting equipment. Here is a guide to how to get it working. The underlying service is using <a href="https://github.com/jeffreykog/node-artnet-protocol"><code>jeffreykog/node-artnet-protocol</code></a> as its library.</p>
+<p>The Art-Net example bundle in <code>samples/artnet-console</code> demonstrates the ability
+send data via Art-Net to e.g., open lighting architecture or professional
+lighting equipment. Here is a guide to how to get it working. The underlying
+service is using
+<a href="https://github.com/jeffreykog/node-artnet-protocol"><code>jeffreykog/node-artnet-protocol</code></a>
+as its library.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>A working Art-Net Node in the current network</li>
 </ul>
 <h3 id="configure-the-art-net-sample-bundle">Configure the Art-Net sample bundle</h3>
 <ol>
+<li>In NodeCG, create a new Art-Net service instance.</li>
 <li>
-<p>Start nodecg with nodecg-io installed. The artnet-console sample bundle is currently part of it, so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new Art-Net service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the needed option.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left dropdown. Enter your universe in monaco (the text-editor on the right) in this format:</p>
+<p>Enter the host to witch the service should broadcast:</p>
 <p><strong>Host</strong></p>
 <p>The broadcast address the Art-Net library will use to send <code>dmx</code> packages.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -1458,17 +1470,14 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
-<p>You may overwrite this broadcast address in code with <code>client.bind("host address");</code>.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
+<p>You may overwrite this broadcast address in code with
+<code>client.bind("host address");</code>.</p>
 </li>
 <li>
-<p>Set the created Art-Net service instance to the service dependency of the artnet-console bundle.</p>
-<p>Select the artnet-console bundle and the Art-Net service in the left bottom dropdown and then select the service instance that should be used by the artnet-console bundle (in this case the name of the previously created Art-Net instance).</p>
+<p>Set the sample's (<code>artnet-console</code>) dependency to be the newly created
+   service instance (of type <code>artnet</code>).</p>
 </li>
-<li>
-<p>Check the nodecg logs</p>
-<p>You should see data logged.</p>
-</li>
+<li>Check the NodeCG logs. You should see data logged.</li>
 </ol>
 <h3 id="explanations">Explanations</h3>
 <h4 id="receiving-dmx-data">Receiving DMX data</h4>
@@ -1485,7 +1494,12 @@
     <span class="nx">physical</span>: <span class="kt">number</span><span class="p">;</span>
     <span class="nx">universe</span>: <span class="kt">number</span><span class="p">;</span>
     <span class="nx">data</span>: <span class="kt">number</span><span class="p">[];</span>
-    <span class="kr">constructor</span><span class="p">(</span><span class="nx">sequence</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">physical</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">universe</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">data</span>: <span class="kt">number</span><span class="p">[]);</span>
+    <span class="kr">constructor</span><span class="p">(</span>
+        <span class="nx">sequence</span>: <span class="kt">number</span><span class="p">,</span>
+        <span class="nx">physical</span>: <span class="kt">number</span><span class="p">,</span>
+        <span class="nx">universe</span>: <span class="kt">number</span><span class="p">,</span>
+        <span class="nx">data</span>: <span class="kt">number</span><span class="p">[]</span>
+    <span class="p">);</span>
     <span class="nx">isSequenceEnabled</span><span class="p">()</span><span class="o">:</span> <span class="kt">boolean</span><span class="p">;</span>
     <span class="k">static</span> <span class="nx">decode</span><span class="p">(</span><span class="nx">data</span>: <span class="kt">Buffer</span><span class="p">)</span><span class="o">:</span> <span class="nx">ArtDmx</span><span class="p">;</span>
     <span class="nx">toString</span><span class="p">()</span><span class="o">:</span> <span class="kt">string</span><span class="p">;</span>
@@ -1502,12 +1516,14 @@
     <span class="p">);</span>
 <span class="p">},</span> <span class="mf">800</span><span class="p">);</span>
 </code></pre></div>
-<p><em>Note</em>: Since neither this library nor nodecg-io does not yet contain an abstraction, so the data is sent to the timings set by the specification, you should respect this part of specification in <strong>your implementation</strong>.</p>
+<p><em>Note</em>: Since neither this library nor nodecg-io does not yet contain an
+abstraction, so the data is sent to the timings set by the specification, you
+should respect this part of specification in <strong>your implementation</strong>.</p>
 <blockquote>
-<p>However, an input that is active but not changing, will re-transmit the last valid ArtDmx
-packet at approximately 4-second intervals. (<em>Note</em>. In order to converge the needs of Art-
-Net and sACN it is recommended that Art-Net devices actually use a re-transmit time of
-800mS to 1000mS).<br />
+<p>However, an input that is active but not changing, will re-transmit the last
+valid ArtDmx packet at approximately 4-second intervals. (<em>Note</em>. In order to
+converge the needs of Art- Net and sACN it is recommended that Art-Net devices
+actually use a re-transmit time of 800mS to 1000mS).<br />
  — <a href="https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf">Art-Net 4 Specification p. 48</a></p>
 </blockquote>
                 

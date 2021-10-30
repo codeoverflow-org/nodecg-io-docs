@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1374,18 +1388,20 @@
                   <h1>Curseforge sample</h1>
                 
                 <h2 id="using-the-curseforge-sample-bundle">Using the CurseForge sample bundle</h2>
-<p>The CurseForge example bundle in <code>samples/curseforge</code> demonstrates the ability to search for different add-ons with the ID or search with specific values for matching add-ons. Here is a guide how to get it working.</p>
+<p>The CurseForge example bundle in <code>samples/curseforge</code> demonstrates the ability
+to search for different add-ons with the ID or search with specific values for
+matching add-ons. Here is a guide how to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
-</ul>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
 <h3 id="configure-the-curseforge-bundle">Configure the CurseForge bundle</h3>
 <ol>
-<li>Start NodeCG with nodecg-io installed. The CurseForge bundle is currently part of it, so it should also be loaded.</li>
-<li>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</li>
-<li>Create a new CurseForge service instance using the left upper menu.</li>
-<li>Set the CurseForge service instance to the service dependency of the CurseForge bundle.
-   Select the CurseForge bundle and the CurseForge service in the left bottom menu and then select the service instance that should be used by the CurseForge bundle (in this case the name of the previously created CurseForge instance).</li>
+<li>In NodeCG, create a new CurseForge service instance.</li>
+<li>Set the sample's (<code>curseforge</code>) dependency to be the newly created service
+   instance (of type <code>curseforge</code>).</li>
 <li>Check the NodeCG logs. You should see two lists of add-ons.</li>
 </ol>
                 

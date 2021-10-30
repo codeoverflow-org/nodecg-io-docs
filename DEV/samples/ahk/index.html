@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-the-ahk-sample-bundle" class="md-skip">
+        <a href="#using-the-autohotkey-sample-bundle" class="md-skip">
           Skip to content
         </a>
       
@@ -250,6 +250,20 @@
     <li class="md-nav__item">
       <a href="../../getting_started/install/" class="md-nav__link">
         Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
       </a>
     </li>
   
@@ -489,11 +503,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-ahk-sample-bundle" class="md-nav__link">
-    Using the AHK sample bundle
+  <a href="#using-the-autohotkey-sample-bundle" class="md-nav__link">
+    Using the AutoHotkey sample bundle
   </a>
   
-    <nav class="md-nav" aria-label="Using the AHK sample bundle">
+    <nav class="md-nav" aria-label="Using the AutoHotkey sample bundle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -504,8 +518,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-the-ahk-sample-bundle" class="md-nav__link">
-    Configure the ahk sample bundle
+  <a href="#configure-the-autohotkey-sample-bundle" class="md-nav__link">
+    Configure the AutoHotkey sample bundle
   </a>
   
 </li>
@@ -1328,11 +1342,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-ahk-sample-bundle" class="md-nav__link">
-    Using the AHK sample bundle
+  <a href="#using-the-autohotkey-sample-bundle" class="md-nav__link">
+    Using the AutoHotkey sample bundle
   </a>
   
-    <nav class="md-nav" aria-label="Using the AHK sample bundle">
+    <nav class="md-nav" aria-label="Using the AutoHotkey sample bundle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1343,8 +1357,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-the-ahk-sample-bundle" class="md-nav__link">
-    Configure the ahk sample bundle
+  <a href="#configure-the-autohotkey-sample-bundle" class="md-nav__link">
+    Configure the AutoHotkey sample bundle
   </a>
   
 </li>
@@ -1373,30 +1387,24 @@
                 
                   <h1>AHK sample</h1>
                 
-                <h2 id="using-the-ahk-sample-bundle">Using the AHK sample bundle</h2>
-<p>The AHK sample bundle in <code>samples/ahk-sendcommand</code> shows how to send a command to a HotkeylessAHK server.</p>
+                <h2 id="using-the-autohotkey-sample-bundle">Using the AutoHotkey sample bundle</h2>
+<p>The AutoHotkey sample bundle in <code>samples/ahk-sendcommand</code> shows how to send a
+command to a HotkeylessAHK server.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>A running <a href="https://github.com/sebinside/HotkeylessAHK">HotkeylessAHK</a> setup.</li>
 </ul>
-<h3 id="configure-the-ahk-sample-bundle">Configure the ahk sample bundle</h3>
+<h3 id="configure-the-autohotkey-sample-bundle">Configure the AutoHotkey sample bundle</h3>
 <ol>
+<li>In NodeCG, create a new ahk service instance.</li>
 <li>
-<p>Start nodecg with nodecg-io installed. The ahk bundle is currently part of it, so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new ahk service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the host and port of the HotkeylessAHK Server.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:</p>
+<p>Enter the host and port of the HotkeylessAHK Server:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
     <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">42800</span>
@@ -1405,11 +1413,10 @@
 <p>After entering it, click save.</p>
 </li>
 <li>
-<p>Set the created ahk service instance to the service dependency of the ahk bundle.</p>
+<p>Set the sample's (<code>ahk-sendcommand</code>) dependency to be the newly created
+   service instance (of type <code>ahk</code>).</p>
 </li>
-<li>
-<p>A small window with the text “Hello World” should have popped up.</p>
-</li>
+<li>A small window with the text “Hello World” should have popped up.</li>
 </ol>
                 
               

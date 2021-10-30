@@ -350,12 +350,32 @@
     Install nodecg-io using the nodecg-io CLI
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-nodecg" class="md-nav__link">
-    Start nodecg
+    <nav class="md-nav" aria-label="Install nodecg-io using the nodecg-io CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#production-install" class="md-nav__link">
+    Production install
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-install" class="md-nav__link">
+    Development install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue-reading" class="md-nav__link">
+    Continue reading
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -370,6 +390,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
     </li>
   
 
@@ -1454,12 +1488,32 @@
     Install nodecg-io using the nodecg-io CLI
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-nodecg" class="md-nav__link">
-    Start nodecg
+    <nav class="md-nav" aria-label="Install nodecg-io using the nodecg-io CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#production-install" class="md-nav__link">
+    Production install
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-install" class="md-nav__link">
+    Development install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue-reading" class="md-nav__link">
+    Continue reading
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1489,62 +1543,160 @@
                 
                 <h1 id="installation">Installation</h1>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>In order to download necessary tools and to install nodecg-io using the CLI you need network access.</p>
+<p>In order to download necessary tools and to install nodecg-io using the CLI you
+need network access.</p>
 <h3 id="required-applications">Required Applications</h3>
 <p>You'll need the following tools:</p>
 <ul>
 <li><a href="https://git-scm.com">Git</a></li>
-<li><a href="https://nodejs.org/en/">Node.JS</a> v12.0.0 or newer</li>
-<li><a href="https://www.npmjs.com/get-npm">Npm</a> 7.0.0 or newer</li>
+<li><a href="https://nodejs.org/en/">Node.js</a> v12.0.0 or newer</li>
+<li><a href="https://www.npmjs.com/get-npm">npm</a> 7.0.0 or newer</li>
 <li><a href="https://nodecg.dev/">NodeCG</a> 1.4.0 or newer (1.7.0 or higher recommended)</li>
 </ul>
 <h3 id="native-build-tools">Native Build Tools</h3>
-<p>Some services depend on packages that require native build tools. You <em>ONLY</em> need to install these if you want to use a service that depends on native modules or if you want to install a development version.</p>
-<p>The services that require these include StreamDeck, Midi and Serial. Please note that this list might not be up-to-date.</p>
-<p>Here's how to install the native build tools on the most popular operating systems, if you need them:</p>
+<p>Some services depend on packages that require native build tools. You <em>ONLY</em>
+need to install these if you want to use a service that depends on native
+modules or if you want to install a development version.</p>
+<p>The services that require these include StreamDeck, Midi and Serial. Please note
+that this list might not be up-to-date.</p>
+<p>Here's how to install the native build tools on the most popular operating
+systems, if you need them:</p>
 <h4 id="windows">Windows</h4>
-<p>For Windows, you'll need the Visual Studio Build Tools, if you have Visual Studio installed you should already have them.
-If you don't have Visual Studio just install the Visual Studio Build Tools by running the following command as an <strong>Administrator</strong>:</p>
+<p>For Windows, you'll need the Visual Studio Build Tools, if you have Visual
+Studio installed you should already have them. If you don't have Visual Studio
+just install the Visual Studio Build Tools by running the following command as
+an <strong>Administrator</strong>:</p>
 <div class="highlight"><pre><span></span><code>npm install -g windows-build-tools
 </code></pre></div>
 <h4 id="linux">Linux</h4>
-<p>For Linux, you'll need a C++ compiler and some other packages. On Ubuntu/Debian based operating systems run the following command:</p>
+<p>For Linux, you'll need a C++ compiler and some other packages. On Ubuntu/Debian
+based operating systems run the following command:</p>
 <div class="highlight"><pre><span></span><code>sudo apt install build-essential libusb-1.0-0-dev libasound2-dev libudev-dev
 </code></pre></div>
-<p>For other Linux distros you'll need the corresponding packages, just search on the internet how the packages are named for your specific distro.</p>
+<p>For other Linux distros you'll need the corresponding packages, just search on
+the internet how the packages are named for your specific distro.</p>
 <h4 id="macos">macOS</h4>
-<p>For macOS, you'll need the Xcode command line tools. To install them run the following command:</p>
+<p>For macOS, you'll need the Xcode command line tools. To install them run the
+following command:</p>
 <div class="highlight"><pre><span></span><code>xcode-select --install
 </code></pre></div>
 <h2 id="install-the-nodecg-io-cli">Install the nodecg-io CLI</h2>
 <p>Install the nodecg-io CLI using the following command:</p>
 <div class="highlight"><pre><span></span><code>npm install -g nodecg-io-cli
 </code></pre></div>
-<p><em>Note:</em> If you are running on Linux, you may need to use <code>sudo</code> if your npm installation uses a non-writeable path (default on Ubuntu apt packages, usually does not apply to packages installed using <a href="https://github.com/nvm-sh/nvm">nvm</a>)</p>
+<p><em>Note:</em> If you are running on Linux, you may need to use <code>sudo</code> if your npm
+installation uses a non-writeable path (default on Ubuntu apt packages, usually
+does not apply to packages installed using <a href="https://github.com/nvm-sh/nvm">nvm</a>)</p>
 <h2 id="install-nodecg-io-using-the-nodecg-io-cli">Install nodecg-io using the nodecg-io CLI</h2>
-<p>With the nodecg-io CLI installed you can run this command inside a nodecg installation to install nodecg-io:</p>
-<div class="highlight"><pre><span></span><code>nodecg-io install
+<blockquote>
+<p>nodecg-io will always be installed into a <code>nodecg-io/</code> directory inside your
+NodeCG installation so that your bundles and all bundles from nodecg-io are
+separated. The CLI will add this path to the loaded bundles in your NodeCG
+configuration automatically, you don't need to worry about it.</p>
+</blockquote>
+<p>With the nodecg-io CLI installed you can run this command inside a NodeCG
+installation to install nodecg-io:</p>
+<div class="highlight"><pre><span></span><code>$ nodecg-io install
+Installing nodecg-io...
 </code></pre></div>
-<p>You will get a prompt which asks you which version you want to install.</p>
+<p>You will get a prompt which asks you which version you want to install:</p>
+<pre><b><span style="color:#1cdc9a">user@computer</span>:<span   style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+Installing nodecg-io...
+Detected nodecg installation at /home/user/nodecg.
+<span style="color:#11d116">?</span> <b>Which version do you want to install?</b> (Use arrow keys) 
+  development 
+<span style="color:#1abc9c">❯ 0.1</span></pre>
+
+<p>There are two possible installation types:</p>
 <ul>
 <li>
-<p>By selecting an actual version (e.g., <code>0.1</code>) you create a production install that downloads the required packages from npm and setups a npm workspace to install all dependencies. Here you can choose which services you want to install.</p>
+<p>By selecting an actual version (e.g., <code>0.1</code>) you create a production install
+    that downloads the required packages from npm and setups a npm workspace to
+    install all dependencies. Here you can choose which services you want to
+    install. Here you can not easily install our premade examples.</p>
 </li>
 <li>
-<p>By selecting <code>development</code> you create a development install that clones the nodecg-io git repo and builds everything from scratch. We only recommend a dev install if you are sure that you want to contribute to nodecg-io. Here you always must install all services.</p>
+<p>By selecting <code>development</code> you create a development install that clones the
+    nodecg-io git repo and builds everything from scratch. We only recommend a
+    development install if you are sure that you want to contribute to nodecg-io
+    or want to try an included example. Here you always must install all
+    services and examples.</p>
 </li>
 </ul>
-<p>For starters, we recommend using the latest non-development version.</p>
-<p>nodecg-io will always be installed into a <code>nodecg-io/</code> directory inside your nodecg installation so that your bundles and all bundles from nodecg-io are separated. The CLI will add this path to the loaded bundles in your nodecg configuration automatically, you don't need to worry about it.</p>
-<p>If you want to every change your nodecg-io installation to add/remove a service or change the version, you can always re-run <code>nodecg-io install</code>. If a nodecg-io installation is found, its options will be preselected in the prompt. Re-running <code>nodecg-io install</code> will also update all packages to the latest patch version, if you have a production installation, and pull the repository and rebuild, if you have a development installation.</p>
-<h2 id="start-nodecg">Start nodecg</h2>
-<p>When starting nodecg you should see that all nodecg-io related bundles should be loaded and that you can now access nodecg-io in your nodecg dashboard.</p>
-<p>Now you can either install an already existing bundle that uses nodecg-io, <a href="../create_new_bundle/">create a new bundle</a> or <a href="../existing_bundle/">integrate an existing bundle</a>.</p>
+<p>For starters, we recommend using the development version, so you may try our
+premade examples.</p>
+<h3 id="production-install">Production install</h3>
+<details>
+  <summary>Click to see more!</summary>
+
+Because you selected a production install you may select the services to be
+included in this next step:
+
+<pre><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+Installing nodecg-io...
+Detected nodecg installation at /home/user/nodecg.
+<span style="color:#11d116">?</span> <b>Which version do you want to install?</b> <span style="color:#1abc9c">0.1</span>
+<span style="color:#11d116">?</span> <b>Which services do you want to use?</b> (Press <span style="color:#16a085">&lt;space&gt;</span> to select, <span    style="color:#16a085">&lt;a&gt;</span> to toggle all,
+<span style="color:#16a085">&lt;i&gt;</span> to invert selection, and <span style="color:#16a085">&lt;enter&gt;</span> to proceed)
+<span style="color:#1abc9c">❯◯ ahk</span>
+ ◯ android
+ ◯ curseforge
+ ◯ discord
+ ◯ intellij
+ ◯ irc
+ ◯ midi-input
+(Move up and down to reveal more choices)</pre>
+
+If you want to every change your nodecg-io installation to add/remove a service
+or change the version, you can always re-run `nodecg-io install`. If a nodecg-io
+installation is found, its options will be preselected in the prompt. Re-running
+`nodecg-io install` will also update all packages to the latest patch version.
+
+</details>
+
+<h3 id="development-install">Development install</h3>
+<details>
+  <summary>Click to see more!</summary>
+
+Because you selected a production install you may select to use the samples and
+documentation to be included in these next steps:
+
+<pre><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+Installing nodecg-io...
+Detected nodecg installation at /home/user/nodecg.
+<span style="color:#11d116">?</span> <b>Which version do you want to install?</b> <span style="color:#1abc9c">development</span>
+<span style="color:#11d116">?</span> <b>Would you like to use the provided samples?</b> (y/N) </pre>
+
+<pre><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+Installing nodecg-io...
+Detected nodecg installation at /home/user/nodecg.
+<span style="color:#11d116">?</span> <b>Which version do you want to install?</b> <span style="color:#1abc9c">development</span>
+<span style="color:#11d116">?</span> <b>Would you like to use the provided samples?</b> <span style="color:#1abc9c">No</span>
+<span style="color:#11d116">?</span> <b>Would you like to clone the documentation?</b> (y/N) </pre>
+
+If you want to every change your nodecg-io installation to add/remove a service
+or change the version, you can always re-run `nodecg-io install`. If a nodecg-io
+installation is found, its options will be preselected in the prompt. Re-running
+`nodecg-io install` will also pull the repository and rebuild it.
+
+</details>
+
+<h3 id="continue-reading">Continue reading</h3>
+<p>There are many example bundles premade for most services, so you may take a look
+at the
+<a href="../try_example_bundle/">“Try an included sample”</a>-Guide (It
+will also tell you how to start NodeCG, log in and how to use the GUI). Or you
+could directly take a deep dive into our framework and either
+<a href="../create_new_bundle/">create a new bundle</a> or
+<a href="../existing_bundle/">integrate an existing bundle</a>. There are other bundles
+using nodecg-io, witch you could try, so may take a look around GitHub or
+GitLab.</p>
 <h2 id="uninstall-nodecg-io">Uninstall nodecg-io</h2>
 <p>If you want to uninstall nodecg-io you can run the following command:</p>
 <div class="highlight"><pre><span></span><code>nodecg-io uninstall
 </code></pre></div>
-<p>This will remove the <code>nodecg-io</code> directory inside your nodecg installation and also will remove it from the loaded bundle paths in your nodecg configuration.</p>
+<p>This will remove the <code>nodecg-io</code> directory inside your NodeCG installation and
+also will remove it from the loaded bundle paths in your NodeCG configuration.</p>
                 
               
               
@@ -1580,13 +1732,13 @@ If you don't have Visual Studio just install the Visual Studio Build Tools by ru
       
       
         
-        <a href="../create_new_bundle/" class="md-footer__link md-footer__link--next" aria-label="Next: Your first bundle" rel="next">
+        <a href="../try_example_bundle/" class="md-footer__link md-footer__link--next" aria-label="Next: Using a sample bundle" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Your first bundle
+              Using a sample bundle
             </div>
           </div>
           <div class="md-footer__button md-icon">

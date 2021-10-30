@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1035,6 +1049,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#configure-the-streamdeck-rainbow-bundle" class="md-nav__link">
     Configure the Streamdeck Rainbow bundle
   </a>
@@ -1329,6 +1350,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#configure-the-streamdeck-rainbow-bundle" class="md-nav__link">
     Configure the Streamdeck Rainbow bundle
   </a>
@@ -1360,35 +1388,37 @@
                   <h1>Streamdeck sample</h1>
                 
                 <h2 id="using-the-streamdeck-rainbow-sample-bundle">Using the StreamDeck rainbow sample bundle</h2>
-<p>The streamdeck-rainbow bundle paints your streamdeck with different colours. It is located in <code>samples/streamdeck-rainbow</code>.</p>
-<p>Sadly you can't access the StreamDeck while another application accesses it. So you need to stop your StreamDeck Software before.</p>
+<p>The streamdeck-rainbow bundle paints your streamdeck with different colours. It
+is located in <code>samples/streamdeck-rainbow</code>.</p>
+<p>Sadly you can't access the StreamDeck while another application accesses it. So
+you need to stop your StreamDeck Software before.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong> (If you're on Linux)</p>
+<p>Follow the instructions listed under Manual Installation
+<a href="https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md">here</a>.
+Everything after the <code>sudo udevadm</code> command can be omitted.</p>
 <h3 id="configure-the-streamdeck-rainbow-bundle">Configure the Streamdeck Rainbow bundle</h3>
 <ol>
 <li>
-<p>If you're on Linux, follow the instructions listed under Manual Installation <a href="https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md">here</a>. Everything after the <code>sudo udevadm</code> command can be omitted.</p>
+<p>In NodeCG, create a new StreamDeck service instance.</p>
 </li>
 <li>
-<p>Start nodecg with nodecg-io installed. The streamdeck-rainbow bundle is currently part of it, so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new StreamDeck service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the configuration</p>
+<p>Enter the configuration:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><code>default</code> tells the bundle to automatically find a StreamDeck. If you use multiple StreamDecks, you need to put in an ID here.</p>
+<p><code>default</code> tells the bundle to automatically find a StreamDeck. If you use
+multiple StreamDecks, you need to put in an ID here.</p>
 </li>
 <li>
-<p>Set the created StreamDeck service instance to the service dependency of the streamdeck-rainbow bundle.</p>
+<p>Set the sample's (<code>streamdeck-rainbow</code>) dependency to be the newly created
+   service instance (of type <code>streamdeck</code>).</p>
 </li>
 <li>
 <p>Watch your streamdeck.</p>

@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1388,32 +1402,27 @@
                   <h1>Serial sample</h1>
                 
                 <h2 id="using-the-serial-sample-bundle">Using the serial sample bundle</h2>
-<p>The serial example bundle in <code>samples/serial</code> demonstrates the ability to exchange data with a device that is connected via serial. Here is a guide to how to get it working.</p>
+<p>The serial example bundle in <code>samples/serial</code> demonstrates the ability to
+exchange data with a device that is connected via serial. Here is a guide to how
+to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
-<li>An Arduino or any other microcontroller development board that can send and receive data via serial.</li>
+<li>An Arduino or any other microcontroller development board that can send and
+    receive data via serial.</li>
 </ul>
 <h3 id="configure-the-serial-sample-bundle">Configure the serial sample bundle</h3>
 <ol>
 <li>
-<p>Load a simple serial echo sketch on your microcontroller. You can find a working Arduino sketch at the end of this article.</p>
+<p>In NodeCG, create a new serial service instance.</p>
 </li>
 <li>
-<p>Start nodecg with nodecg-io installed. The serial bundle is currently part of it, so it should also be loaded. Make sure the device is already connected. Otherwise, you won't be able to see the device.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new serial service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the information of your device.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter the <code>com port</code> or other identifying information in one of these formats:</p>
+<p>Enter the information of your device:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;COM1&quot;</span>
@@ -1427,18 +1436,23 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.
-<em>Note:</em> If you want to list all connected devices you can open a terminal in <code>nodecg-io-serial</code> and run <code>npm run list</code>.
-<em>Note:</em> If you are using multiple devices you might want to use the <code>pnpId</code>, since ports can change between reboots!</p>
+<p><em>Note:</em> If you want to list all connected devices you can open a terminal in
+<code>nodecg-io-serial</code> and run <code>npm run list</code>. <em>Note:</em> If you are using multiple
+devices you might want to use the <code>pnpId</code>, since ports can change between
+reboots!</p>
 </li>
 <li>
-<p>Set the created serial service instance to the service dependency of the serial bundle.</p>
-<p>Select the serial bundle and the serial service in the left bottom menu and then select the service instance that should be used by the serial bundle (in this case the name of the previously created serial instance).</p>
+<p>Set the sample's (<code>serial</code>) dependency to be the newly created service
+   instance (of type <code>serial</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message and nodecg-io will send ping to the microcontroller every 10 seconds. The Arduino device will respond with pong. You should see the pong message displayed in the log.</p>
-<p>If you see an error or nothing at all, try making sure your microcontroller is plugged in and recognized correctly. Then restart nodecg, so the service is cleanly restarted.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message and nodecg-io will send ping to
+the microcontroller every 10 seconds. The Arduino device will respond with
+pong. You should see the pong message displayed in the log.</p>
+<p>If you see an error or nothing at all, try making sure your microcontroller
+is plugged in and recognized correctly. Then restart NodeCG, so the service
+is cleanly restarted.</p>
 </li>
 </ol>
 <h3 id="sample-arduino-sketch">Sample Arduino sketch</h3>

@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1376,34 +1390,33 @@
                   <h1>Youtube sample</h1>
                 
                 <h2 id="using-the-youtube-sample-bundle">Using the YouTube sample bundle</h2>
-<p>The YouTube bundle in <code>samples/youtube-playlist</code> demonstrates the ability of getting information of a playlist. Here is a guide to how to get it working.</p>
+<p>The YouTube bundle in <code>samples/youtube-playlist</code> demonstrates the ability of
+getting information of a playlist. Here is a guide to how to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>Google cloud API OAuth access (client ID, client Secret)</li>
 <li>Grant <code>YouTube Data API v3</code> access at the project's dashboard.<ul>
-<li>Shortcut URL: <https://console.developers.google.com/apis/library/youtube.googleapis.com?project=\<project-id>></li>
+<li>Shortcut URL:
+    <https://console.developers.google.com/apis/library/youtube.googleapis.com?project=\<project-id>></li>
 </ul>
 </li>
 </ul>
-<p><em>Note:</em> If you don't have such a key yet, you can generate them like <a href="https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred">this</a>. As redirect URI add <a href="http://localhost:9090/nodecg-io-googleapis/oauth2callback">http://localhost:9090/nodecg-io-googleapis/oauth2callback</a>.</p>
+<p><em>Note:</em> If you don't have such a key yet, you can generate them like
+<a href="https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred">this</a>.
+As redirect URI add <a href="http://localhost:9090/nodecg-io-googleapis/oauth2callback">http://localhost:9090/nodecg-io-googleapis/oauth2callback</a>.</p>
 <h3 id="configure-the-youtube-sample-bundle">Configure the YouTube sample bundle</h3>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The YouTube bundle is currently part of it, so it should also be loaded.</p>
+<p>In NodeCG, create a new googleapis service instance.</p>
 </li>
 <li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new googleapis service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter credentials for googleapis.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your YouTube OAuth credentials in monaco (the text-editor on the right) in this format:</p>
+<p>Enter your YouTube OAuth credentials:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;clientID&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;clientID&gt;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;clientSecret&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;clientSecret&gt;&quot;</span><span class="p">,</span>
@@ -1411,16 +1424,17 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.<br />
-<em>Note:</em> You can add multiple scopes if the googleapis instance is used for multiple bundles.</p>
+<p><em>Note:</em> You can add multiple scopes if the googleapis instance is used for
+multiple bundles.</p>
 </li>
 <li>
-<p>Set the created googleapis service instance to the service dependency of the YouTube bundle.</p>
-<p>Select the YouTube bundle and the googleapis service in the left bottom menu and then select the service instance that should be used by the YouTube bundle (in this case the name of the previously created googleapis instance).</p>
+<p>Set the sample's (<code>youtube-playlist</code>) dependency to be the newly created
+   service instance (of type <code>googleapis</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message that is hardcoded in <code>samples/youtube-playlist/extension/index.ts</code>.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message that is hardcoded in
+<code>samples/youtube-playlist/extension/index.ts</code>.</p>
 </li>
 </ol>
                 

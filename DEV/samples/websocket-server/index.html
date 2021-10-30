@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1376,28 +1390,20 @@
                   <h1>Server sample</h1>
                 
                 <h2 id="using-the-websocket-server-sample-bundle">Using the WebSocket Server sample bundle</h2>
-<p>The WebSocket-server sample bundle in <code>samples/websocket-server</code> shows how to set up a simple WebSocket server that will relay all incoming messages to all connected clients.</p>
+<p>The WebSocket-server sample bundle in <code>samples/websocket-server</code> shows how to
+set up a simple WebSocket server that will relay all incoming messages to all
+connected clients.</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
-</ul>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
 <h3 id="configure-the-websocket-server-sample-bundle">Configure the websocket-server sample bundle</h3>
 <ol>
+<li>In NodeCG, create a new ws-server service instance.</li>
 <li>
-<p>Start nodecg with nodecg-io installed. The websocket-server bundle is currently part of it, so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new ws-server service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter a port for the server. This has to be a number from 0 to 65535.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the text-editor on the right) in this format:</p>
+<p>Enter a port for the server. This has to be a number from 0 to 65535:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">7777</span>
 <span class="p">}</span>
@@ -1405,7 +1411,8 @@
 <p>After entering it, click save.</p>
 </li>
 <li>
-<p>Set the created ws-server service instance to the service dependency of the ws-server bundle.</p>
+<p>Set the sample's (<code>websocket-server</code>) dependency to be the newly created
+   service instance (of type <code>websocket-server</code>).</p>
 </li>
 <li>
 <p>A websocket-server has been started at the specified port.</p>

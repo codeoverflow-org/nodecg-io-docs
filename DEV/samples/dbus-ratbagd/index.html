@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-the-dbus-ratbagd-sample-bundle" class="md-skip">
+        <a href="#using-the-d-bus-ratbagd-sample-bundle" class="md-skip">
           Skip to content
         </a>
       
@@ -250,6 +250,20 @@
     <li class="md-nav__item">
       <a href="../../getting_started/install/" class="md-nav__link">
         Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
       </a>
     </li>
   
@@ -545,11 +559,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-dbus-ratbagd-sample-bundle" class="md-nav__link">
-    Using the DBus ratbagd sample bundle
+  <a href="#using-the-d-bus-ratbagd-sample-bundle" class="md-nav__link">
+    Using the D-Bus ratbagd sample bundle
   </a>
   
-    <nav class="md-nav" aria-label="Using the DBus ratbagd sample bundle">
+    <nav class="md-nav" aria-label="Using the D-Bus ratbagd sample bundle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1328,11 +1342,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-dbus-ratbagd-sample-bundle" class="md-nav__link">
-    Using the DBus ratbagd sample bundle
+  <a href="#using-the-d-bus-ratbagd-sample-bundle" class="md-nav__link">
+    Using the D-Bus ratbagd sample bundle
   </a>
   
-    <nav class="md-nav" aria-label="Using the DBus ratbagd sample bundle">
+    <nav class="md-nav" aria-label="Using the D-Bus ratbagd sample bundle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1373,42 +1387,36 @@
                 
                   <h1>DBus</h1>
                 
-                <h2 id="using-the-dbus-ratbagd-sample-bundle">Using the DBus ratbagd sample bundle</h2>
-<p>The dbus-ratbagd example bundle in <code>samples/dbus-ratbagd</code> demonstrates how to access all devices supported by ratbagd. Here is a guide to how to get it working.</p>
+                <h2 id="using-the-d-bus-ratbagd-sample-bundle">Using the D-Bus ratbagd sample bundle</h2>
+<p>The <code>dbus-ratbagd</code> example bundle in <code>samples/dbus-ratbagd</code> demonstrates how to
+access all devices supported by ratbagd. Here is a guide to how to get it
+working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li><a href="https://github.com/libratbag/libratbag">ratbagd</a></li>
 </ul>
 <h3 id="configure-the-dbus-ratbagd-sample-bundle">Configure the DBus ratbagd sample bundle</h3>
 <ol>
+<li>In NodeCG, create a new D-Bus service instance.</li>
 <li>
-<p>Start nodecg with nodecg-io installed. The dbus-ratbagd bundle is currently part of it so it should also be loaded.</p>
+<p>Configure the D-Bus service<br />
+   There should not be any additional configuration needed for the D-Bus
+   service.</p>
 </li>
 <li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
+<p>Set the sample's (<code>dbus-ratbagd</code>) dependency to be the newly created service
+   instance (of type <code>dbus</code>).</p>
 </li>
 <li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new dbus service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Configure the dbus service</p>
-<p>There should not be any additional configuration needed for the dbus service. Just enter an empty json object like this:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{}</span>
-</code></pre></div>
-<p>After entering it, click save.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
-</li>
-<li>
-<p>Set the created dbus service instance to the service dependency of the dbus-ratbagd bundle.</p>
-<p>Select the dbus-ratbagd bundle and the dbus service in the left bottom menu and then select the service instance that should be used by the dbus-ratbagd sample bundle (in this case the name of the previously created dbus instance).</p>
-</li>
-<li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message and a list of connected device names</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message and a list of connected device
+names.</p>
 </li>
 </ol>
                 

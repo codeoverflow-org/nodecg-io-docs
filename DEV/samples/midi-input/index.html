@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1376,47 +1390,46 @@
                   <h1>Midi-Input sample</h1>
                 
                 <h2 id="using-the-midi-input-sample-bundle">Using the midi-input sample bundle</h2>
-<p>The midi-input example bundle in <code>samples/midi-input</code> demonstrates the ability to read data from a midi device.</p>
+<p>The midi-input example bundle in <code>samples/midi-input</code> demonstrates the ability
+to read data from a midi device.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>A midi device that can be connected to your computer</li>
 </ul>
 <h3 id="configure-the-midi-input-sample-bundle">Configure the midi-input sample bundle</h3>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The Twitch-chat bundle is currently part of it, so it should also be loaded.</p>
+<p>In NodeCG, create a new midi-input service instance.</p>
 </li>
 <li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new midi-input service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter your device information</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter the name of your device in monaco (the text-editor on the right) in this format:</p>
+<p>Enter your device information:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;name&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>After entering it, click save.
-<strong>Note:</strong> A script is provided to list all inputs and outputs. It can be run from the sample directory <code>samples/midi-input</code> using the command <code>npm run list</code>. The devices should be listed with their device names and some other stuff.
+<p>After entering it, click save.<br />
+<strong>Note:</strong> A script is provided to list all inputs and outputs. It can be run
+from the sample directory <code>samples/midi-input</code> using the command
+<code>npm run list</code>. The devices should be listed with their device names and
+some other stuff.<br />
 Under Linux this looks for example like this:</p>
 <div class="highlight"><pre><span></span><code>nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
 </code></pre></div>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
 </li>
 <li>
-<p>Set the created midi-input service instance to the service dependency of the midi-input sample bundle.</p>
-<p>Select the midi-input bundle and the midi-input service in the left bottom menu and then select the service instance that should be used by the midi-input bundle (in this case the name of the previously created midi-input instance).</p>
+<p>Set the sample's (<code>midi-input</code>) dependency to be the newly created service
+   instance (of type <code>midi-input</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message and all midi messages that are sent by the device that is configured.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message and all midi messages that are
+sent by the device that is configured.</p>
 </li>
 </ol>
                 

@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1376,44 +1390,44 @@
                   <h1>Twitch-Chat sample</h1>
                 
                 <h2 id="using-the-twitch-sample-bundle">Using the Twitch sample bundle</h2>
-<p>The Twitch-chat example bundle in <code>samples/twitch-chat</code> demonstrates the ability to get access to a twitch chat and printing all messages of it. Here is a guide to how to get it working.</p>
+<p>The Twitch-chat example bundle in <code>samples/twitch-chat</code> demonstrates the ability
+to get access to a twitch chat and printing all messages of it. Here is a guide
+to how to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>a Twitch oAuth-Key</li>
 </ul>
-<p><em>Note:</em> If you don't have such a key yet, you can generate it on <a href="https://twitchapps.com/tmi/">https://twitchapps.com/tmi/</a>. Just log into your Twitch account and copy the token.</p>
+<p><em>Note:</em> If you don't have such a key yet, you can generate it on
+<a href="https://twitchapps.com/tmi/">https://twitchapps.com/tmi/</a>. Just log into your Twitch account and copy the
+token.</p>
 <h3 id="configure-the-twitch-sample-bundle">Configure the Twitch sample bundle</h3>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The Twitch-chat bundle is currently part of it, so it should also be loaded.</p>
+<p>In NodeCG, create a new twitch-chat service instance.</p>
 </li>
 <li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new twitch-chat service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter credentials for twitch.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitch OAuth Key in monaco (the text-editor on the right) in this format:</p>
+<p>Enter your Twitch OAuth Key:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;oauthKey&quot;</span><span class="p">:</span> <span class="s2">&quot;oauth:abcdef....&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
 </li>
 <li>
-<p>Set the created twitch-chat service instance to the service dependency of the Twitch-chat bundle.</p>
-<p>Select the Twitch-chat bundle and the twitch-chat service in the left bottom menu and then select the service instance that should be used by the Twitch-chat bundle (in this case the name of the previously created twitch-chat instance).</p>
+<p>Set the sample's (<code>twitch-chat</code>) dependency to be the newly created service
+   instance (of type <code>twitch-chat</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message and all twitch messages that are written in the twitch channel that is hardcoded in <code>samples/twitch-chat/extension/index.ts</code>.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message and all twitch messages that
+are written in the twitch channel that is hardcoded in
+<code>samples/twitch-chat/extension/index.ts</code>.</p>
 </li>
 </ol>
                 

@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1374,45 +1388,43 @@
                   <h1>Shlink sample</h1>
                 
                 <h2 id="using-the-shlink-sample-bundle">Using the Shlink sample bundle</h2>
-<p>The Shlink example bundle in <code>samples/shlink-list-short-urls</code> demonstrates the ability to control a <a href="https://shlink.io/">Shlink</a> server by getting the amount of short urls configured on the server. Here is a guide on how to get it working.</p>
+<p>The Shlink example bundle in <code>samples/shlink-list-short-urls</code> demonstrates the
+ability to control a <a href="https://shlink.io/">Shlink</a> server by getting the amount
+of short URLs configured on the server. Here is a guide on how to get it
+working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li><a href="https://shlink.io/documentation/install-docker-image/">Shlink server and valid API key / token for it</a></li>
 </ul>
 <h3 id="configure-the-shlink-sample-bundle">Configure the Shlink sample bundle</h3>
 <ol>
+<li>In NodeCG, create a new Shlink service instance.</li>
 <li>
-<p>Start nodecg with nodecg-io installed. The shlink-list-short-urls bundle is currently part of it so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new Shlink service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the configuration for Shlink.</p>
-<p>The created instance should be automatically selected, if not, select it in the upper left menu. Enter the connection information for the Shlink server in monaco (the text-editor on the right) in this format:</p>
+<p>Enter the configuration for Shlink:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://example.com&quot;</span><span class="p">,</span>
     <span class="nt">&quot;apiKey&quot;</span><span class="p">:</span> <span class="s2">&quot;1ae89449-f8d2-4b44-baf7-dd7eb0b05017&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
 </li>
 <li>
-<p>Set the created Shlink service instance to the service dependency of the shlink-list-short-urls bundle.</p>
-<p>Select the shlink-list-short-urls bundle and the Shlink service in the left bottom menu and then select the service instance that should be used by the shlink-list-short-urls bundle (in this case the name of the previously created Shlink instance).</p>
+<p>Set the sample's (<code>shlink-list-short-urls</code>) dependency to be the newly
+   created service instance (of type <code>shlink</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message and the amount of configured short urls on the Shlink server.</p>
-<p><em>Note:</em> When listing short urls - like this sample does - be aware that the amount of short urls might be limited by the <a href="https://shlink.io/documentation/api-docs/api-key-roles/">API key role</a>.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message and the amount of configured
+short URLs on the Shlink server.</p>
+<p><em>Note:</em> When listing short URLs — like this sample does — be aware that the
+amount of short URLs might be limited by the
+<a href="https://shlink.io/documentation/api-docs/api-key-roles/">API key role</a>.</p>
 </li>
 </ol>
                 

@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1388,46 +1402,45 @@
                   <h1>StreamElements sample</h1>
                 
                 <h2 id="using-the-streamelements-sample-bundle">Using the StreamElements sample bundle</h2>
-<p>The StreamElements-events example bundle in <code>samples/streamelements-events</code> demonstrates the ability to react to events like donations and subs. Here is a guide to how to get it working.</p>
+<p>The StreamElements-events example bundle in <code>samples/streamelements-events</code>
+demonstrates the ability to react to events like donations and subs. Here is a
+guide to how to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>A StreamElements account</li>
 </ul>
 <h3 id="getting-jwt-token">Getting JWT Token</h3>
-<p>To use the StreamElements service you need a JWT Token that gives it access to your account.</p>
-<p>To get it go to <a href="https://streamelements.com/dashboard/account/channels">https://streamelements.com/dashboard/account/channels</a>, login, click on <code>Show Secrets</code> and copy it.</p>
+<p>To use the StreamElements service you need a JWT Token that gives it access to
+your account.</p>
+<p>To get it go to <a href="https://streamelements.com/dashboard/account/channels">https://streamelements.com/dashboard/account/channels</a>, login,
+click on <code>Show Secrets</code> and copy it.</p>
 <h3 id="configure-the-streamelements-sample-bundle">Configure the StreamElements sample bundle</h3>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The streamelements-events bundle is currently part of it, so it should also be loaded.</p>
+<p>In NodeCG, create a new StreamElements service instance.</p>
 </li>
 <li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new StreamElements service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter credentials for StreamElements.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your JWT Token in monaco (the text-editor on the right) in this format:</p>
+<p>Enter the JWT Token for StreamElements:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;jwtToken&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;your JWT Token&gt;&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
 </li>
 <li>
-<p>Set the created StreamElements service instance to the service dependency of the streamelements-events bundle.</p>
-<p>Select the streamelements-events bundle and the StreamElements service in the left bottom menu and then select the service instance that should be used by the streamelements-events bundle (in this case the name of the previously created streamelements-events instance).</p>
+<p>Set the sample's (<code>streamelements-events</code>) dependency to be the newly created
+   service instance (of type <code>streamelements</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message and a log message for each event of your channel like subs, follows, cheers, raids and so on.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message and a log message for each
+event of your channel like subs, follows, cheers, raids and so on.</p>
 </li>
 </ol>
                 

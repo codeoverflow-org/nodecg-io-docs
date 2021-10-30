@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -534,6 +548,19 @@
   <a href="#using-the-android-sample-bundle" class="md-nav__link">
     Using the Android sample bundle
   </a>
+  
+    <nav class="md-nav" aria-label="Using the Android sample bundle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1312,6 +1339,19 @@
     Using the Android sample bundle
   </a>
   
+    <nav class="md-nav" aria-label="Using the Android sample bundle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1334,65 +1374,58 @@
                   <h1>Android</h1>
                 
                 <h2 id="using-the-android-sample-bundle">Using the Android sample bundle</h2>
-<p>The Android example bundle in <code>samples/android</code> shows how to connect to an android device and turn on WLAN.</p>
+<p>The Android example bundle in <code>samples/android</code> shows how to connect to an
+Android device and turn on WLAN.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ol>
-<li>
-<p>Clone <a href="https://github.com/noeppi-noeppi/nodecg-io-android">this</a> Git Repository</p>
-</li>
-<li>
-<p>Run <code>gradlew build</code> (on Windows) or <code>./gradlew build</code> (on Linux) inside the cloned repository.</p>
-</li>
-<li>
-<p>There will be an apk file generated in <code>app/build/outputs/apk/debug/app-debug.apk</code>. Install it on the device.</p>
-</li>
-<li>
-<p>Launch the app. You'll be asked to grant the system alert window permission. This is required because the app will do its work in the background. However, occasionally when user interaction is required, it needs to launch an activity without the user pressing the app icon in the launcher.</p>
-</li>
-<li>
-<p>Install the android developer tools and make sure you have the <code>adb</code> command in your <code>PATH</code></p>
-</li>
-<li>
-<p>Enable developer options on you device and enable USB debugging there. See <a href="https://developer.android.com/studio/debug/dev-options">here</a>.</p>
-</li>
-<li>
-<p>Run <code>adb start-server</code></p>
-</li>
-<li>
-<p>Connect your device via USB. You'll be prompted whether you want to allow USB debugging. Press <code>Allow</code>.</p>
-</li>
+<li>Clone <a href="https://github.com/noeppi-noeppi/nodecg-io-android">this</a> Git
+   Repository</li>
+<li>Run <code>gradlew build</code> (on Windows) or <code>./gradlew build</code> (on Linux) inside the
+   cloned repository.</li>
+<li>There will be an apk file generated in
+   <code>app/build/outputs/apk/debug/app-debug.apk</code>. Install it on the Android
+   device.</li>
+<li>Launch the app. You'll be asked to grant the system alert window permission.
+   This is required because the app will do its work in the background. However,
+   occasionally when user interaction is required, it needs to launch an
+   activity without the user pressing the app icon in the launcher.</li>
+<li>Install the android developer tools and make sure you have the <code>adb</code> command
+   in your <code>PATH</code></li>
+<li>Enable developer options on you device and enable USB debugging there. See
+   <a href="https://developer.android.com/studio/debug/dev-options">here</a>.</li>
+<li>Run <code>adb start-server</code></li>
+<li>Connect your device via USB. You'll be prompted whether you want to allow USB
+   debugging. Press <code>Allow</code>.</li>
 <li>
 <p>Run <code>adb device -l</code>. The output might look like this:</p>
 <div class="highlight"><pre><span></span><code>########               device usb:2-1.7 product:######## model:######## device:######## transport_id:2
 </code></pre></div>
-<p>The hexadecimal number in the first column is your device ID. You'll need this later.</p>
+<p>The hexadecimal number in the first column is your device ID. You'll need
+this later.</p>
 </li>
 <li>
-<p>Start nodecg with nodecg-io installed. The bundle is currently part of it, so it should also be loaded.</p>
+<p>In NodeCG, create a new android service instance.</p>
 </li>
 <li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new android service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the following</p>
-<div class="highlight"><pre><span></span><code>{
-    &quot;device&quot;: &quot;device_id&quot;
-}
+<p>Enter the following:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;device_id&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Replace <code>device_id</code> with your device ID.</p>
+<p>After entering it, click save.</p>
 </li>
 <li>
-<p>Set the created android service instance to the service dependency of the android sample bundle.</p>
-<p>Select the android bundle and the android service in the left bottom menu and then select the service instance that should be used by the android sample bundle (in this case the name of the previously created android instance).</p>
+<p>Set the sample's (<code>android</code>) dependency to be the newly created service
+    instance (of type <code>android</code>).</p>
 </li>
-<li>
-<p>You should see that WLAN is now activated on your device.</p>
-</li>
+<li>You should see that WLAN is now activated on your device.</li>
 </ol>
                 
               

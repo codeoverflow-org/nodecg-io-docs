@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1376,29 +1390,24 @@
                   <h1>sACN Receiver sample</h1>
                 
                 <h2 id="using-the-sacn-receiver-sample-bundle">Using the sACN receiver sample bundle</h2>
-<p>The sacn-receiver-sample example bundle in <code>samples/sacn-receiver-sample</code> demonstrates the ability receive data send via sACN from e.g., professional lighting consoles. Here is a guide to how to get it working.</p>
+<p>The sacn-receiver-sample example bundle in <code>samples/sacn-receiver-sample</code>
+demonstrates the ability receive data send via sACN from e.g., professional
+lighting consoles. Here is a guide to how to get it working.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>A working sACN sender in the current network</li>
 </ul>
 <h3 id="configure-the-sacn-sample-bundle">Configure the sACN sample bundle</h3>
 <ol>
+<li>In NodeCG, create a new sacn-receiver service instance.</li>
 <li>
-<p>Start nodecg with nodecg-io installed. The sacn-receiver-sample bundle is currently part of it, so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new sacn-receiver service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the needed options.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your Bot token in monaco (the text-editor on the right) in this format:</p>
+<p>Enter the needed options:</p>
 <p><strong>Universes</strong></p>
 <p>The universes to use. Must be an array with numbers within 1-63999</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -1406,35 +1415,36 @@
 <span class="p">}</span>
 </code></pre></div>
 <p><strong>Port</strong></p>
-<p>Optional. The multicast port to use. All professional consoles broadcast to the default port 5568.</p>
+<p>Optional. The multicast port to use. All professional consoles broadcast to
+the default port 5568.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;universes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
     <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">5568</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>Iface</strong>
-Optional. If the computer is connected to multiple networks, specify which network adaptor to use by using this computer's local IP address.</p>
+<p><strong>Iface</strong> Optional. If the computer is connected to multiple networks,
+specify which network adaptor to use by using this computer's local IP
+address.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;universes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
     <span class="nt">&quot;iface&quot;</span><span class="p">:</span> <span class="s2">&quot;Network Adapter&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><strong>ReuseAddr</strong>
-Optional. Allow multiple programs on your computer to listen to the same sACN universe.</p>
+<p><strong>ReuseAddr</strong> Optional. Allow multiple programs on your computer to listen
+to the same sACN universe.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;universes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
     <span class="nt">&quot;reuseAddr&quot;</span><span class="p">:</span> <span class="kc">true</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering them, click save.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
 </li>
 <li>
-<p>Set the created sacn-receiver service instance to the service dependency of the sacn-receiver-sample bundle.</p>
-<p>Select the sacn-receiver-sample bundle and the sacn-receiver service in the left bottom menu and then select the service instance that should be used by the sacn-receiver-sample bundle (in this case the name of the previously created sACN instance).</p>
+<p>Set the sample's (<code>sacn-receiver-sample</code>) dependency to be the newly created
+   service instance (of type <code>sacn-receiver</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
+<p>Check the NodeCG logs:</p>
 <p>You should see data logged.</p>
 </li>
 </ol>

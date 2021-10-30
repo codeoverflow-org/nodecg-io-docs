@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1376,30 +1390,25 @@
                   <h1>Client sample</h1>
                 
                 <h2 id="using-the-websocket-client-sample-bundle">Using the WebSocket-client sample bundle</h2>
-<p>The WebSocket-client sample bundle in <code>samples/websocket-client</code> shows how to set up a simple WebSocket client that will ping a server every second.</p>
+<p>The WebSocket-client sample bundle in <code>samples/websocket-client</code> shows how to
+set up a simple WebSocket client that will ping a server every second.</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
-</ul>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
 <p>For simplicity's sake this sample will rely upon the websocket-server sample.</p>
 <h3 id="configure-the-websocket-client-sample-bundle">Configure the WebSocket-client sample bundle</h3>
-<p>Please set up the WebSocket-server bundle first and then follow these steps:</p>
+<p>Please set up the <a href="../websocket-server/">WebSocket-server bundle</a> first and
+then follow these steps:</p>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The websocket-client bundle is currently part of it, so it should also be loaded.</p>
+<p>In NodeCG, create a new ws-client service instance.</p>
 </li>
 <li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new ws-client service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the address of the sample server. This has to be a URL following the pattern <code>ws://localhost:&lt;port&gt;</code>.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the text-editor on the right) in this format:</p>
+<p>Enter the address of the sample server. This has to be a URL following the
+   pattern <code>ws://localhost:&lt;port&gt;</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;ws://localhost:7777&quot;</span>
 <span class="p">}</span>
@@ -1407,10 +1416,12 @@
 <p>After entering it, click save.</p>
 </li>
 <li>
-<p>Set the created ws-client service instance to the service dependency of the ws-client bundle.</p>
+<p>Set the sample's (<code>websocket-client</code>) dependency to be the newly created
+   service instance (of type <code>websocket-client</code>).</p>
 </li>
 <li>
-<p>A websocket-client has been connected and the console should display if a ping is sent or a pong is received.</p>
+<p>A websocket-client has been connected and the console should display if a
+   ping is sent or a pong is received.</p>
 </li>
 </ol>
                 

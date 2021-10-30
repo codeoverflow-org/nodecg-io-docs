@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -712,6 +726,26 @@
   <a href="#using-the-intellij-sample-bundle" class="md-nav__link">
     Using the IntelliJ sample bundle
   </a>
+  
+    <nav class="md-nav" aria-label="Using the IntelliJ sample bundle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-intellij-sample-bundle" class="md-nav__link">
+    Configure the IntelliJ sample bundle
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1312,6 +1346,26 @@
     Using the IntelliJ sample bundle
   </a>
   
+    <nav class="md-nav" aria-label="Using the IntelliJ sample bundle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-intellij-sample-bundle" class="md-nav__link">
+    Configure the IntelliJ sample bundle
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1334,53 +1388,50 @@
                   <h1>IntelliJ sample</h1>
                 
                 <h2 id="using-the-intellij-sample-bundle">Using the IntelliJ sample bundle</h2>
-<p>The IntelliJ example bundle in <code>samples/intellij-integration</code> Shows how to connect to a JetBrains IDE and print all installed plugins. Here is a guide to how to get it working:</p>
+<p>The IntelliJ example bundle in <code>samples/intellij-integration</code> Shows how to
+connect to a JetBrains IDE and print all installed plugins. Here is a guide to
+how to get it working:</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ol>
+<li>Clone <a href="https://github.com/noeppi-noeppi/nodecg-io-intellij">this</a> Git
+   Repository.</li>
+<li>Make sure you've Java 11 or newer installed.</li>
+<li>Run <code>gradlew build</code> (on Windows) or <code>./gradlew build</code> (on Linux) inside the
+   cloned repository.</li>
+<li>Inside your JetBrains IDE go to <code>Settings</code> and then <code>Plugins</code>. Click on the
+   little gear in the top right corner. Then click <code>Install from file</code>.</li>
+<li>Navigate to <code>path to your cloned repository/build/libs</code> and select the jar
+   file there.</li>
+<li>Restart the IDE.</li>
+</ol>
+<h3 id="configure-the-intellij-sample-bundle">Configure the IntelliJ sample bundle</h3>
+<ol>
+<li>In NodeCG, create a new IntelliJ service instance.</li>
 <li>
-<p>clone <a href="https://github.com/noeppi-noeppi/nodecg-io-intellij">this</a> Git Repository</p>
-</li>
-<li>
-<p>Make sure you've Java 11 or newer installed.</p>
-</li>
-<li>
-<p>Run <code>gradlew build</code> (on Windows) or <code>./gradlew build</code> (on Linux) inside the cloned repository.</p>
-</li>
-<li>
-<p>Inside your JetBrains IDE go to <code>Settings</code> and then <code>Plugins</code>. Click on the little gear in the top right corner. Then click <code>Install from file</code>.</p>
-</li>
-<li>
-<p>Navigate to <code>path to your cloned repository/build/libs</code> and select the jar file there.</p>
-</li>
-<li>
-<p>Restart the IDE</p>
-</li>
-<li>
-<p>Start nodecg with nodecg-io installed. The bundle is currently part of it, so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new IntelliJ service instance using the left upper menu.</p>
-</li>
-<li>
-<p>Enter the following</p>
+<p>Enter the host and port of your IDE's HTTP server:</p>
 <div class="highlight"><pre><span></span><code>{
     &quot;address&quot;: &quot;127.0.0.1:19524&quot;
 }
 </code></pre></div>
-<p>This tells nodecg-io to look for your IDE's HTTP server on your computer at port <code>19524</code>. If you want it to run on another port, please follow the guidelines <a href="https://github.com/noeppi-noeppi/nodecg-io-intellij/blob/master/README.md">here</a>.</p>
+<p>This tells nodecg-io to look for your IDE's HTTP server on your computer at
+port <code>19524</code>. If you want it to run on another port, please follow the
+guidelines
+<a href="https://github.com/noeppi-noeppi/nodecg-io-intellij/blob/master/README.md">here</a>.</p>
 </li>
 <li>
-<p>Set the created IntelliJ service instance to the service dependency of the sample-intellij bundle.</p>
-<p>Select the sample-intellij bundle and the IntelliJ service in the left bottom menu and then select the service instance that should be used by the sample-intellij bundle (in this case the name of the previously created IntelliJ instance).</p>
+<p>Set the sample's (<code>intellij-integration</code>) dependency to be the newly created
+   service instance (of type <code>intellij</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a list of all plugins installed at your IDE including the preinstalled ones by JetBrains.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a list of all plugins installed at your IDE
+including the preinstalled ones by JetBrains.</p>
 </li>
 </ol>
                 

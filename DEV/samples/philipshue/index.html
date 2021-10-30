@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1374,50 +1388,53 @@
                   <h1>Philips Hue sample</h1>
                 
                 <h2 id="using-the-philips-hue-sample-bundle">Using the Philips Hue sample bundle</h2>
-<p>The philipshue-lights example bundle in <code>samples/philipshue-lights</code> demonstrates the ability to connect to the Philips Hue bridge and control Philips Hue accessories.</p>
+<p>The philipshue-lights example bundle in <code>samples/philipshue-lights</code> demonstrates
+the ability to connect to the Philips Hue bridge and control Philips Hue
+accessories.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>A Philips Hue bridge with some connected accessories</li>
 </ul>
 <h3 id="configure-the-philips-hue-sample-bundle">Configure the Philips Hue sample bundle</h3>
 <ol>
 <li>
-<p>Start nodecg with nodecg-io installed. The philipshue-lights sample bundle is currently part of it, so it should also be loaded.</p>
-</li>
-<li>
-<p>Go to the <code>nodecg-io</code> tab in the nodecg dashboard.</p>
-</li>
-<li>
-<p>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</p>
-</li>
-<li>
-<p>Create a new Philips Hue service instance using the left upper menu.</p>
+<p>In NodeCG, create a new Philips Hue service instance.</p>
 </li>
 <li>
 <p>Enter configuration for hue.</p>
-<p>The created instance should be automatically selected, if not select it in the upper left menu. If you want the bridge to be automatically discovered just set <code>discover</code> to true like this:</p>
+<p>If you want the bridge to be automatically discovered just set <code>discover</code> to
+true like this:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;discover&quot;</span><span class="p">:</span> <span class="kc">true</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>If you want to provide the IP address manually you can provide them like this:</p>
+<p>If you want to provide the IP address manually you can provide them like
+this:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;discover&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;ipAddr&quot;</span><span class="p">:</span> <span class="s2">&quot;x.x.x.x&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>After entering it, press the big link button on your bridge and then click save.</p>
-<p>After the first time you connect to your bridge it will create a user and an API key which will be saved so that you only need to press the link button when you connect it for the first time.</p>
-<p><em>Note:</em> If you don't see monaco on the right, try reloading the page.</p>
+<p>After entering it, press the big link button on your bridge and then click
+save.</p>
+<p>After the first time you connect to your bridge it will create a user and an
+API key which will be saved so that you only need to press the link button
+when you connect it for the first time.</p>
 </li>
 <li>
-<p>Set the created Philips Hue service instance to the service dependency of the philipshue-lights sample bundle.</p>
-<p>Select the philipshue-lights sample bundle and the Philips Hue service in the left bottom menu and then select the service instance that should be used by the philipshue-lights sample bundle (in this case the name of the previously created Philips Hue instance).</p>
+<p>Set the sample's (<code>philipshue-lights</code>) dependency to be the newly created
+   service instance (of type <code>philipshue</code>).</p>
 </li>
 <li>
-<p>Check the nodecg logs</p>
-<p>You should see an error or a success message and the number of lights that the bridge knows of.</p>
+<p>Check the NodeCG logs:</p>
+<p>You should see an error or a success message and the number of lights that
+the bridge knows of.</p>
 </li>
 </ol>
                 

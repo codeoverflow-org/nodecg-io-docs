@@ -262,6 +262,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+        Using a sample bundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
@@ -1374,24 +1388,30 @@
                   <h1>MQTT</h1>
                 
                 <h2 id="using-the-mqtt-client-sample-bundle">Using the MQTT-client sample bundle</h2>
-<p>The MQTT-client sample bundle in <code>samples/mqtt-client</code> shows how to connect to an MQTT server. This client is based on the <a href="https://github.com/mqttjs/MQTT.js">MQTT.js</a> package.</p>
+<p>The MQTT-client sample bundle in <code>samples/mqtt-client</code> shows how to connect to
+an MQTT server. This client is based on the
+<a href="https://github.com/mqttjs/MQTT.js">MQTT.js</a> package.</p>
 <h3 id="prerequisites">Prerequisites</h3>
+<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
+look at <a href="../../getting_started/install/">installation guide</a>. You may need to
+install this bundle, so take a look at the
+<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
+will also tell you how to log in and how to use the GUI.</p>
+<p><strong>You also need:</strong></p>
 <ul>
-<li>Working NodeCG &amp; nodecg-io installation</li>
 <li>MQTT-server</li>
 </ul>
 <h3 id="configure-the-mqtt-client-sample-bundle">Configure the MQTT-client sample bundle</h3>
 <ol>
-<li>Start NodeCG with nodecg-io installed. The mqtt-client bundle is currently part of it, so it should also be loaded.</li>
-<li>Go to the <code>nodecg-io</code> tab in the NodeCG dashboard.</li>
-<li>Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.</li>
 <li>
-<p>Create a new mqtt-client service instance using the left upper menu.</p>
+<p>In NodeCG, create a new mqtt-client service instance.</p>
 </li>
 <li>
-<p>Enter the connection parameters of the mqtt server. The URL should be in following the pattern <code>&lt;protocol&gt;://&lt;address&gt;:&lt;port&gt;</code>. Allowed protocols are: <code>mqtt</code>, <code>mqtts</code>, <code>tcp</code>, <code>tls</code>, <code>ws</code>, <code>wss</code>.</p>
-<p>In case your server needs authentication, set the <code>username</code> and <code>password</code> fields otherwise remove them from the configuration.
-The created instance should be automatically selected, if not select it in the upper left menu. Enter your configuration in monaco (the text-editor on the right) in this format:</p>
+<p>Enter the connection parameters of the mqtt server. The URL should be in
+   following the pattern <code>&lt;protocol&gt;://&lt;address&gt;:&lt;port&gt;</code>. Allowed protocols are:
+   <code>mqtt</code>, <code>mqtts</code>, <code>tcp</code>, <code>tls</code>, <code>ws</code>, <code>wss</code>.</p>
+<p>In case your server needs authentication, set the <code>username</code> and <code>password</code>
+fields otherwise remove them from the configuration:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;mqtt://localhost&quot;</span><span class="p">,</span>
     <span class="nt">&quot;topics&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sample/topic&quot;</span><span class="p">,</span> <span class="s2">&quot;diffrent/topic2&quot;</span><span class="p">],</span>
@@ -1402,9 +1422,11 @@ The created instance should be automatically selected, if not select it in the u
 <p>After entering it, click save.</p>
 </li>
 <li>
-<p>Set the created mqtt-client service instance to the service dependency of the mqtt-client bundle.</p>
+<p>Set the sample's (<code>mqtt-client</code>) dependency to be the newly created service
+   instance (of type <code>mqtt-client</code>).</p>
 </li>
-<li>The console should display if the connection was successfully established and should show inbound messages on the subscribed topic.</li>
+<li>The console should display if the connection was successfully established and
+   should show inbound messages on the subscribed topic.</li>
 </ol>
                 
               
