@@ -1,31 +1,34 @@
 ## Using the twitter sample bundle
 
-The Twitter timeline bundle retrieves some of the latest tweets from _skate702_ and printing them to your console.
+The Twitter timeline bundle retrieves some of the latest tweets from _skate702_
+and printing them to your console.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
--   An [app](https://developer.twitter.com/en/apps) and their following keys and tokens
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
+-   An [app](https://developer.twitter.com/en/apps) and their following keys and
+    tokens
     -   The _API key_ here **oauthConsumerKey**
     -   The _API secret key_ here **oauthConsumerSecret**
     -   The _Access token_ here **oauthToken**
     -   The _Access token secret_ here **oauthTokenSecret**
 
-_Note:_ You will need a Twitter developer account (<https://developer.twitter.com/en/apply-for-access>) to get the necessary keys and tokens.
+_Note:_ You will need a Twitter developer account
+(<https://developer.twitter.com/en/apply-for-access>) to get the necessary keys
+and tokens.
 
 ### Configure the sample bundle
 
-1. Start nodecg with nodecg-io installed. The twitter-timeline bundle is currently part of it, so it should also be loaded.
+1. In NodeCG, create a new twitter service instance.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new twitter service instance using the left upper menu.
-
-5. Enter credentials for twitter.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your Twitter keys and tokens in monaco (the text-editor on the right) in this format:
+2. Enter your Twitter keys and tokens:
 
     ```json
     {
@@ -38,21 +41,23 @@ _Note:_ You will need a Twitter developer account (<https://developer.twitter.co
 
     After entering it, click save.
 
-    _Note:_ If you don't see monaco on the right, try reloading the page.
+3. Set the sample's (`twitter-timeline`) dependency to be the newly created
+   service instance (of type `twitter`).
 
-6. Set the created twitter service instance to the service dependency of the twitter-timeline bundle.
+4. Check the NodeCG logs:
 
-    Select the twitter-timeline bundle and the twitter service in the left bottom menu and then select the service instance that should be used by the twitter-timeline bundle (in this case the name of the previously created twitter instance).
-
-7. Check the nodecg logs
-
-    You should see an error or a success message and up to 50 Twitter messages tweeted by the user that is hardcoded in [samples/twitter-timeline/extension/index.ts](/samples/twitter-timeline/extension/index.ts) as `screen_name`.
+    You should see an error or a success message and up to 50 Twitter messages
+    tweeted by the user that is hardcoded in
+    [samples/twitter-timeline/extension/index.ts](/samples/twitter-timeline/extension/index.ts)
+    as `screen_name`.
 
 ## Need to know for creating your own twitter bundle
 
 ### A little description of the twitter client and it's usage
 
--   The client implements the different [API endpoints](https://developer.twitter.com/en/docs/api-reference-index) with two functions
+-   The client implements the different
+    [API endpoints](https://developer.twitter.com/en/docs/api-reference-index)
+    with two functions
 
     ```typescript
       client.get("<get endpoint name>", params, callback)

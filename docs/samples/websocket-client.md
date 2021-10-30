@@ -1,28 +1,27 @@
 ## Using the WebSocket-client sample bundle
 
-The WebSocket-client sample bundle in `samples/websocket-client` shows how to set up a simple WebSocket client that will ping a server every second.
+The WebSocket-client sample bundle in `samples/websocket-client` shows how to
+set up a simple WebSocket client that will ping a server every second.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
 
 For simplicity's sake this sample will rely upon the websocket-server sample.
 
 ### Configure the WebSocket-client sample bundle
 
-Please set up the WebSocket-server bundle first and then follow these steps:
+Please set up the [WebSocket-server bundle](./websocket-server.md) first and
+then follow these steps:
 
-1. Start nodecg with nodecg-io installed. The websocket-client bundle is currently part of it, so it should also be loaded.
+1. In NodeCG, create a new ws-client service instance.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new ws-client service instance using the left upper menu.
-
-5. Enter the address of the sample server. This has to be a URL following the pattern `ws://localhost:<port>`.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your port in monaco (the text-editor on the right) in this format:
+2. Enter the address of the sample server. This has to be a URL following the
+   pattern `ws://localhost:<port>`.
 
     ```json
     {
@@ -32,6 +31,8 @@ Please set up the WebSocket-server bundle first and then follow these steps:
 
     After entering it, click save.
 
-6. Set the created ws-client service instance to the service dependency of the ws-client bundle.
+3. Set the sample's (`websocket-client`) dependency to be the newly created
+   service instance (of type `websocket-client`).
 
-7. A websocket-client has been connected and the console should display if a ping is sent or a pong is received.
+4. A websocket-client has been connected and the console should display if a
+   ping is sent or a pong is received.

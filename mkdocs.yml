@@ -38,6 +38,7 @@ nav:
     - Home: index.md
     - Getting Started:
           - Installation: getting_started/install.md
+          - Using a sample bundle: getting_started/try_example_bundle.md
           - Your first bundle: getting_started/create_new_bundle.md
           - Migrating an existing bundle: getting_started/existing_bundle.md
           - Configuration: getting_started/configuration.md

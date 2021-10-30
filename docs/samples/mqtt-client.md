@@ -1,23 +1,31 @@
 ## Using the MQTT-client sample bundle
 
-The MQTT-client sample bundle in `samples/mqtt-client` shows how to connect to an MQTT server. This client is based on the [MQTT.js](https://github.com/mqttjs/MQTT.js) package.
+The MQTT-client sample bundle in `samples/mqtt-client` shows how to connect to
+an MQTT server. This client is based on the
+[MQTT.js](https://github.com/mqttjs/MQTT.js) package.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   MQTT-server
 
 ### Configure the MQTT-client sample bundle
 
-1. Start NodeCG with nodecg-io installed. The mqtt-client bundle is currently part of it, so it should also be loaded.
-2. Go to the `nodecg-io` tab in the NodeCG dashboard.
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-4. Create a new mqtt-client service instance using the left upper menu.
+1. In NodeCG, create a new mqtt-client service instance.
 
-5. Enter the connection parameters of the mqtt server. The URL should be in following the pattern `<protocol>://<address>:<port>`. Allowed protocols are: `mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`.
+2. Enter the connection parameters of the mqtt server. The URL should be in
+   following the pattern `<protocol>://<address>:<port>`. Allowed protocols are:
+   `mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`.
 
-    In case your server needs authentication, set the `username` and `password` fields otherwise remove them from the configuration.
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your configuration in monaco (the text-editor on the right) in this format:
+    In case your server needs authentication, set the `username` and `password`
+    fields otherwise remove them from the configuration:
 
     ```json
     {
@@ -30,5 +38,7 @@ The MQTT-client sample bundle in `samples/mqtt-client` shows how to connect to a
 
     After entering it, click save.
 
-6. Set the created mqtt-client service instance to the service dependency of the mqtt-client bundle.
-7. The console should display if the connection was successfully established and should show inbound messages on the subscribed topic.
+3. Set the sample's (`mqtt-client`) dependency to be the newly created service
+   instance (of type `mqtt-client`).
+4. The console should display if the connection was successfully established and
+   should show inbound messages on the subscribed topic.

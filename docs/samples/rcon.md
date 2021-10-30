@@ -1,25 +1,26 @@
 ## Using the RCON sample bundle
 
-The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command to a Minecraft server.
+The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command
+to a Minecraft server.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   A working [Minecraft](https://minecraft.net) server.
 
 ### Configure the rcon sample bundle
 
-1. Start nodecg with nodecg-io installed. The rcon bundle is currently part of it, so it should also be loaded.
+1. In NodeCG, create a new rcon service instance.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new rcon service instance using the left upper menu.
-
-5. Enter the host, port, and password of the rcon connection. This can be found in the `server.properties` file (`rcon.port`, `rcon.password`)
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:
+2. Enter the host, port, and password of the rcon connection. This can be found
+   in the `server.properties` file (`rcon.port`, `rcon.password`):
 
     ```json
     {
@@ -31,6 +32,8 @@ The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command t
 
     After entering it, click save.
 
-6. Set the created rcon service instance to the service dependency of the rcon-minecraft bundle.
+3. Set the sample's (`rcon-minecraft`) dependency to be the newly created
+   service instance (of type `rcon`).
 
-7. In the nodecg console you will see a list with all online players. It will also send a /say command to the Minecraft server.
+4. In the NodeCG console you will see a list with all online players. It will
+   also send a /say command to the Minecraft server.

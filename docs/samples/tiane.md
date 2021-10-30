@@ -1,22 +1,39 @@
 ## Using the TIANE-Discord sample bundle
 
-The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make TIANE act as a discord bot. TIANE is a German open source smart home assistant written in python. Here is a guide to how to get it working.
+The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make
+TIANE act as a discord bot. TIANE is a German open source smart home assistant
+written in python. Here is a guide to how to get it working.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
--   A working [TIANE](https://github.com/FerdiKr/TIANE) server installation. (No room client required)
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
+-   A working [TIANE](https://github.com/FerdiKr/TIANE) server installation. (No
+    room client required)
 -   a Discord Bot token
+
+_Note:_ If you don't Discord Bot token yet, you can follow
+[this](https://discordjs.guide/preparations/setting-up-a-bot-application.html)
+guide.
 
 ### Configure the TIANE sample bundle
 
 1. Edit the file `samples/tiane-discord/extension/index.ts`. Look for this line:
 
-    ```
+    ```ts
     const discordChannel = ""; // Insert channel for the discord bot here
     ```
 
-    Put the channel ID of a discord channel where you want to talk to TIANE between the quotation marks. See [here](https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord) to find out how to get a channel ID.
+    Put the channel ID of a discord channel where you want to talk to TIANE
+    between the quotation marks. See
+    [here](https://github.com/Chikachi/DiscordIntegration/wiki/How-to-get-a-token-and-channel-ID-for-Discord)
+    to find out how to get a channel ID.
 
 2. Run `npm run build` in the main nodecg-io directory.
 3. Edit the file `server/TIANE_config.json` on your TIANE server:
@@ -29,19 +46,13 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make TI
     }
     ```
 
-    Make sure `websocket` is either set to `enabled` or `secure` and set a port of your desire.
+    Make sure `websocket` is either set to `enabled` or `secure` and set a port
+    of your desire.
 
-4. Start nodecg with nodecg-io installed. The TIANE-Discord bundle is currently part of it, so it should also be loaded.
+4. In the NodeCG dashboard, create a new TIANE service instance.
 
-5. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-6. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-7. Create a new TIANE service instance using the left upper menu.
-
-8. Enter address of the TIANE-Server
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter host and port you just set in `server/TIANE_config.json` in this format:
+5. Enter address of the TIANE-Server. Enter host and port you just set in
+   `server/TIANE_config.json` in this format:
 
     ```json
     {
@@ -51,12 +62,10 @@ The TIANE-Discord example bundle in `samples/tiane-discord` shows how to make TI
 
     After entering it, click save.
 
-    _Note:_ If you don't see the editor on the right, try reloading the page.
+6. Create a new Discord service instance.
 
-9. Create a new Discord service instance. (See the [Discord Sample](discord.md) on how to do this)
+7. Set the sample's (`tiane-discord`) dependencies to be the newly created
+   service instances (of type `tiane` & `discord`).
 
-10. Set the created TIANE and Discord service instances to the service dependency of the TIANE-Discord bundle.
-
-    Select the TIANE-Discord bundle and the TIANE service in the left bottom menu and then select the service instance that should be used by the TIANE-Discord bundle (in this case the name of the previously created twitch instance). Then do the same for the discord bundle.
-
-11. Ping your discord bot in the channel you set in the first step and ask TIANE something.
+8. Ping your discord bot in the channel you set in the first step and ask TIANE
+   something.
