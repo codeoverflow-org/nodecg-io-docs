@@ -1,6 +1,6 @@
 # How to contribute
 
-There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
+There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions. You can also contribute to this [documentation](docs_setup.md).
 
 First you'll need an installation of nodecg-io. Please refer to the [installation guide](../getting_started/install.md) and create a development installation.
 The CLI asks you whether you want to clone the documentation. It's highly recommended that you do that and update the documentation as you add new services or features.
