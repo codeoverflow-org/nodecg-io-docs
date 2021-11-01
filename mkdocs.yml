@@ -56,6 +56,7 @@ nav:
           - Available services: services.md
           - AHK sample: samples/ahk.md
           - Art-Net sample: samples/artnet.md
+          - Atem sample: samples/atem.md
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
           - DBus: samples/dbus-ratbagd.md

@@ -37,6 +37,15 @@ See the [sample implementation](samples/artnet.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
 Depends on [artnet-protocol](https://www.npmjs.com/package/artnet-protocol) @ ^0.2.1 <br>
 
+## [nodecg-io-atem](https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-atem)
+
+**Allows you to communicate with atem protocol**
+
+See the [sample implementation](samples/atem.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
+Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^2.3.1 <br>
+
 ## [nodecg-io-curseforge](https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-curseforge)
 
 **A service to communicate with the CurseForge API.**
