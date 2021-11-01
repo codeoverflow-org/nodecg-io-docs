@@ -16,9 +16,11 @@ will also tell you how to log in and how to use the GUI.
 
 -   a Twitch oAuth-Key
 
-_Note:_ If you don't have such a key yet, you can generate it on
-<https://twitchapps.com/tmi/>. Just log into your Twitch account and copy the
-token.
+!!! NOTE
+
+    If you don't have such a key yet, you can generate it on
+    <https://twitchapps.com/tmi/>. Just log into your Twitch account and copy
+    the token.
 
 ### Configure the Twitch sample bundle
 

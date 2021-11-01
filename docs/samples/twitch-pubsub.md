@@ -15,9 +15,11 @@ will also tell you how to log in and how to use the GUI.
 
 -   A Twitch oAuth-Key
 
-_Note:_ If you don't have such a key yet, you can generate it on
-<https://twitchtokengenerator.com/>, select custom scope token and select these
-scopes: `channel_subscriptions`, `bits:read` and `channel:read:redemptions`
+!!! NOTE
+
+    If you don't have such a key yet, you can generate it on
+    <https://twitchtokengenerator.com/>, select custom scope token and select these
+    scopes: `channel_subscriptions`, `bits:read` and `channel:read:redemptions`
 
 ### Configure the Twitch PubSub sample bundle
 

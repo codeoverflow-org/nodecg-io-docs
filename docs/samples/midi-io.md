@@ -17,9 +17,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the midi-io sample bundle
 
-1. In NodeCG, create a new midi-input service instance.
+1.  In NodeCG, create a new midi-input service instance.
 
-2. Enter your device information:
+2.  Enter your device information:
 
     ```json
     {
@@ -27,23 +27,27 @@ will also tell you how to log in and how to use the GUI.
     }
     ```
 
-    After entering it, click save.  
-    **Note:** A script is provided to list all inputs and outputs. It can be run
-    from the sample directory `samples/midi-io` using the command
-    `npm run list`. The devices should be listed with their device names and
-    some other stuff.  
-    Under Linux this looks for example like this:
+    After entering it, click save.
 
-    ```
-    nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
-    ```
+    !!! NOTE
 
-3. Create a new midi-output service instance using the left upper menu.
+        A script is provided to list all inputs and outputs. It can be run
+        from the sample directory `samples/midi-input` using the command
+        `npm run list`. The devices should be listed with their device names
+        and some other stuff.
 
-4. Set the sample's (`midi-io`) dependencies to be the newly created service
-   instances (of type `midi-input` & `midi-output`).
+        Under Linux this looks for example like this:
 
-5. Check the NodeCG logs:
+        ```plain
+        nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
+        ```
+
+3.  Create a new midi-output service instance using the left upper menu.
+
+4.  Set the sample's (`midi-io`) dependencies to be the newly created service
+    instances (of type `midi-input` & `midi-output`).
+
+5.  Check the NodeCG logs:
 
     You should see an error or a success message and midi messages that are
     received and echoed back to the device that is configured. The messages are

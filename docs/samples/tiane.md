@@ -18,9 +18,11 @@ will also tell you how to log in and how to use the GUI.
     room client required)
 -   a Discord Bot token
 
-_Note:_ If you don't Discord Bot token yet, you can follow
-[this](https://discordjs.guide/preparations/setting-up-a-bot-application.html)
-guide.
+!!! NOTE
+
+    If you don't Discord Bot token yet, you can follow
+    [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html)
+    guide.
 
 ### Configure the TIANE sample bundle
 

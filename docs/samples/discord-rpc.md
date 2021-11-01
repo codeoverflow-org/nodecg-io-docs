@@ -16,8 +16,10 @@ will also tell you how to log in and how to use the GUI.
 
 -   A discord application with permissions `indentify` and `rpc`
 
-_Note:_ If you don't have an application yet, you can create one
-[here](https://discord.com/developers/applications)
+!!! Note
+
+    If you don't have an application yet, you can create one
+    [here](https://discord.com/developers/applications)
 
 ### Configure the Discord RPC sample bundle
 

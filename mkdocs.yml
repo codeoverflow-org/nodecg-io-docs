@@ -33,6 +33,7 @@ markdown_extensions:
     - pymdownx.tabbed
     - pymdownx.tasklist:
           custom_checkbox: true
+    - admonition
 
 nav:
     - Home: index.md
@@ -46,7 +47,10 @@ nav:
           - Basics: contribute/contribute.md
           - Create a Service: contribute/create_service.md
           - Create a sample bundle: contribute/create_sample.md
-          - Document a sample: contribute/sample_documentation.md
+          - Documentation:
+                - Setup: contribute/docs_setup.md
+                - Markdown: contribute/docs_markdown.md
+                - Document a sample: contribute/docs_sample.md
           - Contributors: contribute/contributors.md
     - Services:
           - Available services: services.md

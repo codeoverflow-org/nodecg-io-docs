@@ -19,3 +19,7 @@
 .md-typeset .task-list-control [type="checkbox"]:checked + .task-list-indicator::before {
     background: var(--md-primary-fg-color) !important;
 }
+
+.md-typeset pre > code {
+    white-space: pre-wrap;
+}

@@ -20,9 +20,11 @@ will also tell you how to log in and how to use the GUI.
     -   The _Access token_ here **oauthToken**
     -   The _Access token secret_ here **oauthTokenSecret**
 
-_Note:_ You will need a Twitter developer account
-(<https://developer.twitter.com/en/apply-for-access>) to get the necessary keys
-and tokens.
+!!! NOTE
+
+    You will need a Twitter developer account
+    (<https://developer.twitter.com/en/apply-for-access>) to get the necessary keys
+    and tokens.
 
 ### Configure the sample bundle
 

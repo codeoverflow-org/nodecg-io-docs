@@ -7,7 +7,7 @@
         "compatibleRange": "^1.1.1"
     },
     "scripts": {
-        "lint": "markdownlint -p ./.ignore-files.txt .",
-        "format": "prettier -w --ignore-path ./.ignore-files.txt **.md"
+        "lint": "markdownlint -p .prettierignore .",
+        "format": "prettier -w **.md"
     }
 }

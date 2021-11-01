@@ -1,0 +1,27 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "markdownExtended.disabledPlugins": "table-of-contents,footnote,abbr,deflist,sup,sub,checkbox,attrs,kbd,underline,multimd-table,container,mark",
+    "ltex.language": "en-GB",
+    "ltex.checkFrequency": "edit",
+    // This could cause more false positives
+    "ltex.additionalRules.enablePickyRules": true,
+    "ltex.hiddenFalsePositives": {
+        "en-GB": [
+            //  nodecg-io will always be written lowercease
+            "{'rule': 'UPPERCASE_SENTENCE_START', 'sentence': '^nodecg-io'}",
+            // Admonition markers are not recognised by the Markdown parser of LTeX
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^ATTENTION'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^CAUTION'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^DANGER'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^ERROR'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^EXAMPLE'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^HINT'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^IMPORTANT'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^NOTE'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^TIP'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^WARNING'}",
+            "{'rule': 'PUNCTUATION_PARAGRAPH_END', 'sentence': '^ADMONITION'}"
+        ]
+    }
+}

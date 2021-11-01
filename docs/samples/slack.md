@@ -16,8 +16,10 @@ will also tell you how to log in and how to use the GUI.
 
 -   a Slack Bot token
 
-_Note:_ If you don't have such a token yet, you can create your own app with
-token on [this](https://app.slack.com/apps-manage/) page.
+!!! NOTE
+
+    If you don't have such a token yet, you can create your own app with
+    token on [this](https://app.slack.com/apps-manage/) page.
 
 ### Configure the Slack sample bundle
 

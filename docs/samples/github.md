@@ -15,9 +15,11 @@ will also tell you how to log in and how to use the GUI.
 
 -   A GitHub token
 
-_Note:_ If you don't have a token yet, you can create one
-[here](https://github.com/settings/tokens/new). The token requires at least the
-`repo` scope.
+!!! Note
+
+    If you don't have a token yet, you can create one
+    [here](https://github.com/settings/tokens/new). The token requires at least the
+    `repo` scope.
 
 ### Configure the GitHub sample bundle
 

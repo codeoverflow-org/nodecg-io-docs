@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "jebbs.plantuml",
+        "valentjn.vscode-ltex",
+        "yzhang.markdown-all-in-one",
+        "jebbs.markdown-extended"
+    ]
+}

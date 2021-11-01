@@ -19,9 +19,9 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the serial sample bundle
 
-1. In NodeCG, create a new serial service instance.
+1.  In NodeCG, create a new serial service instance.
 
-2. Enter the information of your device:
+2.  Enter the information of your device:
 
     ```json
     {
@@ -41,15 +41,17 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-    _Note:_ If you want to list all connected devices you can open a terminal in
-    `nodecg-io-serial` and run `npm run list`. _Note:_ If you are using multiple
-    devices you might want to use the `pnpId`, since ports can change between
-    reboots!
+    !!! NOTE
 
-3. Set the sample's (`serial`) dependency to be the newly created service
-   instance (of type `serial`).
+        If you want to list all connected devices you can open a terminal in
+        `nodecg-io-serial` and run `npm run list`. _Note:_ If you are using multiple
+        devices you might want to use the `pnpId`, since ports can change between
+        reboots!
 
-4. Check the NodeCG logs:
+3.  Set the sample's (`serial`) dependency to be the newly created service
+    instance (of type `serial`).
+
+4.  Check the NodeCG logs:
 
     You should see an error or a success message and nodecg-io will send ping to
     the microcontroller every 10 seconds. The Arduino device will respond with

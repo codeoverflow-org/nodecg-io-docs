@@ -15,9 +15,11 @@ will also tell you how to log in and how to use the GUI.
 
 -   A database supported by [knex](https://knexjs.org/#Installation)
 
-_Note:_ If you don't have a database yet and just want to test things you can
-use sqlite3 and don't need to set up a database server. You can always move to a
-different database type later.
+!!! NOTE
+
+    If you don't have a database yet and just want to test things you can
+    use sqlite3 and don't need to set up a database server. You can always move
+    to a different database type later.
 
 ### Configure the SQL sample bundle
 

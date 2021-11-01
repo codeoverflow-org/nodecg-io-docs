@@ -19,8 +19,8 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the Shlink sample bundle
 
-1. In NodeCG, create a new Shlink service instance.
-2. Enter the configuration for Shlink:
+1.  In NodeCG, create a new Shlink service instance.
+2.  Enter the configuration for Shlink:
 
     ```json
     {
@@ -31,14 +31,16 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-3. Set the sample's (`shlink-list-short-urls`) dependency to be the newly
-   created service instance (of type `shlink`).
+3.  Set the sample's (`shlink-list-short-urls`) dependency to be the newly
+    created service instance (of type `shlink`).
 
-4. Check the NodeCG logs:
+4.  Check the NodeCG logs:
 
     You should see an error or a success message and the amount of configured
     short URLs on the Shlink server.
 
-    _Note:_ When listing short URLs — like this sample does — be aware that the
-    amount of short URLs might be limited by the
-    [API key role](https://shlink.io/documentation/api-docs/api-key-roles/).
+    !!! NOTE
+
+        When listing short URLs — like this sample does — be aware that the
+        amount of short URLs might be limited by the
+        [API key role](https://shlink.io/documentation/api-docs/api-key-roles/).

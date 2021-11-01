@@ -17,15 +17,17 @@ will also tell you how to log in and how to use the GUI.
 -   A Spotify account and a registered Spotify application and the associated
     client id/client secret.
 
-_Note:_ If you don't have a registered application, yet you can follow
-[this guide](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app).
-As a redirect URL use <http://localhost:9090/nodecg-io-spotify/spotifycallback>.
+!!! NOTE
+
+    If you don't have a registered application, yet you can follow
+    [this guide](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app).
+    As a redirect URL use <http://localhost:9090/nodecg-io-spotify/spotifycallback>.
 
 ### Configure the Spotify sample bundle
 
-1. In NodeCG, create a new Spotify service instance.
+1.  In NodeCG, create a new Spotify service instance.
 
-2. Enter your client ID and secret for Spotify:
+2.  Enter your client ID and secret for Spotify:
 
     ```json
     {
@@ -37,15 +39,17 @@ As a redirect URL use <http://localhost:9090/nodecg-io-spotify/spotifycallback>.
 
     After entering it, click save.
 
-    _Note:_ This sample requires the `user-read-playback-state` scope, but you
-    can require other scopes if you want to use functions that require them. A
-    list of all scopes can be found
-    [here](https://developer.spotify.com/documentation/general/guides/scopes/).
+    !!! NOTE
 
-3. Set the sample's (`spotify-current-song`) dependency to be the newly created
-   service instance (of type `spotify`).
+        This sample requires the `user-read-playback-state` scope, but you
+        can require other scopes if you want to use functions that require them. A
+        list of all scopes can be found
+        [here](https://developer.spotify.com/documentation/general/guides/scopes/).
 
-4. Check the NodeCG logs:
+3.  Set the sample's (`spotify-current-song`) dependency to be the newly created
+    service instance (of type `spotify`).
+
+4.  Check the NodeCG logs:
 
     You should see an error or a success message and the current playing song
     with names and artists.

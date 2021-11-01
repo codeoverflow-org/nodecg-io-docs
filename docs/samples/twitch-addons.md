@@ -16,10 +16,12 @@ will also tell you how to log in and how to use the GUI.
 
 -   A Twitch oAuth-Key
 
-_Note:_ If you don't have such a key yet, you can generate it on
-<https://twitchapps.com/tmi/>. Just log into your Twitch account and copy the
-token. You can also use any other token. There are no special scope requirements
-as the token is only used to convert channel names to IDs.
+!!! NOTE
+
+    If you don't have such a key yet, you can generate it on
+    <https://twitchapps.com/tmi/>. Just log into your Twitch account and copy
+    the token. You can also use any other token. There are no special scope
+    requirements as the token is only used to convert channel names to IDs.
 
 ### Configure the Twitch-Addons sample bundle
 

@@ -16,17 +16,21 @@ will also tell you how to log in and how to use the GUI.
 -   Google cloud API OAuth access (client ID, client Secret)
 -   Grant `YouTube Data API v3` access at the project's dashboard.
     -   Shortcut URL:
-        <https://console.developers.google.com/apis/library/youtube.googleapis.com?project=<project-id>>
+        `https://console.developers.google.com/apis/library/youtube.googleapis.com?project=<project-id>`.
 
-_Note:_ If you don't have such a key yet, you can generate them like
-[this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred).
-As redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
+!!! NOTE
+
+    If you don't have such a key yet, you can generate them like
+    [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred).
+    As redirect URI add:
+
+    <http://localhost:9090/nodecg-io-googleapis/oauth2callback>
 
 ### Configure the YouTube sample bundle
 
-1. In NodeCG, create a new googleapis service instance.
+1.  In NodeCG, create a new googleapis service instance.
 
-2. Enter your YouTube OAuth credentials:
+2.  Enter your YouTube OAuth credentials:
 
     ```json
     {
@@ -38,13 +42,15 @@ As redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
 
     After entering it, click save.
 
-    _Note:_ You can add multiple scopes if the googleapis instance is used for
-    multiple bundles.
+    !!! NOTE
 
-3. Set the sample's (`youtube-playlist`) dependency to be the newly created
-   service instance (of type `googleapis`).
+        You can add multiple scopes if the googleapis instance is used for
+        multiple bundles.
 
-4. Check the NodeCG logs:
+3.  Set the sample's (`youtube-playlist`) dependency to be the newly created
+    service instance (of type `googleapis`).
+
+4.  Check the NodeCG logs:
 
     You should see an error or a success message that is hardcoded in
     `samples/youtube-playlist/extension/index.ts`.
