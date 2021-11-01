@@ -91,6 +91,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://nodecg.io/DEV/samples/atem/</loc>
+         <lastmod>2021-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://nodecg.io/DEV/samples/curseforge/</loc>
          <lastmod>2021-11-01</lastmod>
          <changefreq>daily</changefreq>
