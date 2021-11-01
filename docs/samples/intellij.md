@@ -30,7 +30,7 @@ will also tell you how to log in and how to use the GUI.
 1. In NodeCG, create a new IntelliJ service instance.
 2. Enter the host and port of your IDE's HTTP server:
 
-    ```
+    ```json
     {
         "address": "127.0.0.1:19524"
     }

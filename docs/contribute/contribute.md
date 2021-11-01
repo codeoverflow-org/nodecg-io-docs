@@ -46,7 +46,7 @@ pressing <kbd>Ctrl</kbd> + <kbd>P</kbd> and then <kbd>!</kbd> (or
 
 You can also use you terminal to build nodecg-io:
 
-```
+```shell
 cd path/to/nodecg-io
 npm run build
 ```
@@ -56,7 +56,7 @@ To do a full rebuild instead of just an incremental build you can use
 
 The watch builder can be activated here too:
 
-```
+```shell
 cd path/to/nodecg-io
 npm run watch
 ```
@@ -86,7 +86,7 @@ start a Pull Request.
 Occasionally you will want to merge changes in the upstream repository (the
 official code repo) with your fork.
 
-```
+```shell
 cd path/to/nodecg-io
 git checkout master
 git pull https://github.com/codeoverflow-org/nodecg-io master
