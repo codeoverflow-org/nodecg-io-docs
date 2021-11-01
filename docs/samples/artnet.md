@@ -4,7 +4,7 @@ The Art-Net example bundle in `samples/artnet-console` demonstrates the ability
 send data via Art-Net to e.g., open lighting architecture or professional
 lighting equipment. Here is a guide to how to get it working. The underlying
 service is using
-[`jeffreykog/node-artnet-protocol`](https://github.com/jeffreykog/node-artnet-protocol)
+[jeffreykog/node-artnet-protocol](https://github.com/jeffreykog/node-artnet-protocol)
 as its library.
 
 ### Prerequisites
@@ -21,8 +21,8 @@ will also tell you how to log in and how to use the GUI.
 
 ### Configure the Art-Net sample bundle
 
-1. In NodeCG, create a new Art-Net service instance.
-2. Enter the host to witch the service should broadcast:
+1.  In NodeCG, create a new Art-Net service instance.
+2.  Enter the host to witch the service should broadcast:
 
     **Host**
 
@@ -36,12 +36,14 @@ will also tell you how to log in and how to use the GUI.
 
     After entering it, click save.
 
-    You may overwrite this broadcast address in code with
-    `client.bind("host address");`.
+    !!! INFO
 
-3. Set the sample's (`artnet-console`) dependency to be the newly created
-   service instance (of type `artnet`).
-4. Check the NodeCG logs. You should see data logged.
+        You may overwrite this broadcast address in code with
+        `#!ts client.bind("host address");`.
+
+3.  Set the sample's (`artnet-console`) dependency to be the newly created
+    service instance (of type `artnet`).
+4.  Check the NodeCG logs. You should see data logged.
 
 ### Explanations
 
@@ -85,12 +87,14 @@ setInterval(() => {
 }, 800);
 ```
 
-_Note_: Since neither this library nor nodecg-io does not yet contain an
-abstraction, so the data is sent to the timings set by the specification, you
-should respect this part of specification in **your implementation**.
+!!! NOTE
 
-> However, an input that is active but not changing, will re-transmit the last
-> valid ArtDmx packet at approximately 4-second intervals. (_Note_. In order to
-> converge the needs of Art- Net and sACN it is recommended that Art-Net devices
-> actually use a re-transmit time of 800mS to 1000mS).  
->  — [Art-Net 4 Specification p. 48](https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf)
+    Since neither this library nor nodecg-io does not yet contain an
+    abstraction, so the data is sent to the timings set by the specification, you
+    should respect this part of specification in **your implementation**.
+
+    > However, an input that is active but not changing, will re-transmit the last
+    > valid ArtDmx packet at approximately 4-second intervals. (_Note_. In order to
+    > converge the needs of Art- Net and sACN it is recommended that Art-Net devices
+    > actually use a re-transmit time of 800mS to 1000mS).
+    >  — [Art-Net 4 Specification p. 48](https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf)

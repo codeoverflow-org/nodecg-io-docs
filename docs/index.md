@@ -16,13 +16,20 @@
 
 ## About nodecg-io
 
-nodecg-io is the successor of [ChatOverflow](https://github.com/codeoverflow-org/chatoverflow). The aim of this bundle is to simplify the code and expand the number of integrated services. The main goal is to increase the number of supported APIs to save you development time.
+nodecg-io is the successor of
+[ChatOverflow](https://github.com/codeoverflow-org/chatoverflow). The aim of
+this bundle is to simplify the code and expand the number of integrated
+services. The main goal is to increase the number of supported APIs to save you
+development time.
 
 ## How to use nodecg-io
 
-If you want to use nodecg-io, you should note that it is only a framework for your bundle.
-So you need at least a basic knowledge of the programming language JavaScript or any other language that compiles to JavaScript like TypeScript.
-If that's no problem you can head over to the [installation guide](./getting_started/install.md) and take a look at the [available nodecg-io services](./services.md).
+If you want to use nodecg-io, you should note that it is only a framework for
+your bundle. So you need at least a basic knowledge of the programming language
+JavaScript or any other language that compiles to JavaScript like TypeScript. If
+that's no problem you can head over to the
+[installation guide](./getting_started/install.md) and take a look at the
+[available nodecg-io services](./services.md).
 
 ## Implemented Services and Interfaces
 
@@ -68,4 +75,7 @@ If that's no problem you can head over to the [installation guide](./getting_sta
 
 ## How to contribute
 
-If you want to contribute to this bundle you can implement one of those services or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before contributing head over to the [“How to contribute”](./contribute/contribute.md)-Guide.
+If you want to contribute to this bundle you can implement one of those services
+or fix an [issue](https://github.com/codeoverflow-org/nodecg-io/issues). Before
+contributing head over to the
+[“How to contribute”](./contribute/contribute.md)-Guide.

@@ -18,14 +18,18 @@ will also tell you how to log in and how to use the GUI.
     -   Shortcut URL:
         `https://console.developers.google.com/apis/library/sheets.googleapis.com?project=<project-id>`.
 
-_Note:_ If you don't have such a key yet, you can generate them like
-[this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred).
-For the redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callback>.
+!!! NOTE
+
+    If you don't have such a key yet, you can generate them like
+    [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred).
+    As redirect URI add:
+
+    <http://localhost:9090/nodecg-io-googleapis/oauth2callback>
 
 ### Configure the gsheets sample bundle
 
-1. In NodeCG, create a new googleapis service instance.
-2. Enter the credentials for googleapis:
+1.  In NodeCG, create a new googleapis service instance.
+2.  Enter the credentials for googleapis:
 
     ```json
     {
@@ -37,12 +41,14 @@ For the redirect URI add <http://localhost:9090/nodecg-io-googleapis/oauth2callb
 
     After entering it, click save.
 
-    _Note:_ You can add multiple scopes if the googleapis instance is used for
-    multiple bundles.
+    !!! Note
 
-3. Set the sample's (`gsheets`) dependency to be the newly created service
-   instance (of type `googleapis`).
-4. Check the NodeCG logs:
+        You can add multiple scopes if the googleapis instance is used for
+        multiple bundles.
+
+3.  Set the sample's (`gsheets`) dependency to be the newly created service
+    instance (of type `googleapis`).
+4.  Check the NodeCG logs:
 
     You should see an error or a success message that is hardcoded in
     `samples/gsheets/extension/index.ts`.

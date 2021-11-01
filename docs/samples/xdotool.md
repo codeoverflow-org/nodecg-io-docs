@@ -5,6 +5,10 @@ the xdotool service to execute
 [xdotool commands](http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html)
 by minimizing the currently active window.
 
+!!! ATTENTION
+
+    Only works on Linux
+
 ### Prerequisites
 
 You will need a working `nodecg-io` installation. If you have non yet take a
@@ -13,7 +17,7 @@ install this bundle, so take a look at the
 [“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
 will also tell you how to log in and how to use the GUI.
 
--   Xdotool installed (Only works on Linux)
+-   Xdotool installed
 
 ### Configure the Xdotool sample bundle
 

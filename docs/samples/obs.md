@@ -16,15 +16,17 @@ will also tell you how to log in and how to use the GUI.
 
 -   OBS with obs-websocket installed
 
-_Note:_ OBS is available [here](https://obsproject.com/de/download) and
-obs-websocket with install instructions is available
-[here](https://github.com/Palakis/obs-websocket/releases).
+!!! NOTE
+
+    OBS is available [here](https://obsproject.com/de/download) and
+    obs-websocket with install instructions is available
+    [here](https://github.com/Palakis/obs-websocket/releases).
 
 ### Configure the OBS sample bundle
 
-1. In NodeCG, create a new obs service instance.
+1.  In NodeCG, create a new obs service instance.
 
-2. Enter the configuration for obs:
+2.  Enter the configuration for obs:
 
     ```json
     {
@@ -34,15 +36,17 @@ obs-websocket with install instructions is available
     }
     ```
 
-    If you don't want to use a password, you can just remove the password
-    property from the config.
+    !!! INFO
+
+        If you don't want to use a password, you can just remove the password
+        property from the config.
 
     After entering it, click save.
 
-3. Set the sample's (`obs-scenelist`) dependency to be the newly created service
-   instance (of type `obs`).
+3.  Set the sample's (`obs-scenelist`) dependency to be the newly created
+    service instance (of type `obs`).
 
-4. Check the NodeCG logs:
+4.  Check the NodeCG logs:
 
     You should see an error or a success message and the names of all you scenes
     that you have set in OBS.

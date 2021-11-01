@@ -68,12 +68,14 @@ Syntax highlighting in fenced code blocks.
 
 ## [`pymdownx.superfences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)
 
-1.  Allowing the nesting of fences under blockquotes, lists, or other block elements.
-2.  Ability to specify custom fences to provide features like flowcharts, sequence diagrams, or other
-    custom blocks.
-3.  Allow disabling of indented code blocks in favour of only using the fenced variant (off by default).
-4.  Experimental feature that preserves tabs within a code block instead of converting them to spaces which is Python
-    Markdown's default behaviour.
+1.  Allowing the nesting of fences under blockquotes, lists, or other block
+    elements.
+2.  Ability to specify custom fences to provide features like flowcharts,
+    sequence diagrams, or other custom blocks.
+3.  Allow disabling of indented code blocks in favour of only using the fenced
+    variant (off by default).
+4.  Experimental feature that preserves tabs within a code block instead of
+    converting them to spaces which is Python Markdown's default behaviour.
 
 ## [`pymdownx.tabbed`](https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)
 
@@ -148,7 +150,9 @@ GFM style task lists
 ## [`admonition`](https://python-markdown.github.io/extensions/admonition/)
 
 > Possible types are:  
-> NOTE, SUMMARY, ABSTRACT, TLDR, INFO, TODO, TIP, HINT, SUCCESS, CHECK, DONE, QUESTION, HELP, FAQ, WARNING, ATTENTION, CAUTION, FAILURE, FAIL, MISSING, DANGER, ERROR, BUG, EXAMPLE, SNIPPET, QUOTE, CITE
+> NOTE, SUMMARY, ABSTRACT, TLDR, INFO, TODO, TIP, HINT, SUCCESS, CHECK, DONE,
+> QUESTION, HELP, FAQ, WARNING, ATTENTION, CAUTION, FAILURE, FAIL, MISSING,
+> DANGER, ERROR, BUG, EXAMPLE, SNIPPET, QUOTE, CITE
 
 !!! EXAMPLE "Inline Highlighted Code Example"
 

@@ -16,10 +16,12 @@ will also tell you how to log in and how to use the GUI.
 
 -   A Twitch oAuth-Key
 
-_Note:_ If you don't have such a key yet, you can generate it on
-<https://twitchtokengenerator.com/>, select custom scope token and select the
-scopes you need. For this sample you don't need any additional scopes, so you
-can leave everything off.
+!!! NOTE
+
+    If you don't have such a key yet, you can generate it on
+    <https://twitchtokengenerator.com/>, select custom scope token and select
+    the scopes you need. For this sample you don't need any additional scopes,
+    so you can leave everything off.
 
 ### Configure the Twitch API sample bundle
 

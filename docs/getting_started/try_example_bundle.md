@@ -3,9 +3,11 @@
 Trying one of the premade example bundles is a good way to get to know the
 framework and especially the selected service.
 
-> In case you installed the **production** branch of nodecg-io, you are out of
-> luck. Because the build process will cause problems if you just take one of
-> the samples and rebuild elsewhere.
+!!! ATTENTION
+
+    In case you installed the **production** branch of nodecg-io, you are out of
+    luck. Because the build process will cause problems if you just take one of the
+    samples and rebuild elsewhere.
 
 If you installed **dev** branch via the `nodecg-io-cli` and did not select the
 “use the samples”-option run `nodecg-io install` and select it.
@@ -28,7 +30,7 @@ the `Run and Debug` Explorer View:
 
 You may also launch NodeCG using your terminal with:
 
-<pre><b><span style="color:#1cdc9a">user@computer</span>:<spanstyle="color:#3daee9">~/nodecg</span></b>$ npm run start
+<pre><code><b><span style="color:#1cdc9a">user@computer</span>:<spanstyle="color:#3daee9">~/nodecg</span></b>$ npm run start
 
 > nodecg@1.8.1 start
 > node index.js
@@ -38,7 +40,7 @@ info: [nodecg-io-core] Minzig!
 
 // A whole host of logging output
 
-info: [nodecg/lib/server] NodeCG running on http://localhost:9090</pre>
+info: [nodecg/lib/server] NodeCG running on http://localhost:9090</code></pre>
 
 Now you can open the NodeCG dashboard (by default) under
 <http://localhost:9090>.
@@ -69,7 +71,7 @@ to arrange yourself with this one. So, to get started:
 ### In <span style="color:#b06770">pink</span>: NodeCG Tabs
 
 Here you will find every NodeCG-bundle that has a dashboard. Here you may select
-the [`nodecg-io-debug`](../samples/debug.md)-dashboard, if it is installed.
+the [nodecg-io-debug](../samples/debug.md)-dashboard, if it is installed.
 
 ### In <span style="color:#b6b61c">yellow</span>: Monaco editor
 
@@ -112,9 +114,12 @@ This section has three dropdowns:
 ### In <span style="color:#b71424">red</span>: Unset all Button
 
 This button will set the service instance for every bundle/service combination
-to none, effectively removing the access to every service from all bundles.  
-**Caution**: This can not be undone, and you will have to set up all the bundles
-again. _The service instances will be unaffected._
+to none, effectively removing the access to every service from all bundles.
+
+!!! DANGER
+
+    This can not be undone, and you will have to set up all the bundles
+    again. __The service instances will be unaffected.__
 
 ## Step 4: Configure the sample
 

@@ -16,9 +16,11 @@ will also tell you how to log in and how to use the GUI.
 
 -   A Discord Bot token
 
-_Note:_ If you don't have such a token yet, you can follow
-[this](https://discordjs.guide/preparations/setting-up-a-bot-application.html)
-guide.
+!!! Note
+
+    If you don't have such a token yet, you can follow
+    [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html)
+    guide.
 
 ### Configure the Discord sample bundle
 
