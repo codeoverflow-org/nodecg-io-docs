@@ -11,7 +11,7 @@ install this bundle, so take a look at the
 will also tell you how to log in and how to use the GUI.
 
 
-### Configure the AutoHotkey sample bundle
+### Configure the Atem sample bundle
 
 1. In NodeCG, create a new atem service instance.
 2. Enter the address and optional a port of the Atem server:
