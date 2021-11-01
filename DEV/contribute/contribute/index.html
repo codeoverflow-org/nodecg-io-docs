@@ -512,10 +512,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../sample_documentation/" class="md-nav__link">
+      <a href="../docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1502,58 +1563,93 @@
                 
                 
                 <h1 id="how-to-contribute">How to contribute</h1>
-<p>There are many ways to contribute to nodecg-io: logging bugs, submitting pull requests, reporting issues, and creating suggestions.</p>
-<p>First you'll need an installation of nodecg-io. Please refer to the <a href="../../getting_started/install/">installation guide</a> and create a development installation.
-The CLI asks you whether you want to clone the documentation. It's highly recommended that you do that and update the documentation as you add new services or features.
-To be able to create Pull Requests you should fork the corresponding repositories and add them as a remote (update URL for e.g., documentation repository):</p>
+<p>There are many ways to contribute to nodecg-io: logging bugs, submitting pull
+requests, reporting issues, and creating suggestions. You can also contribute to
+this <a href="../docs_setup/">documentation</a>.</p>
+<p>First you'll need an installation of nodecg-io. Please refer to the
+<a href="../../getting_started/install/">installation guide</a> and create a development
+installation. The CLI asks you whether you want to clone the documentation. It's
+highly recommended that you do that and update the documentation as you add new
+services or features. To be able to create Pull Requests you should fork the
+corresponding repositories and add them as a remote (update URL for e.g.,
+documentation repository):</p>
 <div class="highlight"><pre><span></span><code>git remote add fork https://github.com/<span class="o">[</span>YOUR_USERNAME<span class="o">]</span>/nodecg-io.git
 </code></pre></div>
-<p>Then you can create a new branch, do your changes, create commits and publish the branch to your fork using the following command:</p>
+<p>Then you can create a new branch, do your changes, create commits and publish
+the branch to your fork using the following command:</p>
 <div class="highlight"><pre><span></span><code>git push fork my-branch
 </code></pre></div>
 <h2 id="build">Build</h2>
 <h3 id="vs-code">VS Code</h3>
-<p>In Visual Studio Code you can start the build task with
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS).
-The incremental builder will do an initial full build.<br />
-The watch builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
-It will even stay running in the background if you close VS Code.
-You can resume it by starting the build task with
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again.<br />
-You can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd>) on macOS.<br />
-Errors and warnings will be shown in the status bar at the bottom left of the editor. You can view the error list using <code>View | Errors and Warnings</code> or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS)</p>
+<p>In Visual Studio Code you can start the build task with <kbd>Ctrl</kbd> +
+<kbd>Shift</kbd> + <kbd>B</kbd> (<kbd>CMD</kbd> + <kbd>Shift</kbd> +
+<kbd>B</kbd> on macOS). The incremental builder will do an initial full build.<br />
+The watch builder will watch for file changes and compile those changes
+incrementally, giving you a fast, iterative coding experience. It will even stay
+running in the background if you close VS Code. You can resume it by starting
+the build task with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>
+(<kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>) again.<br />
+You can kill the build task by pressing <kbd>Ctrl</kbd> + <kbd>D</kbd> in the
+task terminal (<kbd>CMD</kbd> + <kbd>D</kbd>) on macOS.<br />
+Errors and warnings will be shown in the status bar at the bottom left of the
+editor. You can view the error list using <code>View | Errors and Warnings</code> or
+pressing <kbd>Ctrl</kbd> + <kbd>P</kbd> and then <kbd>!</kbd> (or
+<kbd>CMD</kbd> + <kbd>P</kbd> and <kbd>!</kbd> on macOS).</p>
 <h3 id="terminal">Terminal</h3>
 <p>You can also use you terminal to build nodecg-io:</p>
-<div class="highlight"><pre><span></span><code>cd path/to/nodecg-io
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> path/to/nodecg-io
 npm run build
 </code></pre></div>
-<p>To do a full rebuild instead of just an incremental build you can use <code>npm run rebuild</code>.</p>
+<p>To do a full rebuild instead of just an incremental build you can use
+<code>npm run rebuild</code>.</p>
 <p>The watch builder can be activated here too:</p>
-<div class="highlight"><pre><span></span><code>cd path/to/nodecg-io
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> path/to/nodecg-io
 npm run watch
 </code></pre></div>
 <h2 id="run">Run</h2>
 <p>To test the changes you simply need to start/restart NodeCG.</p>
 <h2 id="adding-dependencies-to-packages">Adding dependencies to packages</h2>
-<p>This project uses <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces/">npm workspaces</a> to manage our monorepo, and most importantly link all our packages together.
-Because of linking you should not use <code>npm install xyz --save</code> to add dependencies because npm can't get the development version of internal packages like <code>nodecg-io-core</code>. Doing so will result in an error and break the link.
-Instead, you should edit the <code>package.json</code> directly using a text editor and the run <code>npm install</code> in the repository root.</p>
+<p>This project uses
+<a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces/">npm workspaces</a> to manage
+our monorepo, and most importantly link all our packages together. Because of
+linking you should not use <code>npm install xyz --save</code> to add dependencies because
+npm can't get the development version of internal packages like
+<code>nodecg-io-core</code>. Doing so will result in an error and break the link. Instead,
+you should edit the <code>package.json</code> directly using a text editor and the run
+<code>npm install</code> in the repository root.</p>
 <h2 id="open-a-pull-request">Open a Pull Request</h2>
-<p>Once you have implemented your feature or fixed a bug push it to your fork and start a Pull Request.</p>
+<p>Once you have implemented your feature or fixed a bug push it to your fork and
+start a Pull Request.</p>
 <h2 id="merge-upstream-changes">Merge Upstream Changes</h2>
-<p>Occasionally you will want to merge changes in the upstream repository (the official code repo) with your fork.</p>
-<div class="highlight"><pre><span></span><code>cd path/to/nodecg-io
+<p>Occasionally you will want to merge changes in the upstream repository (the
+official code repo) with your fork.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> path/to/nodecg-io
 git checkout master
 git pull https://github.com/codeoverflow-org/nodecg-io master
 </code></pre></div>
 <p>Manage any merge conflicts, commit them, and then push them to your fork.</p>
-<p>You may also occasionally need to merge upstream master in a pull request. To do that make the above to update your local master, and then merge your local master into your PR branch.</p>
+<p>You may also occasionally need to merge upstream master in a pull request. To do
+that make the above to update your local master, and then merge your local
+master into your PR branch.</p>
 <h3 id="where-to-contribute">Where to Contribute</h3>
-<p>After cloning and building the repo, check out the <a href="https://github.com/codeoverflow-org/nodecg-io/issues">issues list</a>. Issues labelled <a href="https://github.com/codeoverflow-org/nodecg-io/labels/help%20wanted"><code>help wanted</code></a> are good issues to submit a PR for. Issues labelled <a href="https://github.com/codeoverflow-org/nodecg-io/labels/good%20first%20issue"><code>good first issue</code></a> are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.</p>
+<p>After cloning and building the repo, check out the
+<a href="https://github.com/codeoverflow-org/nodecg-io/issues">issues list</a>. Issues
+labelled
+<a href="https://github.com/codeoverflow-org/nodecg-io/labels/help%20wanted">help wanted</a>
+are good issues to submit a PR for. Issues labelled
+<a href="https://github.com/codeoverflow-org/nodecg-io/labels/good%20first%20issue">good first issue</a>
+are great candidates to pick up if you are in the code for the first time. If
+you are contributing significant changes, please discuss with the assignee of
+the issue first before starting to work on the issue. You may also contribute to
+this <a href="../docs_setup/">documentation</a>.</p>
 <h2 id="suggestions">Suggestions</h2>
-<p>We're also interested in your feedback. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly.</p>
+<p>We're also interested in your feedback. You can submit a suggestion or feature
+request through the issue tracker. To make this process more effective, we're
+asking that these include more information to help define them more clearly.</p>
 <h2 id="discussion-etiquette">Discussion Etiquette</h2>
-<p>In order to keep the conversation clear and transparent, please limit discussion to English and keep things on topic with the issue. Be considerate to others and try to be courteous and professional at all times.</p>
+<p>In order to keep the conversation clear and transparent, please limit discussion
+to English and keep things on topic with the issue. Be considerate to others and
+try to be courteous and professional at all times.</p>
                 
               
               

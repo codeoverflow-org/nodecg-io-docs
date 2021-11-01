@@ -393,10 +393,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../contribute/sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1436,14 +1497,17 @@ will also tell you how to log in and how to use the GUI.</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
-<p><em>Note:</em> If you want to list all connected devices you can open a terminal in
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to list all connected devices you can open a terminal in
 <code>nodecg-io-serial</code> and run <code>npm run list</code>. <em>Note:</em> If you are using multiple
 devices you might want to use the <code>pnpId</code>, since ports can change between
 reboots!</p>
+</div>
 </li>
 <li>
 <p>Set the sample's (<code>serial</code>) dependency to be the newly created service
-   instance (of type <code>serial</code>).</p>
+    instance (of type <code>serial</code>).</p>
 </li>
 <li>
 <p>Check the NodeCG logs:</p>

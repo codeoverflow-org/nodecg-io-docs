@@ -485,10 +485,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../contribute/sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1448,18 +1509,23 @@
                 
                 
                 <h1 id="migrating-your-existing-bundle-to-nodecg-io">Migrating your existing bundle to nodecg-io</h1>
-<p>This guide explains to you how to migrate an existing nodecg bundle that already meets your requirements to use nodecg-io.
-nodecg-io manages service configuration and authentication, so your bundle doesn't have to bother with it.</p>
-<p>If you are lucky and used the same library as we do for the service you want to migrate, nodecg-io is a drop-in replacement just doing authentication and configuration.
-If you have used another library, you'll have to do a little more work to migrate to the library that our service uses.
-In that case make sure that the migration is worth the effort.
-You can use nodecg-io for one service and use your own library of choice for other services if you like to.</p>
+<p>This guide explains to you how to migrate an existing NodeCG bundle that already
+meets your requirements to use nodecg-io. nodecg-io manages service
+configuration and authentication, so your bundle doesn't have to bother with it.</p>
+<p>If you are lucky and used the same library as we do for the service you want to
+migrate, nodecg-io is a drop-in replacement just doing authentication and
+configuration. If you have used another library, you'll have to do a little more
+work to migrate to the library that our service uses. In that case make sure
+that the migration is worth the effort. You can use nodecg-io for one service
+and use your own library of choice for other services if you like to.</p>
 <h2 id="install-nodecg-io-core">Install <code>nodecg-io-core</code></h2>
-<p>The first thing you need to do is to install <code>nodecg-io-core</code>. You can do this simply using this npm command:</p>
+<p>The first thing you need to do is to install <code>nodecg-io-core</code>. You can do this
+simply using this npm command:</p>
 <div class="highlight"><pre><span></span><code>npm install nodecg-io-core
 </code></pre></div>
 <h2 id="import-requireservice">Import <code>requireService</code></h2>
-<p>Now that you have <code>nodecg-io-core</code> installed in your bundle you can import the <code>requireService</code> function that it exposes:</p>
+<p>Now that you have <code>nodecg-io-core</code> installed in your bundle you can import the
+<code>requireService</code> function that it exposes:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">TypeScript/ES Modules</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
 </code></pre></div>
@@ -1470,21 +1536,28 @@ You can use nodecg-io for one service and use your own library of choice for oth
 </div>
 </div>
 <h2 id="import-service-type-typescript-only">Import Service type (TypeScript only)</h2>
-<p>If you're using TypeScript, you'll also need to install the package of the service that you want to use.
-You need it to be able to import its type for type safety.</p>
-<p>This example uses <code>twitch-chat</code> as an example, but you can just replace it with the name of the service you need.</p>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TypeScript</label><div class="tabbed-content">
+<p>If you're using TypeScript, you'll also need to install the package of the
+service that you want to use. You need it to be able to import its type for type
+safety.</p>
+<p>This example uses <code>twitch-chat</code> as an example, but you can just replace it with
+the name of the service you need.</p>
 <div class="highlight"><pre><span></span><code>npm install nodecg-io-twitch-chat
 </code></pre></div>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">TwitchChatServiceClient</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-twitch-chat&quot;</span><span class="p">;</span>
 </code></pre></div>
 </div>
 </div>
-<p>Note: You can get the name of the type by using autocomplete in your editor or by looking it up in the service sample.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can get the name of the type by using autocomplete in your editor or by
+looking it up in the service sample.</p>
+</div>
 <h2 id="require-the-service">Require the service</h2>
-<p>Now you can finally tell nodecg-io that you want to get access to a service using the <code>requireService</code> function.
-You'll have to pass your nodecg instance which is used to identify your bundle and the name of the service you want.
-In case of TypeScript you'll also need to provide the type of the service.</p>
+<p>Now you can finally tell nodecg-io that you want to get access to a service
+using the <code>requireService</code> function. You'll have to pass your NodeCG instance
+which is used to identify your bundle and the name of the service you want. In
+case of TypeScript you'll also need to provide the type of the service.</p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">twitchChat</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TwitchChatServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span>
 </code></pre></div>
@@ -1496,8 +1569,12 @@ In case of TypeScript you'll also need to provide the type of the service.</p>
 </div>
 <h2 id="accessing-the-service-client">Accessing the service client</h2>
 <h3 id="using-onavailable-and-onunavailable-handlers">Using <code>onAvailable</code> and <code>onUnavailable</code> handlers</h3>
-<p>You can set up handlers that are executed when the user assigns a service instance to your bundle, removes the assignment or when the service client got updated in some way.</p>
-<p>Handlers added with <code>onAvailable</code> will get called if there was a change and you got a client:</p>
+<p>You can set up handlers that are executed when the user assigns a service
+instance to your bundle, removes the assignment or when the service client got
+updated in some way.</p>
+<p>Handlers added with <code>onAvailable</code> will get called if there was a change, and you
+got a client:</p>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="c1">// This is the variable with the return value of requireService().</span>
 <span class="c1">// You may want to change the variable name for the service you are using.</span>
 <span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -1505,20 +1582,32 @@ In case of TypeScript you'll also need to provide the type of the service.</p>
     <span class="c1">// You can use the passed client in here to e.g. setup handlers on the client</span>
 <span class="p">});</span>
 </code></pre></div>
-<p><code>onAvailable</code> is especially useful to add event handlers to clients.
-E.g., if you want to react to donations or chat messages you can add event handlers for these here.</p>
-<p>Handlers added with <code>onUnavailable</code> will get called if your bundle was not assigned a service instance or if there was an error in service client creation:</p>
+</div>
+</div>
+<p><code>onAvailable</code> is especially useful to add event handlers to clients. E.g., if
+you want to react to donations or chat messages you can add event handlers for
+these here.</p>
+<p>Handlers added with <code>onUnavailable</code> will get called if the user unassigned your
+bundle from service instance or if there was an error in service client
+creation:</p>
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was unset&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div>
+</div>
+</div>
 <h3 id="using-getclient">Using <code>getClient</code></h3>
 <p>Instead of callbacks you can also get access to the client directly:</p>
+<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">twitchChatClient</span> <span class="o">=</span> <span class="nx">twitchChat</span><span class="p">.</span><span class="nx">getClient</span><span class="p">();</span>
 </code></pre></div>
-<p><code>getClient</code> will return the client if your bundle has an assigned service instance that has produced a service client without error
-and will return <code>undefined</code> otherwise.
-This is useful for when you want to use the client due to some external event or from <code>onAvailable</code> handlers of other services.</p>
+</div>
+</div>
+<p><code>getClient</code> will return the client if your bundle has an assigned service
+instance that has produced a service client without error and will return
+<code>undefined</code> otherwise. This is useful for when you want to use the client due to
+some external event or from <code>onAvailable</code> handlers of other services.</p>
                 
               
               

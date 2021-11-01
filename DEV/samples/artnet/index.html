@@ -393,10 +393,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../contribute/sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1446,7 +1507,7 @@
 send data via Art-Net to e.g., open lighting architecture or professional
 lighting equipment. Here is a guide to how to get it working. The underlying
 service is using
-<a href="https://github.com/jeffreykog/node-artnet-protocol"><code>jeffreykog/node-artnet-protocol</code></a>
+<a href="https://github.com/jeffreykog/node-artnet-protocol">jeffreykog/node-artnet-protocol</a>
 as its library.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
@@ -1470,12 +1531,15 @@ will also tell you how to log in and how to use the GUI.</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>After entering it, click save.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>You may overwrite this broadcast address in code with
-<code>client.bind("host address");</code>.</p>
+<code class="highlight"><span class="nx">client</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;host address&quot;</span><span class="p">);</span></code>.</p>
+</div>
 </li>
 <li>
 <p>Set the sample's (<code>artnet-console</code>) dependency to be the newly created
-   service instance (of type <code>artnet</code>).</p>
+    service instance (of type <code>artnet</code>).</p>
 </li>
 <li>Check the NodeCG logs. You should see data logged.</li>
 </ol>
@@ -1494,12 +1558,7 @@ will also tell you how to log in and how to use the GUI.</p>
     <span class="nx">physical</span>: <span class="kt">number</span><span class="p">;</span>
     <span class="nx">universe</span>: <span class="kt">number</span><span class="p">;</span>
     <span class="nx">data</span>: <span class="kt">number</span><span class="p">[];</span>
-    <span class="kr">constructor</span><span class="p">(</span>
-        <span class="nx">sequence</span>: <span class="kt">number</span><span class="p">,</span>
-        <span class="nx">physical</span>: <span class="kt">number</span><span class="p">,</span>
-        <span class="nx">universe</span>: <span class="kt">number</span><span class="p">,</span>
-        <span class="nx">data</span>: <span class="kt">number</span><span class="p">[]</span>
-    <span class="p">);</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">sequence</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">physical</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">universe</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">data</span>: <span class="kt">number</span><span class="p">[]);</span>
     <span class="nx">isSequenceEnabled</span><span class="p">()</span><span class="o">:</span> <span class="kt">boolean</span><span class="p">;</span>
     <span class="k">static</span> <span class="nx">decode</span><span class="p">(</span><span class="nx">data</span>: <span class="kt">Buffer</span><span class="p">)</span><span class="o">:</span> <span class="nx">ArtDmx</span><span class="p">;</span>
     <span class="nx">toString</span><span class="p">()</span><span class="o">:</span> <span class="kt">string</span><span class="p">;</span>
@@ -1516,16 +1575,19 @@ will also tell you how to log in and how to use the GUI.</p>
     <span class="p">);</span>
 <span class="p">},</span> <span class="mf">800</span><span class="p">);</span>
 </code></pre></div>
-<p><em>Note</em>: Since neither this library nor nodecg-io does not yet contain an
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since neither this library nor nodecg-io does not yet contain an
 abstraction, so the data is sent to the timings set by the specification, you
 should respect this part of specification in <strong>your implementation</strong>.</p>
 <blockquote>
 <p>However, an input that is active but not changing, will re-transmit the last
 valid ArtDmx packet at approximately 4-second intervals. (<em>Note</em>. In order to
 converge the needs of Art- Net and sACN it is recommended that Art-Net devices
-actually use a re-transmit time of 800mS to 1000mS).<br />
+actually use a re-transmit time of 800mS to 1000mS).
  — <a href="https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf">Art-Net 4 Specification p. 48</a></p>
 </blockquote>
+</div>
                 
               
               

@@ -410,23 +410,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-service" class="md-nav__link">
-    Create a service
+  <a href="#create-the-service-files" class="md-nav__link">
+    Create the service files
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Create the service files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#using-the-script-recommended" class="md-nav__link">
     Using the script (recommended)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#create-the-files-manually" class="md-nav__link">
     Create the files manually
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -479,10 +485,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../sample_documentation/" class="md-nav__link">
+      <a href="../docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1377,23 +1444,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-service" class="md-nav__link">
-    Create a service
+  <a href="#create-the-service-files" class="md-nav__link">
+    Create the service files
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Create the service files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#using-the-script-recommended" class="md-nav__link">
     Using the script (recommended)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#create-the-files-manually" class="md-nav__link">
     Create the files manually
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1436,22 +1509,27 @@
                 
                 
                 <h1 id="create-a-service-integration">Create a service integration</h1>
-<p>This guide helps you to create a service integration such as <em>twitch-chat</em> or <em>discord</em></p>
+<p>This guide helps you to create a service integration such as <em>twitch-chat</em> or
+<em>discord</em></p>
 <h2 id="find-a-javascript-library">Find a JavaScript library</h2>
-<p>Go to <a href="https://www.npmjs.com/">npmjs.com</a> and look whether there's already a package that wraps around the API of your service. If there's no such package, you need to create one yourself. This process is not described here. You may read the
+<p>Go to <a href="https://www.npmjs.com/">npmjs.com</a> and look whether there's already a
+package that wraps around the API of your service. If there's no such package,
+you need to create one yourself. This is not described here. You may read the
 <a href="https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry">“Contributing packages to the registry” from the npm Docs</a>.</p>
-<h2 id="create-a-service">Create a service</h2>
-<p>To create the service you can either use a premade Python 3 script in <code>.scripts/create-service.py</code>, or create the files manually.</p>
-<h2 id="using-the-script-recommended">Using the script (recommended)</h2>
+<h2 id="create-the-service-files">Create the service files</h2>
+<p>To create the service you can either use a premade Python 3 script in
+<code>.scripts/create-service.py</code>, or create the files manually.</p>
+<h3 id="using-the-script-recommended">Using the script (recommended)</h3>
 <p>What this script does:</p>
 <ul>
 <li>It creates all required files for a new nodecg-io service</li>
-<li>It copies version and dependency information (e.g., for typescript) from <code>noodecg-io-template</code></li>
+<li>It copies version and dependency information (e.g., for typescript) from
+    <code>noodecg-io-template</code></li>
 </ul>
-<p>It'll also create a sample and the files for the docs
-Requirements:</p>
+<p>It'll also create a sample and the files for the docs Requirements:</p>
 <ul>
-<li>python3 in your PATH</li>
+<li><code>python3</code> in your <code>$PATH</code> (see
+    <a href="https://wiki.python.org/moin/BeginnersGuide/Download">install page</a>)</li>
 <li>executed from root of nodecg-io repo</li>
 </ul>
 <p>The script waits for your input for each of those fields:</p>
@@ -1462,17 +1540,27 @@ Author name: &lt;author here&gt;
 Author url: &lt;url here&gt;
 Sample name: &lt;name here&gt;
 </code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>Now the script will rebuild your environment.</p>
-<h2 id="create-the-files-manually">Create the files manually</h2>
+</div>
+<h3 id="create-the-files-manually">Create the files manually</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>From here you will have to replace:</p>
 <ul>
 <li><code>YourServiceName</code> to your service's name in <a href="https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class">PascalCase</a>.</li>
 <li><code>yourServiceName</code> to your service's name in <a href="https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function">carmelCase</a>.</li>
-<li><code>your-service-name</code> to your service's name with only lowercase and hyphens (<code>-</code>) for example: ws-server.</li>
+<li><code>your-service-name</code> to your service's name with only lowercase and
+    hyphens (<code>-</code>) for example: <code>ws-server</code>.</li>
 </ul>
-<p>Now you need to create a package. You should call it <code>nodecg-io-your-service-name</code>.</p>
-<p>First create a directory with that name in <code>/services/</code> and put file called <code>package.json</code> into it.</p>
+</div>
+<p>Now you need to create a package. You should call it
+<code>nodecg-io-your-service-name</code>.</p>
+<p>First create a directory with that name in <code>/services/</code> and put file called
+<code>package.json</code> into it.</p>
 <p>Put the following into it:</p>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">package.json</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;nodecg-io-&lt;your-service-name&gt;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
@@ -1509,7 +1597,11 @@ Sample name: &lt;name here&gt;
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Next you need to put a file called <code>tsconfig.json</code> next to your <code>package.json</code>. The <code>tsconfig.json</code> should look like this:</p>
+</div>
+</div>
+<p>Next you need to put a file called <code>tsconfig.json</code> next to your <code>package.json</code>.
+The <code>tsconfig.json</code> should look like this:</p>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">tsconfig.json</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;extends&quot;</span><span class="p">:</span> <span class="s2">&quot;../../tsconfig.common.json&quot;</span><span class="p">,</span>
     <span class="nt">&quot;references&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1519,11 +1611,20 @@ Sample name: &lt;name here&gt;
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+</div>
+</div>
 <p>Now run <code>npm install</code> in the repository root.</p>
 <h2 id="create-a-configuration-schema">Create a configuration schema</h2>
-<p>Next create a file called <code>your-service-name-schame.json</code>. This is a JSON schema file that indicates how the configuration for your service should be structured. If you need help here take a look at <a href="https://json-schema.org/understanding-json-schema/">this</a> online resource and the schema-files of the other service implementations.</p>
+<p>Next create a file called <code>your-service-name-schame.json</code>. This is a JSON schema
+file that indicates how the configuration for your service should be structured.
+If you need help here take a look at
+<a href="https://json-schema.org/understanding-json-schema/">this</a> online resource and
+the schema-files of the other service implementations.</p>
 <h2 id="create-the-service">Create the service</h2>
-<p>Create a file called <code>index.ts</code> in a folder called <code>extension</code> inside your service's directory. You can then paste the following code and fill in your code instead of the comments.</p>
+<p>Create a file called <code>index.ts</code> in a folder called <code>extension</code> inside your
+service's directory. You can then paste the following code and fill in your code
+instead of the comments.</p>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">index.ts</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="c1">// TODO: Rename all occurrences of &quot;YourServiceName&quot; in PascalCase</span>
 <span class="c1">// TODO: Rename all occurrences of &quot;yourServiceName&quot; in carmelCase</span>
 <span class="c1">// TODO: Rename all occurrences of &quot;your-service-name&quot; with only lowercase and hyphens ( - )</span>
@@ -1547,18 +1648,30 @@ Sample name: &lt;name here&gt;
 <span class="k">export</span> <span class="kr">type</span> <span class="nx">YourServiceNameServiceClient</span> <span class="o">=</span> <span class="nx">ServiceClient</span><span class="o">&lt;</span><span class="nx">ServiceClass</span><span class="o">&gt;</span><span class="p">;</span>
 
 <span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="ow">new</span> <span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span> <span class="nx">__dirname</span><span class="p">,</span> <span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
+    <span class="ow">new</span> <span class="nx">YourServiceNameService</span><span class="p">(</span>
+        <span class="nx">nodecg</span><span class="p">,</span>
+        <span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span>
+        <span class="nx">__dirname</span><span class="p">,</span>
+        <span class="s2">&quot;../your-service-name-schema.json&quot;</span>
+    <span class="p">).</span><span class="nx">register</span><span class="p">();</span>
 <span class="p">};</span>
 
-<span class="kd">class</span> <span class="nx">YourServiceNameService</span> <span class="k">extends</span> <span class="nx">ServiceBundle</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span> <span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;</span> <span class="p">{</span>
-    <span class="k">async</span> <span class="nx">validateConfig</span><span class="p">(</span><span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span><span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
+<span class="kd">class</span> <span class="nx">YourServiceNameService</span> <span class="k">extends</span> <span class="nx">ServiceBundle</span><span class="o">&lt;</span>
+    <span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span>
+    <span class="nx">YourServiceNameServiceClient</span>
+<span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">async</span> <span class="nx">validateConfig</span><span class="p">(</span>
+        <span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span>
+    <span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
         <span class="c1">// TODO You can validate your config here. If this gets called, the schema is correct.</span>
         <span class="c1">// You should for example check whether oauth keys are valid and servers are online here</span>
         <span class="c1">// If everything is good return &#39;emptySuccess()&#39;</span>
         <span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span>
     <span class="p">}</span>
 
-    <span class="k">async</span> <span class="nx">createClient</span><span class="p">(</span><span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span><span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
+    <span class="k">async</span> <span class="nx">createClient</span><span class="p">(</span>
+        <span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span>
+    <span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
         <span class="c1">// TODO Here you should return a &lt;Your service name&gt;ServiceClient that is exposed to bundles.</span>
         <span class="c1">// Or create a instance of your class if you have any simplifications and return that.</span>
         <span class="c1">// If everything is good return &#39;success(client)&#39;</span>
@@ -1570,19 +1683,32 @@ Sample name: &lt;name here&gt;
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Now run <code>npm run build</code> in the repository root, start NodeCG and test your service out.</p>
+</div>
 <h2 id="next-steps">Next steps</h2>
 <p>You could <a href="../create_sample/">create a sample bundle</a> for your brand-new service.</p>
-<p>If you don't do so, make sure you add a placeholder file called <code>&lt;the services name&gt;.md</code> in <code>docs/samples</code> in your fork of the documentation.</p>
+<p>If you don't do so, make sure you add a placeholder file called
+<code>&lt;the services name&gt;.md</code> in <code>docs/samples</code> in your fork of the documentation.</p>
 <p>The file should look like this:</p>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">the-service-name.md</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>&lt;!-- Marker for build.py that there&#39;s no sample bundle. Remove this if you created one --&gt;
 
 <span class="gu">## Using the &lt;the services name&gt; sample bundle</span>
 
-No sample bundle for service <span class="sb">`&lt;the services name&gt;`</span>.  
+No sample bundle for service <span class="sb">`&lt;the services name&gt;`</span>.
 [<span class="nt">You can help us and create one!</span>](<span class="na">https://github.com/codeoverflow-org/nodecg-io/blob/master/docs/docs/contribute.md</span>)
 </code></pre></div>
-<p>Do not remove the marker in the first line until there is a sample bundle, and it is documented there. Don't forget to add this file to <code>mkdocs.yml</code>.</p>
+</div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Do not remove the marker in the first line until there is a sample bundle,
+and it is documented there. Don't forget to add this file to <code>mkdocs.yml</code>.</p>
+</div>
                 
               
               

@@ -437,10 +437,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../sample_documentation/" class="md-nav__link">
+      <a href="../docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1352,10 +1413,12 @@
                 
                 
                 <h1 id="create-a-sample-bundle">Create a sample bundle</h1>
-<p>A sample should have the same name as the service, but it may include a short description in the name after the service name as well.
-E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
-<p>Create a folder in <code>samples</code> named after the sample and add a <code>package.json</code> and a <code>tsconfig.json</code>:</p>
-<p><code>package.json</code></p>
+<p>A sample should have the same name as the service, but it may include a short
+description in the name after the service name as well. E.g. <code>twitch-chat</code> or
+<code>obs-scenelist</code>.</p>
+<p>Create a folder in <code>samples</code> named after the sample and add a <code>package.json</code> and
+a <code>tsconfig.json</code>:</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">package.json</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;the sample name&gt;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;private&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -1381,7 +1444,8 @@ E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><code>tsconfig.json</code></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">tsconfig.json</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;extends&quot;</span><span class="p">:</span> <span class="s2">&quot;../../tsconfig.common.json&quot;</span><span class="p">,</span>
     <span class="nt">&quot;references&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1394,24 +1458,35 @@ E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Now you can create a file called <code>extension/index.ts</code>. Here's a template. Make sure you replace all the comments with your own code.</p>
+</div>
+</div>
+<p>Now you can create a file called <code>extension/index.ts</code>. Here's a template. Make
+sure you replace all the comments with your own code.</p>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">index.ts</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">TheServicesExportedClient</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-&lt;the services name&gt;&quot;</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">TheServicesExportedClient</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-&lt;the services  name&gt;&quot;</span><span class="p">;</span>
 
 <span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Sample bundle for &lt;the-service-name&gt; started&quot;</span><span class="p">);</span>
 
-    <span class="kd">const</span> <span class="nx">service</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TheServicesExportedClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;&lt;the-service-name&gt;&quot;</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">service</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TheServicesExportedClient</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="nx">nodecg</span><span class="p">,</span>
+        <span class="s2">&quot;&lt;the-service-name&gt;&quot;</span>
+    <span class="p">);</span>
     <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
         <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been updated.&quot;</span><span class="p">);</span>
 
         <span class="c1">// TODO do something with the client to demonstrate the functionality.</span>
     <span class="p">});</span>
 
-    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been unset.&quot;</span><span class="p">));</span>
+    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span>
+        <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been unset.&quot;</span><span class="p">)</span>
+    <span class="p">);</span>
 <span class="p">};</span>
 </code></pre></div>
+</div>
+</div>
 <h2 id="next-steps">Next steps</h2>
 <p>You could <a href="./">add documentation</a> for the sample bundle.</p>
                 
@@ -1449,13 +1524,13 @@ E.g. <code>twitch-chat</code> or <code>obs-scenelist</code>.</p>
       
       
         
-        <a href="../sample_documentation/" class="md-footer__link md-footer__link--next" aria-label="Next: Document a sample" rel="next">
+        <a href="../docs_setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Setup" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Document a sample
+              Setup
             </div>
           </div>
           <div class="md-footer__button md-icon">

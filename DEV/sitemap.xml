@@ -36,7 +36,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nodecg.io/DEV/contribute/sample_documentation/</loc>
+         <loc>https://nodecg.io/DEV/contribute/docs_markdown/</loc>
+         <lastmod>2021-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nodecg.io/DEV/contribute/docs_sample/</loc>
+         <lastmod>2021-11-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nodecg.io/DEV/contribute/docs_setup/</loc>
          <lastmod>2021-11-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

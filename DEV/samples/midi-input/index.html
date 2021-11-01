@@ -393,10 +393,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../contribute/sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1413,18 +1474,21 @@ will also tell you how to log in and how to use the GUI.</p>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;name&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>After entering it, click save.<br />
-<strong>Note:</strong> A script is provided to list all inputs and outputs. It can be run
+<p>After entering it, click save.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A script is provided to list all inputs and outputs. It can be run
 from the sample directory <code>samples/midi-input</code> using the command
-<code>npm run list</code>. The devices should be listed with their device names and
-some other stuff.<br />
-Under Linux this looks for example like this:</p>
+<code>npm run list</code>. The devices should be listed with their device names
+and some other stuff.</p>
+<p>Under Linux this looks for example like this:</p>
 <div class="highlight"><pre><span></span><code>nanoKONTROL2:nanoKONTROL2 MIDI 1 28:0
 </code></pre></div>
+</div>
 </li>
 <li>
 <p>Set the sample's (<code>midi-input</code>) dependency to be the newly created service
-   instance (of type <code>midi-input</code>).</p>
+    instance (of type <code>midi-input</code>).</p>
 </li>
 <li>
 <p>Check the NodeCG logs:</p>

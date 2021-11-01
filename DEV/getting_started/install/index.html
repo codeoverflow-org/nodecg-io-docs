@@ -304,33 +304,6 @@
     Native Build Tools
   </a>
   
-    <nav class="md-nav" aria-label="Native Build Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    Linux
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
-    macOS
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -352,20 +325,6 @@
   
     <nav class="md-nav" aria-label="Install nodecg-io using the nodecg-io CLI">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#production-install" class="md-nav__link">
-    Production install
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-install" class="md-nav__link">
-    Development install
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#continue-reading" class="md-nav__link">
@@ -532,10 +491,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../contribute/sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1442,33 +1462,6 @@
     Native Build Tools
   </a>
   
-    <nav class="md-nav" aria-label="Native Build Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    Linux
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
-    macOS
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1490,20 +1483,6 @@
   
     <nav class="md-nav" aria-label="Install nodecg-io using the nodecg-io CLI">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#production-install" class="md-nav__link">
-    Production install
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-install" class="md-nav__link">
-    Development install
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#continue-reading" class="md-nav__link">
@@ -1561,51 +1540,60 @@ modules or if you want to install a development version.</p>
 that this list might not be up-to-date.</p>
 <p>Here's how to install the native build tools on the most popular operating
 systems, if you need them:</p>
-<h4 id="windows">Windows</h4>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Windows</label><div class="tabbed-content">
 <p>For Windows, you'll need the Visual Studio Build Tools, if you have Visual
 Studio installed you should already have them. If you don't have Visual Studio
 just install the Visual Studio Build Tools by running the following command as
 an <strong>Administrator</strong>:</p>
 <div class="highlight"><pre><span></span><code>npm install -g windows-build-tools
 </code></pre></div>
-<h4 id="linux">Linux</h4>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Linux</label><div class="tabbed-content">
 <p>For Linux, you'll need a C++ compiler and some other packages. On Ubuntu/Debian
 based operating systems run the following command:</p>
 <div class="highlight"><pre><span></span><code>sudo apt install build-essential libusb-1.0-0-dev libasound2-dev libudev-dev
 </code></pre></div>
 <p>For other Linux distros you'll need the corresponding packages, just search on
-the internet how the packages are named for your specific distro.</p>
-<h4 id="macos">macOS</h4>
+the internet for the packages on your specific distro.</p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">macOS</label><div class="tabbed-content">
 <p>For macOS, you'll need the Xcode command line tools. To install them run the
 following command:</p>
 <div class="highlight"><pre><span></span><code>xcode-select --install
 </code></pre></div>
+</div>
+</div>
 <h2 id="install-the-nodecg-io-cli">Install the nodecg-io CLI</h2>
 <p>Install the nodecg-io CLI using the following command:</p>
 <div class="highlight"><pre><span></span><code>npm install -g nodecg-io-cli
 </code></pre></div>
-<p><em>Note:</em> If you are running on Linux, you may need to use <code>sudo</code> if your npm
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are running on Linux, you may need to use <code>sudo</code> if your npm
 installation uses a non-writeable path (default on Ubuntu apt packages, usually
-does not apply to packages installed using <a href="https://github.com/nvm-sh/nvm">nvm</a>)</p>
+does not apply to packages installed using
+<a href="https://github.com/nvm-sh/nvm">nvm</a>)</p>
+</div>
 <h2 id="install-nodecg-io-using-the-nodecg-io-cli">Install nodecg-io using the nodecg-io CLI</h2>
-<blockquote>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>nodecg-io will always be installed into a <code>nodecg-io/</code> directory inside your
 NodeCG installation so that your bundles and all bundles from nodecg-io are
 separated. The CLI will add this path to the loaded bundles in your NodeCG
 configuration automatically, you don't need to worry about it.</p>
-</blockquote>
+</div>
 <p>With the nodecg-io CLI installed you can run this command inside a NodeCG
 installation to install nodecg-io:</p>
 <div class="highlight"><pre><span></span><code>$ nodecg-io install
 Installing nodecg-io...
 </code></pre></div>
 <p>You will get a prompt which asks you which version you want to install:</p>
-<pre><b><span style="color:#1cdc9a">user@computer</span>:<span   style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+<pre><code><b><span style="color:#1cdc9a">user@computer</span>:<span   style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
 Installing nodecg-io...
 Detected nodecg installation at /home/user/nodecg.
 <span style="color:#11d116">?</span> <b>Which version do you want to install?</b> (Use arrow keys) 
   development 
-<span style="color:#1abc9c">❯ 0.1</span></pre>
+<span style="color:#1abc9c">❯ 0.1</span></code></pre>
 
 <p>There are two possible installation types:</p>
 <ul>
@@ -1625,18 +1613,14 @@ Detected nodecg installation at /home/user/nodecg.
 </ul>
 <p>For starters, we recommend using the development version, so you may try our
 premade examples.</p>
-<h3 id="production-install">Production install</h3>
-<details>
-  <summary>Click to see more!</summary>
-
-Because you selected a production install you may select the services to be
-included in this next step:
-
-<pre><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Production install</label><div class="tabbed-content">
+<p>Because you selected a production install you may select the services to be
+included in this next step:</p>
+<p><pre><code><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
 Installing nodecg-io...
 Detected nodecg installation at /home/user/nodecg.
 <span style="color:#11d116">?</span> <b>Which version do you want to install?</b> <span style="color:#1abc9c">0.1</span>
-<span style="color:#11d116">?</span> <b>Which services do you want to use?</b> (Press <span style="color:#16a085">&lt;space&gt;</span> to select, <span    style="color:#16a085">&lt;a&gt;</span> to toggle all,
+<span style="color:#11d116">?</span> <b>Which services do you want to use?</b> (Press <span style="color:#16a085">&lt;space&gt;</span> to select, <span     style="color:#16a085">&lt;a&gt;</span> to toggle all,
 <span style="color:#16a085">&lt;i&gt;</span> to invert selection, and <span style="color:#16a085">&lt;enter&gt;</span> to proceed)
 <span style="color:#1abc9c">❯◯ ahk</span>
  ◯ android
@@ -1645,42 +1629,33 @@ Detected nodecg installation at /home/user/nodecg.
  ◯ intellij
  ◯ irc
  ◯ midi-input
-(Move up and down to reveal more choices)</pre>
-
-If you want to every change your nodecg-io installation to add/remove a service
-or change the version, you can always re-run `nodecg-io install`. If a nodecg-io
-installation is found, its options will be preselected in the prompt. Re-running
-`nodecg-io install` will also update all packages to the latest patch version.
-
-</details>
-
-<h3 id="development-install">Development install</h3>
-<details>
-  <summary>Click to see more!</summary>
-
-Because you selected a production install you may select to use the samples and
-documentation to be included in these next steps:
-
-<pre><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+(Move up and down to reveal more choices)</code></pre></p>
+<p>If you want to every change your nodecg-io installation to add/remove a service
+or change the version, you can always re-run <code>nodecg-io install</code>. If it finds a
+nodecg-io installation, its options will be preselected in the prompt.
+Re-running <code>nodecg-io install</code> will also update all packages to the latest patch
+version.</p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Development install</label><div class="tabbed-content">
+<p>Because you selected a production install you may select to use the samples and
+documentation to be included in these next steps:</p>
+<p><pre><code><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
 Installing nodecg-io...
 Detected nodecg installation at /home/user/nodecg.
 <span style="color:#11d116">?</span> <b>Which version do you want to install?</b> <span style="color:#1abc9c">development</span>
-<span style="color:#11d116">?</span> <b>Would you like to use the provided samples?</b> (y/N) </pre>
-
-<pre><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
+<span style="color:#11d116">?</span> <b>Would you like to use the provided samples?</b> (y/N) </code></pre></p>
+<p><pre><code><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
 Installing nodecg-io...
 Detected nodecg installation at /home/user/nodecg.
 <span style="color:#11d116">?</span> <b>Which version do you want to install?</b> <span style="color:#1abc9c">development</span>
 <span style="color:#11d116">?</span> <b>Would you like to use the provided samples?</b> <span style="color:#1abc9c">No</span>
-<span style="color:#11d116">?</span> <b>Would you like to clone the documentation?</b> (y/N) </pre>
-
-If you want to every change your nodecg-io installation to add/remove a service
-or change the version, you can always re-run `nodecg-io install`. If a nodecg-io
-installation is found, its options will be preselected in the prompt. Re-running
-`nodecg-io install` will also pull the repository and rebuild it.
-
-</details>
-
+<span style="color:#11d116">?</span> <b>Would you like to clone the documentation?</b> (y/N) </code></pre></p>
+<p>If you want to every change your nodecg-io installation to add/remove a service
+or change the version, you can always re-run <code>nodecg-io install</code>. If it finds a
+nodecg-io installation, its options will be preselected in the prompt.
+Re-running <code>nodecg-io install</code> will also pull the repository and rebuild it.</p>
+</div>
+</div>
 <h3 id="continue-reading">Continue reading</h3>
 <p>There are many example bundles premade for most services, so you may take a look
 at the

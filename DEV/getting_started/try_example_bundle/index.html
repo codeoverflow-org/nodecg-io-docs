@@ -519,10 +519,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../contribute/sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1518,11 +1579,12 @@
                 <h1 id="try-an-included-sample">Try an included sample</h1>
 <p>Trying one of the premade example bundles is a good way to get to know the
 framework and especially the selected service.</p>
-<blockquote>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p>In case you installed the <strong>production</strong> branch of nodecg-io, you are out of
-luck. Because the build process will cause problems if you just take one of
-the samples and rebuild elsewhere.</p>
-</blockquote>
+luck. Because the build process will cause problems if you just take one of the
+samples and rebuild elsewhere.</p>
+</div>
 <p>If you installed <strong>dev</strong> branch via the <code>nodecg-io-cli</code> and did not select the
 “use the samples”-option run <code>nodecg-io install</code> and select it.</p>
 <p>In case you cloned the repository directly from GitHub, everything should be
@@ -1535,7 +1597,7 @@ the <code>Run and Debug</code> Explorer View:</p>
 <p><img alt="Run and Debug Explorer View" src="../../assets/run_from_vscode.png" /></p>
 <h3 id="using-the-terminal">Using the terminal</h3>
 <p>You may also launch NodeCG using your terminal with:</p>
-<pre><b><span style="color:#1cdc9a">user@computer</span>:<spanstyle="color:#3daee9">~/nodecg</span></b>$ npm run start
+<pre><code><b><span style="color:#1cdc9a">user@computer</span>:<spanstyle="color:#3daee9">~/nodecg</span></b>$ npm run start
 
 > nodecg@1.8.1 start
 > node index.js
@@ -1545,7 +1607,7 @@ info: [nodecg-io-core] Minzig!
 
 // A whole host of logging output
 
-info: [nodecg/lib/server] NodeCG running on http://localhost:9090</pre>
+info: [nodecg/lib/server] NodeCG running on http://localhost:9090</code></pre>
 
 <p>Now you can open the NodeCG dashboard (by default) under
 <a href="http://localhost:9090">http://localhost:9090</a>.</p>
@@ -1564,7 +1626,7 @@ to arrange yourself with this one. So, to get started:</p>
 <p><img alt="nodcg-io colour coded" src="../../assets/nodcg-io-colored.png" /></p>
 <h3 id="in-pink-nodecg-tabs">In <span style="color:#b06770">pink</span>: NodeCG Tabs</h3>
 <p>Here you will find every NodeCG-bundle that has a dashboard. Here you may select
-the <a href="../../samples/debug/"><code>nodecg-io-debug</code></a>-dashboard, if it is installed.</p>
+the <a href="../../samples/debug/">nodecg-io-debug</a>-dashboard, if it is installed.</p>
 <h3 id="in-yellow-monaco-editor">In <span style="color:#b6b61c">yellow</span>: Monaco editor</h3>
 <p>It is basically only a text editor which is used to save configurations for
 service instances.</p>
@@ -1594,9 +1656,12 @@ monaco, then click <code>'Save'</code>.</p>
 </ol>
 <h3 id="in-red-unset-all-button">In <span style="color:#b71424">red</span>: Unset all Button</h3>
 <p>This button will set the service instance for every bundle/service combination
-to none, effectively removing the access to every service from all bundles.<br />
-<strong>Caution</strong>: This can not be undone, and you will have to set up all the bundles
-again. <em>The service instances will be unaffected.</em></p>
+to none, effectively removing the access to every service from all bundles.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This can not be undone, and you will have to set up all the bundles
+again. <strong>The service instances will be unaffected.</strong></p>
+</div>
 <h2 id="step-4-configure-the-sample">Step 4: Configure the sample</h2>
 <p>The configurations for every sample bundle differ too greatly from each other to
 be included here, so you have to take a look at the documentation for your

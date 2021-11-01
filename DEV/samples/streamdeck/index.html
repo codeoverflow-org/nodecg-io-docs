@@ -393,10 +393,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../contribute/sample_documentation/" class="md-nav__link">
+      <a href="../../contribute/docs_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_markdown/" class="md-nav__link">
+        Markdown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/docs_sample/" class="md-nav__link">
         Document a sample
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1057,7 +1118,7 @@
         
           <li class="md-nav__item">
   <a href="#configure-the-streamdeck-rainbow-bundle" class="md-nav__link">
-    Configure the Streamdeck Rainbow bundle
+    Configure the StreamDeck Rainbow bundle
   </a>
   
 </li>
@@ -1358,7 +1419,7 @@
         
           <li class="md-nav__item">
   <a href="#configure-the-streamdeck-rainbow-bundle" class="md-nav__link">
-    Configure the Streamdeck Rainbow bundle
+    Configure the StreamDeck Rainbow bundle
   </a>
   
 </li>
@@ -1402,7 +1463,7 @@ will also tell you how to log in and how to use the GUI.</p>
 <p>Follow the instructions listed under Manual Installation
 <a href="https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md">here</a>.
 Everything after the <code>sudo udevadm</code> command can be omitted.</p>
-<h3 id="configure-the-streamdeck-rainbow-bundle">Configure the Streamdeck Rainbow bundle</h3>
+<h3 id="configure-the-streamdeck-rainbow-bundle">Configure the StreamDeck Rainbow bundle</h3>
 <ol>
 <li>
 <p>In NodeCG, create a new StreamDeck service instance.</p>
@@ -1413,12 +1474,15 @@ Everything after the <code>sudo udevadm</code> command can be omitted.</p>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p><code>default</code> tells the bundle to automatically find a StreamDeck. If you use
 multiple StreamDecks, you need to put in an ID here.</p>
+</div>
 </li>
 <li>
 <p>Set the sample's (<code>streamdeck-rainbow</code>) dependency to be the newly created
-   service instance (of type <code>streamdeck</code>).</p>
+    service instance (of type <code>streamdeck</code>).</p>
 </li>
 <li>
 <p>Watch your streamdeck.</p>
