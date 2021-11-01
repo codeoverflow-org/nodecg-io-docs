@@ -24,6 +24,8 @@ FontStyle Underline
 [<u>get-stream] as get_stream <<lib>> [[https://www.npmjs.com/package/get-stream]]
 [<u>nodecg-io-artnet] as services_nodecg_io_artnet <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-artnet]]
 [<u>artnet-protocol] as artnet_protocol <<lib>> [[https://www.npmjs.com/package/artnet-protocol]]
+[<u>nodecg-io-atem] as services_nodecg_io_atem <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-atem]]
+[<u>atem-connection] as atem_connection <<lib>> [[https://www.npmjs.com/package/atem-connection]]
 [<u>nodecg-io-curseforge] as services_nodecg_io_curseforge <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-curseforge]]
 [<u>nodecg-io-dbus] as services_nodecg_io_dbus <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-dbus]]
 [<u>dbus-next] as dbus_next <<lib>> [[https://www.npmjs.com/package/dbus-next]]
@@ -114,6 +116,8 @@ services_nodecg_io_android ...> get_stream
 services_nodecg_io_android --> nodecg_io_core
 services_nodecg_io_artnet --> nodecg_io_core
 services_nodecg_io_artnet ...> artnet_protocol
+services_nodecg_io_atem ...> atem_connection
+services_nodecg_io_atem --> nodecg_io_core
 services_nodecg_io_curseforge ...> node_fetch
 services_nodecg_io_curseforge --> nodecg_io_core
 services_nodecg_io_dbus --> nodecg_io_core
