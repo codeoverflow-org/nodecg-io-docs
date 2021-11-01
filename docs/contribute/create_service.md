@@ -4,7 +4,7 @@ This guide helps you to create a service integration such as _twitch-chat_ or _d
 
 ## Find a JavaScript library
 
-Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a package that wraps around the API of your service. If there's no such package, you need to create one yourself. This process is not described here. You may read the
+Go to [npmjs.com](https://www.npmjs.com/) and look whether there's already a package that wraps around the API of your service. If there's no such package, you need to create one yourself. This is not described here. You may read the
 [“Contributing packages to the registry” from the npm Docs](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
 
 ## Create a service
@@ -41,9 +41,9 @@ Now the script will rebuild your environment.
 
 From here you will have to replace:
 
--   `YourServiceName` to your service's name in [PascalCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class).
--   `yourServiceName` to your service's name in [carmelCase](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function).
--   `your-service-name` to your service's name with only lowercase and hyphens (`-`) for example: ws-server.
+-   `YourServiceName` to your service's name in [`PascalCase`](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#class).
+-   `yourServiceName` to your service's name in [`carmelCase`](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md#variable-and-function).
+-   `your-service-name` to your service's name with only lowercase and hyphens (`-`) for example: `ws-server`.
 
 Now you need to create a package. You should call it `nodecg-io-your-service-name`.
 

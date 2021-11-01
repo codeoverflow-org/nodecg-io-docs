@@ -16,7 +16,7 @@ will also tell you how to log in and how to use the GUI.
 -   Google cloud API OAuth access (client ID, client Secret)
 -   Grant `YouTube Data API v3` access at the project's dashboard.
     -   Shortcut URL:
-        <https://console.developers.google.com/apis/library/youtube.googleapis.com?project=<project-id>>
+        `https://console.developers.google.com/apis/library/youtube.googleapis.com?project=<project-id>`.
 
 _Note:_ If you don't have such a key yet, you can generate them like
 [this](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred).

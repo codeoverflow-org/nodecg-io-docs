@@ -1,6 +1,6 @@
 nodecg-io has a steadily growing and improving documentation. We are using
 [Markdown](https://en.wikipedia.org/wiki/Markdown) to describe the content and
-mkdocs for the deployment to the webpage (<https://nodecg.io>). If you want to
+[mkdocs](https://www.mkdocs.org/) for the deployment to the webpage (<https://nodecg.io>). If you want to
 get to know the standard Markdown syntax, take a look at this
 [guide](https://www.markdownguide.org/). We also use many plugins, so you may
 take a look at a curated list of [examples](docs_markdown.md) of the extended syntax.
@@ -39,7 +39,7 @@ git clone https://github.com/<your-user-name>/nodecg-io-docs.git
 
 ## Install dependencies to use the preview
 
-You will need a Python 3 installed. You will also need to install mkdocs with pip:
+You will need a Python 3 installed. You will also need to install `mkdocs` with pip:
 
 ```shell
 pip install -r requirements.txt

@@ -8,7 +8,7 @@ Think of what services your bundle needs. Take a look at the [service list](../s
 
 Automatically generating a bundle that uses nodecg-io requires that you have the nodecg-io CLI installed. A guide on how to do this is inside the [installation guide](./install.md). Also note that this currently only works when you have installed a release version, not development versions.
 
-To start run this command while being inside your nodecg installation:
+To start run this command while being inside your NodeCG installation:
 
 ```shell
 nodecg-io generate
@@ -41,4 +41,4 @@ A couple of steps you may want to do after generating a bundle:
 
 ## Share it!
 
-If you share your work others might find it useful and get happy with it. We made nodecg-io for you, and the nodecg people made nodecg for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.
+If you share your work others might find it useful and get happy with it. We made nodecg-io for you, and the NodeCG people made NodeCG for you. Many people spent much time for you to create cool content that easy and if you shared your work others could create good content more easily as well.

@@ -64,12 +64,7 @@ declare class ArtDmx {
     physical: number;
     universe: number;
     data: number[];
-    constructor(
-        sequence: number,
-        physical: number,
-        universe: number,
-        data: number[]
-    );
+    constructor(sequence: number, physical: number, universe: number, data: number[]);
     isSequenceEnabled(): boolean;
     static decode(data: Buffer): ArtDmx;
     toString(): string;

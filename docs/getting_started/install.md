@@ -47,7 +47,7 @@ sudo apt install build-essential libusb-1.0-0-dev libasound2-dev libudev-dev
 ```
 
 For other Linux distros you'll need the corresponding packages, just search on
-the internet how the packages are named for your specific distro.
+the internet for the packages on your specific distro.
 
 #### macOS
 
@@ -68,7 +68,7 @@ npm install -g nodecg-io-cli
 
 _Note:_ If you are running on Linux, you may need to use `sudo` if your npm
 installation uses a non-writeable path (default on Ubuntu apt packages, usually
-does not apply to packages installed using [nvm](https://github.com/nvm-sh/nvm))
+does not apply to packages installed using [`nvm`](https://github.com/nvm-sh/nvm))
 
 ## Install nodecg-io using the nodecg-io CLI
 
@@ -134,8 +134,8 @@ Detected nodecg installation at /home/user/nodecg.
 (Move up and down to reveal more choices)</pre>
 
 If you want to every change your nodecg-io installation to add/remove a service
-or change the version, you can always re-run `nodecg-io install`. If a nodecg-io
-installation is found, its options will be preselected in the prompt. Re-running
+or change the version, you can always re-run `nodecg-io install`. If it finds a nodecg-io
+installation, its options will be preselected in the prompt. Re-running
 `nodecg-io install` will also update all packages to the latest patch version.
 
 </details>
@@ -162,8 +162,8 @@ Detected nodecg installation at /home/user/nodecg.
 <span style="color:#11d116">?</span> <b>Would you like to clone the documentation?</b> (y/N) </pre>
 
 If you want to every change your nodecg-io installation to add/remove a service
-or change the version, you can always re-run `nodecg-io install`. If a nodecg-io
-installation is found, its options will be preselected in the prompt. Re-running
+or change the version, you can always re-run `nodecg-io install`. If it finds a nodecg-io
+installation, its options will be preselected in the prompt. Re-running
 `nodecg-io install` will also pull the repository and rebuild it.
 
 </details>

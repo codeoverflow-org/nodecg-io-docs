@@ -21,14 +21,14 @@ git push fork my-branch
 ### VS Code
 
 In Visual Studio Code you can start the build task with
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS).
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (<kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on macOS).
 The incremental builder will do an initial full build.  
 The watch builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
 It will even stay running in the background if you close VS Code.
 You can resume it by starting the build task with
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again.  
-You can kill the build task by pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd>) on macOS.  
-Errors and warnings will be shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS)
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (<kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>) again.  
+You can kill the build task by pressing <kbd>Ctrl</kbd> + <kbd>D</kbd> in the task terminal (<kbd>CMD</kbd> + <kbd>D</kbd>) on macOS.  
+Errors and warnings will be shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd> + <kbd>P</kbd> and then <kbd>!</kbd> (or <kbd><kbd>CMD</kbd> + <kbd>P</kbd></kbd> and <kbd>!</kbd> on macOS).
 
 ### Terminal
 

@@ -1,6 +1,6 @@
 ## Using the RCON sample bundle
 
-The rcon sample bundle in `samples/rcon-minecraft` shows how to send a command
+The RCON sample bundle in `samples/rcon-minecraft` shows how to send a command
 to a Minecraft server.
 
 ### Prerequisites
@@ -15,11 +15,11 @@ will also tell you how to log in and how to use the GUI.
 
 -   A working [Minecraft](https://minecraft.net) server.
 
-### Configure the rcon sample bundle
+### Configure the RCON sample bundle
 
-1. In NodeCG, create a new rcon service instance.
+1. In NodeCG, create a new RCON service instance.
 
-2. Enter the host, port, and password of the rcon connection. This can be found
+2. Enter the host, port, and password of the RCON connection. This can be found
    in the `server.properties` file (`rcon.port`, `rcon.password`):
 
     ```json

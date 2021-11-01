@@ -1,6 +1,6 @@
 # Migrating your existing bundle to nodecg-io
 
-This guide explains to you how to migrate an existing nodecg bundle that already meets your requirements to use nodecg-io.
+This guide explains to you how to migrate an existing NodeCG bundle that already meets your requirements to use nodecg-io.
 nodecg-io manages service configuration and authentication, so your bundle doesn't have to bother with it.
 
 If you are lucky and used the same library as we do for the service you want to migrate, nodecg-io is a drop-in replacement just doing authentication and configuration.
@@ -54,7 +54,7 @@ Note: You can get the name of the type by using autocomplete in your editor or b
 ## Require the service
 
 Now you can finally tell nodecg-io that you want to get access to a service using the `requireService` function.
-You'll have to pass your nodecg instance which is used to identify your bundle and the name of the service you want.
+You'll have to pass your NodeCG instance which is used to identify your bundle and the name of the service you want.
 In case of TypeScript you'll also need to provide the type of the service.
 
 === "TypeScript"
@@ -75,7 +75,7 @@ In case of TypeScript you'll also need to provide the type of the service.
 
 You can set up handlers that are executed when the user assigns a service instance to your bundle, removes the assignment or when the service client got updated in some way.
 
-Handlers added with `onAvailable` will get called if there was a change and you got a client:
+Handlers added with `onAvailable` will get called if there was a change, and you got a client:
 
 ```typescript
 // This is the variable with the return value of requireService().
@@ -89,7 +89,7 @@ twitchChat.onAvailable((client) => {
 `onAvailable` is especially useful to add event handlers to clients.
 E.g., if you want to react to donations or chat messages you can add event handlers for these here.
 
-Handlers added with `onUnavailable` will get called if your bundle was not assigned a service instance or if there was an error in service client creation:
+Handlers added with `onUnavailable` will get called if the user unassigned your bundle from service instance or if there was an error in service client creation:
 
 ```typescript
 twitchChat.onUnavailable(() => {

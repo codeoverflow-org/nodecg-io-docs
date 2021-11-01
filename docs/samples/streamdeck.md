@@ -20,7 +20,7 @@ Follow the instructions listed under Manual Installation
 [here](https://github.com/timothycrosley/streamdeck-ui/blob/master/README.md).
 Everything after the `sudo udevadm` command can be omitted.
 
-### Configure the Streamdeck Rainbow bundle
+### Configure the StreamDeck Rainbow bundle
 
 1. In NodeCG, create a new StreamDeck service instance.
 
