@@ -4,22 +4,20 @@ The elgato-light example bundle in `samples/elgato-light` demonstrates the abili
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   at least one elgato keylight or lightstrip
 
 ### Configure the elgato-light sample bundle
 
-1. Start nodecg with nodecg-io installed. The elgato-light sample bundle is currently part of it so it should also be loaded.
-
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new elgato-light service instance using the left upper menu.
-
-5. Enter configuration:
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter the IP address to your light and the type (`KeyLight` or `LightStrip`) in monaco (the text-editor on the right) in this format:
+1. In NodeCG, create a new elgato-light service instance.
+2. Enter your IP address of your light and the type (`KeyLight` or `LightStrip`):
 
     ```json
     {
@@ -39,12 +37,8 @@ The elgato-light example bundle in `samples/elgato-light` demonstrates the abili
 
     After entering it, click save.
 
-    _Note:_ If you don't see monaco on the right, try reloading the page.
+3. Set the sample's (`elgato-light`) dependency to be the newly created
+   service instance (of type `elgato-light`).
+4. Check the NodeCG logs:
 
-6. Set the created elgato-light service instance to the service dependency of the elgato-light sample bundle.
-
-    Select the elgato-light example bundle and the elgato-light service in the left bottom menu and then select the service instance that should be used by the elgato-light example bundle (in this case the name of the previously created elagto-light instance).
-
-7. Check the nodecg logs
-
-    Your lights should blink for three seconds and you should see the current brightness in the nodecg logs.
+    Your lights should blink for three seconds and you should see the current brightness in the NodeCG logs.
