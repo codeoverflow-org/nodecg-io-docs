@@ -64,6 +64,7 @@ nav:
           - Discord:
                 - Discord API sample: samples/discord.md
                 - Discord RPC sample: samples/discord-rpc.md
+          - Elgato Light sample: samples/elgato-light.md
           - GitHub sample: samples/github.md
           - Googleapis:
                 - GSheets sample: samples/gsheets.md
