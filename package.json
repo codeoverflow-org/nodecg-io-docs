@@ -5,5 +5,9 @@
     "private": true,
     "nodecg": {
         "compatibleRange": "^1.1.1"
+    },
+    "scripts": {
+        "lint": "markdownlint -p .prettierignore .",
+        "format": "prettier -w **.md"
     }
 }

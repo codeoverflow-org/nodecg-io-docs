@@ -1,27 +1,30 @@
 ## Using the Discord RPC sample bundle
 
-The discord-rpc example bundle in `samples/discord-rpc` demonstrates the ability to access a locally running discord client. Here is a guide to how to get it working.
+The Discord Rich Presence example bundle in `samples/discord-rpc` demonstrates
+the ability to access a locally running discord client. Here is a guide to how
+to get it working.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   A discord application with permissions `indentify` and `rpc`
 
-_Note:_ If you don't have an application yet, you can create one [here](https://discord.com/developers/applications)
+!!! Note
+
+    If you don't have an application yet, you can create one
+    [here](https://discord.com/developers/applications)
 
 ### Configure the Discord RPC sample bundle
 
-1. Start nodecg with nodecg-io installed. The discord-rpc bundle is currently part of it so it should also be loaded.
-
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new discord-rpc service instance using the left upper menu.
-
-5. Enter required information.
-
-   The created instance should be automatically selected, if not select it in the upper left menu. Enter your information in monaco (the text-editor on the right) in this format:
+1. In NodeCG, create a new `discord-rpc` service instance.
+2. Enter the `clientId` and `clientSecret` for the service:
 
     ```json
     {
@@ -30,14 +33,11 @@ _Note:_ If you don't have an application yet, you can create one [here](https://
     }
     ```
 
-   After entering it, click save.
+    After entering it, click save.
 
-   _Note:_ If you don't see monaco on the right, try reloading the page.
+3. Set the sample's (`discord-rpc`) dependency to be the newly created service
+   instance (of type `discord-rpc`).
+4. Check the NodeCG logs:
 
-6. Set the created discord-rpc service instance to the service dependency of the discord-rpc bundle.
-
-   Select the discord-rpc bundle and the discord-rpc service in the left bottom menu and then select the service instance that should be used by the discord-rpc sample bundle (in this case the name of the previously created discord-rpc instance).
-
-7. Check the nodecg logs
-
-   You should see an error or a success message displaying your discord username.
+    You should see an error or a success message displaying your discord
+    username.

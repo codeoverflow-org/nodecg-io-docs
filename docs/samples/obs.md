@@ -1,27 +1,32 @@
 ## Using the OBS sample bundle
 
-The OBS example bundle in `samples/obs-scenelist` demonstrates the ability to control an OBS instance by listing all available scenes. Here is a guide to how to get it working.
+The OBS example bundle in `samples/obs-scenelist` demonstrates the ability to
+control an OBS instance by listing all available scenes. Here is a guide to how
+to get it working.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   OBS with obs-websocket installed
 
-_Note:_ OBS is available [here](https://obsproject.com/de/download) and obs-websocket with install instructions is available [here](https://github.com/Palakis/obs-websocket/releases).
+!!! NOTE
+
+    OBS is available [here](https://obsproject.com/de/download) and
+    obs-websocket with install instructions is available
+    [here](https://github.com/Palakis/obs-websocket/releases).
 
 ### Configure the OBS sample bundle
 
-1. Start nodecg with nodecg-io installed. The obs-scenelist bundle is currently part of it, so it should also be loaded.
+1.  In NodeCG, create a new obs service instance.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new obs service instance using the left upper menu.
-
-5. Enter configuration for obs.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your obs-websocket connection information in monaco (the text-editor on the right) in this format:
+2.  Enter the configuration for obs:
 
     ```json
     {
@@ -31,16 +36,17 @@ _Note:_ OBS is available [here](https://obsproject.com/de/download) and obs-webs
     }
     ```
 
-    If you don't want to use a password, you can just remove the password property from the config.
+    !!! INFO
+
+        If you don't want to use a password, you can just remove the password
+        property from the config.
 
     After entering it, click save.
 
-    _Note:_ If you don't see monaco on the right, try reloading the page.
+3.  Set the sample's (`obs-scenelist`) dependency to be the newly created
+    service instance (of type `obs`).
 
-6. Set the created obs service instance to the service dependency of the obs-scenelist bundle.
+4.  Check the NodeCG logs:
 
-    Select the obs-scenelist bundle and the OBS service in the left bottom menu and then select the service instance that should be used by the obs-scenelist bundle (in this case the name of the previously created OBS instance).
-
-7. Check the nodecg logs
-
-    You should see an error or a success message and the names of all you scenes that you have set in OBS.
+    You should see an error or a success message and the names of all you scenes
+    that you have set in OBS.

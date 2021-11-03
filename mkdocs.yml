@@ -33,11 +33,13 @@ markdown_extensions:
     - pymdownx.tabbed
     - pymdownx.tasklist:
           custom_checkbox: true
+    - admonition
 
 nav:
     - Home: index.md
     - Getting Started:
           - Installation: getting_started/install.md
+          - Using a sample bundle: getting_started/try_example_bundle.md
           - Your first bundle: getting_started/create_new_bundle.md
           - Migrating an existing bundle: getting_started/existing_bundle.md
           - Configuration: getting_started/configuration.md
@@ -45,12 +47,16 @@ nav:
           - Basics: contribute/contribute.md
           - Create a Service: contribute/create_service.md
           - Create a sample bundle: contribute/create_sample.md
-          - Document a sample: contribute/sample_documentation.md
+          - Documentation:
+                - Setup: contribute/docs_setup.md
+                - Markdown: contribute/docs_markdown.md
+                - Document a sample: contribute/docs_sample.md
           - Contributors: contribute/contributors.md
     - Services:
           - Available services: services.md
           - AHK sample: samples/ahk.md
           - Art-Net sample: samples/artnet.md
+          - Atem sample: samples/atem.md
           - Curseforge sample: samples/curseforge.md
           - Android: samples/android.md
           - DBus: samples/dbus-ratbagd.md
@@ -69,6 +75,7 @@ nav:
                 - Midi-Input sample: samples/midi-input.md
                 - Midi-Output sample: samples/midi-output.md
                 - Midi-IO sample: samples/midi-io.md
+          - MQTT: samples/mqtt-client.md
           - Nanoleaf: samples/nanoleaf.md
           - OBS: samples/obs.md
           - Philips Hue sample: samples/philipshue.md

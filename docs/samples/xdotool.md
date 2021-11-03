@@ -1,25 +1,29 @@
 ## Using the Xdotool sample bundle
 
-The Xdotool sample bundle in `samples/xdotool-windowminimize` shows how to use the xdotool service to execute [xdotool commands](http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html) by minimizing the currently active window.
+The Xdotool sample bundle in `samples/xdotool-windowminimize` shows how to use
+the xdotool service to execute
+[xdotool commands](http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html)
+by minimizing the currently active window.
+
+!!! ATTENTION
+
+    Only works on Linux
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
--   xdotool installed (Only works on Linux)
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+-   Xdotool installed
 
 ### Configure the Xdotool sample bundle
 
-1. Start nodecg with nodecg-io installed. The xdotool bundle is currently part of it, so it should also be loaded.
+1. In NodeCG, create a new xdotool service instance.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new xdotool service instance using the left upper menu.
-
-5. Enter settings port `-1` tells nodecg-io to use a locally installed xdotool.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Configure local xdotool in monaco (the text-editor on the right) using this config:
+2. Enter settings port `-1` tells nodecg-io to use a locally installed xdotool:
 
     ```json
     {
@@ -30,6 +34,7 @@ The Xdotool sample bundle in `samples/xdotool-windowminimize` shows how to use t
 
     After entering it, click save.
 
-6. Set the created xdotool service instance to the service dependency of the xdotool bundle.
+3. Set the sample's (`xdotool-windowminimize`) dependency to be the newly
+   created service instance (of type `xdotool`).
 
-7. Your browser window should get minimized.
+4. Your browser window should get minimized.

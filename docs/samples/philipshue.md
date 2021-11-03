@@ -1,25 +1,29 @@
 ## Using the Philips Hue sample bundle
 
-The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates the ability to connect to the Philips Hue bridge and control Philips Hue accessories.
+The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
+the ability to connect to the Philips Hue bridge and control Philips Hue
+accessories.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   A Philips Hue bridge with some connected accessories
 
 ### Configure the Philips Hue sample bundle
 
-1. Start nodecg with nodecg-io installed. The philipshue-lights sample bundle is currently part of it, so it should also be loaded.
+1.  In NodeCG, create a new Philips Hue service instance.
 
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
+2.  Enter configuration for hue.
 
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new Philips Hue service instance using the left upper menu.
-
-5. Enter configuration for hue.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. If you want the bridge to be automatically discovered just set `discover` to true like this:
+    If you want the bridge to be automatically discovered just set `discover` to
+    true like this:
 
     ```json
     {
@@ -27,7 +31,8 @@ The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
     }
     ```
 
-    If you want to provide the IP address manually you can provide them like this:
+    If you want to provide the IP address manually you can provide them like
+    this:
 
     ```json
     {
@@ -36,16 +41,19 @@ The philipshue-lights example bundle in `samples/philipshue-lights` demonstrates
     }
     ```
 
-    After entering it, press the big link button on your bridge and then click save.
+    After entering it, press the big link button on your bridge and then click
+    save.
 
-    After the first time you connect to your bridge it will create a user and an API key which will be saved so that you only need to press the link button when you connect it for the first time.
+    !!! INFO
 
-    _Note:_ If you don't see monaco on the right, try reloading the page.
+        After the first time you connect to your bridge it will create a user and an
+        API key which will be saved so that you only need to press the link button
+        when you connect it for the first time.
 
-6. Set the created Philips Hue service instance to the service dependency of the philipshue-lights sample bundle.
+3.  Set the sample's (`philipshue-lights`) dependency to be the newly created
+    service instance (of type `philipshue`).
 
-    Select the philipshue-lights sample bundle and the Philips Hue service in the left bottom menu and then select the service instance that should be used by the philipshue-lights sample bundle (in this case the name of the previously created Philips Hue instance).
+4.  Check the NodeCG logs:
 
-7. Check the nodecg logs
-
-    You should see an error or a success message and the number of lights that the bridge knows of.
+    You should see an error or a success message and the number of lights that
+    the bridge knows of.

@@ -1,25 +1,24 @@
-## Using the AHK sample bundle
+## Using the AutoHotkey sample bundle
 
-The AHK sample bundle in `samples/ahk-sendcommand` shows how to send a command to a HotkeylessAHK server.
+The AutoHotkey sample bundle in `samples/ahk-sendcommand` shows how to send a
+command to a HotkeylessAHK server.
 
 ### Prerequisites
 
--   Working NodeCG & nodecg-io installation
+You will need a working `nodecg-io` installation. If you have non yet take a
+look at [installation guide](../getting_started/install.md). You may need to
+install this bundle, so take a look at the
+[“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
+will also tell you how to log in and how to use the GUI.
+
+**You also need:**
+
 -   A running [HotkeylessAHK](https://github.com/sebinside/HotkeylessAHK) setup.
 
-### Configure the ahk sample bundle
+### Configure the AutoHotkey sample bundle
 
-1. Start nodecg with nodecg-io installed. The ahk bundle is currently part of it, so it should also be loaded.
-
-2. Go to the `nodecg-io` tab in the nodecg dashboard.
-
-3. Login using your password. If this is your first run, then enter the password with which you want to encrypt your configurations and credentials.
-
-4. Create a new ahk service instance using the left upper menu.
-
-5. Enter the host and port of the HotkeylessAHK Server.
-
-    The created instance should be automatically selected, if not select it in the upper left menu. Enter your host and port in monaco (the text-editor on the right) in this format:
+1. In NodeCG, create a new ahk service instance.
+2. Enter the host and port of the HotkeylessAHK Server:
 
     ```json
     {
@@ -30,6 +29,6 @@ The AHK sample bundle in `samples/ahk-sendcommand` shows how to send a command t
 
     After entering it, click save.
 
-6. Set the created ahk service instance to the service dependency of the ahk bundle.
-
-7. A small window with the text “Hello World” should have popped up.
+3. Set the sample's (`ahk-sendcommand`) dependency to be the newly created
+   service instance (of type `ahk`).
+4. A small window with the text “Hello World” should have popped up.

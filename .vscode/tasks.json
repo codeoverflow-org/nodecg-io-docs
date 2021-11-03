@@ -1,0 +1,51 @@
+{
+    // See https://code.visualstudio.com/docs/editor/tasks
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "mkdocs serve locally",
+            "detail": "mkdocs serve",
+            "type": "shell",
+            "command": "mkdocs serve",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "dependsOn": [
+                "npm: format",
+                "npm: lint"
+            ]
+        },
+        {
+            "type": "npm",
+            "script": "format",
+            "problemMatcher": [],
+            "label": "npm: format",
+            "detail":"prettier -w **.md",
+            "group": "test",
+            "presentation": {
+                "reveal": "never",
+                "panel": "shared",
+                "revealProblems": "onProblem"
+            },
+        },
+        {
+            "type": "npm",
+            "script": "lint",
+            "problemMatcher": [],
+            "label": "npm: lint",
+            "detail": "markdownlint -p .prettierignore .",
+            "group": "test",
+            "presentation": {
+                "reveal": "never",
+                "panel": "shared",
+                "revealProblems": "onProblem"
+            }
+        }
+    ]
+}
