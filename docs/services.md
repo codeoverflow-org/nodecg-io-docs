@@ -97,7 +97,7 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.5 <br>
 
 **Control your Elgato lights, e.g. key lights and light stripes.**
 
-There's no sample implementation for this service yet.
+See the [sample implementation](samples/elgato-light.md)
 
 Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.5.10 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.5 <br>
@@ -302,7 +302,7 @@ See the [sample implementation](samples/streamelements.md)
 
 Depends on [@types/socket.io-client](https://www.npmjs.com/package/@types/socket.io-client) @ ^1.4.36 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
-Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ ^4.3.2 <br>
+Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ ^2.4.0 <br>
 
 ## [nodecg-io-telegram](https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-telegram)
 
