@@ -244,7 +244,7 @@ See the [sample implementation](samples/serial.md)
 Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^9.2.4 <br>
 Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/master/nodecg-io-core) @ ^0.2.0 <br>
-Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.2.4 <br>
+Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^9.2.5 <br>
 
 ## [nodecg-io-shlink](https://github.com/codeoverflow-org/nodecg-io/tree/master/services/nodecg-io-shlink)
 
