@@ -88,15 +88,15 @@ official code repo) with your fork.
 
 ```shell
 cd path/to/nodecg-io
-git checkout master
-git pull https://github.com/codeoverflow-org/nodecg-io master
+git checkout main
+git pull https://github.com/codeoverflow-org/nodecg-io main
 ```
 
 Manage any merge conflicts, commit them, and then push them to your fork.
 
-You may also occasionally need to merge upstream master in a pull request. To do
-that make the above to update your local master, and then merge your local
-master into your PR branch.
+You may also occasionally need to merge upstream main in a pull request. To do
+that make the above to update your local main branch, and then merge your local
+main branch into your PR branch.
 
 ### Where to Contribute
 

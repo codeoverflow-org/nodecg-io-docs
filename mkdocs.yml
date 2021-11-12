@@ -19,7 +19,7 @@ site_dir: build
 
 repo_name: codeoverflow-org/nodecg-io
 repo_url: https://github.com/codeoverflow-org/nodecg-io
-edit_uri: https://github.com/codeoverflow-org/nodecg-io-docs/edit/master/docs/
+edit_uri: https://github.com/codeoverflow-org/nodecg-io-docs/edit/main/docs/
 
 markdown_extensions:
     - plantuml_markdown:
