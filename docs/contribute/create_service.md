@@ -218,7 +218,7 @@ The file should look like this:
     ## Using the <the services name> sample bundle
 
     No sample bundle for service `<the services name>`.
-    [You can help us and create one!](https://github.com/codeoverflow-org/nodecg-io/blob/master/docs/docs/contribute.md)
+    [You can help us and create one!](https://github.com/codeoverflow-org/nodecg-io-docs/blob/main/docs/contribute/docs_sample.md)
     ```
 
 !!! ATTENTION

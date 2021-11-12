@@ -9,7 +9,7 @@
 <!-- Do not set the 'Services implemented' value manually. It's inserted automatically. -->
 
 [![Services](https://img.shields.io/static/v1?label=Services%20implemented&message=42&color=blue&style=flat-square)](services.md)
-[![License](https://img.shields.io/github/license/codeoverflow-org/nodecg-io?label=License&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/codeoverflow-org/nodecg-io?label=License&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/blob/main/LICENSE)
 [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&style=flat-square)](https://discord.gg/sX2Gjbs/)
 
 **nodecg-io is a [NodeCG](https://github.com/nodecg/nodecg)-bundle that implements Social Media API's in the NodeCG framework**

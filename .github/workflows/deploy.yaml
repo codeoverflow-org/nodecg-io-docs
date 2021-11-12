@@ -2,7 +2,7 @@ name: Publish docs via GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main
       - release/**
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
+      - name: Checkout main
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
@@ -31,13 +31,13 @@ jobs:
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.${GITHUB_DOMAIN:-github.com}"
 
       - name: Deploy dev docs
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         run: mike deploy --push --update-aliases DEV
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy release docs
-        if: github.ref != 'refs/heads/master'
+        if: github.ref != 'refs/heads/main'
         run: mike deploy --push --update-aliases ${GITHUB_REF##*/} RELEASE
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
