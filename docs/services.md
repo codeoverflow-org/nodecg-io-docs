@@ -349,7 +349,7 @@ See the [sample implementation](samples/twitch-api.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.2.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.2.0 <br>
-Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.8 <br>
+Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.9 <br>
 
 ## [nodecg-io-twitch-chat](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitch-chat)
 
@@ -369,7 +369,7 @@ See the [sample implementation](samples/twitch-pubsub.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.2.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.2.0 <br>
-Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.8 <br>
+Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.9 <br>
 Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.0.9 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitter)
