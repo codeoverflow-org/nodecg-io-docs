@@ -71,7 +71,7 @@ Depends on [dbus-next](https://www.npmjs.com/package/dbus-next) @ ^0.10.2 <br>
 See the [sample implementation](samples/debug.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.2.0 <br>
-Depends on [monaco-editor](https://www.npmjs.com/package/monaco-editor) @ ^0.29.1 <br>
+Depends on [monaco-editor](https://www.npmjs.com/package/monaco-editor) @ ^0.30.1 <br>
 
 ## [nodecg-io-discord](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord)
 
