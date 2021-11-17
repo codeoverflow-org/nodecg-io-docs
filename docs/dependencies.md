@@ -30,6 +30,7 @@ FontStyle Underline
 [<u>nodecg-io-dbus] as services_nodecg_io_dbus <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-dbus]]
 [<u>dbus-next] as dbus_next <<lib>> [[https://www.npmjs.com/package/dbus-next]]
 [<u>nodecg-io-debug] as services_nodecg_io_debug <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-debug]]
+[<u>nodecg-types] as nodecg_types <<lib>> [[https://www.npmjs.com/package/nodecg-types]]
 [<u>monaco-editor] as monaco_editor <<lib>> [[https://www.npmjs.com/package/monaco-editor]]
 [<u>nodecg-io-discord] as services_nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
@@ -123,6 +124,7 @@ services_nodecg_io_curseforge --> nodecg_io_core
 services_nodecg_io_dbus --> nodecg_io_core
 services_nodecg_io_dbus ...> dbus_next
 services_nodecg_io_debug --> nodecg_io_core
+services_nodecg_io_debug ...> nodecg_types
 services_nodecg_io_debug ...> monaco_editor
 services_nodecg_io_discord ...> discord_js
 services_nodecg_io_discord --> nodecg_io_core
@@ -154,6 +156,7 @@ services_nodecg_io_mqtt_client ...> mqtt
 services_nodecg_io_nanoleaf ...> types_node_fetch
 services_nodecg_io_nanoleaf ...> node_fetch
 services_nodecg_io_nanoleaf --> nodecg_io_core
+services_nodecg_io_nanoleaf ...> nodecg_types
 services_nodecg_io_obs --> nodecg_io_core
 services_nodecg_io_obs ...> obs_websocket_js
 services_nodecg_io_philipshue ...> is_ip
