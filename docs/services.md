@@ -80,7 +80,7 @@ Depends on [monaco-editor](https://www.npmjs.com/package/monaco-editor) @ ^0.30.
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^12.5.3 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.3.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.2.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
