@@ -1,0 +1,25 @@
+:root {
+    --md-primary-fg-color: #5836ff;
+    --md-accent-fg-color: #dd241f;
+    --md-header-color--dark: #2c1849;
+}
+
+.md-header {
+    background-color: var(--md-header-color--dark);
+}
+
+.md-nav__title {
+    --md-primary-fg-color: var(--md-header-color--dark);
+}
+
+.md-nav__source {
+    --md-primary-fg-color--dark: #1f1135;
+}
+
+.md-typeset .task-list-control [type="checkbox"]:checked + .task-list-indicator::before {
+    background: var(--md-primary-fg-color) !important;
+}
+
+.md-typeset pre > code {
+    white-space: pre-wrap;
+}
