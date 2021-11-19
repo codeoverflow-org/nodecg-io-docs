@@ -31,7 +31,6 @@ FontStyle Underline
 [<u>dbus-next] as dbus_next <<lib>> [[https://www.npmjs.com/package/dbus-next]]
 [<u>nodecg-io-debug] as services_nodecg_io_debug <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-debug]]
 [<u>nodecg-types] as nodecg_types <<lib>> [[https://www.npmjs.com/package/nodecg-types]]
-[<u>monaco-editor] as monaco_editor <<lib>> [[https://www.npmjs.com/package/monaco-editor]]
 [<u>nodecg-io-discord] as services_nodecg_io_discord <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord]]
 [<u>discord.js] as discord_js <<lib>> [[https://www.npmjs.com/package/discord.js]]
 [<u>nodecg-io-discord-rpc] as services_nodecg_io_discord_rpc <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc]]
@@ -125,7 +124,6 @@ services_nodecg_io_dbus --> nodecg_io_core
 services_nodecg_io_dbus ...> dbus_next
 services_nodecg_io_debug --> nodecg_io_core
 services_nodecg_io_debug ...> nodecg_types
-services_nodecg_io_debug ...> monaco_editor
 services_nodecg_io_discord ...> discord_js
 services_nodecg_io_discord --> nodecg_io_core
 services_nodecg_io_discord_rpc --> nodecg_io_core
