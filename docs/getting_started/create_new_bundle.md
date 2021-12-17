@@ -14,11 +14,6 @@ Automatically generating a bundle that uses nodecg-io requires that you have the
 nodecg-io CLI installed. A guide on how to do this is inside the
 [installation guide](./install.md).
 
-!!! NOTE
-
-    Also note that this currently only works when you have installed a release
-    version, not development versions.
-
 To start run this command while being inside your NodeCG installation:
 
 ```shell
