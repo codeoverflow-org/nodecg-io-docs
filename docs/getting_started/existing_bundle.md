@@ -20,6 +20,28 @@ simply using this npm command:
 npm install nodecg-io-core
 ```
 
+## Add the service bundle as a bundle dependency
+
+To ensure that NodeCG loads the service bundle you need before your bundle you
+need to add it as a `bundleDependency` to your bundle.
+To do that for e.g. the `twitch-chat` service you add it to your bundles
+`package.json` file like this:
+
+```json
+    ...
+    "nodecg": {
+        "compatibleRange": "^1.4.0",
+        "bundleDependencies": {
+            "nodecg-io-twitch-chat": "^0.2.0"
+        }
+    }
+    ...
+```
+
+Change the bundle name and version accordingly. 
+You need to specify each service your bundle needs here as a bundle dependency.
+Just don't forget to add a comma as a separator between the multiple bundles.
+
 ## Import `requireService`
 
 Now that you have `nodecg-io-core` installed in your bundle you can import the
