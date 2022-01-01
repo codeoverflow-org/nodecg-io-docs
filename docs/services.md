@@ -79,7 +79,7 @@ Depends on [nodecg-types](https://www.npmjs.com/package/nodecg-types) @ ^1.8.3 <
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.4.0 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.5.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -168,7 +168,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/mqtt-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.3.1 <br>
+Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.3.2 <br>
 
 ## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-nanoleaf)
 
@@ -283,7 +283,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 See the [sample implementation](samples/sql.md)
 
-Depends on [knex](https://www.npmjs.com/package/knex) @ ^0.95.13 <br>
+Depends on [knex](https://www.npmjs.com/package/knex) @ ^0.95.15 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamdeck)
@@ -311,7 +311,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.53.1 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.53.3 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.56.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
