@@ -4,11 +4,15 @@ on:
     branches:
       - main
       - release/**
+  schedule:
+    # https://crontab.guru/#3_21_*_*_6
+    - cron: "3 21 * * 6"
 
 jobs:
   build:
     name: Deploy docs
     runs-on: ubuntu-latest
+    if: github.actor != 'dependabot[bot]'
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
