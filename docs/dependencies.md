@@ -42,7 +42,6 @@ FontStyle Underline
 [<u>@octokit/rest] as octokit_rest <<lib>> [[https://www.npmjs.com/package/@octokit/rest]]
 [<u>nodecg-io-googleapis] as services_nodecg_io_googleapis <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-googleapis]]
 [<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
-[<u>express] as express <<lib>> [[https://www.npmjs.com/package/express]]
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 [<u>open] as open <<lib>> [[https://www.npmjs.com/package/open]]
 [<u>nodecg-io-intellij] as services_nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-intellij]]
@@ -136,7 +135,6 @@ services_nodecg_io_elgato_light --> nodecg_io_core
 services_nodecg_io_github --> nodecg_io_core
 services_nodecg_io_github ...> octokit_rest
 services_nodecg_io_googleapis ...> types_gapi
-services_nodecg_io_googleapis ...> express
 services_nodecg_io_googleapis ...> googleapis
 services_nodecg_io_googleapis --> nodecg_io_core
 services_nodecg_io_googleapis ...> open
@@ -177,7 +175,6 @@ services_nodecg_io_shlink ...> shlink_client
 services_nodecg_io_slack ...> slack_web_api
 services_nodecg_io_slack --> nodecg_io_core
 services_nodecg_io_spotify ...> types_spotify_web_api_node
-services_nodecg_io_spotify ...> express
 services_nodecg_io_spotify --> nodecg_io_core
 services_nodecg_io_spotify ...> open
 services_nodecg_io_spotify ...> spotify_web_api_node
