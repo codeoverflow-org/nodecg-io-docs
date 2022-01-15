@@ -79,7 +79,7 @@ Depends on [nodecg-types](https://www.npmjs.com/package/nodecg-types) @ ^1.8.3 <
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.5.1 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.6.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -196,7 +196,7 @@ Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ 
 See the [sample implementation](samples/philipshue.md)
 
 Depends on [is-ip](https://www.npmjs.com/package/is-ip) @ ^3.1.0 <br>
-Depends on [node-hue-api](https://www.npmjs.com/package/node-hue-api) @ ^4.0.10 <br>
+Depends on [node-hue-api](https://www.npmjs.com/package/node-hue-api) @ ^4.0.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-rcon](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-rcon)
@@ -270,7 +270,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/spotify.md)
 
-Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^5.0.3 <br>
+Depends on [@types/spotify-web-api-node](https://www.npmjs.com/package/@types/spotify-web-api-node) @ ^5.0.6 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-node) @ ^5.0.2 <br>
@@ -309,7 +309,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.53.5 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.53.6 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.56.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
@@ -328,7 +328,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/tiane.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.4.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.4.2 <br>
 
 ## [nodecg-io-twitch-addons](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitch-addons)
 
@@ -389,7 +389,7 @@ See the [sample implementation](samples/websocket-client.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^8.2.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.4.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.4.2 <br>
 
 ## [nodecg-io-websocket-server](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-websocket-server)
 
@@ -399,7 +399,7 @@ See the [sample implementation](samples/websocket-server.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^8.2.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.4.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.4.2 <br>
 
 ## [nodecg-io-xdotool](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-xdotool)
 
