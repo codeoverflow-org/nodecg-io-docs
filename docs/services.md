@@ -215,7 +215,7 @@ Depends on [rcon-client](https://www.npmjs.com/package/rcon-client) @ ^4.2.3 <br
 See the [sample implementation](samples/reddit.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [reddit-ts](https://www.npmjs.com/package/reddit-ts) @ noeppi-noeppi/npm-reddit-ts#build <br>
+Depends on [reddit-ts](https://www.npmjs.com/package/reddit-ts) @ https://github.com/noeppi-noeppi/npm-reddit-ts.git#build <br>
 
 ## [nodecg-io-sacn-receiver](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-sacn-receiver)
 
