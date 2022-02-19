@@ -99,7 +99,7 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.7 <br>
 
 See the [sample implementation](samples/elgato-light.md)
 
-Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.5.10 <br>
+Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.6.1 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.7 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
@@ -167,7 +167,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/mqtt-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.3.5 <br>
+Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.3.6 <br>
 
 ## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-nanoleaf)
 
@@ -175,7 +175,7 @@ Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.3.5 <br>
 
 See the [sample implementation](samples/nanoleaf.md)
 
-Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.5.10 <br>
+Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.6.1 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.7 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-types](https://www.npmjs.com/package/nodecg-types) @ ^1.8.3 <br>
@@ -369,7 +369,7 @@ See the [sample implementation](samples/twitch-pubsub.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.3.0 <br>
 Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.17 <br>
-Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.0.17 <br>
+Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.0.18 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitter)
 
