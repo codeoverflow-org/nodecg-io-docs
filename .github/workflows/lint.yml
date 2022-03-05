@@ -4,7 +4,7 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - uses: xt0rted/markdownlint-problem-matcher@v1
             - name: "Run Markdown linter"
               uses: docker://avtodev/markdown-lint:v1
