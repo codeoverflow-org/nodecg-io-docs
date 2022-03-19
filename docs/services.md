@@ -119,7 +119,7 @@ Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^18.12
 There's no sample implementation for this service yet.
 
 Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.41 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^96.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^97.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -281,7 +281,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 See the [sample implementation](samples/sql.md)
 
-Depends on [knex](https://www.npmjs.com/package/knex) @ ^1.0.3 <br>
+Depends on [knex](https://www.npmjs.com/package/knex) @ ^1.0.4 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamdeck)
