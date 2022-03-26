@@ -5,7 +5,7 @@
 
 **The core of nodecg-io. Connects everything up.**
 
-Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^8.10.0 <br>
+Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^8.11.0 <br>
 Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.1.1 <br>
 Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.3.1 <br>
 
@@ -90,7 +90,7 @@ See the [sample implementation](samples/discord-rpc.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [discord-rpc](https://www.npmjs.com/package/discord-rpc) @ ^4.0.1 <br>
-Depends on [@types/discord-rpc](https://www.npmjs.com/package/@types/discord-rpc) @ ^4.0.0 <br>
+Depends on [@types/discord-rpc](https://www.npmjs.com/package/@types/discord-rpc) @ ^4.0.1 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.7 <br>
 
 ## [nodecg-io-elgato-light](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-elgato-light)
@@ -224,7 +224,7 @@ Depends on [reddit-ts](https://www.npmjs.com/package/reddit-ts) @ https://github
 See the [sample implementation](samples/sacn-receiver.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.1.0 <br>
+Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.2.0 <br>
 
 ## [nodecg-io-sacn-sender](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-sacn-sender)
 
@@ -233,7 +233,7 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.1.0 <br>
 See the [sample implementation](samples/sacn-sender.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.1.0 <br>
+Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.2.0 <br>
 
 ## [nodecg-io-serial](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-serial)
 
