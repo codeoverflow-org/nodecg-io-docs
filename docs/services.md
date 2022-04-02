@@ -119,7 +119,7 @@ Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^18.12
 There's no sample implementation for this service yet.
 
 Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.41 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^97.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^100.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -261,7 +261,7 @@ Depends on [shlink-client](https://www.npmjs.com/package/shlink-client) @ ^1.0.1
 
 See the [sample implementation](samples/slack.md)
 
-Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.7.0 <br>
+Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.7.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-spotify](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-spotify)
