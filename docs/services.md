@@ -281,7 +281,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 See the [sample implementation](samples/sql.md)
 
-Depends on [knex](https://www.npmjs.com/package/knex) @ ^1.0.4 <br>
+Depends on [knex](https://www.npmjs.com/package/knex) @ ^1.0.5 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamdeck)
@@ -309,7 +309,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.56.0 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.56.2 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.56.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
