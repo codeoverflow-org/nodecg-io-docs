@@ -90,7 +90,7 @@ See the [sample implementation](samples/discord-rpc.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [discord-rpc](https://www.npmjs.com/package/discord-rpc) @ ^4.0.1 <br>
-Depends on [@types/discord-rpc](https://www.npmjs.com/package/@types/discord-rpc) @ ^4.0.1 <br>
+Depends on [@types/discord-rpc](https://www.npmjs.com/package/@types/discord-rpc) @ ^4.0.2 <br>
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.7 <br>
 
 ## [nodecg-io-elgato-light](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-elgato-light)
@@ -281,7 +281,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 See the [sample implementation](samples/sql.md)
 
-Depends on [knex](https://www.npmjs.com/package/knex) @ ^1.0.5 <br>
+Depends on [knex](https://www.npmjs.com/package/knex) @ ^1.0.7 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamdeck)
@@ -348,7 +348,7 @@ See the [sample implementation](samples/twitch-api.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.3.0 <br>
-Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.18 <br>
+Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.19 <br>
 
 ## [nodecg-io-twitch-chat](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitch-chat)
 
@@ -358,7 +358,7 @@ See the [sample implementation](samples/twitch-chat.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.3.0 <br>
-Depends on [@twurple/chat](https://www.npmjs.com/package/@twurple/chat) @ ^5.0.18 <br>
+Depends on [@twurple/chat](https://www.npmjs.com/package/@twurple/chat) @ ^5.0.19 <br>
 
 ## [nodecg-io-twitch-pubsub](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitch-pubsub)
 
@@ -368,8 +368,8 @@ See the [sample implementation](samples/twitch-pubsub.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.3.0 <br>
-Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.18 <br>
-Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.0.18 <br>
+Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.0.19 <br>
+Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.0.19 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitter)
 
