@@ -16,23 +16,20 @@
                 "reveal": "always",
                 "panel": "new"
             },
-            "dependsOn": [
-                "npm: format",
-                "npm: lint"
-            ]
+            "dependsOn": ["npm: format", "npm: lint"]
         },
         {
             "type": "npm",
             "script": "format",
             "problemMatcher": [],
             "label": "npm: format",
-            "detail":"prettier -w **.md",
+            "detail": "prettier -w **.md",
             "group": "test",
             "presentation": {
                 "reveal": "never",
                 "panel": "shared",
                 "revealProblems": "onProblem"
-            },
+            }
         },
         {
             "type": "npm",

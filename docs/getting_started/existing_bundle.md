@@ -38,7 +38,7 @@ To do that for e.g. the `twitch-chat` service you add it to your bundles
     ...
 ```
 
-Change the bundle name and version accordingly. 
+Change the bundle name and version accordingly.
 You need to specify each service your bundle needs here as a bundle dependency.
 Just don't forget to add a comma as a separator between the multiple bundles.
 
