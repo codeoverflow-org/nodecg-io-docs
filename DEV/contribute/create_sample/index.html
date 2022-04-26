@@ -1491,27 +1491,27 @@ a <code>tsconfig.json</code>:</p>
 <p>Now you can create a file called <code>extension/index.ts</code>. Here's a template. Make
 sure you replace all the comments with your own code.</p>
 <div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">index.ts</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">requireService</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">TheServicesExportedClient</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-&lt;the services  name&gt;&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TheServicesExportedClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-&lt;the services  name&gt;&quot;</span><span class="p">;</span><span class="w"></span>
 
-<span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Sample bundle for &lt;the-service-name&gt; started&quot;</span><span class="p">);</span>
+<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Sample bundle for &lt;the-service-name&gt; started&quot;</span><span class="p">);</span><span class="w"></span>
 
-    <span class="kd">const</span> <span class="nx">service</span> <span class="o">=</span> <span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TheServicesExportedClient</span><span class="o">&gt;</span><span class="p">(</span>
-        <span class="nx">nodecg</span><span class="p">,</span>
-        <span class="s2">&quot;&lt;the-service-name&gt;&quot;</span>
-    <span class="p">);</span>
-    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-        <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been updated.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TheServicesExportedClient</span><span class="o">&gt;</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="nx">nodecg</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;&lt;the-service-name&gt;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been updated.&quot;</span><span class="p">);</span><span class="w"></span>
 
-        <span class="c1">// TODO do something with the client to demonstrate the functionality.</span>
-    <span class="p">});</span>
+<span class="w">        </span><span class="c1">// TODO do something with the client to demonstrate the functionality.</span><span class="w"></span>
+<span class="w">    </span><span class="p">});</span><span class="w"></span>
 
-    <span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span> <span class="p">=&gt;</span>
-        <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been unset.&quot;</span><span class="p">)</span>
-    <span class="p">);</span>
-<span class="p">};</span>
+<span class="w">    </span><span class="nx">service</span><span class="o">?</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;&lt;the-service-name&gt; client has been unset.&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">);</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>

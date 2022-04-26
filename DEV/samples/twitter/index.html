@@ -1603,22 +1603,22 @@ as <code>screen_name</code>.</p>
 <p>The client implements the different
     <a href="https://developer.twitter.com/en/docs/api-reference-index">API endpoints</a>
     with two functions</p>
-<div class="highlight"><pre><span></span><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;&lt;get endpoint name&gt;&quot;</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span>
-  <span class="nx">client</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;&lt;post endpoint name&gt;&quot;</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nx">client</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;&lt;get endpoint name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="p">,</span><span class="w"> </span><span class="nx">callback</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="nx">client</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;&lt;post endpoint name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="p">,</span><span class="w"> </span><span class="nx">callback</span><span class="p">)</span><span class="w"></span>
 
-  <span class="c1">// Instead of callbacks it can be used with promises</span>
-  <span class="nx">client</span>
-    <span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;statuses/user_timeline&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">screen_name</span><span class="o">:</span> <span class="s2">&quot;skate702&quot;</span><span class="p">})</span>
-    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">tweets</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="cm">/* Do something with the tweets */</span><span class="p">)</span>
-    <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="cm">/* Handle error */</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Instead of callbacks it can be used with promises</span><span class="w"></span>
+<span class="w">  </span><span class="nx">client</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;statuses/user_timeline&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">screen_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;skate702&quot;</span><span class="p">})</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">tweets</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="cm">/* Do something with the tweets */</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="cm">/* Handle error */</span><span class="p">);</span><span class="w"></span>
 
-  <span class="c1">// Or async and await as well</span>
-  <span class="k">try</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">tweets</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;statuses/user_timeline&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">screen_name</span><span class="o">:</span> <span class="s2">&quot;skate702&quot;</span><span class="p">});</span>
-    <span class="c1">// Do something with the tweets</span>
-  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Handle error</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c1">// Or async and await as well</span><span class="w"></span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">tweets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;statuses/user_timeline&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">screen_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;skate702&quot;</span><span class="p">});</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Do something with the tweets</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Handle error</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </li>
 </ul>
