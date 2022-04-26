@@ -10,7 +10,6 @@ install this bundle, so take a look at the
 [“Try an included sample”](../getting_started/try_example_bundle.md)-Guide. It
 will also tell you how to log in and how to use the GUI.
 
-
 ### Configure the Atem sample bundle
 
 1. In NodeCG, create a new atem service instance.
