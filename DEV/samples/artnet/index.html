@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://nodecg.io/DEV/samples/artnet/">
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c5ef100.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
@@ -1562,7 +1562,7 @@ will also tell you how to log in and how to use the GUI.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>You may overwrite this broadcast address in code with
-<code class="highlight"><span class="nx">client</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;host address&quot;</span><span class="p">);</span><span class="w"></span></code>.</p>
+<code class="highlight"><span class="nx">client</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;host address&quot;</span><span class="p">);</span></code>.</p>
 </div>
 </li>
 <li>
@@ -1573,35 +1573,35 @@ will also tell you how to log in and how to use the GUI.</p>
 </ol>
 <h3 id="explanations">Explanations</h3>
 <h4 id="receiving-dmx-data">Receiving DMX data</h4>
-<div class="highlight"><pre><span></span><code><span class="nx">client</span><span class="p">.</span><span class="nx">onDMX</span><span class="p">((</span><span class="nx">dmx</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// dmx contains an ArtDmx object</span><span class="w"></span>
-<span class="w">    </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">dmx</span><span class="p">.</span><span class="nx">universe</span><span class="p">,</span><span class="w"> </span><span class="nx">dmx</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nx">client</span><span class="p">.</span><span class="nx">onDMX</span><span class="p">((</span><span class="nx">dmx</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// dmx contains an ArtDmx object</span>
+    <span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">dmx</span><span class="p">.</span><span class="nx">universe</span><span class="p">,</span> <span class="nx">dmx</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
 </code></pre></div>
 <p>The data you receive has the following fields:</p>
-<div class="highlight"><pre><span></span><code><span class="kr">declare</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ArtDmx</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">opcode</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">protocolVersion</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">sequence</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">physical</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">universe</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[];</span><span class="w"></span>
-<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">sequence</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">physical</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">universe</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[]);</span><span class="w"></span>
-<span class="w">    </span><span class="nx">isSequenceEnabled</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="nx">decode</span><span class="p">(</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Buffer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">ArtDmx</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">toString</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">encode</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kr">declare</span> <span class="kd">class</span> <span class="nx">ArtDmx</span> <span class="p">{</span>
+    <span class="nx">opcode</span>: <span class="kt">number</span><span class="p">;</span>
+    <span class="nx">protocolVersion</span>: <span class="kt">number</span><span class="p">;</span>
+    <span class="nx">sequence</span>: <span class="kt">number</span><span class="p">;</span>
+    <span class="nx">physical</span>: <span class="kt">number</span><span class="p">;</span>
+    <span class="nx">universe</span>: <span class="kt">number</span><span class="p">;</span>
+    <span class="nx">data</span>: <span class="kt">number</span><span class="p">[];</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">sequence</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">physical</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">universe</span>: <span class="kt">number</span><span class="p">,</span> <span class="nx">data</span>: <span class="kt">number</span><span class="p">[]);</span>
+    <span class="nx">isSequenceEnabled</span><span class="p">()</span><span class="o">:</span> <span class="kt">boolean</span><span class="p">;</span>
+    <span class="k">static</span> <span class="nx">decode</span><span class="p">(</span><span class="nx">data</span>: <span class="kt">Buffer</span><span class="p">)</span><span class="o">:</span> <span class="nx">ArtDmx</span><span class="p">;</span>
+    <span class="nx">toString</span><span class="p">()</span><span class="o">:</span> <span class="kt">string</span><span class="p">;</span>
+    <span class="nx">encode</span><span class="p">()</span><span class="o">:</span> <span class="nx">Buffer</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <h4 id="sending-dmx-data">Sending DMX data</h4>
-<div class="highlight"><pre><span></span><code><span class="c1">// send new data every 0,8 seconds.</span><span class="w"></span>
-<span class="c1">// This is the official timing for re-transmiting data in the artnet specifciation.</span><span class="w"></span>
-<span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="w"></span>
-<span class="w">        </span><span class="nx">universe</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nx">values</span><span class="w"> </span><span class="c1">// number[] of values for each of the 512 channels</span><span class="w"></span>
-<span class="w">    </span><span class="p">);</span><span class="w"></span>
-<span class="p">},</span><span class="w"> </span><span class="mf">800</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">// send new data every 0,8 seconds.</span>
+<span class="c1">// This is the official timing for re-transmiting data in the artnet specifciation.</span>
+<span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">client</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span>
+        <span class="nx">universe</span><span class="p">,</span>
+        <span class="nx">values</span> <span class="c1">// number[] of values for each of the 512 channels</span>
+    <span class="p">);</span>
+<span class="p">},</span> <span class="mf">800</span><span class="p">);</span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1701,7 +1701,7 @@ actually use a re-transmit time of 800mS to 1000mS).
     <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>

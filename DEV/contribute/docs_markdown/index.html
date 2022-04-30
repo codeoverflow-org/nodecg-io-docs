@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://nodecg.io/DEV/contribute/docs_markdown/">
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c5ef100.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
@@ -1545,18 +1545,18 @@ Alice &lt;-- Bob: responds
 <p class="admonition-title">Syntax highlighting</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="sb">```typescript</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
+<span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="ow">new</span> <span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span> <span class="nx">__dirname</span><span class="p">,</span> <span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
+<span class="p">};</span>
 <span class="sb">```</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Output</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
+<span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="ow">new</span> <span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span> <span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span> <span class="nx">__dirname</span><span class="p">,</span> <span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
+<span class="p">};</span>
 </code></pre></div>
 </div>
 </div>
@@ -1769,7 +1769,7 @@ DANGER, ERROR, BUG, EXAMPLE, SNIPPET, QUOTE, CITE</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>
