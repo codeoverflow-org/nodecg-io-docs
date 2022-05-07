@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://nodecg.io/DEV/contribute/create_service/">
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
     
     
       
@@ -21,10 +21,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c5ef100.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -1653,63 +1653,63 @@ the schema-files of the other service implementations.</p>
 service's directory. You can then paste the following code and fill in your code
 instead of the comments.</p>
 <div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">index.ts</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="c1">// TODO: Rename all occurrences of &quot;YourServiceName&quot; in PascalCase</span>
-<span class="c1">// TODO: Rename all occurrences of &quot;yourServiceName&quot; in carmelCase</span>
-<span class="c1">// TODO: Rename all occurrences of &quot;your-service-name&quot; with only lowercase and hyphens ( - )</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// TODO: Rename all occurrences of &quot;YourServiceName&quot; in PascalCase</span><span class="w"></span>
+<span class="c1">// TODO: Rename all occurrences of &quot;yourServiceName&quot; in carmelCase</span><span class="w"></span>
+<span class="c1">// TODO: Rename all occurrences of &quot;your-service-name&quot; with only lowercase and hyphens ( - )</span><span class="w"></span>
 
-<span class="k">import</span> <span class="p">{</span> <span class="nx">NodeCG</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">Result</span><span class="p">,</span> <span class="nx">emptySuccess</span><span class="p">,</span> <span class="nx">success</span><span class="p">,</span> <span class="nx">ServiceBundle</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
-<span class="c1">// TODO: Replace the &quot;fake&quot; service class with that found on npm etc.</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">ServiceClass</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Result</span><span class="p">,</span><span class="w"> </span><span class="nx">emptySuccess</span><span class="p">,</span><span class="w"> </span><span class="nx">success</span><span class="p">,</span><span class="w"> </span><span class="nx">ServiceBundle</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// TODO: Replace the &quot;fake&quot; service class with that found on npm etc.</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceClass</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./&quot;</span><span class="p">;</span><span class="w"></span>
 
-<span class="kd">interface</span> <span class="nx">YourServiceNameServiceConfig</span> <span class="p">{</span>
-    <span class="c1">// TODO Fill in the values from your json schema here. The json</span>
-    <span class="c1">// schema will load into an instance of this.</span>
-<span class="p">}</span>
+<span class="kd">interface</span><span class="w"> </span><span class="nx">YourServiceNameServiceConfig</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// TODO Fill in the values from your json schema here. The json</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// schema will load into an instance of this.</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="c1">// ServiceClient ensures that you will provide a `getNativeClient` function that should give</span>
-<span class="c1">// access to the underlying client from the library that you are using.</span>
-<span class="c1">// TODO: if you want to provide simplifications for the service then make this</span>
-<span class="c1">// type-alias a separate class in a separate file and directly implement those simplifications</span>
-<span class="c1">// there.</span>
-<span class="c1">// TODO: Replace the `ServiceClass` with the class of the package from step 1</span>
-<span class="k">export</span> <span class="kr">type</span> <span class="nx">YourServiceNameServiceClient</span> <span class="o">=</span> <span class="nx">ServiceClient</span><span class="o">&lt;</span><span class="nx">ServiceClass</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="c1">// ServiceClient ensures that you will provide a `getNativeClient` function that should give</span><span class="w"></span>
+<span class="c1">// access to the underlying client from the library that you are using.</span><span class="w"></span>
+<span class="c1">// TODO: if you want to provide simplifications for the service then make this</span><span class="w"></span>
+<span class="c1">// type-alias a separate class in a separate file and directly implement those simplifications</span><span class="w"></span>
+<span class="c1">// there.</span><span class="w"></span>
+<span class="c1">// TODO: Replace the `ServiceClass` with the class of the package from step 1</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">YourServiceNameServiceClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ServiceClient</span><span class="o">&lt;</span><span class="nx">ServiceClass</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
 
-<span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nodecg</span>: <span class="kt">NodeCG</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="ow">new</span> <span class="nx">YourServiceNameService</span><span class="p">(</span>
-        <span class="nx">nodecg</span><span class="p">,</span>
-        <span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span>
-        <span class="nx">__dirname</span><span class="p">,</span>
-        <span class="s2">&quot;../your-service-name-schema.json&quot;</span>
-    <span class="p">).</span><span class="nx">register</span><span class="p">();</span>
-<span class="p">};</span>
+<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="nx">nodecg</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">).</span><span class="nx">register</span><span class="p">();</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 
-<span class="kd">class</span> <span class="nx">YourServiceNameService</span> <span class="k">extends</span> <span class="nx">ServiceBundle</span><span class="o">&lt;</span>
-    <span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span>
-    <span class="nx">YourServiceNameServiceClient</span>
-<span class="o">&gt;</span> <span class="p">{</span>
-    <span class="k">async</span> <span class="nx">validateConfig</span><span class="p">(</span>
-        <span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span>
-    <span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
-        <span class="c1">// TODO You can validate your config here. If this gets called, the schema is correct.</span>
-        <span class="c1">// You should for example check whether oauth keys are valid and servers are online here</span>
-        <span class="c1">// If everything is good return &#39;emptySuccess()&#39;</span>
-        <span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span>
-    <span class="p">}</span>
+<span class="kd">class</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">ServiceBundle</span><span class="o">&lt;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">YourServiceNameServiceClient</span><span class="w"></span>
+<span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="nx">validateConfig</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceConfig</span><span class="w"></span>
+<span class="w">    </span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// TODO You can validate your config here. If this gets called, the schema is correct.</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// You should for example check whether oauth keys are valid and servers are online here</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// If everything is good return &#39;emptySuccess()&#39;</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="k">async</span> <span class="nx">createClient</span><span class="p">(</span>
-        <span class="nx">config</span>: <span class="kt">YourServiceNameServiceConfig</span>
-    <span class="p">)</span><span class="o">:</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
-        <span class="c1">// TODO Here you should return a &lt;Your service name&gt;ServiceClient that is exposed to bundles.</span>
-        <span class="c1">// Or create a instance of your class if you have any simplifications and return that.</span>
-        <span class="c1">// If everything is good return &#39;success(client)&#39;</span>
-        <span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="nx">createClient</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceConfig</span><span class="w"></span>
+<span class="w">    </span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// TODO Here you should return a &lt;Your service name&gt;ServiceClient that is exposed to bundles.</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Or create a instance of your class if you have any simplifications and return that.</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// If everything is good return &#39;success(client)&#39;</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="nx">stopClient</span><span class="p">(</span><span class="nx">client</span>: <span class="kt">YourServiceNameServiceClient</span><span class="p">)</span><span class="o">:</span> <span class="ow">void</span> <span class="p">{</span>
-        <span class="c1">// Here you should make sure you disconnect everything here (if possible).</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="nx">stopClient</span><span class="p">(</span><span class="nx">client</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceClient</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Here you should make sure you disconnect everything here (if possible).</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>
@@ -1822,7 +1822,7 @@ and it is documented there. Don't forget to add this file to <code>mkdocs.yml</c
     <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.748e2769.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
       
     
   </body>
