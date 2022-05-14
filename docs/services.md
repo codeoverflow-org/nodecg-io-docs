@@ -79,7 +79,7 @@ Depends on [nodecg-types](https://www.npmjs.com/package/nodecg-types) @ ^1.8.3 <
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.6.0 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.7.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -290,7 +290,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/streamdeck.md)
 
-Depends on [@elgato-stream-deck/node](https://www.npmjs.com/package/@elgato-stream-deck/node) @ ^5.3.1 <br>
+Depends on [@elgato-stream-deck/node](https://www.npmjs.com/package/@elgato-stream-deck/node) @ ^5.4.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamelements](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamelements)
