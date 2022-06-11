@@ -119,7 +119,7 @@ Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^18.12
 There's no sample implementation for this service yet.
 
 Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.42 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^100.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^101.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -261,7 +261,7 @@ Depends on [shlink-client](https://www.npmjs.com/package/shlink-client) @ ^1.0.1
 
 See the [sample implementation](samples/slack.md)
 
-Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.7.1 <br>
+Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.7.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-spotify](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-spotify)
@@ -328,7 +328,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/tiane.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.7.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.0 <br>
 
 ## [nodecg-io-twitch-addons](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitch-addons)
 
@@ -389,7 +389,7 @@ See the [sample implementation](samples/websocket-client.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^8.5.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.7.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.0 <br>
 
 ## [nodecg-io-websocket-server](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-websocket-server)
 
@@ -399,7 +399,7 @@ See the [sample implementation](samples/websocket-server.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^8.5.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.7.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.0 <br>
 
 ## [nodecg-io-xdotool](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-xdotool)
 
