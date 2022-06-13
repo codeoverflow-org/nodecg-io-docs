@@ -1447,7 +1447,9 @@ description in the name after the service name as well. E.g. <code>twitch-chat</
 <code>obs-scenelist</code>.</p>
 <p>Create a folder in <code>samples</code> named after the sample and add a <code>package.json</code> and
 a <code>tsconfig.json</code>:</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">package.json</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">package.json</label><label for="__tabbed_1_2">tsconfig.json</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;the sample name&gt;&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;private&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
@@ -1474,7 +1476,7 @@ a <code>tsconfig.json</code>:</p>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">tsconfig.json</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;extends&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;../../tsconfig.common.json&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;references&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
@@ -1489,9 +1491,12 @@ a <code>tsconfig.json</code>:</p>
 </code></pre></div>
 </div>
 </div>
+</div>
 <p>Now you can create a file called <code>extension/index.ts</code>. Here's a template. Make
 sure you replace all the comments with your own code.</p>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">index.ts</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">index.ts</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
 <span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span><span class="w"></span>
 <span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TheServicesExportedClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-&lt;the services  name&gt;&quot;</span><span class="p">;</span><span class="w"></span>
@@ -1514,6 +1519,7 @@ sure you replace all the comments with your own code.</p>
 <span class="w">    </span><span class="p">);</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 </code></pre></div>
+</div>
 </div>
 </div>
 <h2 id="next-steps">Next steps</h2>
@@ -1570,7 +1576,7 @@ sure you replace all the comments with your own code.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      © 2020 codeoverflow.org CC-BY-4.0
+      © 2020-2022 codeoverflow.org CC-BY-4.0
     </div>
   
   

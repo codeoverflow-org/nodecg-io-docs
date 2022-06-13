@@ -1569,7 +1569,9 @@ modules or if you want to install a development version.</p>
 that this list might not be up-to-date.</p>
 <p>Here's how to install the native build tools on the most popular operating
 systems, if you need them:</p>
-<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Windows</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>For Windows, you'll need the Visual Studio Build Tools, if you have Visual
 Studio installed you should already have them. If you don't have Visual Studio
 just install the Visual Studio Build Tools by running the following command as
@@ -1577,7 +1579,7 @@ an <strong>Administrator</strong>:</p>
 <div class="highlight"><pre><span></span><code>npm install -g windows-build-tools
 </code></pre></div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Linux</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>For Linux, you'll need a C++ compiler and some other packages. On Ubuntu/Debian
 based operating systems run the following command:</p>
 <div class="highlight"><pre><span></span><code>sudo apt install build-essential libusb-1.0-0-dev libasound2-dev libudev-dev
@@ -1585,11 +1587,12 @@ based operating systems run the following command:</p>
 <p>For other Linux distros you'll need the corresponding packages, just search on
 the internet for the packages on your specific distro.</p>
 </div>
-<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">macOS</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>For macOS, you'll need the Xcode command line tools. To install them run the
 following command:</p>
 <div class="highlight"><pre><span></span><code>xcode-select --install
 </code></pre></div>
+</div>
 </div>
 </div>
 <h2 id="install-the-nodecg-io-cli">Install the nodecg-io CLI</h2>
@@ -1642,7 +1645,9 @@ Detected nodecg installation at /home/user/nodecg.
 </ul>
 <p>For starters, we recommend using the development version, so you may try our
 premade examples.</p>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Production install</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Production install</label><label for="__tabbed_2_2">Development install</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Because you selected a production install you may select the services to be
 included in this next step:</p>
 <p><pre><code><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
@@ -1665,7 +1670,7 @@ nodecg-io installation, its options will be preselected in the prompt.
 Re-running <code>nodecg-io install</code> will also update all packages to the latest patch
 version.</p>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Development install</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>Because you selected a production install you may select to use the samples and
 documentation to be included in these next steps:</p>
 <p><pre><code><b><span style="color:#1cdc9a">user@computer</span>:<span style="color:#3daee9">~/nodecg</span></b>$ nodecg-io install
@@ -1683,6 +1688,7 @@ Detected nodecg installation at /home/user/nodecg.
 or change the version, you can always re-run <code>nodecg-io install</code>. If it finds a
 nodecg-io installation, its options will be preselected in the prompt.
 Re-running <code>nodecg-io install</code> will also pull the repository and rebuild it.</p>
+</div>
 </div>
 </div>
 <h3 id="continue-reading">Continue reading</h3>
@@ -1753,7 +1759,7 @@ also will remove it from the loaded bundle paths in your NodeCG configuration.</
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      © 2020 codeoverflow.org CC-BY-4.0
+      © 2020-2022 codeoverflow.org CC-BY-4.0
     </div>
   
   

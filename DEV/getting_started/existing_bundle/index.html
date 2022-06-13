@@ -1586,13 +1586,16 @@ Just don't forget to add a comma as a separator between the multiple bundles.</p
 <h2 id="import-requireservice">Import <code>requireService</code></h2>
 <p>Now that you have <code>nodecg-io-core</code> installed in your bundle you can import the
 <code>requireService</code> function that it exposes:</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">TypeScript/ES Modules</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">TypeScript/ES Modules</label><label for="__tabbed_1_2">CommonJS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">CommonJS</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">).</span><span class="nx">requireService</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
+</div>
 </div>
 </div>
 <h2 id="import-service-type-typescript-only">Import Service type (TypeScript only)</h2>
@@ -1603,9 +1606,12 @@ safety.</p>
 the name of the service you need.</p>
 <div class="highlight"><pre><span></span><code>npm install nodecg-io-twitch-chat
 </code></pre></div>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">TypeScript</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">TypeScript</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TwitchChatServiceClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-twitch-chat&quot;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
+</div>
 </div>
 </div>
 <div class="admonition note">
@@ -1618,13 +1624,16 @@ looking it up in the service sample.</p>
 using the <code>requireService</code> function. You'll have to pass your NodeCG instance
 which is used to identify your bundle and the name of the service you want. In
 case of TypeScript you'll also need to provide the type of the service.</p>
-<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">TypeScript</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">TypeScript</label><label for="__tabbed_3_2">JavaScript</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TwitchChatServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">JavaScript</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
+</div>
 </div>
 </div>
 <h2 id="accessing-the-service-client">Accessing the service client</h2>
@@ -1634,7 +1643,6 @@ instance to your bundle, removes the assignment or when the service client got
 updated in some way.</p>
 <p>Handlers added with <code>onAvailable</code> will get called if there was a change, and you
 got a client:</p>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="c1">// This is the variable with the return value of requireService().</span><span class="w"></span>
 <span class="c1">// You may want to change the variable name for the service you are using.</span><span class="w"></span>
 <span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1642,28 +1650,20 @@ got a client:</p>
 <span class="w">    </span><span class="c1">// You can use the passed client in here to e.g. setup handlers on the client</span><span class="w"></span>
 <span class="p">});</span><span class="w"></span>
 </code></pre></div>
-</div>
-</div>
 <p><code>onAvailable</code> is especially useful to add event handlers to clients. E.g., if
 you want to react to donations or chat messages you can add event handlers for
 these here.</p>
 <p>Handlers added with <code>onUnavailable</code> will get called if the user unassigned your
 bundle from service instance or if there was an error in service client
 creation:</p>
-<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was unset&quot;</span><span class="p">);</span><span class="w"></span>
 <span class="p">});</span><span class="w"></span>
 </code></pre></div>
-</div>
-</div>
 <h3 id="using-getclient">Using <code>getClient</code></h3>
 <p>Instead of callbacks you can also get access to the client directly:</p>
-<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">TypeScript</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChatClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">getClient</span><span class="p">();</span><span class="w"></span>
 </code></pre></div>
-</div>
-</div>
 <p><code>getClient</code> will return the client if your bundle has an assigned service
 instance that has produced a service client without error and will return
 <code>undefined</code> otherwise. This is useful for when you want to use the client due to
@@ -1720,7 +1720,7 @@ some external event or from <code>onAvailable</code> handlers of other services.
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      © 2020 codeoverflow.org CC-BY-4.0
+      © 2020-2022 codeoverflow.org CC-BY-4.0
     </div>
   
   
