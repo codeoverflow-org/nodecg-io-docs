@@ -113,16 +113,14 @@ updated in some way.
 Handlers added with `onAvailable` will get called if there was a change, and you
 got a client:
 
-=== "TypeScript"
-
-    ```typescript
-    // This is the variable with the return value of requireService().
-    // You may want to change the variable name for the service you are using.
-    twitchChat.onAvailable((client) => {
-        nodecg.log.info("Client was set");
-        // You can use the passed client in here to e.g. setup handlers on the client
-    });
-    ```
+```typescript
+// This is the variable with the return value of requireService().
+// You may want to change the variable name for the service you are using.
+twitchChat.onAvailable((client) => {
+    nodecg.log.info("Client was set");
+    // You can use the passed client in here to e.g. setup handlers on the client
+});
+```
 
 `onAvailable` is especially useful to add event handlers to clients. E.g., if
 you want to react to donations or chat messages you can add event handlers for
@@ -132,23 +130,19 @@ Handlers added with `onUnavailable` will get called if the user unassigned your
 bundle from service instance or if there was an error in service client
 creation:
 
-=== "TypeScript"
-
-    ```typescript
-    twitchChat.onUnavailable(() => {
-        nodecg.log.info("Client was unset");
-    });
-    ```
+```typescript
+twitchChat.onUnavailable(() => {
+    nodecg.log.info("Client was unset");
+});
+```
 
 ### Using `getClient`
 
 Instead of callbacks you can also get access to the client directly:
 
-=== "TypeScript"
-
-    ```typescript
-    const twitchChatClient = twitchChat.getClient();
-    ```
+```typescript
+const twitchChatClient = twitchChat.getClient();
+```
 
 `getClient` will return the client if your bundle has an assigned service
 instance that has produced a service client without error and will return
