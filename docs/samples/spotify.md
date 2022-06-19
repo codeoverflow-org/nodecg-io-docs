@@ -20,7 +20,7 @@ will also tell you how to log in and how to use the GUI.
 !!! NOTE
 
     If you don't have a registered application, yet you can follow
-    [this guide](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app).
+    [this guide](https://developer.spotify.com/documentation/general/guides/authorization/app-settings/).
     As a redirect URL use <http://localhost:9090/nodecg-io-spotify/spotifycallback>.
 
 ### Configure the Spotify sample bundle
@@ -44,7 +44,7 @@ will also tell you how to log in and how to use the GUI.
         This sample requires the `user-read-playback-state` scope, but you
         can require other scopes if you want to use functions that require them. A
         list of all scopes can be found
-        [here](https://developer.spotify.com/documentation/general/guides/scopes/).
+        [here](https://developer.spotify.com/documentation/general/guides/authorization/scopes/).
 
 3.  Set the sample's (`spotify-current-song`) dependency to be the newly created
     service instance (of type `spotify`).
