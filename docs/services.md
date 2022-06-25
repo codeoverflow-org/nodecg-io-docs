@@ -79,7 +79,7 @@ Depends on [nodecg-types](https://www.npmjs.com/package/nodecg-types) @ ^1.8.3 <
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.7.0 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^13.8.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -119,7 +119,7 @@ Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^18.12
 There's no sample implementation for this service yet.
 
 Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.42 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^103.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^104.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -310,7 +310,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 See the [sample implementation](samples/telegram.md)
 
 Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.57.1 <br>
-Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.57.0 <br>
+Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.58.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-template](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-template)
