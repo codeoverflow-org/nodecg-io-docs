@@ -89,12 +89,12 @@ setInterval(() => {
 
 !!! NOTE
 
-    Since neither this library nor nodecg-io does not yet contain an
-    abstraction, so the data is sent to the timings set by the specification, you
-    should respect this part of specification in **your implementation**.
+    Since neither this library nor nodecg-io currently contains an
+    abstraction that abides the timings specified by the specification, it is
+    important for **your implementation** to respect this part of the specification:
 
     > However, an input that is active but not changing, will re-transmit the last
     > valid ArtDmx packet at approximately 4-second intervals. (_Note_. In order to
     > converge the needs of Art- Net and sACN it is recommended that Art-Net devices
-    > actually use a re-transmit time of 800mS to 1000mS).
+    > actually use a re-transmit time of 800ms to 1000ms).
     >  — [Art-Net 4 Specification p. 48](https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf)
