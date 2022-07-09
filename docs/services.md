@@ -110,7 +110,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/github.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^18.12.0 <br>
+Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^19.0.3 <br>
 
 ## [nodecg-io-googleapis](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-googleapis)
 
