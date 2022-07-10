@@ -119,7 +119,7 @@ Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^19.0.
 There's no sample implementation for this service yet.
 
 Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.42 <br>
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^104.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^105.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -187,7 +187,7 @@ Depends on [nodecg-types](https://www.npmjs.com/package/nodecg-types) @ ^1.8.3 <
 See the [sample implementation](samples/obs.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ ^4.0.3 <br>
+Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ ^5.0.0 <br>
 
 ## [nodecg-io-philipshue](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-philipshue)
 
