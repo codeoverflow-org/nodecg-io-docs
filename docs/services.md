@@ -328,7 +328,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/tiane.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.1 <br>
 
 ## [nodecg-io-twitch-addons](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitch-addons)
 
@@ -389,7 +389,7 @@ See the [sample implementation](samples/websocket-client.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^8.5.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.1 <br>
 
 ## [nodecg-io-websocket-server](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-websocket-server)
 
@@ -399,7 +399,7 @@ See the [sample implementation](samples/websocket-server.md)
 
 Depends on [@types/ws](https://www.npmjs.com/package/@types/ws) @ ^8.5.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.0 <br>
+Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.8.1 <br>
 
 ## [nodecg-io-xdotool](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-xdotool)
 
