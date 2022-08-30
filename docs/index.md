@@ -44,6 +44,7 @@ that's no problem you can head over to the
 -   Elgato lights
 -   GitHub
 -   Google APIs
+-   Google Cast
 -   IntelliJ IDEs
 -   IRC (Internet Relay Chat)
 -   MIDI Input
