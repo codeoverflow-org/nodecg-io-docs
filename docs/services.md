@@ -112,6 +112,15 @@ See the [sample implementation](samples/github.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^19.0.4 <br>
 
+## [nodecg-io-google-cast](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-google-cast)
+
+**Allows playing media on Google Cast devices.**
+
+See the [sample implementation](samples/google-cast.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
+Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4.0 <br>
+
 ## [nodecg-io-googleapis](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-googleapis)
 
 **Allows to connect to and interact with many google-apis**
