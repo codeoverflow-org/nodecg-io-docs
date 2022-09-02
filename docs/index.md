@@ -52,6 +52,7 @@ that's no problem you can head over to the
 -   MQTT
 -   Nanoleafs
 -   OBS
+-   [OpenTTS](https://github.com/synesthesiam/opentts)
 -   Philips Hue
 -   RCON
 -   Reddit

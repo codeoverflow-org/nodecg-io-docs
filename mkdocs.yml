@@ -81,6 +81,7 @@ nav:
           - MQTT: samples/mqtt-client.md
           - Nanoleaf: samples/nanoleaf.md
           - OBS: samples/obs.md
+          - OpenTTS: samples/opentts.md
           - Philips Hue sample: samples/philipshue.md
           - Rcon sample: samples/rcon.md
           - Reddit sample: samples/reddit.md
