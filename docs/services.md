@@ -198,6 +198,15 @@ See the [sample implementation](samples/obs.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ ^5.0.1 <br>
 
+## [nodecg-io-opentts](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-opentts)
+
+**Allows generating audio for text using an OpenTTS instance.**
+
+See the [sample implementation](samples/opentts.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.7 <br>
+
 ## [nodecg-io-philipshue](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-philipshue)
 
 **Allows you to connect with your Philips Hue bridge. This allows you to control your lights etc.**

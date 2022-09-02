@@ -58,6 +58,7 @@ FontStyle Underline
 [<u>nodecg-io-nanoleaf] as services_nodecg_io_nanoleaf <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-nanoleaf]]
 [<u>nodecg-io-obs] as services_nodecg_io_obs <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-obs]]
 [<u>obs-websocket-js] as obs_websocket_js <<lib>> [[https://www.npmjs.com/package/obs-websocket-js]]
+[<u>nodecg-io-opentts] as services_nodecg_io_opentts <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-opentts]]
 [<u>nodecg-io-philipshue] as services_nodecg_io_philipshue <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-philipshue]]
 [<u>is-ip] as is_ip <<lib>> [[https://www.npmjs.com/package/is-ip]]
 [<u>node-hue-api] as node_hue_api <<lib>> [[https://www.npmjs.com/package/node-hue-api]]
@@ -159,6 +160,8 @@ services_nodecg_io_nanoleaf --> nodecg_io_core
 services_nodecg_io_nanoleaf ...> nodecg_types
 services_nodecg_io_obs --> nodecg_io_core
 services_nodecg_io_obs ...> obs_websocket_js
+services_nodecg_io_opentts --> nodecg_io_core
+services_nodecg_io_opentts ...> node_fetch
 services_nodecg_io_philipshue ...> is_ip
 services_nodecg_io_philipshue ...> node_hue_api
 services_nodecg_io_philipshue --> nodecg_io_core
