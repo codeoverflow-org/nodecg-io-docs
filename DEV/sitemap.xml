@@ -101,11 +101,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nodecg.io/DEV/samples/curseforge/</loc>
-         <lastmod>2022-09-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://nodecg.io/DEV/samples/dbus-ratbagd/</loc>
          <lastmod>2022-09-06</lastmod>
          <changefreq>daily</changefreq>
