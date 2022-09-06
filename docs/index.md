@@ -37,7 +37,6 @@ that's no problem you can head over to the
 -   Android (using adb)
 -   Art-Net
 -   Atem
--   CurseForge
 -   DBus
 -   Discord
 -   Discord RPC

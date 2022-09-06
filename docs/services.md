@@ -46,15 +46,6 @@ See the [sample implementation](samples/atem.md)
 Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
-## [nodecg-io-curseforge](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-curseforge)
-
-**A service to communicate with the CurseForge API.**
-
-See the [sample implementation](samples/curseforge.md)
-
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.7 <br>
-Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-
 ## [nodecg-io-dbus](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-dbus)
 
 **Allows to interface with DBus**
