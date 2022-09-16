@@ -135,7 +135,7 @@ premade examples.
      ◯ midi-input
     (Move up and down to reveal more choices)</code></pre>
 
-    If you want to every change your nodecg-io installation to add/remove a service
+    If you ever want to change your nodecg-io installation to add/remove a service
     or change the version, you can always re-run `nodecg-io install`. If it finds a
     nodecg-io installation, its options will be preselected in the prompt.
     Re-running `nodecg-io install` will also update all packages to the latest patch
@@ -159,9 +159,8 @@ premade examples.
     <span style="color:#11d116">?</span> <b>Would you like to use the provided samples?</b> <span style="color:#1abc9c">No</span>
     <span style="color:#11d116">?</span> <b>Would you like to clone the documentation?</b> (y/N) </code></pre>
 
-    If you want to every change your nodecg-io installation to add/remove a service
-    or change the version, you can always re-run `nodecg-io install`. If it finds a
-    nodecg-io installation, its options will be preselected in the prompt.
+    If you ever want to change your nodecg-io installation to add/remove the doc repo
+    or add/remove the samples you can always re-run `nodecg-io install`.
     Re-running `nodecg-io install` will also pull the repository and rebuild it.
 
 ### Continue reading
