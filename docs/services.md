@@ -43,7 +43,7 @@ Depends on [artnet-protocol](https://www.npmjs.com/package/artnet-protocol) @ ^0
 
 See the [sample implementation](samples/atem.md)
 
-Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.0.0 <br>
+Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-dbus](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-dbus)
