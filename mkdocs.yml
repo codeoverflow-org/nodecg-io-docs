@@ -45,6 +45,7 @@ nav:
           - Migrating an existing bundle: getting_started/existing_bundle.md
           - Use service replicants: getting_started/use_replicants.md
           - Configuration: getting_started/configuration.md
+          - Security considerations: getting_started/security_considerations.md
     - Contribute:
           - Basics: contribute/contribute.md
           - Create a Service: contribute/create_service.md
