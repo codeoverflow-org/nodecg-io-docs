@@ -9,7 +9,7 @@ TODO: explain for what replicants are useful
 
 Current list of services with replicant support:
 
-- StreamElements
+-   StreamElements
 
 (more services with replicants will hopefully be added in the future)
 
@@ -56,11 +56,11 @@ Here's an example for the StreamElements service (replace the name with the serv
 
         ...
 
-	streamElements?.onAvailable((client) => {
+    streamElements?.onAvailable((client) => {
             ...
-	    // Connect your replicant to this nodecg-io service instance.
-	    client.setupReplicant(streamElementsReplicant);
-	});
+        // Connect your replicant to this nodecg-io service instance.
+        client.setupReplicant(streamElementsReplicant);
+    });
     }
 
     ```
@@ -72,5 +72,3 @@ In case you want to use the created replicant in your bundles extension you alre
 You can access the NodeCG replicant as usual. Use `replicant.value` to get the current state and `replicant.on("change", (newValue, oldValue) => { /* .... */ })` to be informed when the value of the replicant changes.
 
 To figure out what properties are available on the object value you can either look at the corresponding sample bundle or use autocomplete in your editor if you're using TypeScript.
-
-
