@@ -10,7 +10,7 @@ need network access.
 You'll need the following tools:
 
 -   [Git](https://git-scm.com)
--   [Node.js](https://nodejs.org/en/) v12.0.0 or newer
+-   [Node.js](https://nodejs.org/en/) v14.14.0 or newer
 -   [npm](https://www.npmjs.com/get-npm) 7.0.0 or newer
 -   [NodeCG](https://nodecg.dev/) 1.4.0 or newer (1.7.0 or higher recommended)
 
