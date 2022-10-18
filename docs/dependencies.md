@@ -41,7 +41,6 @@ FontStyle Underline
 [<u>nodecg-io-google-cast] as services_nodecg_io_google_cast <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-google-cast]]
 [<u>chromecast-api] as chromecast_api <<lib>> [[https://www.npmjs.com/package/chromecast-api]]
 [<u>nodecg-io-googleapis] as services_nodecg_io_googleapis <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-googleapis]]
-[<u>@types/gapi] as types_gapi <<lib>> [[https://www.npmjs.com/package/@types/gapi]]
 [<u>googleapis] as googleapis <<lib>> [[https://www.npmjs.com/package/googleapis]]
 [<u>open] as open <<lib>> [[https://www.npmjs.com/package/open]]
 [<u>nodecg-io-intellij] as services_nodecg_io_intellij <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-intellij]]
@@ -134,7 +133,6 @@ services_nodecg_io_github --> nodecg_io_core
 services_nodecg_io_github ...> octokit_rest
 services_nodecg_io_google_cast --> nodecg_io_core
 services_nodecg_io_google_cast ...> chromecast_api
-services_nodecg_io_googleapis ...> types_gapi
 services_nodecg_io_googleapis ...> googleapis
 services_nodecg_io_googleapis --> nodecg_io_core
 services_nodecg_io_googleapis ...> open

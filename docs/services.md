@@ -117,7 +117,6 @@ Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4
 
 There's no sample implementation for this service yet.
 
-Depends on [@types/gapi](https://www.npmjs.com/package/@types/gapi) @ ^0.0.42 <br>
 Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^107.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
