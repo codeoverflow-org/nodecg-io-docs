@@ -375,7 +375,7 @@ See the [sample implementation](samples/twitch-pubsub.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.3.0 <br>
 Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.2.4 <br>
-Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.2.4 <br>
+Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.2.5 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitter)
 
