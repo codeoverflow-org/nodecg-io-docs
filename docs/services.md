@@ -146,7 +146,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/midi-input.md)
 
-Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.1.1 <br>
+Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^3.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-midi-output](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-midi-output)
@@ -155,7 +155,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/midi-output.md)
 
-Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^2.1.1 <br>
+Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^3.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-mqtt-client](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-mqtt-client)
