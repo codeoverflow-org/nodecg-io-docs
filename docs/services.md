@@ -43,7 +43,7 @@ Depends on [artnet-protocol](https://www.npmjs.com/package/artnet-protocol) @ ^0
 
 See the [sample implementation](samples/atem.md)
 
-Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.0.1 <br>
+Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.1.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-dbus](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-dbus)
@@ -69,7 +69,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.6.0 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.7.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -267,7 +267,7 @@ Depends on [shlink-client](https://www.npmjs.com/package/shlink-client) @ ^1.0.1
 
 See the [sample implementation](samples/slack.md)
 
-Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.7.2 <br>
+Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.8.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-spotify](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-spotify)
