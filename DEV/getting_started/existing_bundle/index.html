@@ -1594,21 +1594,21 @@ and use your own library of choice for other services if you like to.</p>
 <h2 id="install-nodecg-io-core">Install <code>nodecg-io-core</code></h2>
 <p>The first thing you need to do is to install <code>nodecg-io-core</code>. You can do this
 simply using this npm command:</p>
-<div class="highlight"><pre><span></span><code>npm install nodecg-io-core
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>nodecg-io-core
 </code></pre></div>
 <h2 id="add-the-service-bundle-as-a-bundle-dependency">Add the service bundle as a bundle dependency</h2>
 <p>To ensure that NodeCG loads the service bundle you need before your bundle you
 need to add it as a <code>bundleDependency</code> to your bundle.
 To do that for e.g. the <code>twitch-chat</code> service you add it to your bundles
 <code>package.json</code> file like this:</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="err">...</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;nodecg&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;compatibleRange&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.4.0&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;bundleDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;nodecg-io-twitch-chat&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^0.2.0&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="err">...</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="err">...</span>
+<span class="w">    </span><span class="nt">&quot;nodecg&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;compatibleRange&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.4.0&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;bundleDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;nodecg-io-twitch-chat&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^0.2.0&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="err">...</span>
 </code></pre></div>
 <p>Change the bundle name and version accordingly.
 You need to specify each service your bundle needs here as a bundle dependency.
@@ -1619,11 +1619,11 @@ Just don't forget to add a comma as a separator between the multiple bundles.</p
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">TypeScript/ES Modules</label><label for="__tabbed_1_2">CommonJS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">).</span><span class="nx">requireService</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">requireService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">).</span><span class="nx">requireService</span><span class="p">;</span>
 </code></pre></div>
 </div>
 </div>
@@ -1634,12 +1634,12 @@ service that you want to use. You need it to be able to import its type for type
 safety.</p>
 <p>This example uses <code>twitch-chat</code> as an example, but you can just replace it with
 the name of the service you need.</p>
-<div class="highlight"><pre><span></span><code>npm install nodecg-io-twitch-chat
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>nodecg-io-twitch-chat
 </code></pre></div>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">TypeScript</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TwitchChatServiceClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-twitch-chat&quot;</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TwitchChatServiceClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-twitch-chat&quot;</span><span class="p">;</span>
 </code></pre></div>
 </div>
 </div>
@@ -1657,11 +1657,11 @@ case of TypeScript you'll also need to provide the type of the service.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">TypeScript</label><label for="__tabbed_3_2">JavaScript</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TwitchChatServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">TwitchChatServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;twitch-chat&quot;</span><span class="p">);</span>
 </code></pre></div>
 </div>
 </div>
@@ -1673,12 +1673,12 @@ instance to your bundle, removes the assignment or when the service client got
 updated in some way.</p>
 <p>Handlers added with <code>onAvailable</code> will get called if there was a change, and you
 got a client:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// This is the variable with the return value of requireService().</span><span class="w"></span>
-<span class="c1">// You may want to change the variable name for the service you are using.</span><span class="w"></span>
-<span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was set&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// You can use the passed client in here to e.g. setup handlers on the client</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">// This is the variable with the return value of requireService().</span>
+<span class="c1">// You may want to change the variable name for the service you are using.</span>
+<span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was set&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// You can use the passed client in here to e.g. setup handlers on the client</span>
+<span class="p">});</span>
 </code></pre></div>
 <p><code>onAvailable</code> is especially useful to add event handlers to clients. E.g., if
 you want to react to donations or chat messages you can add event handlers for
@@ -1686,13 +1686,13 @@ these here.</p>
 <p>Handlers added with <code>onUnavailable</code> will get called if the user unassigned your
 bundle from service instance or if there was an error in service client
 creation:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was unset&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">onUnavailable</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&quot;Client was unset&quot;</span><span class="p">);</span>
+<span class="p">});</span>
 </code></pre></div>
 <h3 id="using-getclient">Using <code>getClient</code></h3>
 <p>Instead of callbacks you can also get access to the client directly:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChatClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">getClient</span><span class="p">();</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">twitchChatClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">twitchChat</span><span class="p">.</span><span class="nx">getClient</span><span class="p">();</span>
 </code></pre></div>
 <p><code>getClient</code> will return the client if your bundle has an assigned service
 instance that has produced a service client without error and will return

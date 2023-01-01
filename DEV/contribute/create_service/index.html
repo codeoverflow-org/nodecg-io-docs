@@ -1592,12 +1592,12 @@ you need to create one yourself. This is not described here. You may read the
 <li>executed from root of nodecg-io repo</li>
 </ul>
 <p>The script waits for your input for each of those fields:</p>
-<div class="highlight"><pre><span></span><code>$ python3 .scripts/create-service.py
-Service name: &lt;name here&gt;
-Short description: &lt;description here&gt;
-Author name: &lt;author here&gt;
-Author url: &lt;url here&gt;
-Sample name: &lt;name here&gt;
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>python3<span class="w"> </span>.scripts/create-service.py
+Service<span class="w"> </span>name:<span class="w"> </span>&lt;name<span class="w"> </span>here&gt;
+Short<span class="w"> </span>description:<span class="w"> </span>&lt;description<span class="w"> </span>here&gt;
+Author<span class="w"> </span>name:<span class="w"> </span>&lt;author<span class="w"> </span>here&gt;
+Author<span class="w"> </span>url:<span class="w"> </span>&lt;url<span class="w"> </span>here&gt;
+Sample<span class="w"> </span>name:<span class="w"> </span>&lt;name<span class="w"> </span>here&gt;
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -1622,41 +1622,41 @@ Sample name: &lt;name here&gt;
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">package.json</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nodecg-io-&lt;your-service-name&gt;&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Short description what is possible with your service.&gt;&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;homepage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://nodecg.io/RELEASE/samples/&lt;your-service-name&gt;&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Your name&gt;&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Your github profile url&gt;&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;repository&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;git&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/codeoverflow-org/nodecg-io.git&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;services/nodecg-io-&lt;your-service-name&gt;&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;**/*.js&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/*.js.map&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/*.d.ts&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.json&quot;</span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;extension&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;keywords&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;nodecg-io&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;nodecg-bundle&quot;</span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;nodecg&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;compatibleRange&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.1.1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;bundleDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;nodecg-io-core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^0.2.0&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;devDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;@types/node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^15.0.2&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;nodecg-types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.8.2&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;typescript&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.2.4&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;nodecg-io-core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^0.2.0&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;&lt;the package you found in step 1&gt;&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;the packages version you want to use&gt;&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nodecg-io-&lt;your-service-name&gt;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Short description what is possible with your service.&gt;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;homepage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://nodecg.io/RELEASE/samples/&lt;your-service-name&gt;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Your name&gt;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Your github profile url&gt;&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;repository&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;git&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/codeoverflow-org/nodecg-io.git&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;services/nodecg-io-&lt;your-service-name&gt;&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;**/*.js&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/*.js.map&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/*.d.ts&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.json&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;extension&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="nt">&quot;keywords&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;nodecg-io&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;nodecg-bundle&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;nodecg&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;compatibleRange&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.1.1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;bundleDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;nodecg-io-core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^0.2.0&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;devDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@types/node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^15.0.2&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;nodecg-types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.8.2&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;typescript&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.2.4&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;nodecg-io-core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^0.2.0&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;&lt;the package you found in step 1&gt;&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;the packages version you want to use&gt;&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1666,14 +1666,14 @@ The <code>tsconfig.json</code> should look like this:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">tsconfig.json</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;extends&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;../../tsconfig.common.json&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;references&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;../../nodecg-io-core&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;extends&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;../../tsconfig.common.json&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;references&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;../../nodecg-io-core&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1692,63 +1692,63 @@ instead of the comments.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">index.ts</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1">// TODO: Rename all occurrences of &quot;YourServiceName&quot; in PascalCase</span><span class="w"></span>
-<span class="c1">// TODO: Rename all occurrences of &quot;yourServiceName&quot; in carmelCase</span><span class="w"></span>
-<span class="c1">// TODO: Rename all occurrences of &quot;your-service-name&quot; with only lowercase and hyphens ( - )</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">// TODO: Rename all occurrences of &quot;YourServiceName&quot; in PascalCase</span>
+<span class="c1">// TODO: Rename all occurrences of &quot;yourServiceName&quot; in carmelCase</span>
+<span class="c1">// TODO: Rename all occurrences of &quot;your-service-name&quot; with only lowercase and hyphens ( - )</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Result</span><span class="p">,</span><span class="w"> </span><span class="nx">emptySuccess</span><span class="p">,</span><span class="w"> </span><span class="nx">success</span><span class="p">,</span><span class="w"> </span><span class="nx">ServiceBundle</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="c1">// TODO: Replace the &quot;fake&quot; service class with that found on npm etc.</span><span class="w"></span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceClass</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Result</span><span class="p">,</span><span class="w"> </span><span class="nx">emptySuccess</span><span class="p">,</span><span class="w"> </span><span class="nx">success</span><span class="p">,</span><span class="w"> </span><span class="nx">ServiceBundle</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-core&quot;</span><span class="p">;</span>
+<span class="c1">// TODO: Replace the &quot;fake&quot; service class with that found on npm etc.</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceClass</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./&quot;</span><span class="p">;</span>
 
-<span class="kd">interface</span><span class="w"> </span><span class="nx">YourServiceNameServiceConfig</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// TODO Fill in the values from your json schema here. The json</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// schema will load into an instance of this.</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kd">interface</span><span class="w"> </span><span class="nx">YourServiceNameServiceConfig</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// TODO Fill in the values from your json schema here. The json</span>
+<span class="w">    </span><span class="c1">// schema will load into an instance of this.</span>
+<span class="p">}</span>
 
-<span class="c1">// ServiceClient ensures that you will provide a `getNativeClient` function that should give</span><span class="w"></span>
-<span class="c1">// access to the underlying client from the library that you are using.</span><span class="w"></span>
-<span class="c1">// TODO: if you want to provide simplifications for the service then make this</span><span class="w"></span>
-<span class="c1">// type-alias a separate class in a separate file and directly implement those simplifications</span><span class="w"></span>
-<span class="c1">// there.</span><span class="w"></span>
-<span class="c1">// TODO: Replace the `ServiceClass` with the class of the package from step 1</span><span class="w"></span>
-<span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">YourServiceNameServiceClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ServiceClient</span><span class="o">&lt;</span><span class="nx">ServiceClass</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// ServiceClient ensures that you will provide a `getNativeClient` function that should give</span>
+<span class="c1">// access to the underlying client from the library that you are using.</span>
+<span class="c1">// TODO: if you want to provide simplifications for the service then make this</span>
+<span class="c1">// type-alias a separate class in a separate file and directly implement those simplifications</span>
+<span class="c1">// there.</span>
+<span class="c1">// TODO: Replace the `ServiceClass` with the class of the package from step 1</span>
+<span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">YourServiceNameServiceClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ServiceClient</span><span class="o">&lt;</span><span class="nx">ServiceClass</span><span class="o">&gt;</span><span class="p">;</span>
 
-<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="w"></span>
-<span class="w">        </span><span class="nx">nodecg</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">).</span><span class="nx">register</span><span class="p">();</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span>
+<span class="w">        </span><span class="nx">nodecg</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">__dirname</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span>
+<span class="w">    </span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
+<span class="p">};</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">ServiceBundle</span><span class="o">&lt;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nx">YourServiceNameServiceClient</span><span class="w"></span>
-<span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="nx">validateConfig</span><span class="p">(</span><span class="w"></span>
-<span class="w">        </span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceConfig</span><span class="w"></span>
-<span class="w">    </span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// TODO You can validate your config here. If this gets called, the schema is correct.</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// You should for example check whether oauth keys are valid and servers are online here</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// If everything is good return &#39;emptySuccess()&#39;</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="kd">class</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">ServiceBundle</span><span class="o">&lt;</span>
+<span class="w">    </span><span class="nx">YourServiceNameServiceConfig</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">YourServiceNameServiceClient</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="nx">validateConfig</span><span class="p">(</span>
+<span class="w">        </span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceConfig</span>
+<span class="w">    </span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// TODO You can validate your config here. If this gets called, the schema is correct.</span>
+<span class="w">        </span><span class="c1">// You should for example check whether oauth keys are valid and servers are online here</span>
+<span class="w">        </span><span class="c1">// If everything is good return &#39;emptySuccess()&#39;</span>
+<span class="w">        </span><span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span>
+<span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="nx">createClient</span><span class="p">(</span><span class="w"></span>
-<span class="w">        </span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceConfig</span><span class="w"></span>
-<span class="w">    </span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// TODO Here you should return a &lt;Your service name&gt;ServiceClient that is exposed to bundles.</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// Or create a instance of your class if you have any simplifications and return that.</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// If everything is good return &#39;success(client)&#39;</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="nx">createClient</span><span class="p">(</span>
+<span class="w">        </span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceConfig</span>
+<span class="w">    </span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Result</span><span class="o">&lt;</span><span class="nx">YourServiceNameServiceClient</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// TODO Here you should return a &lt;Your service name&gt;ServiceClient that is exposed to bundles.</span>
+<span class="w">        </span><span class="c1">// Or create a instance of your class if you have any simplifications and return that.</span>
+<span class="w">        </span><span class="c1">// If everything is good return &#39;success(client)&#39;</span>
+<span class="w">        </span><span class="c1">// If an error occurs return &#39;error(&lt;The error message&gt;)&#39;</span>
+<span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="nx">stopClient</span><span class="p">(</span><span class="nx">client</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceClient</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// Here you should make sure you disconnect everything here (if possible).</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="nx">stopClient</span><span class="p">(</span><span class="nx">client</span><span class="o">:</span><span class="w"> </span><span class="kt">YourServiceNameServiceClient</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Here you should make sure you disconnect everything here (if possible).</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>

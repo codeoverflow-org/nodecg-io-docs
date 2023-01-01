@@ -1581,18 +1581,18 @@ Alice &lt;-- Bob: responds
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="sb">```typescript</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
+<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
+<span class="p">};</span>
 <span class="sb">```</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">NodeCG</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-types/types/server&quot;</span><span class="p">;</span>
+<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">YourServiceNameService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your-service-name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">__dirname</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;../your-service-name-schema.json&quot;</span><span class="p">).</span><span class="nx">register</span><span class="p">();</span>
+<span class="p">};</span>
 </code></pre></div>
 </div>
 </div>
@@ -1643,8 +1643,8 @@ The mock shebang will be treated like text here: <span class="sb">` #!js vartest
 
     More Markdown <span class="gs">**content**</span>.
 
-    <span class="k">-</span> list item a
-    <span class="k">-</span> list item b
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>list item a
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>list item b
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1675,13 +1675,13 @@ The mock shebang will be treated like text here: <span class="sb">` #!js vartest
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">- [X]</span> item 1
-  <span class="k">* [X]</span> item A
-    <span class="k">* [ ]</span> item B
+<span class="w">  </span><span class="k">* [X]</span> item A
+<span class="w">    </span><span class="k">* [ ]</span> item B
         more text
         + [x] item a
         + [ ] item b
         + [x] item c
-    <span class="k">* [X]</span> item C
+<span class="w">    </span><span class="k">* [X]</span> item C
 <span class="k">- [ ]</span> item 2
 <span class="k">- [ ]</span> item 3
 </code></pre></div>

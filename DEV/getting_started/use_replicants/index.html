@@ -1503,42 +1503,42 @@ Here's an example for the StreamElements service (replace the name with the serv
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">TypeScript</label><label for="__tabbed_1_2">JavaScript</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1">// Update your imports to include the type of the replicant data:</span><span class="w"></span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">StreamElementsReplicant</span><span class="p">,</span><span class="w"> </span><span class="nx">StreamElementsServiceClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-streamelements&quot;</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Update your imports to include the type of the replicant data:</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">StreamElementsReplicant</span><span class="p">,</span><span class="w"> </span><span class="nx">StreamElementsServiceClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;nodecg-io-streamelements&quot;</span><span class="p">;</span>
 
-<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// Require service (as usual)</span><span class="w"></span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">StreamElementsServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;streamelements&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="kt">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Require service (as usual)</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="o">&lt;</span><span class="nx">StreamElementsServiceClient</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;streamelements&quot;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="c1">// Define replicant</span><span class="w"></span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElementsReplicant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">Replicant</span><span class="o">&lt;</span><span class="nx">StreamElementsReplicant</span><span class="o">&gt;</span><span class="p">(</span><span class="s2">&quot;myStreamElementsReplicant&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Define replicant</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElementsReplicant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">Replicant</span><span class="o">&lt;</span><span class="nx">StreamElementsReplicant</span><span class="o">&gt;</span><span class="p">(</span><span class="s2">&quot;myStreamElementsReplicant&quot;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="p">...</span><span class="w"></span>
+<span class="w">    </span><span class="p">...</span>
 
-<span class="w">    </span><span class="nx">streamElements</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="p">...</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// Connect your replicant to this nodecg-io service instance.</span><span class="w"></span>
-<span class="w">        </span><span class="nx">client</span><span class="p">.</span><span class="nx">setupReplicant</span><span class="p">(</span><span class="nx">streamElementsReplicant</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="p">});</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="nx">streamElements</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="w">        </span><span class="c1">// Connect your replicant to this nodecg-io service instance.</span>
+<span class="w">        </span><span class="nx">client</span><span class="p">.</span><span class="nx">setupReplicant</span><span class="p">(</span><span class="nx">streamElementsReplicant</span><span class="p">);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="nx">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// Require service (as usual)</span><span class="w"></span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;streamelements&quot;</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">nodecg</span><span class="o">:</span><span class="w"> </span><span class="nx">NodeCG</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Require service (as usual)</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">requireService</span><span class="p">(</span><span class="nx">nodecg</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;streamelements&quot;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="c1">// Define replicant</span><span class="w"></span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElementsReplicant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">Replicant</span><span class="p">(</span><span class="s2">&quot;myStreamElementsReplicant&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Define replicant</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">streamElementsReplicant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nodecg</span><span class="p">.</span><span class="nx">Replicant</span><span class="p">(</span><span class="s2">&quot;myStreamElementsReplicant&quot;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="p">...</span><span class="w"></span>
+<span class="w">    </span><span class="p">...</span>
 
-<span class="nx">streamElements</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="p">...</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// Connect your replicant to this nodecg-io service instance.</span><span class="w"></span>
-<span class="w">    </span><span class="nx">client</span><span class="p">.</span><span class="nx">setupReplicant</span><span class="p">(</span><span class="nx">streamElementsReplicant</span><span class="p">);</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="nx">streamElements</span><span class="o">?</span><span class="p">.</span><span class="nx">onAvailable</span><span class="p">((</span><span class="nx">client</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="w">    </span><span class="c1">// Connect your replicant to this nodecg-io service instance.</span>
+<span class="w">    </span><span class="nx">client</span><span class="p">.</span><span class="nx">setupReplicant</span><span class="p">(</span><span class="nx">streamElementsReplicant</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>

@@ -1632,11 +1632,11 @@ highly recommended that you do that and update the documentation as you add new
 services or features. To be able to create Pull Requests you should fork the
 corresponding repositories and add them as a remote (update URL for e.g.,
 documentation repository):</p>
-<div class="highlight"><pre><span></span><code>git remote add fork https://github.com/<span class="o">[</span>YOUR_USERNAME<span class="o">]</span>/nodecg-io.git
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>fork<span class="w"> </span>https://github.com/<span class="o">[</span>YOUR_USERNAME<span class="o">]</span>/nodecg-io.git
 </code></pre></div>
 <p>Then you can create a new branch, do your changes, create commits and publish
 the branch to your fork using the following command:</p>
-<div class="highlight"><pre><span></span><code>git push fork my-branch
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>fork<span class="w"> </span>my-branch
 </code></pre></div>
 <h2 id="build">Build</h2>
 <h3 id="vs-code">VS Code</h3>
@@ -1656,14 +1656,14 @@ pressing <kbd>Ctrl</kbd> + <kbd>P</kbd> and then <kbd>!</kbd> (or
 <kbd>CMD</kbd> + <kbd>P</kbd> and <kbd>!</kbd> on macOS).</p>
 <h3 id="terminal">Terminal</h3>
 <p>You can also use you terminal to build nodecg-io:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> path/to/nodecg-io
-npm run build
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>path/to/nodecg-io
+npm<span class="w"> </span>run<span class="w"> </span>build
 </code></pre></div>
 <p>To do a full rebuild instead of just an incremental build you can use
 <code>npm run rebuild</code>.</p>
 <p>The watch builder can be activated here too:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> path/to/nodecg-io
-npm run watch
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>path/to/nodecg-io
+npm<span class="w"> </span>run<span class="w"> </span>watch
 </code></pre></div>
 <h2 id="run">Run</h2>
 <p>To test the changes you simply need to start/restart NodeCG.</p>
@@ -1682,9 +1682,9 @@ start a Pull Request.</p>
 <h2 id="merge-upstream-changes">Merge Upstream Changes</h2>
 <p>Occasionally you will want to merge changes in the upstream repository (the
 official code repo) with your fork.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> path/to/nodecg-io
-git checkout main
-git pull https://github.com/codeoverflow-org/nodecg-io main
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>path/to/nodecg-io
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>pull<span class="w"> </span>https://github.com/codeoverflow-org/nodecg-io<span class="w"> </span>main
 </code></pre></div>
 <p>Manage any merge conflicts, commit them, and then push them to your fork.</p>
 <p>You may also occasionally need to merge upstream main in a pull request. To do
