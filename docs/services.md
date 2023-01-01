@@ -43,7 +43,7 @@ Depends on [artnet-protocol](https://www.npmjs.com/package/artnet-protocol) @ ^0
 
 See the [sample implementation](samples/atem.md)
 
-Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.1.2 <br>
+Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.1.3 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-dbus](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-dbus)
@@ -117,7 +117,7 @@ Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4
 
 There's no sample implementation for this service yet.
 
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^108.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^110.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -247,7 +247,7 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.2.0 <br>
 
 See the [sample implementation](samples/serial.md)
 
-Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^10.3.0 <br>
+Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^10.5.0 <br>
 Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^10.4.0 <br>
@@ -375,7 +375,7 @@ See the [sample implementation](samples/twitch-pubsub.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.3.0 <br>
 Depends on [@twurple/api](https://www.npmjs.com/package/@twurple/api) @ ^5.2.5 <br>
-Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.2.5 <br>
+Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5.3.1 <br>
 
 ## [nodecg-io-twitter](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-twitter)
 
