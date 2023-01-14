@@ -287,7 +287,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 See the [sample implementation](samples/sql.md)
 
-Depends on [knex](https://www.npmjs.com/package/knex) @ ^2.3.0 <br>
+Depends on [knex](https://www.npmjs.com/package/knex) @ ^2.4.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamdeck)
