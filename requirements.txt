@@ -3,5 +3,5 @@
 
 mkdocs == 1.4.2
 mkdocs-material == 9.1.5
-plantuml-markdown == 3.8.2
+plantuml-markdown == 3.9.1
 mike == 1.1.2
