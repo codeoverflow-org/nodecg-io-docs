@@ -117,7 +117,7 @@ Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4
 
 There's no sample implementation for this service yet.
 
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^114.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^118.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -247,10 +247,10 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.3.0 <br>
 
 See the [sample implementation](samples/serial.md)
 
-Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^10.5.0 <br>
+Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^11.0.0 <br>
 Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^10.5.0 <br>
+Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^11.0.0 <br>
 
 ## [nodecg-io-shlink](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-shlink)
 
@@ -315,7 +315,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.57.5 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.61.6 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.61.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
