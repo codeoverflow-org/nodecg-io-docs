@@ -1,7 +1,7 @@
 # This file contains the direct dependencies required for building the docs
 # To install them all run 'pip install -r requirements.txt' in the same directory
 
-mkdocs == 1.4.2
+mkdocs == 1.4.3
 mkdocs-material == 9.1.15
 plantuml-markdown == 3.9.1
 mike == 1.1.2
