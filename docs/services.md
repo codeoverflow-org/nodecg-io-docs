@@ -7,7 +7,7 @@
 
 Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^8.12.0 <br>
 Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.1.1 <br>
-Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.5.0 <br>
+Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.5.2 <br>
 
 ## [nodecg-io-ahk](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-ahk)
 
@@ -15,7 +15,7 @@ Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.5.0 <br>
 
 See the [sample implementation](samples/ahk.md)
 
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-android](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-android)
@@ -69,7 +69,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.7.1 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.11.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -81,7 +81,7 @@ See the [sample implementation](samples/discord-rpc.md)
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [discord-rpc](https://www.npmjs.com/package/discord-rpc) @ ^4.0.1 <br>
 Depends on [@types/discord-rpc](https://www.npmjs.com/package/@types/discord-rpc) @ ^4.0.3 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 
 ## [nodecg-io-elgato-light](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-elgato-light)
 
@@ -89,8 +89,8 @@ Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
 
 See the [sample implementation](samples/elgato-light.md)
 
-Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.6.2 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.6.4 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-github](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-github)
@@ -100,7 +100,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/github.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^19.0.7 <br>
+Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^19.0.11 <br>
 
 ## [nodecg-io-google-cast](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-google-cast)
 
@@ -127,7 +127,7 @@ Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
 See the [sample implementation](samples/intellij.md)
 
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-irc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-irc)
@@ -173,8 +173,8 @@ Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.3.7 <br>
 
 See the [sample implementation](samples/nanoleaf.md)
 
-Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.6.2 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) @ ^2.6.4 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-obs](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-obs)
@@ -184,7 +184,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/obs.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ ^5.0.2 <br>
+Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ ^5.0.3 <br>
 
 ## [nodecg-io-opentts](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-opentts)
 
@@ -193,7 +193,7 @@ Depends on [obs-websocket-js](https://www.npmjs.com/package/obs-websocket-js) @ 
 See the [sample implementation](samples/opentts.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 
 ## [nodecg-io-philipshue](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-philipshue)
 
@@ -342,7 +342,7 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.12.1 <br>
 
 See the [sample implementation](samples/twitch-addons.md)
 
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [nodecg-io-twitch-auth](https://www.npmjs.com/package/nodecg-io-twitch-auth) @ ^0.3.0 <br>
 
@@ -414,6 +414,6 @@ Depends on [ws](https://www.npmjs.com/package/ws) @ ^8.12.1 <br>
 See the [sample implementation](samples/xdotool.md)
 
 Depends on [@rauschma/stringio](https://www.npmjs.com/package/@rauschma/stringio) @ ^1.4.0 <br>
-Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.9 <br>
+Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
