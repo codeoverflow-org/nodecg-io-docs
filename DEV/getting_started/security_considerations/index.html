@@ -10,20 +10,20 @@
         <meta name="author" content="codeoverflow.org">
       
       
-        <link rel="canonical" href="https://nodecg.io/DEV/samples/ahk/">
+        <link rel="canonical" href="https://nodecg.io/DEV/getting_started/security_considerations/">
       
       
-        <link rel="prev" href="../../services/">
+        <link rel="prev" href="../configuration/">
       
       
-        <link rel="next" href="../artnet/">
+        <link rel="next" href="../../contribute/contribute/">
       
       <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>AHK sample - nodecg-io Documentation</title>
+        <title>Security considerations - nodecg-io Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-the-autohotkey-sample-bundle" class="md-skip">
+        <a href="#security-considerations" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AHK sample
+              Security considerations
             
           </span>
         </div>
@@ -231,14 +231,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -247,7 +249,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Getting Started
@@ -260,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/install/" class="md-nav__link">
+      <a href="../install/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -274,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/try_example_bundle/" class="md-nav__link">
+      <a href="../try_example_bundle/" class="md-nav__link">
         Using a sample bundle
       </a>
     </li>
@@ -288,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/create_new_bundle/" class="md-nav__link">
+      <a href="../create_new_bundle/" class="md-nav__link">
         Your first bundle
       </a>
     </li>
@@ -302,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/existing_bundle/" class="md-nav__link">
+      <a href="../existing_bundle/" class="md-nav__link">
         Migrating an existing bundle
       </a>
     </li>
@@ -316,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/use_replicants/" class="md-nav__link">
+      <a href="../use_replicants/" class="md-nav__link">
         Use service replicants
       </a>
     </li>
@@ -330,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         Configuration
       </a>
     </li>
@@ -342,11 +344,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../getting_started/security_considerations/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Security considerations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Security considerations
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#security-claims" class="md-nav__link">
+    Security claims
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,16 +581,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
@@ -549,7 +597,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Services
@@ -574,68 +622,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          AHK sample
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../samples/ahk/" class="md-nav__link">
         AHK sample
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-the-autohotkey-sample-bundle" class="md-nav__link">
-    Using the AutoHotkey sample bundle
-  </a>
-  
-    <nav class="md-nav" aria-label="Using the AutoHotkey sample bundle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-the-autohotkey-sample-bundle" class="md-nav__link">
-    Configure the AutoHotkey sample bundle
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -647,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../artnet/" class="md-nav__link">
+      <a href="../../samples/artnet/" class="md-nav__link">
         Art-Net sample
       </a>
     </li>
@@ -661,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../atem/" class="md-nav__link">
+      <a href="../../samples/atem/" class="md-nav__link">
         Atem sample
       </a>
     </li>
@@ -675,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../android/" class="md-nav__link">
+      <a href="../../samples/android/" class="md-nav__link">
         Android
       </a>
     </li>
@@ -689,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dbus-ratbagd/" class="md-nav__link">
+      <a href="../../samples/dbus-ratbagd/" class="md-nav__link">
         DBus
       </a>
     </li>
@@ -703,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../debug/" class="md-nav__link">
+      <a href="../../samples/debug/" class="md-nav__link">
         Debug
       </a>
     </li>
@@ -744,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../discord/" class="md-nav__link">
+      <a href="../../samples/discord/" class="md-nav__link">
         Discord API sample
       </a>
     </li>
@@ -758,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../discord-rpc/" class="md-nav__link">
+      <a href="../../samples/discord-rpc/" class="md-nav__link">
         Discord RPC sample
       </a>
     </li>
@@ -779,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elgato-light/" class="md-nav__link">
+      <a href="../../samples/elgato-light/" class="md-nav__link">
         Elgato Light sample
       </a>
     </li>
@@ -793,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../google-cast/" class="md-nav__link">
+      <a href="../../samples/google-cast/" class="md-nav__link">
         Google Cast sample
       </a>
     </li>
@@ -807,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github/" class="md-nav__link">
+      <a href="../../samples/github/" class="md-nav__link">
         GitHub sample
       </a>
     </li>
@@ -848,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gsheets/" class="md-nav__link">
+      <a href="../../samples/gsheets/" class="md-nav__link">
         GSheets sample
       </a>
     </li>
@@ -862,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../youtube/" class="md-nav__link">
+      <a href="../../samples/youtube/" class="md-nav__link">
         Youtube sample
       </a>
     </li>
@@ -883,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intellij/" class="md-nav__link">
+      <a href="../../samples/intellij/" class="md-nav__link">
         IntelliJ sample
       </a>
     </li>
@@ -897,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../irc/" class="md-nav__link">
+      <a href="../../samples/irc/" class="md-nav__link">
         IRC
       </a>
     </li>
@@ -938,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../midi-input/" class="md-nav__link">
+      <a href="../../samples/midi-input/" class="md-nav__link">
         Midi-Input sample
       </a>
     </li>
@@ -952,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../midi-output/" class="md-nav__link">
+      <a href="../../samples/midi-output/" class="md-nav__link">
         Midi-Output sample
       </a>
     </li>
@@ -966,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../midi-io/" class="md-nav__link">
+      <a href="../../samples/midi-io/" class="md-nav__link">
         Midi-IO sample
       </a>
     </li>
@@ -987,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mqtt-client/" class="md-nav__link">
+      <a href="../../samples/mqtt-client/" class="md-nav__link">
         MQTT
       </a>
     </li>
@@ -1001,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nanoleaf/" class="md-nav__link">
+      <a href="../../samples/nanoleaf/" class="md-nav__link">
         Nanoleaf
       </a>
     </li>
@@ -1015,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../obs/" class="md-nav__link">
+      <a href="../../samples/obs/" class="md-nav__link">
         OBS
       </a>
     </li>
@@ -1029,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../opentts/" class="md-nav__link">
+      <a href="../../samples/opentts/" class="md-nav__link">
         OpenTTS
       </a>
     </li>
@@ -1043,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../philipshue/" class="md-nav__link">
+      <a href="../../samples/philipshue/" class="md-nav__link">
         Philips Hue sample
       </a>
     </li>
@@ -1057,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rcon/" class="md-nav__link">
+      <a href="../../samples/rcon/" class="md-nav__link">
         Rcon sample
       </a>
     </li>
@@ -1071,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reddit/" class="md-nav__link">
+      <a href="../../samples/reddit/" class="md-nav__link">
         Reddit sample
       </a>
     </li>
@@ -1112,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sacn-receiver/" class="md-nav__link">
+      <a href="../../samples/sacn-receiver/" class="md-nav__link">
         sACN Receiver sample
       </a>
     </li>
@@ -1126,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sacn-sender/" class="md-nav__link">
+      <a href="../../samples/sacn-sender/" class="md-nav__link">
         sACN Sender sample
       </a>
     </li>
@@ -1147,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../serial/" class="md-nav__link">
+      <a href="../../samples/serial/" class="md-nav__link">
         Serial sample
       </a>
     </li>
@@ -1161,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shlink/" class="md-nav__link">
+      <a href="../../samples/shlink/" class="md-nav__link">
         Shlink sample
       </a>
     </li>
@@ -1175,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slack/" class="md-nav__link">
+      <a href="../../samples/slack/" class="md-nav__link">
         Slack sample
       </a>
     </li>
@@ -1189,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../spotify/" class="md-nav__link">
+      <a href="../../samples/spotify/" class="md-nav__link">
         Spotify sample
       </a>
     </li>
@@ -1203,7 +1194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sql/" class="md-nav__link">
+      <a href="../../samples/sql/" class="md-nav__link">
         SQL sample
       </a>
     </li>
@@ -1217,7 +1208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../streamdeck/" class="md-nav__link">
+      <a href="../../samples/streamdeck/" class="md-nav__link">
         Streamdeck sample
       </a>
     </li>
@@ -1231,7 +1222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../streamelements/" class="md-nav__link">
+      <a href="../../samples/streamelements/" class="md-nav__link">
         StreamElements sample
       </a>
     </li>
@@ -1245,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../telegram/" class="md-nav__link">
+      <a href="../../samples/telegram/" class="md-nav__link">
         Telegram sample
       </a>
     </li>
@@ -1259,7 +1250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tiane/" class="md-nav__link">
+      <a href="../../samples/tiane/" class="md-nav__link">
         TIANE sample
       </a>
     </li>
@@ -1300,7 +1291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-addons/" class="md-nav__link">
+      <a href="../../samples/twitch-addons/" class="md-nav__link">
         Twitch-Addons sample
       </a>
     </li>
@@ -1314,7 +1305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-api/" class="md-nav__link">
+      <a href="../../samples/twitch-api/" class="md-nav__link">
         Twitch-Api sample
       </a>
     </li>
@@ -1328,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-chat/" class="md-nav__link">
+      <a href="../../samples/twitch-chat/" class="md-nav__link">
         Twitch-Chat sample
       </a>
     </li>
@@ -1342,7 +1333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitch-pubsub/" class="md-nav__link">
+      <a href="../../samples/twitch-pubsub/" class="md-nav__link">
         Twitch-Pubsub sample
       </a>
     </li>
@@ -1363,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../twitter/" class="md-nav__link">
+      <a href="../../samples/twitter/" class="md-nav__link">
         Twitter sample
       </a>
     </li>
@@ -1404,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../websocket-client/" class="md-nav__link">
+      <a href="../../samples/websocket-client/" class="md-nav__link">
         Client sample
       </a>
     </li>
@@ -1418,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../websocket-server/" class="md-nav__link">
+      <a href="../../samples/websocket-server/" class="md-nav__link">
         Server sample
       </a>
     </li>
@@ -1439,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xdotool/" class="md-nav__link">
+      <a href="../../samples/xdotool/" class="md-nav__link">
         Xdotool sample
       </a>
     </li>
@@ -1484,6 +1475,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1492,29 +1485,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-autohotkey-sample-bundle" class="md-nav__link">
-    Using the AutoHotkey sample bundle
-  </a>
-  
-    <nav class="md-nav" aria-label="Using the AutoHotkey sample bundle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#security-claims" class="md-nav__link">
+    Security claims
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-the-autohotkey-sample-bundle" class="md-nav__link">
-    Configure the AutoHotkey sample bundle
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1536,38 +1516,68 @@
   
 
 
-  <h1>AHK sample</h1>
-
-<h2 id="using-the-autohotkey-sample-bundle">Using the AutoHotkey sample bundle</h2>
-<p>The AutoHotkey sample bundle in <code>samples/ahk-sendcommand</code> shows how to send a
-command to a HotkeylessAHK server.</p>
-<h3 id="prerequisites">Prerequisites</h3>
-<p>You will need a working <code>nodecg-io</code> installation. If you have non yet take a
-look at <a href="../../getting_started/install/">installation guide</a>. You may need to
-install this bundle, so take a look at the
-<a href="../../getting_started/try_example_bundle/">“Try an included sample”</a>-Guide. It
-will also tell you how to log in and how to use the GUI.</p>
-<p><strong>You also need:</strong></p>
-<ul>
-<li>A running <a href="https://github.com/sebinside/HotkeylessAHK">HotkeylessAHK</a> setup.</li>
-</ul>
-<h3 id="configure-the-autohotkey-sample-bundle">Configure the AutoHotkey sample bundle</h3>
+<h1 id="security-considerations">Security considerations</h1>
+<p>nodecg-io is managing all configuration values for your service instances which consists of authentication credentials for third party services.
+nodecg-io tries to protect this sensitive data but can't make it completely safe due to constraints in the NodeCG architecture.</p>
+<p>This document will explain what nodecg-io can and can't do to protect your sensitive configuration data including credentials.
+The first part consist of our security claims and the second part describes how achieve those claims.</p>
+<h2 id="security-claims">Security claims</h2>
+<p>These claims all assume that you use a good strong password and take care of it properly.
+Also, a secure base layer is assumed here. Security Bugs in node.js/V8, your browser or your operating system are possible and can compromise your private data in nodecg-io. Possible malware or e.g. keyloggers on your computer may also compromise this security model.</p>
 <ol>
-<li>In NodeCG, create a new ahk service instance.</li>
 <li>
-<p>Enter the host and port of the HotkeylessAHK Server:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42800</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>After entering it, click save.</p>
+<p>No service configuration is accessible to someone with only filesystem access.</p>
+<ul>
+<li>An exception to this is a nodecg-io install with automatic login as the password is stored in plain text.</li>
+</ul>
 </li>
 <li>
-<p>Set the sample's (<code>ahk-sendcommand</code>) dependency to be the newly created
-   service instance (of type <code>ahk</code>).</p>
+<p>All loaded bundles may be able to access your plain text password if they have a dashboard.</p>
 </li>
-<li>A small window with the text “Hello World” should have popped up.</li>
+<li>All loaded bundles may change nodecg-io settings like deleting instances</li>
+<li>
+<p>All loaded bundles may access all your configurations and passwords.</p>
+<ul>
+<li>It is highly recommended to only use bundles you trust!</li>
+</ul>
+</li>
+<li>
+<p>Anyone intercepting network traffic between the NodeCG instance and browser with a logged in dashboard can access all configuration and passwords.</p>
+<ul>
+<li>It is highly recommended configuring NodeCG to use HTTPS when using untrusted networks (e.g. the internet, open Wi-Fi if your NodeCG port is not firewalled)</li>
+</ul>
+</li>
+</ol>
+<p>TL;DR don't use untrusted bundles and use HTTPS if your NodeCG run inside an untrusted network.</p>
+<h2 id="implementation">Implementation</h2>
+<ol>
+<li>
+<p>The configuration is stored encrypted only in a NodeCG replicant. If someone reads the persistent value of the replicant from the filesystem the configuration cannot be read because it is encrypted using your chosen password.</p>
+<ul>
+<li>AES Options:<ul>
+<li>Bit length: 256 bits</li>
+<li>AES block cipher mode: CBC</li>
+<li>Padding scheme: PKCS7</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When you enter your password inside the dashboard, it is used to derive an encryption key using argon2id. Only this encryption key is ever transmitted and leaves the browser tab. Therefore, other bundles can listen to the communication, but it only contains the derived encryption key, not your plain text password. However, bundles with a dashboard are inside the same browser tab as the nodecg-io dashboard and can therefore access all elements of the nodecg-io dashboard using the DOM and including your plain text password.</p>
+<ul>
+<li>Argon2id options:<ul>
+<li>Memory size: 37 MiB</li>
+<li>Iteration count: 2</li>
+<li>Parallelism: 1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Bundles can listen to the login message from the dashboard to get the encryption key. This can be used to send authenticate messages to the nodecg-io-core bundle to add/delete instances, change service instance assignments and do everything that is possible in the dashboard.</p>
+</li>
+<li>As mentioned in 3 all bundles can get the encryption key. The encrypted configuration is stored in a replicant which can be accessed by all bundles as well. Using these two any bundle could decrypt the configuration and have access to it.</li>
+<li>Same as in 3, everyone who intercepts network traffic will be able to intercept the encryption key that gets sent to the core using NodeCG messages.</li>
 </ol>
 
 

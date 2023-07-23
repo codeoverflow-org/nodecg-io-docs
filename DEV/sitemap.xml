@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://nodecg.io/DEV/getting_started/security_considerations/</loc>
+         <lastmod>2023-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://nodecg.io/DEV/getting_started/try_example_bundle/</loc>
          <lastmod>2023-07-23</lastmod>
          <changefreq>daily</changefreq>
