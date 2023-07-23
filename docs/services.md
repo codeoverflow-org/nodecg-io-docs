@@ -110,7 +110,7 @@ Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^19.0.
 See the [sample implementation](samples/google-cast.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4.0 <br>
+Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4.2 <br>
 
 ## [nodecg-io-googleapis](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-googleapis)
 
