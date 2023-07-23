@@ -14,6 +14,7 @@ FontColor White
 FontStyle Underline
 }
 [<u>nodecg-io-core] as nodecg_io_core <<core>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core]]
+[<u>hash-wasm] as hash_wasm <<lib>> [[https://www.npmjs.com/package/hash-wasm]]
 [<u>ajv] as ajv <<lib>> [[https://www.npmjs.com/package/ajv]]
 [<u>crypto-js] as crypto_js <<lib>> [[https://www.npmjs.com/package/crypto-js]]
 [<u>tslib] as tslib <<lib>> [[https://www.npmjs.com/package/tslib]]
@@ -105,6 +106,7 @@ FontStyle Underline
 [<u>@types/ws] as types_ws <<lib>> [[https://www.npmjs.com/package/@types/ws]]
 [<u>nodecg-io-websocket-server] as services_nodecg_io_websocket_server <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-websocket-server]]
 [<u>nodecg-io-xdotool] as services_nodecg_io_xdotool <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-xdotool]]
+nodecg_io_core ...> hash_wasm
 nodecg_io_core ...> ajv
 nodecg_io_core ...> crypto_js
 nodecg_io_core ...> tslib

@@ -5,6 +5,7 @@
 
 **The core of nodecg-io. Connects everything up.**
 
+Depends on [hash-wasm](https://www.npmjs.com/package/hash-wasm) @ ^4.9.0 <br>
 Depends on [ajv](https://www.npmjs.com/package/ajv) @ ^8.12.0 <br>
 Depends on [crypto-js](https://www.npmjs.com/package/crypto-js) @ ^4.1.1 <br>
 Depends on [tslib](https://www.npmjs.com/package/tslib) @ ^2.6.0 <br>
