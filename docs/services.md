@@ -70,7 +70,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.11.0 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.12.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -101,7 +101,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/github.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^19.0.13 <br>
+Depends on [@octokit/rest](https://www.npmjs.com/package/@octokit/rest) @ ^20.0.1 <br>
 
 ## [nodecg-io-google-cast](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-google-cast)
 
@@ -118,7 +118,7 @@ Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4
 
 There's no sample implementation for this service yet.
 
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^120.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^123.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -147,7 +147,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/midi-input.md)
 
-Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^3.0.1 <br>
+Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^3.1.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-midi-output](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-midi-output)
@@ -156,7 +156,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/midi-output.md)
 
-Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^3.0.1 <br>
+Depends on [easymidi](https://www.npmjs.com/package/easymidi) @ ^3.1.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-mqtt-client](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-mqtt-client)
@@ -231,7 +231,7 @@ Depends on [reddit-ts](https://www.npmjs.com/package/reddit-ts) @ https://github
 See the [sample implementation](samples/sacn-receiver.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.3.0 <br>
+Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.4.0 <br>
 
 ## [nodecg-io-sacn-sender](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-sacn-sender)
 
@@ -240,7 +240,7 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.3.0 <br>
 See the [sample implementation](samples/sacn-sender.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.3.0 <br>
+Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.4.0 <br>
 
 ## [nodecg-io-serial](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-serial)
 
@@ -251,7 +251,7 @@ See the [sample implementation](samples/serial.md)
 Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^11.0.0 <br>
 Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.2 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^11.0.0 <br>
+Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^11.0.1 <br>
 
 ## [nodecg-io-shlink](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-shlink)
 
