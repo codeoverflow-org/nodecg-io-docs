@@ -1,5 +1,6 @@
 build/
-.idea
+.venv/
+.idea/
 .vscode/*
 !.vscode/extensions.json
 !.vscode/tasks.json
