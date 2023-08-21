@@ -37,6 +37,7 @@ FontStyle Underline
 [<u>@types/discord-rpc] as types_discord_rpc <<lib>> [[https://www.npmjs.com/package/@types/discord-rpc]]
 [<u>nodecg-io-elgato-light] as services_nodecg_io_elgato_light <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-elgato-light]]
 [<u>@types/node-fetch] as types_node_fetch <<lib>> [[https://www.npmjs.com/package/@types/node-fetch]]
+[<u>nodecg-io-gametts] as services_nodecg_io_gametts <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-gametts]]
 [<u>nodecg-io-github] as services_nodecg_io_github <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-github]]
 [<u>@octokit/rest] as octokit_rest <<lib>> [[https://www.npmjs.com/package/@octokit/rest]]
 [<u>nodecg-io-google-cast] as services_nodecg_io_google_cast <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-google-cast]]
@@ -131,6 +132,7 @@ services_nodecg_io_discord_rpc ...> node_fetch
 services_nodecg_io_elgato_light ...> types_node_fetch
 services_nodecg_io_elgato_light ...> node_fetch
 services_nodecg_io_elgato_light --> nodecg_io_core
+services_nodecg_io_gametts --> nodecg_io_core
 services_nodecg_io_github --> nodecg_io_core
 services_nodecg_io_github ...> octokit_rest
 services_nodecg_io_google_cast --> nodecg_io_core

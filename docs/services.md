@@ -94,6 +94,14 @@ Depends on [@types/node-fetch](https://www.npmjs.com/package/@types/node-fetch) 
 Depends on [node-fetch](https://www.npmjs.com/package/node-fetch) @ ^2.6.12 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
+## [nodecg-io-gametts](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-gametts)
+
+**Allows generating audio for text using an GameTTS instance.**
+
+See the [sample implementation](samples/gametts.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
+
 ## [nodecg-io-github](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-github)
 
 **Allows to connect to the GitHub REST API**
