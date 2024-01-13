@@ -174,7 +174,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/mqtt-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^4.3.7 <br>
+Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^5.3.4 <br>
 
 ## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-nanoleaf)
 
