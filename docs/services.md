@@ -44,7 +44,7 @@ Depends on [artnet-protocol](https://www.npmjs.com/package/artnet-protocol) @ ^0
 
 See the [sample implementation](samples/atem.md)
 
-Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.2.0 <br>
+Depends on [atem-connection](https://www.npmjs.com/package/atem-connection) @ ^3.4.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-dbus](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-dbus)
@@ -70,7 +70,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/discord.md)
 
-Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.13.0 <br>
+Depends on [discord.js](https://www.npmjs.com/package/discord.js) @ ^14.14.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-discord-rpc](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-discord-rpc)
@@ -174,7 +174,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/mqtt-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^5.3.4 <br>
+Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^5.3.5 <br>
 
 ## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-nanoleaf)
 
@@ -257,7 +257,7 @@ Depends on [sacn](https://www.npmjs.com/package/sacn) @ ^4.4.0 <br>
 See the [sample implementation](samples/serial.md)
 
 Depends on [@serialport/parser-readline](https://www.npmjs.com/package/@serialport/parser-readline) @ ^12.0.0 <br>
-Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.2 <br>
+Depends on [@types/serialport](https://www.npmjs.com/package/@types/serialport) @ ^8.0.5 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [serialport](https://www.npmjs.com/package/serialport) @ ^12.0.0 <br>
 
@@ -276,7 +276,7 @@ Depends on [shlink-client](https://www.npmjs.com/package/shlink-client) @ ^1.0.1
 
 See the [sample implementation](samples/slack.md)
 
-Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^6.11.0 <br>
+Depends on [@slack/web-api](https://www.npmjs.com/package/@slack/web-api) @ ^7.0.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-spotify](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-spotify)
@@ -296,7 +296,7 @@ Depends on [spotify-web-api-node](https://www.npmjs.com/package/spotify-web-api-
 
 See the [sample implementation](samples/sql.md)
 
-Depends on [knex](https://www.npmjs.com/package/knex) @ ^2.5.1 <br>
+Depends on [knex](https://www.npmjs.com/package/knex) @ ^3.1.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamdeck](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamdeck)
@@ -324,7 +324,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 
 See the [sample implementation](samples/telegram.md)
 
-Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.61.7 <br>
+Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.64.2 <br>
 Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.64.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
@@ -392,7 +392,7 @@ Depends on [@twurple/pubsub](https://www.npmjs.com/package/@twurple/pubsub) @ ^5
 
 See the [sample implementation](samples/twitter.md)
 
-Depends on [@types/twitter](https://www.npmjs.com/package/@types/twitter) @ ^1.7.1 <br>
+Depends on [@types/twitter](https://www.npmjs.com/package/@types/twitter) @ ^1.7.4 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [twitter](https://www.npmjs.com/package/twitter) @ ^1.7.1 <br>
 
