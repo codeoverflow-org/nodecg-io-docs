@@ -2,6 +2,6 @@
 # To install them all run 'pip install -r requirements.txt' in the same directory
 
 mkdocs == 1.5.3
-mkdocs-material == 9.5.12
+mkdocs-material == 9.5.16
 plantuml-markdown == 3.9.4
 mike == 2.0.0
