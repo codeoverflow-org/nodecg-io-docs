@@ -126,7 +126,7 @@ Depends on [chromecast-api](https://www.npmjs.com/package/chromecast-api) @ ^0.4
 
 There's no sample implementation for this service yet.
 
-Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^133.0.0 <br>
+Depends on [googleapis](https://www.npmjs.com/package/googleapis) @ ^134.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 Depends on [open](https://www.npmjs.com/package/open) @ ^8.4.0 <br>
 
@@ -174,7 +174,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 See the [sample implementation](samples/mqtt-client.md)
 
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
-Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^5.3.5 <br>
+Depends on [mqtt](https://www.npmjs.com/package/mqtt) @ ^5.5.0 <br>
 
 ## [nodecg-io-nanoleaf](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-nanoleaf)
 
@@ -305,7 +305,7 @@ Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/m
 
 See the [sample implementation](samples/streamdeck.md)
 
-Depends on [@elgato-stream-deck/node](https://www.npmjs.com/package/@elgato-stream-deck/node) @ ^5.7.2 <br>
+Depends on [@elgato-stream-deck/node](https://www.npmjs.com/package/@elgato-stream-deck/node) @ ^6.0.0 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-streamelements](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-streamelements)
@@ -325,7 +325,7 @@ Depends on [socket.io-client](https://www.npmjs.com/package/socket.io-client) @ 
 See the [sample implementation](samples/telegram.md)
 
 Depends on [@types/node-telegram-bot-api](https://www.npmjs.com/package/@types/node-telegram-bot-api) @ ^0.64.3 <br>
-Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.64.0 <br>
+Depends on [node-telegram-bot-api](https://www.npmjs.com/package/node-telegram-bot-api) @ ^0.65.1 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
 ## [nodecg-io-template](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-template)
