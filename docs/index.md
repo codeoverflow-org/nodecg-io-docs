@@ -53,6 +53,7 @@ that's no problem you can head over to the
 -   OBS
 -   [OpenTTS](https://github.com/synesthesiam/opentts)
 -   Philips Hue
+-   [PiShock](https://pishock.com)
 -   RCON
 -   Reddit
 -   sACN Receiver
