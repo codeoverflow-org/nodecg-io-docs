@@ -61,6 +61,8 @@ FontStyle Underline
 [<u>nodecg-io-philipshue] as services_nodecg_io_philipshue <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-philipshue]]
 [<u>is-ip] as is_ip <<lib>> [[https://www.npmjs.com/package/is-ip]]
 [<u>node-hue-api] as node_hue_api <<lib>> [[https://www.npmjs.com/package/node-hue-api]]
+[<u>nodecg-io-pishock] as services_nodecg_io_pishock <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-pishock]]
+[<u>pishock-ts] as pishock_ts <<lib>> [[https://www.npmjs.com/package/pishock-ts]]
 [<u>nodecg-io-rcon] as services_nodecg_io_rcon <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-rcon]]
 [<u>rcon-client] as rcon_client <<lib>> [[https://www.npmjs.com/package/rcon-client]]
 [<u>nodecg-io-reddit] as services_nodecg_io_reddit <<service>> [[https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-reddit]]
@@ -161,6 +163,8 @@ services_nodecg_io_opentts ...> node_fetch
 services_nodecg_io_philipshue ...> is_ip
 services_nodecg_io_philipshue ...> node_hue_api
 services_nodecg_io_philipshue --> nodecg_io_core
+services_nodecg_io_pishock --> nodecg_io_core
+services_nodecg_io_pishock ...> pishock_ts
 services_nodecg_io_rcon --> nodecg_io_core
 services_nodecg_io_rcon ...> rcon_client
 services_nodecg_io_reddit --> nodecg_io_core

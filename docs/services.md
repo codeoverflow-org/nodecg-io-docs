@@ -214,6 +214,15 @@ Depends on [is-ip](https://www.npmjs.com/package/is-ip) @ ^3.1.0 <br>
 Depends on [node-hue-api](https://www.npmjs.com/package/node-hue-api) @ ^4.0.11 <br>
 Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
 
+## [nodecg-io-pishock](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-pishock)
+
+**Allows using the PiShock api.**
+
+See the [sample implementation](samples/pishock.md)
+
+Depends on [nodecg-io-core](https://github.com/codeoverflow-org/nodecg-io/tree/main/nodecg-io-core) @ ^0.3.0 <br>
+Depends on [pishock-ts](https://www.npmjs.com/package/pishock-ts) @ ^1.0.1 <br>
+
 ## [nodecg-io-rcon](https://github.com/codeoverflow-org/nodecg-io/tree/main/services/nodecg-io-rcon)
 
 **Allows you to send commands to a minecraft server via RCON.**
