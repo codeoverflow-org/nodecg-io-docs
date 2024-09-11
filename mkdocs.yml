@@ -1,7 +1,7 @@
 site_name: nodecg-io Documentation
 site_author: codeoverflow.org
 site_url: https://nodecg.io/
-copyright: "© 2020-2022 codeoverflow.org CC-BY-4.0"
+copyright: "© 2020-2024 codeoverflow.org CC-BY-4.0"
 
 theme:
     palette:
@@ -83,7 +83,8 @@ nav:
           - Nanoleaf: samples/nanoleaf.md
           - OBS: samples/obs.md
           - OpenTTS: samples/opentts.md
-          - Philips Hue sample: samples/philipshue.md
+          - Philips Hue: samples/philipshue.md
+          - PiShock: samples/pishock.md
           - Rcon sample: samples/rcon.md
           - Reddit sample: samples/reddit.md
           - sACN:
