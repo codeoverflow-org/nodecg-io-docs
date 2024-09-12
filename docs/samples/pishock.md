@@ -25,22 +25,22 @@ will also tell you how to log in and how to use the GUI.
 2. Enter your authentication details like this
 
    ```json
-    {
-        "authentications": [
-            {
-                "username": "myAwesomeUsername",
-                "apiKey": "12345678-1234-1234-1234-123456789012",
-                "code": "ABCDEFGHIJK",
-                "name": "nodecg-io-pishock-integration"
-            }
+   {
+       "authentications": [
+           {
+               "username": "myAwesomeUsername",
+               "apiKey": "12345678-1234-1234-1234-123456789012",
+               "code": "ABCDEFGHIJK",
+               "name": "nodecg-io-pishock-integration"
+           }
        ]
-    }
-    ```
+   }
+   ```
 
-    Multiple authentications may be provided to allow the using bundle
-    to access multiple devices.
-    Setting the client name is optional and defaults to `nodecg-io PiShock Service` if none is provided.
-    After entering it, click save.
+   Multiple authentications may be provided to allow the using bundle
+   to access multiple devices.
+   Setting the client name is optional and defaults to `nodecg-io PiShock Service` if none is provided.
+   After entering it, click save.
 
 3. Set the sample's (`pishock`) dependency to be the newly created service
    instance (of type `pishock`).
