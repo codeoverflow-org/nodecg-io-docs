@@ -2142,23 +2142,21 @@ will also tell you how to log in and how to use the GUI.</p>
 <p>Enter your authentication details like this</p>
 </li>
 </ol>
-<p><code>json
-    {
-        "authentications": [
-            {
-                "username": "myAwesomeUsername",
-                "apiKey": "12345678-1234-1234-1234-123456789012",
-                "code": "ABCDEFGHIJK",
-                "name": "nodecg-io-pishock-integration"
-            }
-       ]
-    }</code></p>
-<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">Multiple authentications may be provided to allow the using bundle</span>
-<span style="color: #f8f8f2">to access multiple devices</span>.
-<span style="color: #f8f8f2">Setting the client name is optional and defaults to </span>`<span style="color: #f8f8f2">nodecg</span><span style="color: #ff4689">-</span><span style="color: #f8f8f2">io PiShock Service</span>`<span style="color: #f8f8f2"> </span><span style="color: #66d9ef">if</span><span style="color: #f8f8f2"> none is provided</span>.
-<span style="color: #f8f8f2">After entering it</span>,<span style="color: #f8f8f2"> click save</span>.
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;authentications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;myAwesomeUsername&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;apiKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;12345678-1234-1234-1234-123456789012&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ABCDEFGHIJK&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nodecg-io-pishock-integration&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
-
+<p>Multiple authentications may be provided to allow the using bundle
+   to access multiple devices.
+   Setting the client name is optional and defaults to <code>nodecg-io PiShock Service</code> if none is provided.
+   After entering it, click save.</p>
 <ol>
 <li>
 <p>Set the sample's (<code>pishock</code>) dependency to be the newly created service
