@@ -1,7 +1,7 @@
 nodecg-io has a steadily growing and improving documentation. We are using
 [Markdown](https://en.wikipedia.org/wiki/Markdown) to describe the content and
 [mkdocs](https://www.mkdocs.org/) for the deployment to the webpage
-(<https://nodecg.io>). If you want to get to know the standard Markdown syntax,
+(<https://codeoverflow-org.github.io/nodecg-io-docs>). If you want to get to know the standard Markdown syntax,
 take a look at this [guide](https://www.markdownguide.org/). We also use many
 plugins, so you may take a look at a curated list of
 [examples](docs_markdown.md) of the extended syntax.

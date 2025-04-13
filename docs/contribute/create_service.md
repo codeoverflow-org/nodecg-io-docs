@@ -70,7 +70,7 @@ Put the following into it:
         "name": "nodecg-io-<your-service-name>",
         "version": "0.2.0",
         "description": "<Short description what is possible with your service.>",
-        "homepage": "https://nodecg.io/RELEASE/samples/<your-service-name>",
+        "homepage": "https://codeoverflow-org.github.io/nodecg-io-docs/RELEASE/samples/<your-service-name>",
         "author": {
             "name": "<Your name>",
             "url": "<Your github profile url>"
