@@ -2,19 +2,27 @@
 
 ![nodecg-io logo](assets/header_white.png)
 
+# ⚠️ nodecg-io is abandoned
+
+This project is no longer actively maintained and is archived.
+The domain [nodecg.io](https://codeoverflow-org.github.io/nodecg-io-docs/RELEASE/) is also not available anymore.
+Use this project at your own risk - breaking APIs and security vulnerabilities are expected to happen soon.
+If you wish to continue nodecg-io, please fork it.
+Similar projects may or may not happen in the future [here](https://github.com/sebinside).
+
+## About nodecg-io
+
 [![Feature Requests](https://img.shields.io/github/issues/codeoverflow-org/nodecg-io/enhancement?label=Feature%20Requests&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/labels/enhancement)
 [![Bugs](https://img.shields.io/github/issues/codeoverflow-org/nodecg-io/bug?label=Bugs&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/labels/bug)
 [![Pull Requests](https://img.shields.io/github/issues-pr/codeoverflow-org/nodecg-io?label=Pull%20Requests&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/pulls)
 
 <!-- Do not set the 'Services implemented' value manually. It's inserted automatically. -->
 
-[![Services](https://img.shields.io/static/v1?label=Services%20implemented&message=43&color=blue&style=flat-square)](services.md)
+[![Services](https://img.shields.io/static/v1?label=Services%20implemented&message=45&color=blue&style=flat-square)](services.md)
 [![License](https://img.shields.io/github/license/codeoverflow-org/nodecg-io?label=License&style=flat-square)](https://github.com/codeoverflow-org/nodecg-io/blob/main/LICENSE)
 [![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&style=flat-square)](https://discord.gg/sX2Gjbs/)
 
 **nodecg-io is a [NodeCG](https://github.com/nodecg/nodecg)-bundle that implements Social Media API's in the NodeCG framework**
-
-## About nodecg-io
 
 nodecg-io is the successor of
 [ChatOverflow](https://github.com/codeoverflow-org/chatoverflow). The aim of
